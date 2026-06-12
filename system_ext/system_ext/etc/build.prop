@@ -1,0 +1,40 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system_ext.brand=vivo
+ro.product.system_ext.device=PD2453
+ro.product.system_ext.manufacturer=vivo
+ro.product.system_ext.model=V2453A
+ro.product.system_ext.name=PD2453
+ro.system_ext.build.date=Fri May 16 22:08:05 CST 2025
+ro.system_ext.build.date.utc=1747404485
+ro.system_ext.build.fingerprint=vivo/PD2453/PD2453:15/AP3A.240905.015.A2/compiler250516220805:user/release-keys
+ro.system_ext.build.id=AP3A.240905.015.A2
+ro.system_ext.build.tags=release-keys
+ro.system_ext.build.type=user
+ro.system_ext.build.version.incremental=compiler250516220805
+ro.system_ext.build.version.release=15
+ro.system_ext.build.version.release_or_codename=15
+ro.system_ext.build.version.sdk=35
+####################################
+# from variable PRODUCT_SYSTEM_EXT_PROPERTIES
+####################################
+ro.config.isolated_compilation_enabled=true
+ro.audio.ihaladaptervendorextension_enabled=true
+bluetooth.profile.sap.server.enabled=true
+bluetooth.profile.pbap.sim.enabled=false
+bluetooth.hfp.codec_aptx_voice.enabled=false
+bluetooth.hfp.swb.aptx.power_management.enabled=true
+ro.bluetooth.leaudio_offload.supported=true
+bluetooth.device.class_of_device=90,2,12
+persist.bluetooth.leaudio_offload.disabled=false
+persist.bluetooth.leaudio.allow.multiple.context=false
+persist.bluetooth.leaudio.bypass_allow_list=true
+bluetooth.leaudio.dual_bidirection_swb.supported=true
+persist.bluetooth.leaudio.notify.idle.during.call=false
+persist.vendor.bluetooth.haltest=true
+persist.vendor.dpm.feature=11
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
+# end of file
