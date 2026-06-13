@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StreamHandlerConfig version="1.0.0">
+    <!-- 2227 Support UltraWide Cam Record -->
+    <IS_SUPPORT_ULTRAWIDE_CAM_RECORD value="1" />
+    <IS_SUPPORT_SUPERMOON value="1" />
+    <IS_SUPPORT_EIS_4_3_SIZE value="1"/>
+    <IS_ENABLE_INSENSORZOOM value="1" />
+    <NEED_PREVENT_SEAMLESS value="1"/>
+    <ENABLE_MEMC value="1" />
+    <PIP_PHYSICALID_TELE value="0" />
+    <IS_NEED_UPDATE_VSS_MODE value="1" />
+    <IS_NEED_ADD_MORE_INSERT_FRAME value="1" />
+    <ENABLE_4K60FPS_SAT value="1" />
+    <EIS_HIGH_FPS_LIST>
+        <FPS value="60" />
+        <FPS value="50" />
+    </EIS_HIGH_FPS_LIST>
+    <EIS_HIGH_FPS_CONDITION value="50" />
+    <!-- Stream size for each scene mode -->
+    <STREAM_SIZE_SETTING>
+        <!-- Video Record -->
+        <MAX_50_FPS_VIDEO_RAW_OUTPUT_WIDTH value="3840" />
+        <MAX_50_FPS_VIDEO_RAW_OUTPUT_HEIGHT value="2160" />
+        <MAX_60_FPS_VIDEO_RAW_OUTPUT_WIDTH value="3840" />
+        <MAX_60_FPS_VIDEO_RAW_OUTPUT_HEIGHT value="2160" />
+        <SUPER_EIS_VIDEO_RAW_OUTPUT_WIDTH value="3840" />
+        <SUPER_EIS_VIDEO_RAW_OUTPUT_HEIGHT value="2160" />
+        <!-- RDI size for EIS algo -->
+        <EIS_BEAUTY_VIDEO_WIDTH_WIDE value="4096" />
+        <EIS_BEAUTY_VIDEO_HEIGHT_WIDE value="2304" />
+        <EIS_BEAUTY_VIDEO_HEIGHT_4_3_WIDE value="3072" />
+        <EIS_BEAUTY_VIDEO_WIDTH_TELE value="4608" />
+        <EIS_BEAUTY_VIDEO_HEIGHT_TELE value="2592" />
+        <EIS_BEAUTY_VIDEO_HEIGHT_4_3_TELE value="3120" />
+        <EIS_BEAUTY_VIDEO_WIDTH_ULTRAWIDE value="3200" />
+        <EIS_BEAUTY_VIDEO_HEIGHT_ULTRAWIDE value="1800" />
+        <EIS_BEAUTY_VIDEO_HEIGHT_4_3_ULTRAWIDE value="2400" />
+        <EIS_VIDEO_SKYLINE_WIDTH_ULTRAWIDE value="3200" />
+        <EIS_VIDEO_SKYLINE_HEIGHT_ULTRAWIDE value="2400" />
+        <!-- Max RAW output size for ULTRAWIDE cam -->
+        <ULTRAWIDE_RAW_MAX_SIZE_WIDTH value="3200" />
+        <ULTRAWIDE_RAW_MAX_SIZE_HEIGHT value="2400" />
+        <!-- Max RAW output size for front cam -->
+        <FRONT_VIDEO_RAW_OUTPUT_WIDTH value="2304" />
+        <FRONT_VIDEO_RAW_OUTPUT_HEIGHT value="1296" />
+
+        <!-- RT YUV output size for EIS algo -->
+        <EIS_720P_30FPS_PREVIEW_VIDEO_WIDTH value="3840" />
+        <EIS_720P_30FPS_PREVIEW_VIDEO_HEIGHT value="2160" />
+        <EIS_720P_60FPS_PREVIEW_VIDEO_WIDTH value="3840" />
+        <EIS_720P_60FPS_PREVIEW_VIDEO_HEIGHT value="2160" />
+        <EIS_1080P_30FPS_PREVIEW_VIDEO_WIDTH value="3840" />
+        <EIS_1080P_30FPS_PREVIEW_VIDEO_HEIGHT value="2160" />
+        <EIS_1080P_60FPS_PREVIEW_VIDEO_WIDTH value="3840" />
+        <EIS_1080P_60FPS_PREVIEW_VIDEO_HEIGHT value="2160" />
+        <EIS_4K_30_60FPS_PREVIEW_WIDTH value="3840" />
+        <EIS_4K_30_60FPS_PREVIEW_HEIGHT value="2160" />
+        <EIS_4K_30_60FPS_VIDEO_WIDTH value="3840" />
+        <EIS_4K_30_60FPS_VIDEO_HEIGHT value="2160" />
+        <SUPER_EIS_PREVIEW_VIDEO_WIDTH value="3840" />
+        <SUPER_EIS_PREVIEW_VIDEO_HEIGHT value="2160" />
+        <VIDEO_8K_RAW_SIZE_WIDTH_WIDE value="7680" />
+        <VIDEO_8k_RAW_SIZE_HEIGHT_WIDE value="4320" />
+        <ALGO_DEPTH_WIDTH  value="480" />
+        <ALGO_DEPTH_HEIGHT value="270" />
+        <RTIC_DEPTH_WIDTH  value="1920" />
+        <RTIC_DEPTH_HEIGHT value="72" />
+    </STREAM_SIZE_SETTING>
+</StreamHandlerConfig>

@@ -1,0 +1,26 @@
+{
+"featureConfig":{
+        "SupportMicroCamera":[0,"是否支持超微距功能： 0 （不支持微距）；1 （有微距摄像头，支持微距）；2（无微距镜头，使用广角摄像头做超微距）；4（仅支持长焦微距功能）；5（支持长焦微距+超微距自动）"],
+        "SupportRefocusHALRotate":[1,"双摄虚化是否底层旋转"],
+        "SupportObjectTrackVersion":[5.0,"追焦支持版本 默认1.0"],
+        "SupportObjectTrackMinZoomRatio":[1,"追焦支持的minzoomratio,[Min,Max)"],
+        "SupportObjectTrackMaxZoomRatio":[2.1,"追焦支持的maxzoomratio,[Min,Max)"],
+        "SupportOISPanning":[0,"光学摇摄算法是否底层支持"],
+        "SupportSportStagger":[0,"1X运动抓拍是否支持双串流"],
+        "SupportHalVersion":[128,"平台VIF版本:http://km.vivo.xyz/pages/viewpage.action?pageId=69452869"],
+        "SupportHalskipframeforBltm":[1,"Bltm效果模块判断是否开启需要跳帧"],
+        "SkipframeforVideoBeauty":[1,"录像美颜开Bltm，需要丢1帧"],
+        "SupportVivoLaser":[0,"是否支持激光"],
+        "SupportAPPDistortionCorrection":["remosaic,advanced,super_micro,tilt_shift","应用畸变矫正支持的模式，高像素 专业模式拍照 手动微距 移轴"],
+        "SupportSupperMoonRoi":[0,"超级月亮tele是否使用roi"],
+        "SupportSetVivoHidlZoom":[1,"APP是否直接通过AIDL下发zoomratio到HAL"],
+        "SupportSatMask":[0,"1<<1,支持主摄常开 1<<2,支持fusion  1<<3,支持P1不裁跟手性"],
+        "SupportAppEquivalentFocalLength":[1,"是否支持Bokeh zoom feature"],
+        "SupportVideoModeVersion":[1,"录像模式版本"],
+        "SupportHWRemosaicOnHFR":[1,"高帧率录像是否支持HWRemosaic"],
+        "HighTempratureThresholdIn":[43,"高温阈值"],
+        "HighTempratureThresholdOut":[41,"高温阈值"],
+        "SupportPortraitNiceTone":[1,"1 人像走NiceTone, 0 人像不走NiceTone"],
+        "SupportAECtrlMoonAnimation":[1,"匹配格式: 是否支持MAAE优化功能 0: 不支持 1: 支持"]
+    }
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * vivo copyright
+ */
+-->
+<settings version="1.0">
+
+
+<!-- for adapter -->
+
+<struct-array name="satSetting">
+    <item>
+        <string name="cameratype">Wide</string>
+        <integer name="cameraid">2</integer>
+        <bool name="isSATEnable">true</bool>
+        <integer name="width">6400</integer>
+        <integer name="height">4800</integer>
+        <integer name="binValue">1</integer>
+        <float name="basicZoomRatio">0.6</float>
+        <float name="roiRatio">1.0</float>
+    </item>
+    <item>
+        <string name="cameratype">Master</string>
+        <integer name="cameraid">0</integer>
+        <bool name="isSATEnable">true</bool>
+        <integer name="width">8192</integer>
+        <integer name="height">6144</integer>
+        <integer name="binValue">2</integer>
+        <float name="basicZoomRatio">1</float>
+        <float name="roiRatio">2.0</float>
+    </item>
+</struct-array>
+
+<struct-array name="satBokehSetting">
+    <item>
+        <string name="cameratype">Wide</string>
+        <string name="slaveCameratype">NONE</string>
+        <integer name="cameraid">2</integer>
+        <bool name="isSATEnable">true</bool>
+        <integer name="width">3200</integer>
+        <integer name="height">2400</integer>
+        <integer name="activewidth">3200</integer>
+        <integer name="activeheight">2400</integer>
+        <integer name="binValue">1</integer>
+        <float name="basicZoomRatio">0.6</float>
+        <float name="activeZoomRatio">0.6</float>
+         <float name="roiRatio">1.0</float>
+    </item>
+    <item>
+        <string name="cameratype">Master</string>
+        <string name="slaveCameratype">Wide</string>
+        <integer name="cameraid">0</integer>
+        <bool name="isSATEnable">true</bool>
+        <integer name="width">4096</integer>
+        <integer name="height">3072</integer>
+        <integer name="activewidth">4096</integer>
+        <integer name="activeheight">3072</integer>
+        <integer name="binValue">1</integer>
+        <float name="basicZoomRatio">1</float>
+        <float name="activeZoomRatio">1</float>
+         <float name="roiRatio">2.0</float>
+    </item>
+</struct-array>
+
+<struct-array name="satBokehFallbackSetting">
+    <item>
+        <string name="cameratype">Wide</string>
+        <integer name="cameraid">2</integer>
+        <integer-array name="roiEnable">0,0,0</integer-array>
+        <integer-array name="fallbackEnable">0,0,0</integer-array>
+    </item>
+    <item>
+        <string name="cameratype">Master</string>
+        <integer name="cameraid">0</integer>
+        <integer-array name="roiEnable">1,0,0</integer-array>
+        <integer-array name="fallbackEnable">1,1,1</integer-array>
+    </item>
+</struct-array>
+
+<!-- 人像去紫边 -->
+<bool name="CFR_FOR_PORTRAIT">true</bool>
+
+<bool name="isSoftBRPNotEarlyRelease">true</bool>
+
+<!-- 人像下只支持首次进入点位切换seamless -->
+<bool name="isOnlySupportCameraChangeSeamless">true</bool>
+
+<!-- 使用dsp版本的rawnr，需要配置这个参数为true，以兼容roiremosaic场景下rawnr仍然走CPU版本 -->
+<bool name="isUseRawnrDspVersion">true</bool>
+<!--自研时光慢门-->
+<integer  name="slowShutterVersion">1</integer>
+<!-- FastNight单帧效果太差，FastNight场景不进单帧 -->
+<bool name="isNotSupportFastNightSingleCapture">true</bool>
+<!-- 配置为true, 该项目不支持sat fuion -->
+<bool name="satFusion_not_supported">true</bool>
+</settings>

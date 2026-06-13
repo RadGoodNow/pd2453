@@ -1,0 +1,96 @@
+{
+"ROIThreshold":{
+    "thresholdROI":[
+        [0.1, 0.1],
+        [0.1, 0.1],
+        [300.0, 320.0]
+    ],
+    "RoiRangeRatio":[
+        [999, 1.0],
+        [999, 1.0],
+        [0.6, 100]
+    ]
+},
+"SatFusionParams":{
+    "SatFusionConfig":[
+        [9999.9, 0.1, 9999.9, 0.1],
+        [9999.9, 0.1, 9999.9, 0.1],
+        [   2.5, 3.0,     50, 390]
+    ]
+},
+"ThresholdForSATFallback":{
+    "EisThreshold":[
+        [4.2,10,10, "// EIS active threshold"]
+    ],
+    "CameraActiveRangeRatio":
+    [
+        [0.6, 1.3],
+        [0.8, 3.6],
+        [2.6,  100]
+    ],
+    "ThresholdLux":
+    [
+        ["  UW          WIDE            TELE "],
+        [999, 999, 9999.9, 9999.9,   888,   888, "// lux threshold for 3A info of UW"  ],
+        [999, 999, 9999.9, 9999.9, 415.0, 403.0, "// lux threshold for 3A info of WIDE"],
+        [999, 999, 9999.9, 9999.9, 415.0, 403.0, "// lux threshold for 3A info of TELE"]
+    ],
+    "ThresholdDistance":
+    [
+        [0.1,  0.1,  10.0, 15.0,  30.0,  40.0, "// distance threshold for 3A info of UW"  ],
+        [0.1,  0.1,  10.0, 15.0,  45.0,  60.0, "// distance threshold for 3A info of WIDE"],
+        [0.1,  0.1,   0.1,  0.1,  45.0,  60.0, "// distance threshold for 3A info of TELE"],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// threshold for DisplayIC sensor"        ],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// distance threshold for laser info"     ],
+        [0.1, 10.0,   8.0, 40.0,  45.0, 100.0, "// distance threshold for reliable range, index should be camera num +1"]
+    ],
+    "ThresholdLuxForSuperNS":
+    [
+        ["  UW          WIDE            TELE "  ],
+        [999, 999, 9999.9, 9999.9, 9999.9, 9999.9, "// lux threshold for 3A info of UW"],
+        [999, 999, 9999.9, 9999.9,    410.0, 395.0, "// lux threshold for 3A info of WIDE"],
+        [999, 999, 9999.9, 9999.9,    410.0, 395.0, "// lux threshold for 3A info of TELE2P0x"]
+    ],
+    "ThresholdDistanceForSuperNS":
+    [
+        [0.1,  0.1,  10.0, 15.0,  30.0,  40.0, "// distance threshold for 3A info of UW"  ],
+        [0.1,  0.1,  10.0, 15.0,  45.0,  60.0, "// distance threshold for 3A info of WIDE"],
+        [0.1,  0.1,   0.1,  0.1,  45.0,  60.0, "// distance threshold for 3A info of TELE"],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// threshold for DisplayIC sensor"        ],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// distance threshold for laser info"     ],
+        [0.1, 10.0,   8.0, 40.0,  45.0, 100.0, "// distance threshold for reliable range, index should be camera num +1"]
+    ],
+    "ThresholdDistanceForDoc":
+    [
+        [0.1,  0.1,  10.0, 15.0,  30.0,  40.0, "// distance threshold for 3A info of UW"  ],
+        [0.1,  0.1,  10.0, 15.0,  45.0,  60.0, "// distance threshold for 3A info of WIDE"],
+        [0.1,  0.1,   0.1,  0.1,  45.0,  60.0, "// distance threshold for 3A info of TELE"],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// threshold for DisplayIC sensor"        ],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// distance threshold for laser info"     ],
+        [0.1, 10.0,   8.0, 40.0,  45.0, 100.0, "// distance threshold for reliable range, index should be camera num +1"]
+    ],
+    "ThresholdLuxForVideo":
+    [
+        ["     UW          WIDE          TELE"],
+        [  999,   999, 9999.9, 9999.9, 888, 888, "// lux threshold for 3A info of UW"  ],
+        [  999,   999, 9999.9, 9999.9, 350, 340, "// lux threshold for 3A info of WIDE"],
+        [  999,   999, 9999.9, 9999.9, 350, 340, "// lux threshold for 3A info of TELE"]
+    ],
+    "ThresholdLuxForTeleMacro":
+    [
+        ["     UW               WIDE          TELE"],
+        [  9999.9, 9999.9, 9999.9, 9999.9, 9999.9, 9999.9, "// lux threshold for 3A info of UW"  ],
+        [  9999.9, 9999.9, 9999.9, 9999.9, 9999.9, 9999.9, "// lux threshold for 3A info of WIDE"],
+        [  9999.9, 9999.9, 9999.9, 9999.9, 9999.9, 9999.9, "// lux threshold for 3A info of TELE"]
+    ],
+    "ThresholdDistanceForTeleMacro":
+    [
+        [0.1,  0.1,  12.0, 15.0,  15.0,  25.0, "// distance threshold for 3A info of UW"  ],
+        [0.1,  0.1,  12.0, 15.0,  15.0,  25.0, "// distance threshold for 3A info of WIDE"],
+        [0.1,  0.1,   0.1,  0.1,  15.0,  25.0, "// distance threshold for 3A info of TELE"],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// threshold for DisplayIC sensor"        ],
+        [0.1,  0.1,   0.1,  0.1,   0.1,   0.1, "// distance threshold for laser info"     ],
+        [0.1, 10.0,   8.0, 40.0,  45.0, 100.0, "// distance threshold for reliable range, index should be camera num +1"]
+    ]
+}
+}

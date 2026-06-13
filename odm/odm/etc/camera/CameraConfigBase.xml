@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CameraConfigBase version="1.0.0">
+    <ENABLE_DYNAMIC_DEBLUR value="1" />
+    <DARKSCENE_EXPTIME_LIMIT value="40.0" />
+    <VCF_REQUEST_BUFFER_RETRY_CNT value="4" />
+    <VCF_REQUEST_BUFFER_RETRY_INTERVAL_US value="30000" />
+</CameraConfigBase>

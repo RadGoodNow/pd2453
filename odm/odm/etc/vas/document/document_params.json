@@ -1,0 +1,12 @@
+{
+    "Name":	"document_params",
+    "project":	"PD2453",
+    "version":	"1",
+    "algoConfigParams": {
+        "gDistanceL1": 30.0,
+        "gDistanceL2": 12.0,
+        "isSupportDoc": 0,
+        "isBypassMacro": 0
+    }
+
+}

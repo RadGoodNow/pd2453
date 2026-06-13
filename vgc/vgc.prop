@@ -1,0 +1,11 @@
+ro.vivo.vgc.activate=true
+ro.vgc.cust.version=15.0.1
+ro.vgc.cust.name=V000
+ro.vgc.product.version=V000L1
+ro.vgc.customer=NULL
+
+
+ro.vgc.device.name=V000_PD2453MA
+ro.vgc.software.version=vgc_V000_PD2453MA_15.0.1
+ro.vgc.fs_type=erofs
+ro.vgc.system.product.version=PD2453_A_15.0.7.1.W10

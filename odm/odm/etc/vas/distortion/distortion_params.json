@@ -1,0 +1,15 @@
+{
+  "Name":	"distortion_params",
+  "project":	"PD2453",
+  "version":	"1",
+  "algoConfigParams": {
+      "needCorrection": 0,
+      "net_index": 1,
+      "distortionMode": 0,
+      "checkVideoMode": 0,
+      "checkFaceMode": 0,
+      "xdrParams": {
+          "distortionXdrMode": 0
+      }
+  }
+}

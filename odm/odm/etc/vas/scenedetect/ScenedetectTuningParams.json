@@ -1,0 +1,1232 @@
+{
+  "name": "ScenedetectTuningParams",
+  "product": "PD2453",
+  "version": 1.1,
+  "links": [
+    {
+      "name": "g_niceSensorInfo_noniceROI",
+      "type": "NiceSensorInfo",
+      "length": 1,
+      "value": [[[2, 0, 0, 0], [0, 0, 0, 0]]]
+    },
+    {
+      "name": "g_niceSensorInfo",
+      "type": "NiceSensorInfo",
+      "length": 1,
+      "value": [[[2, 0, 0, 0], [0, 0, 0, 1]]]
+    },
+    {
+      "name": "s_patches",
+      "type": "int",
+      "length": 1,
+      "value": 16
+    },
+    {
+      "name": "s_isClothDetectEnable",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "s_logic_isBlockStatsOn",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "s_logic_isRegionDetectOn",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "s_isHistStatsOn",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "s_isDRStatsOn",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "s_isStableOn",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "s_lightLowestValueRangeThL",
+      "type": "int",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "s_lightLowestValueRangeThH",
+      "type": "int",
+      "length": 1,
+      "value": 8
+    },
+    {
+      "name": "s_lightLowerValueRangeThL",
+      "type": "int",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "s_lightLowerValueRangeThH",
+      "type": "int",
+      "length": 1,
+      "value": 20
+    },
+    {
+      "name": "s_lightMiddleValueRangeThL",
+      "type": "int",
+      "length": 1,
+      "value": 40
+    },
+    {
+      "name": "s_lightMiddleValueRangeThH",
+      "type": "int",
+      "length": 1,
+      "value": 200
+    },
+    {
+      "name": "s_lightHighValueRangeThL",
+      "type": "int",
+      "length": 1,
+      "value": 250
+    },
+    {
+      "name": "s_lightHighValueRangeThH",
+      "type": "int",
+      "length": 1,
+      "value": 255
+    },
+    {
+      "name": "s_hdrClothExpParams",
+      "type": "backlightTuningClothInputParams array",
+      "length": 2,
+      "value": [
+        [[10, 1, 0, 300], [3.5, 3, 0.005, 0.01, 245]],
+        [[9, 1, 0, 350], [3.5, 5, 0.001, 0.01, 245]]
+      ]
+    },
+    {
+      "name": "s_backlightTuningParams",
+      "type": "backlightTuningHdrInputParams array",
+      "length": 2,
+      "value": [
+        [[100, 2, 0, 350], [[0.01, 0.1, 250, 15], [0, 15], [60, 220], [250, 255], [0, 30], [190, 255], [0.005, 1], [0.001, 1], [0, 30], [250, 255]]],
+        [[100, 2, 360, 999], [[0.01, 0.1, 250, 15], [0, 30], [60, 220], [250, 255], [0, 30], [190, 255], [0.005, 1], [0.001, 1], [0, 30], [250, 255]]]
+      ]
+    },
+    {
+      "name": "s_threshTuningParams",
+      "type": "backlightTuningThreshInputParams array",
+      "length": 5,
+      "value": [
+        [[10, 2, 0, 450], [[0, 1], [0, 1], [0.055, 1], [0, 256], [0, 256], [0, 999], [0, 999]]],
+        [[10, 2, 450, 999], [[0, 1], [0, 1], [0.025, 1], [0, 256], [0, 256], [0, 999], [0, 999]]],
+        [[9, 2, 0, 300], [[0, 1], [0, 1], [0.002, 1], [0, 256], [0, 256], [0, 999], [0, 999]]],
+        [[9, 2, 0, 300], [[0.15, 1], [0, 1], [0, 1], [0, 256], [0, 256], [0, 999], [0, 999]]],
+        [[9, 2, 300, 999], [[0, 1], [0, 1], [0, 1], [0, 256], [0, 256], [0, 999], [0, 999]]]
+      ]
+    },
+    {
+      "name": "s_niceZoomThreshTuningParams",
+      "type": "backlightTuningThreshInputParams array",
+      "length": 4,
+      "value": [
+        [[0, 2, 0, 300], [[0, 1], [0, 1], [0.002, 1], [0, 256], [0, 256], [0, 999], [0, 999]]],
+        [[2, 2, 0, 300], [[0, 1], [0, 1], [0.015, 1], [0, 256], [0, 256], [0, 999], [0, 999]]],
+        [[9, 2, 0, 300], [[0.15, 1], [0, 1], [0, 1], [0, 256], [0, 256], [0, 999], [0, 999]]],
+        [[9, 2, 300, 999], [[0, 1], [0, 1], [0, 1], [0, 256], [0, 256], [0, 999], [0, 999]]]
+      ]
+    },
+    {
+      "name": "s_overExpParams",
+      "type": "VBacklightThreshold",
+      "length": 1,
+      "value": [0, 0.0005]
+    },
+    {
+      "name": "s_highlightParams",
+      "type": "VBacklightThreshold",
+      "length": 1,
+      "value": [0.0015, 0.002]
+    },
+    {
+      "name": "s_sportHighlightParams",
+      "type": "VBacklightThreshold",
+      "length": 1,
+      "value": [0.0055, 0.006]
+    },
+    {
+      "name": "s_hdrliteDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 2,
+      "value": [
+        [10, 0, 999, 0, 999, 0.85, 1],
+        [9, 0, 150, 0, 40, 0.85, 1]
+      ]
+    },
+    {
+      "name": "s_hdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 3,
+      "value": [
+        [9, 0, 400, 0, 999, 0.42, 1],
+        [9, 220, 310, 0, 999, 0.68, 1],
+        [9, 310, 350, 0, 999, 0.85, 1]
+      ]
+    },
+    {
+      "name": "s_llhdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 2,
+      "value": [
+        [9, 200, 999, 6, 999, 0.68, 1],
+        [9, 320, 999, 11, 999, 0.7, 1]
+      ]
+    },
+    {
+      "name": "s_supernsDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 2,
+      "value": [
+        [9, 370, 999, 0, 999, 0.5, 1],
+        [10, 250, 999, 0, 999, 0.5, 1]
+      ]
+    },
+    {
+      "name": "s_niceHdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[100, 0, 999, 0, 999, 0.5, 1]]
+    },
+    {
+      "name": "s_niceHdrLuxindexLimit",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_niceHdrBackGainThreshold",
+      "type": "float",
+      "length": 1,
+      "value": 10.0
+    },
+    {
+      "name": "s_niceHdrBackGainThreshold_tele",
+      "type": "float",
+      "length": 1,
+      "value": 10.0
+    },
+    {
+      "name": "s_hdrBackRealGainThreshold",
+      "type": "float",
+      "length": 1,
+      "value": 1.0
+    },
+    {
+      "name": "s_hdrBackRealGainThreshold_wide",
+      "type": "float",
+      "length": 1,
+      "value": 1.43
+    },
+    {
+      "name": "s_hdrBackRealGainThreshold_tele",
+      "type": "float",
+      "length": 1,
+      "value": 0.0
+    },
+    {
+      "name": "s_hdrBackRealGainThreshold_night",
+      "type": "float",
+      "length": 1,
+      "value": 0.0
+    },
+    {
+      "name": "s_niceHdrBackExposureTimeThreshold",
+      "type": "float",
+      "length": 1,
+      "value": 120.0
+    },
+    {
+      "name": "s_niceHdrBackExposureTimeThreshold_tele",
+      "type": "float",
+      "length": 1,
+      "value": 120.0
+    },
+    {
+      "name": "s_sunsetZoomRatioThredhold",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_zoomNiceHdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 2,
+      "value": [
+        [0, 0, 999, 0, 999, 0.5, 1],
+        [2, 0, 999, 0, 999, 0.95, 1]
+      ]
+    },
+    {
+      "name": "s_zoomNiceHdrLuxindexLimit",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_hightZoomNiceHdrLuxindexLimit",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_hightfastnsLuxindexLimit",
+      "type": "int",
+      "length": 1,
+      "value": 250
+    },
+    {
+      "name": "s_zoomNiceHdrLuxindexLimit_tele2",
+      "type": "int",
+      "length": 1,
+      "value": 380
+    },
+    {
+      "name": "s_fastnsLuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_fastnsLuxindexLimit_wide",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_fastnsLuxindexLimit_tele2",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_fastnsLuxindexLimit_tele5",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_fastnsLuxindexLimit_front",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_supernsLuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 340
+    },
+    {
+      "name": "s_supernsLuxindexLimit_wide",
+      "type": "int",
+      "length": 1,
+      "value": 300
+    },
+    {
+      "name": "s_supernsLuxindexLimit_tele2",
+      "type": "int",
+      "length": 1,
+      "value": 300
+    },
+    {
+      "name": "s_supernsLuxindexLimit_tele5",
+      "type": "int",
+      "length": 1,
+      "value": 300
+    },
+    {
+      "name": "s_supernsLuxindexLimit_front",
+      "type": "int",
+      "length": 1,
+      "value": 300
+    },
+    {
+      "name": "s_supernsSafeGainLimit_master",
+      "type": "float",
+      "length": 1,
+      "value": 999.0
+    },
+    {
+      "name": "s_supernsSafeGainLimit_wide",
+      "type": "float",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_supernsSafeGainLimit_tele2",
+      "type": "float",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_supernsSafeGainLimit_tele5",
+      "type": "float",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_supernsSafeGainLimit_front",
+      "type": "float",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_hdrLiteGainLimit_master",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_hdrLiteGainLimit_wide",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_hdrLiteGainLimit_tele2",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_hdrLiteGainLimit_tele5",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_hdrLiteGainLimit_front",
+      "type": "float",
+      "length": 1,
+      "value": 4.0
+    },
+    {
+      "name": "s_extremeLowlightThreshold",
+      "type": "double",
+      "length": 1,
+      "value": 485.0
+    },
+    {
+      "name": "s_extremeLowlightHinder",
+      "type": "double",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_extremeFrontLLThreshold",
+      "type": "double",
+      "length": 1,
+      "value": 360.0
+    },
+    {
+      "name": "s_starLuxIndexLimit",
+      "type": "float",
+      "length": 1,
+      "value": 440.0
+    },
+    {
+      "name": "s_fastNsAIOFFLuxIndexLimit",
+      "type": "float",
+      "length": 1,
+      "value": 1000.0
+    },
+    {
+      "name": "s_zoomHdrliteDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 0, 200, 0, 50, 0.95, 1]]
+    },
+    {
+      "name": "s_zoomHdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 0, 400, 0, 999, 0.95, 1]]
+    },
+    {
+      "name": "s_zoomLLhdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 200, 999, 10, 999, 0.95, 1]]
+    },
+    {
+      "name": "s_zoomSupernsDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 250, 999, 0, 999, 0.95, 1]]
+    },
+    {
+      "name": "s_zoom_fastnsLuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 375
+    },
+    {
+      "name": "s_zoom_fastnsLuxindexLimit_wide",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_zoom_fastnsLuxindexLimit_tele2",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_zoom_fastnsLuxindexLimit_tele5",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_zoom_supernsLuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_zoom_supernsLuxindexLimit_wide",
+      "type": "int",
+      "length": 1,
+      "value": 300
+    },
+    {
+      "name": "s_zoom_supernsLuxindexLimit_tele2",
+      "type": "int",
+      "length": 1,
+      "value": 300
+    },
+    {
+      "name": "s_zoom_supernsLuxindexLimit_tele5",
+      "type": "int",
+      "length": 1,
+      "value": 300
+    },
+    {
+      "name": "s_zoom_supernsSafeGainLimit_master",
+      "type": "float",
+      "length": 1,
+      "value": 999.0
+    },
+    {
+      "name": "s_zoom_supernsSafeGainLimit_wide",
+      "type": "float",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_zoom_supernsSafeGainLimit_tele2",
+      "type": "float",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_zoom_supernsSafeGainLimit_tele5",
+      "type": "float",
+      "length": 1,
+      "value": 20.0
+    },
+    {
+      "name": "s_zoom_hdrLiteGainLimit_master",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_zoom_hdrLiteGainLimit_wide",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_zoom_hdrLiteGainLimit_tele2",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_zoom_hdrLiteGainLimit_tele5",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "s_foodHdrliteDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 0, 999, 0, 999, 0.5, 1]]
+    },
+    {
+      "name": "s_foodHdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 0, 400, 0, 999, 0.5, 1]]
+    },
+    {
+      "name": "s_foodLLhdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 200, 999, 10, 999, 0.5, 1]]
+    },
+    {
+      "name": "s_portraitHdrliteDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 2,
+      "value": [
+        [10, 0, 999, 0, 999, 0.4, 1],
+        [9, 0, 200, 0, 50, 0.65, 1]
+      ]
+    },
+    {
+      "name": "s_portraitHdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 0, 300, 0, 999, 0.5, 1]]
+    },
+    {
+      "name": "s_portraitLLhdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 200, 999, 10, 999, 0.5, 1]]
+    },
+    {
+      "name": "s_sportHdrliteDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 0, 200, 0, 50, 0.95, 1]]
+    },
+    {
+      "name": "s_sportHdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 0, 400, 0, 999, 0.95, 1]]
+    },
+    {
+      "name": "s_sportLLhdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[9, 200, 999, 10, 999, 0.95, 1]]
+    },
+    {
+      "name": "s_sportNiceHdrDecisionParams",
+      "type": "backlightTuningDecisionParams array",
+      "length": 1,
+      "value": [[100, 0, 999, 0, 999, 0.95, 1]]
+    },
+    {
+      "name": "s_sportNiceHdrLuxindexLimit",
+      "type": "int",
+      "length": 1,
+      "value": 370
+    },
+    {
+      "name": "s_sportNiceHdrBackGainThreshold",
+      "type": "float",
+      "length": 1,
+      "value": 4.5
+    },
+    {
+      "name": "AIhdr_Enable",
+      "type": "bool",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "AIhdr_highConfidenceThreshold",
+      "type": "double",
+      "length": 1,
+      "value": 0.7
+    },
+    {
+      "name": "AIhdr_lowConfidenceThreshold",
+      "type": "double",
+      "length": 1,
+      "value": 0.2
+    },
+    {
+      "name": "default_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 1.0
+    },
+    {
+      "name": "master_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 1.0
+    },
+    {
+      "name": "wide_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 1.0
+    },
+    {
+      "name": "tele_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 1.2
+    },
+    {
+      "name": "threshold_front",
+      "type": "float",
+      "length": 1,
+      "value": 4
+    },
+    {
+      "name": "threshold_front_nightRemosaic",
+      "type": "float",
+      "length": 1,
+      "value": 1.0
+    },
+    {
+      "name": "AINR_default_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 300.0
+    },
+    {
+      "name": "AINR_master_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 300.0
+    },
+    {
+      "name": "AINR_wide_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 300.0
+    },
+    {
+      "name": "AINR_tele2_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 300.0
+    },
+    {
+      "name": "AINR_tele5_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 300.0
+    },
+    {
+      "name": "AINR_threshold_front",
+      "type": "float",
+      "length": 1,
+      "value": 300.0
+    },
+    {
+      "name": "AINR_default_drcgain_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 3.4
+    },
+    {
+      "name": "AINR_master_drcgain_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 4.4
+    },
+    {
+      "name": "AINR_wide_drcgain_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 3.4
+    },
+    {
+      "name": "AINR_tele2_drcgain_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 3.4
+    },
+    {
+      "name": "AINR_tele5_drcgain_threshold_back",
+      "type": "float",
+      "length": 1,
+      "value": 3.4
+    },
+    {
+      "name": "AINR_drcgain_threshold_front",
+      "type": "float",
+      "length": 1,
+      "value": 3.4
+    },
+    {
+      "name": "ZoomFrameSelectNum",
+      "type": "int",
+      "length": 1,
+      "value": 2
+    },
+    {
+      "name": "mIsRemosaicSupport",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "mgetTeleTypeSupport",
+      "type": "int",
+      "length": 1,
+      "value": 3
+    },
+    {
+      "name": "mIsMultiRemosaicSupport",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "mIsSupportRAWNR",
+      "type": "int",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "mRet_starModeType",
+      "type": "int",
+      "length": 1,
+      "value": 4
+    },
+    {
+      "name": "mIsSupportRAWHDRDetect",
+      "type": "int",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "mIsSupportNormalRAWHDRDetect",
+      "type": "int",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "mIsSupportRAWNRHDRDetect",
+      "type": "int",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "mHDRSport_IndexThrold",
+      "type": "float",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "PortraitNight_threshold",
+      "type": "float",
+      "length": 1,
+      "value": 410.0
+    },
+    {
+      "name": "PortraitNight_threshold_Bokeh",
+      "type": "float",
+      "length": 1,
+      "value": 380.0
+    },
+    {
+      "name": "PortraitNight_threshold_BokehTele2",
+      "type": "float",
+      "length": 1,
+      "value": 390.0
+    },
+    {
+      "name": "PortraitNight_threshold_tiltshiftMode",
+      "type": "float",
+      "length": 1,
+      "value": 400.0
+    },
+    {
+      "name": "mHDRSportdeltaEVMax_throld",
+      "type": "int",
+      "length": 1,
+      "value": 1000
+    },
+    {
+      "name": "mHDRSportdeltaEVMin_throld",
+      "type": "int",
+      "length": 1,
+      "value": -1000
+    },
+    {
+      "name": "Zoom_Pixelshift_Threshold_LLS_default",
+      "type": "float",
+      "length": 1,
+      "value": 350.0
+    },
+    {
+      "name": "Zoom_Pixelshift_Threshold_LLS_master",
+      "type": "float",
+      "length": 1,
+      "value": 400.0
+    },
+    {
+      "name": "Zoom_Pixelshift_Threshold_LLS_wide",
+      "type": "float",
+      "length": 1,
+      "value": 350.0
+    },
+    {
+      "name": "Zoom_Pixelshift_Threshold_LLS_tele2",
+      "type": "float",
+      "length": 1,
+      "value": 350.0
+    },
+    {
+      "name": "Zoom_Pixelshift_Threshold_LLS_tele5",
+      "type": "float",
+      "length": 1,
+      "value": 330.0
+    },
+    {
+      "name": "ROI_Pixelshift_Threshold_LLS_default",
+      "type": "float",
+      "length": 1,
+      "value": 350.0
+    },
+    {
+      "name": "ROI_Pixelshift_Threshold_LLS_master",
+      "type": "float",
+      "length": 1,
+      "value": 350.0
+    },
+    {
+      "name": "ROI_Pixelshift_Threshold_LLS_wide",
+      "type": "float",
+      "length": 1,
+      "value": 350.0
+    },
+    {
+      "name": "ROI_Pixelshift_Threshold_LLS_tele2",
+      "type": "float",
+      "length": 1,
+      "value": 350.0
+    },
+    {
+      "name": "ROI_Pixelshift_Threshold_LLS_tele5",
+      "type": "float",
+      "length": 1,
+      "value": 330.0
+    },
+    {
+      "name": "sHoldRatio",
+      "type": "float",
+      "length": 1,
+      "value": 0.2
+    },
+    {
+      "name": "sMaxFrequence",
+      "type": "uint32_t",
+      "length": 1,
+      "value": 400
+    },
+    {
+      "name": "sMinFrequence",
+      "type": "uint32_t",
+      "length": 1,
+      "value": 35
+    },
+    {
+      "name": "mCFRLuxIndexThresholdUW",
+      "type": "float",
+      "length": 1,
+      "value": 280.0
+    },
+    {
+      "name": "mCFRLuxIndexThresholdW",
+      "type": "float",
+      "length": 1,
+      "value": 320.0
+    },
+    {
+      "name": "mCFRLuxIndexThresholdT",
+      "type": "float",
+      "length": 1,
+      "value": 340.0
+    },
+    {
+      "name": "mCFRLuxIndexThresholdUT",
+      "type": "float",
+      "length": 1,
+      "value": 280.0
+    },
+    {
+      "name": "adrgainThresholdUW",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "adrgainThresholdW",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "adrgainThresholdT",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "adrgainThresholdUT",
+      "type": "float",
+      "length": 1,
+      "value": 3.0
+    },
+    {
+      "name": "mNiceCFRLuxIndexThresholdUW",
+      "type": "int",
+      "length": 1,
+      "value": 280
+    },
+    {
+      "name": "mNiceCFRLuxIndexThresholdW",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "mNiceCFRLuxIndexThresholdT",
+      "type": "int",
+      "length": 1,
+      "value": 340
+    },
+    {
+      "name": "mNiceCFRLuxIndexThresholdUT",
+      "type": "int",
+      "length": 1,
+      "value": 280
+    },
+    {
+      "name": "luxThresholdMax",
+      "type": "float",
+      "length": 1,
+      "value": 355.0
+    },
+    {
+      "name": "luxThresholdMin",
+      "type": "float",
+      "length": 1,
+      "value": 325.0
+    },
+    {
+      "name": "luxThresholdMotionMax",
+      "type": "float",
+      "length": 1,
+      "value": 210.0
+    },
+    {
+      "name": "luxThresholdMotionMin",
+      "type": "float",
+      "length": 1,
+      "value": 190.0
+    },
+    {
+      "name": "isSupportSportStagerSeamless",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "UnSupportNiceStagerSeamless",
+      "type": "bool",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "isSupportPreviewHdrSeamless",
+      "type": "bool",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "mipThreshold",
+      "type": "int",
+      "length": 1,
+      "value": 30
+    },
+    {
+      "name": "g_sport_tuning_params_map",
+      "type": "map",
+      "length": 5,
+      "definition": "map<int, SportCaptureFramesTuningParams>",
+      "value": [
+        [0, [50, 3200]],
+        [2, [50, 3200]],
+        [3, [50, 3200]],
+        [11, [50, 3200]],
+        [1, [50, 3200]]
+      ]
+    },
+    {
+      "name": "captureFrameNumForNightMode",
+      "type": "uint32_t",
+      "length": 1,
+      "value": 4
+    },
+    {
+      "name": "captureFrameNumForStarMode",
+      "type": "uint32_t",
+      "length": 1,
+      "value": 5
+    },
+    {
+      "name": "s_nicehdr_owl_LuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 435
+    },
+    {
+      "name": "s_nicestar_owl_LuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 440
+    },
+    {
+      "name": "s_nicehdr_owl_LuxindexLimit_default",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "s_nicehdr_portrait_owl_LuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 380
+    },
+    {
+      "name": "s_nicehdr_portrait_owl_LuxindexLimit_master_2P2",
+      "type": "int",
+      "length": 1,
+      "value": 380
+    },
+    {
+      "name": "s_nicehdr_portrait_owl_LuxindexLimit_default",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "s_nicehdr_portrait_roiquadFrameNum_LuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 380
+    },
+    {
+      "name": "s_nicehdr_night_LuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 365
+    },
+    {
+      "name": "s_nicehdr_night_LuxindexLimit_default",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "s_nicehdr_more_ev0_frame_LuxindexLimit",
+      "type": "int",
+      "length": 1,
+      "value": 240
+    },
+    {
+      "name": "s_nicehdr_more_ev0_frame_binning_zoom_ratio_Limit",
+      "type": "float array",
+      "length": 2,
+      "value": [6.0, 100.0]
+    },
+    {
+      "name": "s_nicehdr_more_ev0_frame_quad_zoom_ratio_Limit",
+      "type": "float array",
+      "length": 2,
+      "value": [6.0, 10.0]
+    },
+    {
+      "name": "nicehdr_fallback_binning_wide",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "nicehdr_fallback_binning_master",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "nicehdr_fallback_binning_tele",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "nicehdr_fallback_binning_default",
+      "type": "int",
+      "length": 1,
+      "value": 320
+    },
+    {
+      "name": "s_nicehdr_owl_quickNight_LuxindexLimit_master",
+      "type": "int",
+      "length": 1,
+      "value": 400
+    },
+    {
+      "name": "portrait_sport_LuxindexLimit_high",
+      "type": "int",
+      "length": 1,
+      "value": 400
+    },
+    {
+      "name": "portrait_sport_LuxindexLimit_low",
+      "type": "int",
+      "length": 1,
+      "value": 250
+    },
+    {
+      "name": "s_ktv_motion_threshould",
+      "type": "float",
+      "length": 1,
+      "value": 0.001
+    },
+    {
+      "name": "s_nice_quad_night_master",
+      "type": "float",
+      "length": 1,
+      "value": 250.0
+    },
+    {
+      "name": "s_nice_motion_threshold1_tele",
+      "type": "int",
+      "length": 1,
+      "value": 340
+    },
+    {
+      "name": "s_ui_force_close_hdr_enable",
+      "type": "bool",
+      "length": 1,
+      "value": 0
+    }
+  ]
+}

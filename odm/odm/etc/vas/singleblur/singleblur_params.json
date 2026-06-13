@@ -1,0 +1,38 @@
+{
+    "Name":	"singleblur_params",
+    "project":	"PD2453",
+    "version":	"1",
+    "algoConfigParams": {
+        "afFocusDistanceThreshold_wide": 60.0,
+        "afFocusDistanceThreshold_master": 100.0,
+        "afFocusDistanceThreshold_tele": 150.0,
+        "afSubjectProportion" :0.05,
+        "HandSegEnable" : 0,
+        "NightLuxThreshold" : 0,
+        "SupportFrontPortraitHP" : 0
+    },
+    "SinglecamMacro":{
+        "mOutDofType" : 2,
+        "mOutBokehSceneType" : 3,
+        "mOutBokehRenderType" : 1,
+        "mOutBokehConfigPath" : "/vendor/camera3rd/nti"
+    },
+    "SinglecamFood":{
+        "mOutDofType" : 2,
+        "mOutBokehSceneType" : 1,
+        "mOutBokehRenderType" : 0,
+        "mOutBokehConfigPath" : "/vendor/camera3rd/nti"
+    },
+    "SinglecamPortrait":{
+        "mOutDofType" : 4,
+        "mOutBokehSceneType" : 4,
+        "mOutBokehRenderType" : 0,
+        "mOutBokehConfigPath" : "/vendor/camera3rd/nti"
+    },
+    "SinglecamPortraitZeiss":{
+        "mOutDofType" : 2,
+        "mOutBokehSceneType" : 4,
+        "mOutBokehRenderType" : 0,
+        "mOutBokehConfigPath" : "/vendor/camera3rd/nti"
+    }
+}

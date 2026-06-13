@@ -1,0 +1,81 @@
+{
+    "common": {
+        "phyPath": "/sys/module/camera/parameters/csiphy_onthego_regs",
+        "isRFpoweron": true
+    },
+    "config": [
+        {
+            "type": "后主_mode1_1993",
+            "sensorID": "0",
+			"phyID":"3",
+            "camera": "11",
+            "mode": "1",
+            "pointList": [
+                {                                   
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0x9F 0x00 0x0400 0x9F 0x00 0x0800 0x9F 0x00 0x0C00 0x9F 0x00 0x108C 0x00 0x00"
+                },
+				{
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0x8E 0x00 0x0400 0x8E 0x00 0x0800 0x8E 0x00 0x0C00 0x8E 0x00 0x108C 0x05 0x00"
+                }
+            ],
+            "openCameraDuration": "2000",
+            "closeCameraDuration": "1300",
+            "waitCameraDuration": "18000",
+            "ischecked": true
+        },{
+            "type": "后主_mode4_2477",
+            "sensorID": "0",
+			"phyID":"3",
+            "camera": "11",
+            "mode": "4",
+            "pointList": [
+                {                                   
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0x9C 0x00 0x0400 0x9C 0x00 0x0800 0x9C 0x00 0x0C00 0x9C 0x00 0x108C 0x00 0x00"
+                },
+				{
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0x8E 0x00 0x0400 0x8E 0x00 0x0800 0x8E 0x00 0x0C00 0x8E 0x00 0x108C 0x05 0x00"
+                }
+            ],
+            "openCameraDuration": "2000",
+            "closeCameraDuration": "1300",
+            "waitCameraDuration": "18000",
+            "ischecked": true
+        },{
+            "type": "广角_mode0_1344",
+            "sensorID": "2",
+			"phyID":"2",
+            "camera": "94",
+            "mode": "0",
+            "pointList": [
+                {                                   
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0xA8 0x00 0x0400 0xA8 0x00 0x0800 0xA8 0x00 0x0C00 0xA8 0x00 0x108C 0x00 0x00"
+                },
+                {
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0x8E 0x00 0x0400 0x8E 0x00 0x0800 0x8E 0x00 0x0C00 0x8E 0x00 0x108C 0x05 0x00"
+                }
+            ],
+            "openCameraDuration": "2000",
+            "closeCameraDuration": "1300",
+            "waitCameraDuration": "18000",
+            "ischecked": true
+        },{
+            "type": "前摄_mode1_835",
+            "sensorID": "1",
+			"phyID":"4",
+            "camera": "12",
+            "mode": "1",
+            "pointList": [
+                {                                   
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0xB8 0x00 0x0400 0xB8 0x00 0x0800 0xB8 0x00 0x0C00 0xB8 0x00 0x108C 0x00 0x00"
+                },
+                {
+                    "pointVal": "0x0E00 0x80 0x00 0x0000 0x8E 0x00 0x0400 0x8E 0x00 0x0800 0x8E 0x00 0x0C00 0x8E 0x00 0x108C 0x05 0x00"
+                }
+            ],
+            "openCameraDuration": "2000",
+            "closeCameraDuration": "1300",
+            "waitCameraDuration": "18000",
+            "ischecked": true
+        }
+    ]
+}

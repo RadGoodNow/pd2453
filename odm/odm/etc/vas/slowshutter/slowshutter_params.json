@@ -1,0 +1,10 @@
+{
+    "Name":	"slowshutter_params",
+    "project":	"PD2453",
+    "version":	"1",
+    "algoConfigParams": {
+        "threadNum" : 4,
+        "IsFusion" : 0
+    }
+
+}

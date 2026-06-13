@@ -1,0 +1,110 @@
+{
+  "name": "remosaic_param_tuning",
+  "product": "PD2453",
+  "version": 1.1,
+  "links": [
+    {
+      "name": "cpumask",
+      "type": "char pointer",
+      "length": 8,
+      "value": "00001111"
+    },
+    {
+      "name": "frontJsonFile",
+      "type": "char pointer",
+      "length": 63,
+      "value": "vendor/camera3rd/nti/remosaic/IQT_remosaic_v1_front_camera.json"
+    },
+    {
+      "name": "backJsonFile",
+      "type": "char pointer",
+      "length": 62,
+      "value": "vendor/camera3rd/nti/remosaic/IQT_remosaic_v1_back_camera.json"
+    },
+    {
+      "name": "nInterpDirecStrength",
+      "type": "char",
+      "length": 1,
+      "value": 3
+    },
+    {
+      "name": "nCnrStrength",
+      "type": "char",
+      "length": 1,
+      "value": 6
+    },
+    {
+      "name": "fCnrFusionStrength",
+      "type": "float",
+      "length": 1,
+      "value": 1.0
+    },
+    {
+      "name": "fSharpStrength",
+      "type": "float",
+      "length": 1,
+      "value": 0.8
+    },
+    {
+      "name": "nSharpClip",
+      "type": "char",
+      "length": 1,
+      "value": 4
+    },
+    {
+      "name": "nRawBits",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 10
+    },
+    {
+      "name": "nRawType",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "nRawFormat",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "nRawFormatFront",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 0
+    },
+    {
+      "name": "nSatRemosaicRawBits",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 14
+    },
+    {
+      "name": "nSatRemosaicRawType",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "nNightRemosaicRawBits",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 14
+    },
+    {
+      "name": "nNightRemosaicRawType",
+      "type": "unsigned char",
+      "length": 1,
+      "value": 1
+    },
+    {
+      "name": "RemosaiclibIndex",
+      "type": "unordered_map",
+      "length": 4,
+      "definition": "unordered_map<int, int>",
+      "value": [[0, 1], [11, 1]]
+    }
+  ]
+}

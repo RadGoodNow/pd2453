@@ -1,0 +1,291 @@
+{
+  "name": "frameInfo_baseCfg_tunning",
+  "product": "PD2453",
+  "version": 1.1,
+  "links": [
+    {
+      "name": "default_paramsList",
+      "type": "captureFrameCfgList",
+      "length": 7,
+      "value": [
+        [1500, 0, 5, 1, 1],
+        [3000, 0, 5, 1, 1],
+        [4500, 0, 5, 1, 1],
+        [6000, 0, 6, 1, 1],
+        [7500, 0, 6, 1, 1],
+        [9000, 0, 6, 1, 1],
+        [100000, 0, 6, 1, 1]
+      ]
+    },
+    {
+      "name": "hdrlite_params_m",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 6, 0, 1, 1]]
+    },
+    {
+      "name": "hdrlite_params_w",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 6, 0, 1, 1]]
+    },
+    {
+      "name": "hdrlite_params_t",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 6, 0, 1, 1]]
+    },
+    {
+      "name": "hdrlite_params_p",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 6, 0, 1, 1]]
+    },
+    {
+      "name": "hdrlite_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 4,
+      "value": [
+        [75, 1, 0, 1, 1],
+        [200, 4, 0, 1, 1],
+        [400, 6, 0, 1, 1],
+        [100000, 6, 0, 1, 1]
+      ]
+    },
+    {
+      "name": "hdroff_params_m",
+      "type": "captureFrameCfgList",
+      "length": 4,
+      "value": [
+        [90, 4, 0, 0, 0],
+        [200, 4, 0, 0, 0],
+        [400, 6, 0, 0, 0],
+        [100000, 6, 0, 0, 0]
+      ]
+    },
+    {
+      "name": "hdroff_params_t",
+      "type": "captureFrameCfgList",
+      "length": 4,
+      "value": [
+        [90, 4, 0, 0, 0],
+        [200, 4, 0, 0, 0],
+        [400, 6, 0, 0, 0],
+        [100000, 6, 0, 0, 0]
+      ]
+    },
+    {
+      "name": "hdroff_params_p",
+      "type": "captureFrameCfgList",
+      "length": 4,
+      "value": [
+        [90, 4, 0, 0, 0],
+        [200, 4, 0, 0, 0],
+        [400, 6, 0, 0, 0],
+        [100000, 6, 0, 0, 0]
+      ]
+    },
+    {
+      "name": "hdroff_params_w",
+      "type": "captureFrameCfgList",
+      "length": 4,
+      "value": [
+        [90, 4, 0, 0, 0],
+        [200, 4, 0, 0, 0],
+        [400, 6, 0, 0, 0],
+        [100000, 6, 0, 0, 0]
+      ]
+    },
+    {
+      "name": "hdroff_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 4,
+      "value": [
+        [90, 5, 0, 0, 0],
+        [200, 6, 0, 0, 0],
+        [400, 6, 0, 0, 0],
+        [100000, 6, 0, 0, 0]
+      ]
+    },
+    {
+      "name": "fastns_params_m",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 5, 1, 1]]
+    },
+    {
+      "name": "fastns_params_w",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "fastns_params_t",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "fastns_params_p",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "fastns_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "superns_params_m",
+      "type": "captureFrameCfgList",
+      "length": 2,
+      "value": [[2000, 0, 8, 1, 1], [100000, 0, 8, 1, 1]]
+    },
+    {
+      "name": "superns_params_w",
+      "type": "captureFrameCfgList",
+      "length": 2,
+      "value": [[6000, 0, 7, 1, 1], [100000, 0, 8, 1, 1]]
+    },
+    {
+      "name": "superns_params_t",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 8, 1, 1]]
+    },
+    {
+      "name": "superns_params_p",
+      "type": "captureFrameCfgList",
+      "length": 2,
+      "value": [[5000, 0, 7, 1, 1], [100000, 0, 8, 1, 1]]
+    },
+    {
+      "name": "superns_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 5, 1, 1]]
+    },
+    {
+      "name": "tripod_params_m",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "tripod_params_w",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "tripod_params_t",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "tripod_params_p",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "tripod_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 6, 1, 1]]
+    },
+    {
+      "name": "hdr_params_m",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 4, 1, 1]]
+    },
+    {
+      "name": "hdr_params_w",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 5, 1, 1]]
+    },
+    {
+      "name": "hdr_params_t",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 4, 1, 1]]
+    },
+    {
+      "name": "hdr_params_p",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 5, 1, 1]]
+    },
+    {
+      "name": "hdr_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 4, 1, 1]]
+    },
+    {
+      "name": "llhdr_params_m",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 4, 1, 1]]
+    },
+    {
+      "name": "llhdr_params_w",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 5, 1, 1]]
+    },
+    {
+      "name": "llhdr_params_t",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 5, 1, 1]]
+    },
+    {
+      "name": "llhdr_params_p",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 5, 1, 1]]
+    },
+    {
+      "name": "llhdr_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[100000, 0, 4, 1, 1]]
+    },
+    {
+      "name": "hdrsport_params_m",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[1500, 0, 5, 1, 1]]
+    },
+    {
+      "name": "hdrsport_params_w",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[1500, 0, 5, 1, 1]]
+    },
+    {
+      "name": "hdrsport_params_t",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[1500, 0, 5, 1, 1]]
+    },
+    {
+      "name": "hdrsport_params_p",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[1500, 0, 5, 1, 1]]
+    },
+    {
+      "name": "hdrsport_params_m_f",
+      "type": "captureFrameCfgList",
+      "length": 1,
+      "value": [[1500, 0, 5, 1, 1]]
+    }
+  ]
+}

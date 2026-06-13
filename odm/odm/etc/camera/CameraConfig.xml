@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CameraConfig version="1.0.0">
+    <VIF_PARITAL_META value="1" />
+    <PROJ_CAMERA_OPEN_CHARGE_SIZE value="200" />
+    <RDI_QUEUE_SETTING>
+        <RDI_READY_QUEUE_MIN value="6" />
+        <RDI_PREALLOCATED_NUM value="2" />
+        <RDI_TOTAL_QUEUE_MAX value="100" />
+    </RDI_QUEUE_SETTING>
+    <MEMORY_POOL_SETTING>
+        <PREV_RING_MAX value="128" />
+        <PREV_RING_MIN value="0" />
+        <CAP_RING_MAX value="8" />
+        <CAP_RING_MIN value="4" />
+        <RING_FREE_MIN value="8" />
+    </MEMORY_POOL_SETTING>
+    <THREAD_POOL_PRIORITY_SETTING>
+        <NORMAL_THREAD_RT_PRI_DEFAULT value="-16" />
+        <NORMAL_THREAD_RT_PRI_HIGHEST value="-20" />
+        <NORMAL_THREAD_RT_PRI_LOWEST value="19" />
+        <BOOST_THREAD_PRI value="-19" />
+    </THREAD_POOL_PRIORITY_SETTING>
+    <THREAD_PRIORITY_POINT_SETTING>
+        <ALGO_ENTRANCE value="2" />
+        <AIDL_R_HANDLER value="0" />
+        <DAG_PENDING_EXE value="1" />
+        <PF_RESULT_EXE value="1" />
+    </THREAD_PRIORITY_POINT_SETTING>
+    <!-- SAT_CONFIGINFO_BEGIN -->
+    <PROJ_SUPPORT_SAT_REMOSAIC value="0" />
+    <ENABLE_SAT3_FEATURE value="1"/>
+    <ENABLE_KEEPBINNING_INZOOM value="1"/>
+    <MAXRATIO_KEEPBINNING_INZOOM value="10"/>
+    <SAT3_POWERENHANCE_TYPE value="7"/>
+    <SAT_PREVIEW_CLOSE_SLAVE_RDI value="1"/>
+    <ZOOM_ROI_HIGH_RATIO value="2.8"/>
+    <DISABLE_MASTER_ALWAYS_ON_FEATURE value="1"/>
+    <ENABLE_ZOOMCTR_BUTTONFRMNUMV2 value="1" />
+    <ENABLE_TRIPLE_OPEN value="0" />
+    <ENABLE_TRIPLE_OPEN_TEMPERATURE_LIMIT value="45" />
+    <CRASH_DUMP_ENABLE value="1" />
+    <ENABLE_ZOOM_CONTROL value="0" />
+    <!-- SAT_CONFIGINFO_END -->
+    <MTK_PLATFORM value="0" />
+    <DEFAULT_MAXINFLIGHTS value="8" />
+    <V2_HIGH_TEMPER_30FPS_MASK value="17" />
+    <PROJ_SUPPORT_BOKEHMOON_ADD_NICE value="0" />
+    <PROJ_SUPPORT_CAPTURE_FUNMOTION value="1" />
+    <PDAF_CONFIDENCE_THRESHOLD value="200" />
+    <!-- DEFAULT_RDI_QUEUE_STREAM_SET -->
+    <DEFAULT_RDI_QUEUE_STREAM_SET>
+        <VCF_STREAM_ID value="REAL_RAW_WIDE_OUT" />
+        <VCF_STREAM_ID value="REAL_RAW_ULTRAWIDE_OUT" />
+        <VCF_STREAM_ID value="REAL_RAW_FRONT_OUT" />
+        <VCF_STREAM_ID value="REAL_SHORTEX_RAW_WIDE_OUT" />
+        <VCF_STREAM_ID value="REAL_RAW_AUXMAIN_OUT" />
+    </DEFAULT_RDI_QUEUE_STREAM_SET>
+    <CAMERATYPE_PAIRS>
+        <ITEM>
+            <CAMERATYPE value="BokehTele2" />
+            <VCF_CAMERATYPE value="BokehTele" />
+        </ITEM>
+        <ITEM>
+            <CAMERATYPE value="BokehTele3" />
+            <VCF_CAMERATYPE value="BokehUltraTele" />
+        </ITEM>
+        <ITEM>
+            <CAMERATYPE value="BokehTUW" />
+            <VCF_CAMERATYPE value="BokehTeleUltraWide" />
+        </ITEM>
+        <ITEM>
+            <CAMERATYPE value="Master" />
+            <VCF_CAMERATYPE value="Wide" />
+        </ITEM>
+        <ITEM>
+            <CAMERATYPE value="Wide" />
+            <VCF_CAMERATYPE value="UltraWide" />
+        </ITEM>
+        <ITEM>
+            <CAMERATYPE value="Tele3xLong" />
+            <VCF_CAMERATYPE value="Tele" />
+        </ITEM>
+    </CAMERATYPE_PAIRS>
+    <!-- ROI remosaic config -->
+    <ROI_REMOSAIC_CONFIG>
+        <ITEM>
+            <CAMERA_TYPE value="ULTRAWIDE" />
+            <RATIO_START value="100" />
+            <RATIO_END value="0" />
+        </ITEM>
+        <ITEM>
+            <CAMERA_TYPE value="WIDE" />
+            <RATIO_START value="2.0" />
+            <RATIO_END value="20.0" />
+        </ITEM>
+    </ROI_REMOSAIC_CONFIG>
+    <BOKEH_ROI_REMOSAIC_CONFIG>
+        <ITEM>
+            <CAMERA_TYPE value="ULTRAWIDE" />
+            <RATIO_START value="100" />
+            <RATIO_END value="0" />
+        </ITEM>
+        <ITEM>
+            <CAMERA_TYPE value="WIDE" />
+            <RATIO_START value="2.0" />
+            <RATIO_END value="20.0" />
+        </ITEM>
+    </BOKEH_ROI_REMOSAIC_CONFIG>
+    <!-- gSatAvailableCamMaskByRatio -->
+    <SAT_AVAILABLE_CAM_MASK>
+        <RATIO value="1.0">
+            <MASK value="ULTRAWIDE" />
+        </RATIO>
+        <RATIO value="2.0">
+            <MASK value="ULTRAWIDE" />
+            <MASK value="WIDE" />
+        </RATIO>
+        <RATIO value="20.1">
+            <MASK value="ULTRAWIDE" />
+            <MASK value="WIDE" />
+        </RATIO>
+    </SAT_AVAILABLE_CAM_MASK>
+    <BUTTON_RATIOS>
+        <RATIO value="0.6"/>
+        <RATIO value="1.0"/>
+        <RATIO value="2.0"/>
+        <RATIO value="3.0"/>
+        <RATIO value="10.0"/>
+    </BUTTON_RATIOS>
+    <!-- gMaxFallbackRangeForSAT -->
+    <MAX_FALLBACK_RANGE_FOR_SAT>
+        <SCENE value="DEFAULT">
+            <RATIO value="0.99" />
+            <RATIO value="10.01" />
+            <RATIO value="10.01" />
+        </SCENE>
+        <SCENE value="VIDEOSAT">
+            <RATIO value="0.8999" />
+            <RATIO value="20" />
+            <RATIO value="20" />
+        </SCENE>
+        <SCENE value="ELAPSESAT">
+            <RATIO value="0.8999" />
+            <RATIO value="10.1" />
+            <RATIO value="10.1" />
+        </SCENE>
+        <SCENE value="SUPERNS">
+            <RATIO value="0.8999" />
+            <RATIO value="10" />
+            <RATIO value="10" />
+        </SCENE>
+        <SCENE value="NORMALSAT">
+            <RATIO value="0.8999" />
+            <RATIO value="10" />
+            <RATIO value="10" />
+        </SCENE>
+        <SCENE value="DOCUMENTSAT">
+            <RATIO value="0.8999" />
+            <RATIO value="10" />
+            <RATIO value="10" />
+        </SCENE>
+    </MAX_FALLBACK_RANGE_FOR_SAT>
+    <!-- g_defaultMapStatus -->
+    <DEVICE_CATEGORY_MAP_STATUS>
+        <DEVICE_CATEGORY value="REALTIME">
+            <NUM_OF_DEVICE value="1" id="MASTER_FRONT" />
+            <NUM_OF_DEVICE value="1" id="WIDE" />
+            <NUM_OF_DEVICE value="1" id="ULTRAWIDE" />
+            <NUM_OF_DEVICE value="1" id="TELE" />
+            <NUM_OF_DEVICE value="0" id="ULTRATELE" />
+            <NUM_OF_DEVICE value="1" id="MULTICAM" />
+            <NUM_OF_DEVICE value="0" id="IC" />
+            <NUM_OF_DEVICE value="1" id="FRONTIC" />
+            <NUM_OF_DEVICE value="0" id="PUBLIC_MULTICAM" />
+            <NUM_OF_DEVICE value="1" id="AUXMAIN" />
+            <NUM_OF_DEVICE value="1" id="FRONTMULTICAM" />
+            <NUM_OF_DEVICE value="1" id="NOVA" />
+            <NUM_OF_DEVICE value="0" id="NOUSE_DEVICE" />
+        </DEVICE_CATEGORY>
+        <DEVICE_CATEGORY value="REALTIME_Y2Y">
+            <NUM_OF_DEVICE value="1" id="MASTER_FRONT" />
+            <NUM_OF_DEVICE value="1" id="WIDE" />
+            <NUM_OF_DEVICE value="1" id="ULTRAWIDE" />
+            <NUM_OF_DEVICE value="1" id="TELE" />
+            <NUM_OF_DEVICE value="0" id="ULTRATELE" />
+            <NUM_OF_DEVICE value="0" id="MULTICAM" />
+            <NUM_OF_DEVICE value="0" id="IC" />
+            <NUM_OF_DEVICE value="0" id="FRONTIC" />
+            <NUM_OF_DEVICE value="0" id="PUBLIC_MULTICAM" />
+            <NUM_OF_DEVICE value="1" id="AUXMAIN" />
+            <NUM_OF_DEVICE value="0" id="FRONTMULTICAM" />
+            <NUM_OF_DEVICE value="0" id="NOVA" />
+            <NUM_OF_DEVICE value="0" id="NOUSE_DEVICE" />
+        </DEVICE_CATEGORY>
+        <DEVICE_CATEGORY value="OFFLINE_IMAGE_ECHO">
+            <NUM_OF_DEVICE value="2" id="MASTER_FRONT" />
+            <NUM_OF_DEVICE value="2" id="WIDE" />
+            <NUM_OF_DEVICE value="2" id="ULTRAWIDE" />
+            <NUM_OF_DEVICE value="2" id="TELE" />
+            <NUM_OF_DEVICE value="0" id="ULTRATELE" />
+            <NUM_OF_DEVICE value="0" id="MULTICAM" />
+            <NUM_OF_DEVICE value="0" id="IC" />
+            <NUM_OF_DEVICE value="0" id="FRONTIC" />
+            <NUM_OF_DEVICE value="0" id="PUBLIC_MULTICAM" />
+            <NUM_OF_DEVICE value="2" id="AUXMAIN" />
+            <NUM_OF_DEVICE value="0" id="FRONTMULTICAM" />
+            <NUM_OF_DEVICE value="2" id="NOVA" />
+            <NUM_OF_DEVICE value="0" id="NOUSE_DEVICE" />
+        </DEVICE_CATEGORY>
+    </DEVICE_CATEGORY_MAP_STATUS>
+    <!-- SATFeatureList must be in order -->
+    <SAT_FEATURE_LIST>
+        <ITEM>
+            <NAME value="EarlyOpen"/>
+            <ISNEED value="1"/>
+        </ITEM>
+        <ITEM>
+            <NAME value="DualOpen"/>
+            <ISNEED value="1"/>
+        </ITEM>
+        <ITEM>
+            <NAME value="SAT2_0"/>
+            <ISNEED value="1"/>
+        </ITEM>
+        <ITEM>
+            <NAME value="SAT3_0"/>
+            <ISNEED value="1"/>
+        </ITEM>
+        <ITEM>
+            <NAME value="PipPreview"/>
+            <ISNEED value="1"/>
+        </ITEM>
+        <ITEM>
+            <NAME value="TeleMacro"/>
+            <ISNEED value="1"/>
+        </ITEM>
+        <ITEM>
+            <NAME value="FusionCap"/>
+            <ISNEED value="1"/>
+        </ITEM>
+        <ITEM>
+            <NAME value="CaptureBlock"/>
+            <ISNEED value="1"/>
+        </ITEM>
+    </SAT_FEATURE_LIST>
+    <ZOOMCTR_BUTTON_FRAMENUMBER>
+        <ITEM>
+            <SPACE_RATIO_LOW value="0.0"/>
+            <SPACE_RATIO_HIGH value="0.6"/>
+            <ZOOMIN_FRAME_NUM value="12"/>
+            <ZOOMOUT_FRAME_NUM value="12"/>
+            <ZOOMIN_FRAME_NUM_D value="5"/>
+            <ZOOMOUT_FRAME_NUM_D value="5"/>
+        </ITEM>
+        <ITEM>
+            <SPACE_RATIO_LOW value="0.6"/>
+            <SPACE_RATIO_HIGH value="5.0"/>
+            <ZOOMIN_FRAME_NUM value="14"/>
+            <ZOOMOUT_FRAME_NUM value="12"/>
+            <ZOOMIN_FRAME_NUM_D value="6"/>
+            <ZOOMOUT_FRAME_NUM_D value="6"/>
+        </ITEM>
+        <ITEM>
+            <SPACE_RATIO_LOW value="5.0"/>
+            <SPACE_RATIO_HIGH value="10.0"/>
+            <ZOOMIN_FRAME_NUM value="17"/>
+            <ZOOMOUT_FRAME_NUM value="14"/>
+            <ZOOMIN_FRAME_NUM_D value="8"/>
+            <ZOOMOUT_FRAME_NUM_D value="8"/>
+        </ITEM>
+        <ITEM>
+            <SPACE_RATIO_LOW value="10.0"/>
+            <SPACE_RATIO_HIGH value="20.0"/>
+            <ZOOMIN_FRAME_NUM value="17"/>
+            <ZOOMOUT_FRAME_NUM value="15"/>
+            <ZOOMIN_FRAME_NUM_D value="9"/>
+            <ZOOMOUT_FRAME_NUM_D value="9"/>
+        </ITEM>
+    </ZOOMCTR_BUTTON_FRAMENUMBER>
+    <!-- gCameraConfigurationTable -->
+    <CAMERA_COMBINATION>
+        <CAMERA_CONFIG_TYPE value="DOUBLE_OPEN_ZOOM_IN">
+            <ITEM>
+                <CAMERA_TYPE value="ULTRAWIDE" />
+                <TRANSITION_LOW value="0.6" />
+                <TRANSITION_HIGH value="1.0" />
+                <OVERLAP>
+                    <OVERLAP_ITEM>
+                        <CAMERA_TYPE value="WIDE" />
+                        <OVERLAP_VALUE_LOW value="0.6" />
+                        <OVERLAP_VALUE_HIGH value="1.0" />
+                    </OVERLAP_ITEM>
+                </OVERLAP>
+                <BOKEH_SLAVE_CAMERA_TYPE value="NONE" />
+            </ITEM>
+            <ITEM>
+                <CAMERA_TYPE value="WIDE" />
+                <TRANSITION_LOW value="1.0" />
+                <TRANSITION_HIGH value="10.1" />
+                <OVERLAP>
+                    <OVERLAP_ITEM>
+                        <CAMERA_TYPE value="ULTRAWIDE" />
+                        <OVERLAP_VALUE_LOW value="1.0" />
+                        <OVERLAP_VALUE_HIGH value="10.1" />
+                    </OVERLAP_ITEM>
+                </OVERLAP>
+                <BOKEH_SLAVE_CAMERA_TYPE value="NONE" />
+            </ITEM>
+        </CAMERA_CONFIG_TYPE>
+        <CAMERA_CONFIG_TYPE value="DOUBLE_OPEN_ZOOM_OUT">
+            <ITEM>
+                <CAMERA_TYPE value="ULTRAWIDE" />
+                <TRANSITION_LOW value="0.6" />
+                <TRANSITION_HIGH value="1.0" />
+                <OVERLAP>
+                    <OVERLAP_ITEM>
+                        <CAMERA_TYPE value="WIDE" />
+                        <OVERLAP_VALUE_LOW value="0.6" />
+                        <OVERLAP_VALUE_HIGH value="1.0" />
+                    </OVERLAP_ITEM>
+                </OVERLAP>
+                <BOKEH_SLAVE_CAMERA_TYPE value="NONE" />
+            </ITEM>
+            <ITEM>
+                <CAMERA_TYPE value="WIDE" />
+                <TRANSITION_LOW value="1.0" />
+                <TRANSITION_HIGH value="10.1" />
+                <OVERLAP>
+                    <OVERLAP_ITEM>
+                        <CAMERA_TYPE value="ULTRAWIDE" />
+                        <OVERLAP_VALUE_LOW value="1.0" />
+                        <OVERLAP_VALUE_HIGH value="10.1" />
+                    </OVERLAP_ITEM>
+                </OVERLAP>
+                <BOKEH_SLAVE_CAMERA_TYPE value="NONE" />
+            </ITEM>
+        </CAMERA_CONFIG_TYPE>
+        <CAMERA_CONFIG_TYPE value="DOUBLE_OPEN_NOZOOM">
+            <ITEM>
+                <CAMERA_TYPE value="ULTRAWIDE" />
+                <TRANSITION_LOW value="0.6" />
+                <TRANSITION_HIGH value="1.0" />
+                <OVERLAP>
+                    <OVERLAP_ITEM>
+                        <CAMERA_TYPE value="WIDE" />
+                        <OVERLAP_VALUE_LOW value="0.6" />
+                        <OVERLAP_VALUE_HIGH value="0.999" />
+                    </OVERLAP_ITEM>
+                </OVERLAP>
+                <BOKEH_SLAVE_CAMERA_TYPE value="NONE" />
+            </ITEM>
+            <ITEM>
+                <CAMERA_TYPE value="WIDE" />
+                <TRANSITION_LOW value="1.0" />
+                <TRANSITION_HIGH value="10.1" />
+                <OVERLAP>
+                    <OVERLAP_ITEM>
+                        <CAMERA_TYPE value="ULTRAWIDE" />
+                        <OVERLAP_VALUE_LOW value="1.0" />
+                        <OVERLAP_VALUE_HIGH value="10.1" />
+                    </OVERLAP_ITEM>
+                </OVERLAP>
+                <BOKEH_SLAVE_CAMERA_TYPE value="NONE" />
+            </ITEM>
+        </CAMERA_CONFIG_TYPE>
+        <CAMERA_CONFIG_TYPE value="ENG_APP">
+            <ITEM>
+                <CAMERA_TYPE value="WIDE" />
+                <TRANSITION_LOW value="0.6" />
+                <TRANSITION_HIGH value="100.1" />
+                <OVERLAP>
+                    <OVERLAP_ITEM>
+                        <CAMERA_TYPE value="ULTRAWIDE" />
+                        <OVERLAP_VALUE_LOW value="0.6" />
+                        <OVERLAP_VALUE_HIGH value="100.1" />
+                    </OVERLAP_ITEM>
+                </OVERLAP>
+            </ITEM>
+        </CAMERA_CONFIG_TYPE>
+    </CAMERA_COMBINATION>
+    <!-- EIS config -->
+    <EIS_CONFIG>
+        <ITEM>
+            <CROP_FACTOR value="0.8" />
+            <MODE_INDEX value="0" />
+            <USE_FULL_FOV value="1" />
+        </ITEM>
+        <ITEM>
+            <CROP_FACTOR value="0.8" />
+            <MODE_INDEX value="1" />
+            <USE_FULL_FOV value="0" />
+        </ITEM>
+        <ITEM>
+            <CROP_FACTOR value="0.8" />
+            <MODE_INDEX value="2" />
+            <USE_FULL_FOV value="0" />
+        </ITEM>
+        <ITEM>
+            <CROP_FACTOR value="0.8" />
+            <MODE_INDEX value="3" />
+            <USE_FULL_FOV value="0" />
+        </ITEM>
+        <ITEM>
+            <CROP_FACTOR value="0.8" />
+            <MODE_INDEX value="4" />
+            <USE_FULL_FOV value="1" />
+        </ITEM>
+        <ITEM>
+            <CROP_FACTOR value="0.7" />
+            <MODE_INDEX value="5" />
+            <USE_FULL_FOV value="1" />
+        </ITEM>
+        <ITEM>
+            <CROP_FACTOR value="0.9" />
+            <MODE_INDEX value="6" />
+            <USE_FULL_FOV value="0" />
+        </ITEM>
+    </EIS_CONFIG>
+    <!-- gSatFusionParam -->
+    <SAT_FUSION_PARAM>
+        <IS_SUPPORT_FUSION value="0" />
+        <ITEM>
+            <CAMERA_TYPE value="ULTRAWIDE" />
+            <RATIO_START value="9999.9" />
+            <RATIO_END value="0.1" />
+            <THRESHOLD_DISTANCE value="9999.9" />
+            <THRESHOLD_LUX value="0.1" />
+        </ITEM>
+        <ITEM>
+            <CAMERA_TYPE value="WIDE" />
+            <RATIO_START value="9999.9" />
+            <RATIO_END value="0.1" />
+            <THRESHOLD_DISTANCE value="9999.9" />
+            <THRESHOLD_LUX value="0.1" />
+        </ITEM>
+    </SAT_FUSION_PARAM>
+    <!-- SatCameraIndexValToCamType -->
+    <SAT_CAMERA_INDEX_VAL_TO_CAMTYPE>
+        <CAM_IDX_ULTRAWIDE value="ULTRAWIDE" />
+        <CAM_IDX_WIDE value="WIDE" />
+        <CAM_IDX_TELE value="NONE" />
+        <CAM_IDX_ULTRATELE value="NONE" />
+        <CAM_IDX_RTBONLY value="NONE" />
+    </SAT_CAMERA_INDEX_VAL_TO_CAMTYPE>
+    <!-- shot2shot capture count M N config -->
+    <SHOT2SHOT_COUNT_CONFIG>
+        <MEMORY_TYPE value="8G">
+            <UIMODE value="MODE_PHOTO_DEFAULT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_PROTRAIT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="3" />
+            </UIMODE>
+            <UIMODE value="MODE_HUMANITY">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="3" />
+            </UIMODE>
+            <UIMODE value="MODE_PROTRAIT_FRONT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="3" />
+            </UIMODE>
+            <UIMODE value="MODE_MOTION_DEBLUR">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_FOOD">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="3" />
+            </UIMODE>
+            <UIMODE value="MODE_LIVE_PHOTO">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_REMOSAIC">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="1" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="MODE_NIGHT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="2" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="MODE_PANORAMA">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="2" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="MODE_DOCUMENT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="1" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="UIMODE_DEFAULT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+        </MEMORY_TYPE>
+        <MEMORY_TYPE value="12G">
+            <UIMODE value="MODE_PHOTO_DEFAULT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="20" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="6" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_PROTRAIT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="6" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_HUMANITY">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="3" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="3" />
+            </UIMODE>
+            <UIMODE value="MODE_PROTRAIT_FRONT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="10" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="6" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_MOTION_DEBLUR">
+                <MAX_MULTIFRAME_CAPTURE_COUNT_UFS value="20" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT_UFS value="30" />
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="6" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_FOOD">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="6" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_LIVE_PHOTO">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="6" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="5" />
+            </UIMODE>
+            <UIMODE value="MODE_REMOSAIC">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="1" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="MODE_NIGHT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="2" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="MODE_PANORAMA">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="2" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="MODE_DOCUMENT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="1" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+            <UIMODE value="UIMODE_DEFAULT">
+                <MAX_MULTIFRAME_CAPTURE_COUNT value="6" />
+                <MAX_SINGLEFRAME_CAPTURE_COUNT value="0" />
+            </UIMODE>
+        </MEMORY_TYPE>
+    </SHOT2SHOT_COUNT_CONFIG>
+    <SAT_SEAMLESS_SCENE>
+        <SceneMode value="SCENE_SAT"/>
+        <SceneMode value="SCENE_BOKEH_ZOOM"/>
+    </SAT_SEAMLESS_SCENE>
+    <SHDR_SEAMLESS_SCENE>
+        <SceneMode value="SCENE_SHDR_SNAPSHOT"/>
+    </SHDR_SEAMLESS_SCENE>
+    <VIDEO_SEAMLESS_PARAM>
+        <VIDEO_MODE_SCENE_LIST>
+            <NORMAL_LIGHT>
+                <MODE value="0" />
+                <MODE value="1" />
+                <MODE value="11" />
+            </NORMAL_LIGHT>
+            <NORMAL_NIGHT>
+                <MODE value="2" />
+                <MODE value="12" />
+            </NORMAL_NIGHT>
+            <EXTREME_NIGHT>
+                <MODE value="3" />
+                <MODE value="4" />
+                <MODE value="13" />
+                <MODE value="14" />
+            </EXTREME_NIGHT>
+            <BACK_LIGHT>
+                <MODE value="10" />
+            </BACK_LIGHT>
+        </VIDEO_MODE_SCENE_LIST>
+        <DISPLAY_IC_PARAM>
+            <SUPPORT_SCENE>
+                <NORMAL_NIGHT value="0" />
+                <EXTREME_NIGHT value="1" />
+            </SUPPORT_SCENE>
+            <HIGH_TEMPERATURE_RANGE_LOWER value="45" />
+            <HIGH_TEMPERATURE_RANGE_UPPER value="47" />
+            <SUPPORT_CAMERA_TYPE_LIST>
+                <CAMERA_TYPE value="Wide" />
+            </SUPPORT_CAMERA_TYPE_LIST>
+            <IC_VERSION value="0" />
+        </DISPLAY_IC_PARAM>
+        <VSHDR_PARAM>
+            <SUPPORT_SCENE>
+                <NORMAL_NIGHT value="0" />
+                <BACK_LIGHT value="1" />
+            </SUPPORT_SCENE>
+            <HIGH_TEMPERATURE_RANGE_LOWER value="45" />
+            <HIGH_TEMPERATURE_RANGE_UPPER value="47" />
+            <SUPPORT_CAMERA_TYPE_LIST>
+                <CAMERA_TYPE value="Wide" />
+            </SUPPORT_CAMERA_TYPE_LIST>
+            <NEED_AE_SMOOTH value="0" />
+        </VSHDR_PARAM>
+        <TWO_PASS_NR_PARAM>
+            <SUPPORT_SCENE>
+                <EXTREME_NIGHT value="1" />
+            </SUPPORT_SCENE>
+            <HIGH_TEMPERATURE_RANGE_LOWER value="45" />
+            <HIGH_TEMPERATURE_RANGE_UPPER value="47" />
+            <SUPPORT_CAMERA_TYPE_LIST>
+                <CAMERA_TYPE value="UltraWide" />
+                <CAMERA_TYPE value="Wide" />
+                <CAMERA_TYPE value="Tele" />
+                <CAMERA_TYPE value="Master" />  <!-- Front -->
+            </SUPPORT_CAMERA_TYPE_LIST>
+        </TWO_PASS_NR_PARAM>
+        <ROI_REMOSAIC_PARAM>
+            <SUPPORT_CAMERA_TYPE_LIST>
+                <CAMERA_TYPE value="Wide" />
+                <CAMERA_TYPE value="Tele" />
+            </SUPPORT_CAMERA_TYPE_LIST>
+            <SUPPORT_UI_MODE_LIST>
+                <UIMODE value="MODE_VIDEO_DEFAULT" />
+            </SUPPORT_UI_MODE_LIST>
+            <SUPPORT_SCENE_MODE_LIST>
+                <SCENE_MODE value="SCENE_SAT_VIDEO_INPLACE" />
+                <SCENE_MODE value="SCENE_SAT_VIDEO_ALGO_MEMC" />
+                <SCENE_MODE value="SCENE_SAT_VIDEO" />
+                <SCENE_MODE value="SCENE_VSS_SINGLE_VIDEO_INPLACE" />
+            </SUPPORT_SCENE_MODE_LIST>
+        </ROI_REMOSAIC_PARAM>
+    </VIDEO_SEAMLESS_PARAM>
+    <HBM_STRATEGY_MODE>
+        <SceneMode value="SCENE_SAT_VIDEO_ALGO_MEMC">
+            <StrategyMode value="HBM_STRATEGY_CACHED"/>
+        </SceneMode>
+        <SceneMode value="SCENE_SAT_VIDEO_INPLACE">
+            <StrategyMode value="HBM_STRATEGY_CACHED"/>
+        </SceneMode>
+        <SceneMode value="SCENE_SAT_VIDEO">
+            <StrategyMode value="HBM_STRATEGY_CACHED"/>
+        </SceneMode>
+        <SceneMode value="SCENE_SAT_VIDEO_NORTYP">
+            <StrategyMode value="HBM_STRATEGY_CACHED"/>
+        </SceneMode>
+        <SceneMode value="SCENE_SAT_ADV_VIDEO">
+            <StrategyMode value="HBM_STRATEGY_CACHED"/>
+        </SceneMode>
+        <SceneMode value="SCENE_VSS_SINGLE_VIDEO_INPLACE">
+            <StrategyMode value="HBM_STRATEGY_CACHED"/>
+        </SceneMode>
+        <SceneMode value="SCENE_VSS_SINGLE_VIDEO_NORTYP">
+            <StrategyMode value="HBM_STRATEGY_CACHED"/>
+        </SceneMode>
+    </HBM_STRATEGY_MODE>
+    <ENABLE_AICAMERA_UIMODE_SET>
+        <FACING value="0">
+            <UIMODE value="MODE_PROTRAIT_FRONT" />
+            <UIMODE value="MODE_PHOTO_DEFAULT" />
+            <UIMODE value="MODE_MOTION_DEBLUR" />
+        </FACING>
+        <FACING value="1">
+            <UIMODE value="MODE_PHOTO_DEFAULT" />
+            <UIMODE value="MODE_MOTION_DEBLUR" />
+            <UIMODE value="MODE_PROTRAIT" />
+            <UIMODE value="MODE_NIGHT" />
+        </FACING>
+    </ENABLE_AICAMERA_UIMODE_SET>
+    <MEMC_SEAMLESS_PARAM>
+        <PREVIEW_TEMPERATURE_RANGE_LOWER value="41" />
+        <PREVIEW_TEMPERATURE_RANGE_UPPER value="43" />
+        <!-- no video temperature range currently -->
+        <VIDEO_TEMPERATURE_RANGE_LOWER value="100" />
+        <VIDEO_TEMPERATURE_RANGE_UPPER value="100" />
+        <SCENE_MODE value="SCENE_SAT_VIDEO_ALGO_MEMC">
+            <DARK_VIDEO_MODE_LIST>
+                <MODE value="3" />
+                <MODE value="4" />
+                <MODE value="13" />
+                <MODE value="14" />
+            </DARK_VIDEO_MODE_LIST>
+        </SCENE_MODE>
+        <SCENE_MODE value="SCENE_RAW_VIDEO_ALGO_MEMC">
+            <DARK_VIDEO_MODE_LIST>
+                <MODE value="4" />
+                <MODE value="14" />
+            </DARK_VIDEO_MODE_LIST>
+        </SCENE_MODE>
+    </MEMC_SEAMLESS_PARAM>
+    <SEAMLESS_STATE_CONFIG>
+        <CAMERA_TYPE value="ULTRAWIDE">
+            <TARGET_STATE value="SENSOR_BINNING">
+                <CURRENT_STATE value="STATE_UNKNOWN" />
+            </TARGET_STATE>
+        </CAMERA_TYPE>
+        <CAMERA_TYPE value="WIDE">
+            <TARGET_STATE value="SENSOR_BINNING">
+                <CURRENT_STATE value="ISP_BINNING" />
+                <CURRENT_STATE value="ISP_REMOSAIC" />
+                <CURRENT_STATE value="SHDR_CAPTURE" />
+                <CURRENT_STATE value="SHDR_BURST" />
+                <CURRENT_STATE value="SHDR_SPORT" />
+                <CURRENT_STATE value="SENSOR_BINNING_3M" />
+                <CURRENT_STATE value="ISP_CROP_BAYER" />
+                <CURRENT_STATE value="STATE_UNKNOWN" />
+            </TARGET_STATE>
+            <TARGET_STATE value="ISP_BINNING">
+                <CURRENT_STATE value="SENSOR_BINNING" />
+                <CURRENT_STATE value="SHDR_CAPTURE" />
+                <CURRENT_STATE value="SHDR_BURST" />
+                <CURRENT_STATE value="SHDR_SPORT" />
+            </TARGET_STATE>
+            <TARGET_STATE value="ISP_REMOSAIC">
+                <CURRENT_STATE value="SENSOR_BINNING" />
+                <CURRENT_STATE value="SHDR_CAPTURE" />
+                <CURRENT_STATE value="SHDR_BURST" />
+                <CURRENT_STATE value="SHDR_SPORT" />
+                <CURRENT_STATE value="SENSOR_BINNING_3M" />
+                <CURRENT_STATE value="STATE_UNKNOWN" />
+            </TARGET_STATE>
+            <TARGET_STATE value="ISP_CROP_BAYER">
+                <CURRENT_STATE value="SENSOR_BINNING" />
+                <CURRENT_STATE value="STATE_UNKNOWN" />
+            </TARGET_STATE>
+            <TARGET_STATE value="SHDR_CAPTURE">
+                <CURRENT_STATE value="SENSOR_BINNING" />
+                <CURRENT_STATE value="ISP_BINNING" />
+                <CURRENT_STATE value="ISP_REMOSAIC" />
+                <CURRENT_STATE value="SHDR_BURST" />
+                <CURRENT_STATE value="SHDR_SPORT" />
+                <CURRENT_STATE value="STATE_UNKNOWN" />
+            </TARGET_STATE>
+            <TARGET_STATE value="SHDR_BURST">
+                <CURRENT_STATE value="SHDR_CAPTURE" />
+            </TARGET_STATE>
+            <TARGET_STATE value="SHDR_SPORT">
+                <CURRENT_STATE value="SENSOR_BINNING" />
+                <CURRENT_STATE value="ISP_BINNING" />
+                <CURRENT_STATE value="ISP_REMOSAIC" />
+                <CURRENT_STATE value="SHDR_CAPTURE" />
+                <CURRENT_STATE value="STATE_UNKNOWN" />
+            </TARGET_STATE>
+            <TARGET_STATE value="SENSOR_BINNING_3M">
+                <CURRENT_STATE value="SENSOR_BINNING" />
+                <CURRENT_STATE value="ISP_REMOSAIC" />
+                <CURRENT_STATE value="STATE_UNKNOWN" />
+            </TARGET_STATE>
+        </CAMERA_TYPE>
+    </SEAMLESS_STATE_CONFIG>
+    <VSS_CONFIG>
+        <VSS_ENABLE>
+            <NOT_SUPPORT_SCENE>
+                <SceneMode value="SCENE_SINGLE_VIDEO_NORTYP"/>
+                <SceneMode value="SCENE_SINGLE_VIDEO_INPLACE"/>
+                <SceneMode value="SCENE_SAT_VIDEO_FAST"/>
+            </NOT_SUPPORT_SCENE>
+        </VSS_ENABLE>
+        <VSS_MODE>
+            <CONFIG_TO_HW>
+                <SUPPORT_SCENE>
+                    <SceneMode value="SCENE_NILEIS_SAT_VIDEO"/>
+                    <SceneMode value="SCENE_SAT_VIDEO_ALGO_MEMC"/>
+                    <SceneMode value="SCENE_RAW_VIDEO_ALGO_MEMC"/>
+                    <SceneMode value="SCENE_NILEIS_SAT_FAST"/>
+                    <SceneMode value="SCENE_EIS_4K_SINGLE_PREVIEW"/>
+                    <SceneMode value="SCENE_VIDEO_FAST"/>
+                    <SceneMode value="SCENE_EIS_SAT_VIDEO_IC_HWME"/>
+                    <SceneMode value="SCENE_NILEIS_SINGLE_VIDEO_FAST"/>
+                    <SceneMode value="SCENE_SAT_VIDEO_FAST"/>
+                    <SceneMode value="SCENE_EIS_SAT_4K_VIDEO_2NR"/>
+                    <SceneMode value="SCENE_EIS_SKYLINE_VIDEO"/>
+                    <SceneMode value="SCENE_FULL_BYPASS_AFBC"/>
+                    <SceneMode value="SCENE_NILEIS_FRONT_VIDEO_2NR"/>
+                    <SceneMode value="SCENE_EIS_4K_VIDEO_2NR"/>
+                </SUPPORT_SCENE>
+            </CONFIG_TO_HW>
+        </VSS_MODE>
+    </VSS_CONFIG>
+    <!-- Spatial video config -->
+    <SPATIAL_PARAM>
+        <CAP_BLACK_MARGIN_H value="0"/>
+        <CAP_BLACK_MARGIN_W value="0"/>
+        <VIDEO_BLACK_MARGIN_H value="0.0"/>
+        <VIDEO_BLACK_MARGIN_W value="0.0"/>
+    </SPATIAL_PARAM>
+    <ENABLE_MEMC_BRIGHT_SKIPFRAME value="1" />
+    <VCF_ENABLE_PUREBYPASS value="0" />
+    <VCF_ENABLE_EXTENSION  value="1" />
+</CameraConfig>
