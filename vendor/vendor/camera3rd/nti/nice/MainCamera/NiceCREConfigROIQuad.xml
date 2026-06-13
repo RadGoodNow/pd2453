@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NiceCREConfig version="0.0.1" name='MainCameraQuad'>
+    <Adams use="0" description="adams algorithm config">
+        <ModelPath description="adams model path">/vendor/camera3rd/nti/adams</ModelPath>
+        <EffectXmlName description="adams effect xmlfile name">AdamsEffectConfig.xml</EffectXmlName>
+        <FunctionXmlName description="adams function xmlfile name">AdamsFunctionConfig.xml</FunctionXmlName>
+        <SegmentjsonName description="adams segment config path">/vendor/camera3rd/nti/aisegment_config.json</SegmentjsonName>
+        <AllinoneXML description="adams allinone config path">/vendor/camera3rd/nti/allinone2_0_config.xml</AllinoneXML>
+    </Adams>
+    <NiceTone description="nice-tone algorithm config">
+        <ModelPath description="nice-tone model path">/vendor/camera3rd/nti/nice_tone/Model/</ModelPath>
+        <XmlPath description="nice-tone xmlfile name">/vendor/camera3rd/nti/nice_tone</XmlPath>
+        <SkysegConfigPath description="nice-tone SkysegConfigPath name">/vendor/camera3rd/nti/skyseg.xml</SkysegConfigPath>
+        <SegmentjsonName description="nice-tone segment config path">/vendor/camera3rd/nti/aisegment_config.json</SegmentjsonName>
+        <AllinoneXML description="nice-tone allinone config path">/vendor/camera3rd/nti/allinone2_0_config.xml</AllinoneXML>
+        <CVTNXmlPath description="nice-tone brp_xml_path config path">/vendor/camera3rd/nti/nice_tone/RawBrp/xml</CVTNXmlPath>
+    </NiceTone>
+	<DitherParamHDR use='0' UseInCVtone='0' description="HDR Enable dither: use=1, use dither only in MTKTone: UseInCVtone=0">
+        <!-- in the case of use=1, dither will take effect if any of the three conditions DrcgainThd or LuxIndexThd or ISOThd are met-->
+        <DrcgainThd>0</DrcgainThd>
+        <LuxIndexThd>0</LuxIndexThd>
+        <ISOThd>0</ISOThd>
+        <!-- if dither takes effect, the number of arguments for DrcgainValue and DitherLevel should be equal. The last value of the DrcgainValue array must be 4-->
+        <!-- if <DrcgainValue>2, 3, 4</DrcgainValue>, it means that the drcgain is divided into three segments: 1-2, 2-3, 3-4. The maximum value of DitherLevel is 65535-->
+        <DrcgainValue>1.5, 2.5, 3, 4</DrcgainValue>
+        <DitherLevel>1.0, 2.5, 3.0, 8.0</DitherLevel>
+    </DitherParamHDR>
+    <DitherParam use='0' UseInCVtone='0' description="Normal Enable dither: use=1, use dither only in MTKTone: UseInCVtone=0">
+        <!-- in the case of use=1, dither will take effect if any of the three conditions DrcgainThd or LuxIndexThd or ISOThd are met-->
+        <DrcgainThd>0</DrcgainThd>
+        <LuxIndexThd>0</LuxIndexThd>
+        <ISOThd>0</ISOThd>
+        <!-- if dither takes effect, the number of arguments for DrcgainValue and DitherLevel should be equal. The last value of the DrcgainValue array must be 4-->
+        <!-- if <DrcgainValue>2, 3, 4</DrcgainValue>, it means that the drcgain is divided into three segments: 1-2, 2-3, 3-4. The maximum value of DitherLevel is 65535-->
+        <DrcgainValue>1.5, 2.5, 3, 4</DrcgainValue>
+        <DitherLevel>1.0, 2.5, 3.0, 8.0</DitherLevel>
+    </DitherParam>
+    <NoiseInfo num='2' name='IMX882'>
+        <!-- 27602 -->
+        <limitexp>35310</limitexp>
+        <coeff>1</coeff>
+        <Sensor01>
+            <a0>0.0010243642</a0>
+            <a1>0.0044352463</a1>
+            <b0>0.0000023569</b0>
+            <b1>0.0002716186</b1>
+            <b2>0.0098872833</b2>
+        </Sensor01>
+		<Sensor02 >
+            <a0>0.0010243642</a0>
+            <a1>0.0044352463</a1>
+            <b0>0.0000023569</b0>
+            <b1>0.0002716186</b1>
+            <b2>0.0098872833</b2>
+        </Sensor02>
+    </NoiseInfo>
+    <NoiseInfoHDR num='1' name='IMX882'>
+        <limitexp>35310</limitexp>
+        <coeff>1</coeff>
+        <Sensor01 >
+            <a0>0.0010243642</a0>
+            <a1>0.0044352463</a1>
+            <b0>0.0000023569</b0>
+            <b1>0.0002716186</b1>
+            <b2>0.0098872833</b2>
+        </Sensor01>
+    </NoiseInfoHDR>
+    <!-- sensor infomation, max segmentation num: 2-->
+    <BinningNoiseInfo num='1' name='IMX882' description="hdr noise infomation">
+        <!--limitexp description="hdr limit exporetime">35310</limitexp-->
+        <!--coeff description="linear problem">1</coeff-->
+        <Sensor01>
+            <a0>0.0010243642</a0>
+            <a1>0.0044352463</a1>
+            <b0>0.0000023569</b0>
+            <b1>0.0002716186</b1>
+            <b2>0.0098872833</b2>
+        </Sensor01>
+    </BinningNoiseInfo>
+    <BinningNoiseInfoHDR num='1' name='IMX921'>
+        <Sensor01>
+            <a0>0.0006080434</a0>
+            <a1>0.0071942639</a1>
+            <b0>0.0000004541</b0>
+            <b1>0.0002838482</b1>
+            <b2>0.0065863827</b2>
+        </Sensor01>
+    </BinningNoiseInfoHDR>
+
+    <ISOThred description="iso thred">
+        <NightModelThred description="night model thred">800</NightModelThred>
+    </ISOThred>
+    <ModelSubPath description="model sub path">MainCamera</ModelSubPath>
+    <Overlap description="block overlap, default 16">16</Overlap>
+    <UseVst description="vst convert swith, default 1" hdrvstmode="1">1</UseVst>
+    <FallBackKeepHdr>1</FallBackKeepHdr>
+    <BitWidthNormal description="normal flow bitwidth, default 16">32</BitWidthNormal>
+    <BitWidthHDR description="hdr flow bitwidth, default 32">32</BitWidthHDR>
+    <LogDomainMax description="Max vaule in Log Domain Convert">17034.8</LogDomainMax>
+    <!-- prebps parameter -->
+    <UsePreBit description="prebps use bit, default 16">14</UsePreBit>
+    <PreBpsParam description="pre bps parameter">
+        <!--0: none, 1: only for pretbps local, 2: only for prebps global, 4: only for postbps local, 5: only for postbps global, 6: vst and ivst (not support) -->
+		<OpticalBlackCorrect use='1' method='2' description="local ob prameter file path">/vendor/camera3rd/nti/MainCamera/prebps_localobc_roiquad_normal.xml</OpticalBlackCorrect>
+		<OpticalBlackCorrectHDR use='1' method='2' description="local ob prameter file path">/vendor/camera3rd/nti/MainCamera/prebps_localobc_roiquad_hdr.xml</OpticalBlackCorrectHDR>
+        <CodeFunc description="pre bps function code">2560</CodeFunc>
+    </PreBpsParam>
+    <!-- postbps parameter -->
+    <PostBpsParam description="post bps parameter">
+        <CodeFunc description="post bps function code">376</CodeFunc>
+        <LTMCodeFunc description="ltm function code, 0, not ltm; 1, cvltm; 2, mtk ltm; 3, nice-tone">0</LTMCodeFunc>
+        <ToneFunc>1</ToneFunc>
+        <NormalNiceTMDigitalZoomTH>0</NormalNiceTMDigitalZoomTH>
+        <NiceTMOnlyUsePortrait>2</NiceTMOnlyUsePortrait>
+        <HightLightKeepAWB>
+            <use>1</use>
+            <scaleratio>1.4</scaleratio>
+        </HightLightKeepAWB>
+        <HightLightKeepAWBHDR>
+            <use>0</use>
+            <scaleratio>1.4</scaleratio>
+        </HightLightKeepAWBHDR>
+    </PostBpsParam>
+    <HighRatioInfo description="high ratio information">
+        <NetMinZoomRatio description="net min zoom ratio">4</NetMinZoomRatio>
+        <LastZoom description="last zoom ratio">1000</LastZoom>
+    </HighRatioInfo>
+    <ImageAlign description="image align information">
+        <FeatureTrack description="feature track information">
+            <MaxCorners>1000</MaxCorners>
+            <MaxCandidateCorners>32768</MaxCandidateCorners>
+            <MinDistance>16</MinDistance>
+            <HarrisK use='0'>0.04</HarrisK>
+            <QualityLevel>0.01</QualityLevel>
+        </FeatureTrack>
+        <GlobalAlign description="global align information">
+            <MinPointsNum>50</MinPointsNum>
+            <LKEpsilon>0.01</LKEpsilon>
+            <LKMaxIter>20</LKMaxIter>
+            <LKNumRatio>0.7</LKNumRatio>
+            <RansacMaxIter>100</RansacMaxIter>
+            <RansacConfidence>0.9950</RansacConfidence>
+            <RansacThreshold>3</RansacThreshold>
+            <UseRegion>0</UseRegion>
+            <Ratio>0.5</Ratio>
+            <SwitchRegionDigitalZoom>4</SwitchRegionDigitalZoom>
+            <DeltaPad>32</DeltaPad>
+            <RandomDisturbDigitalZoom use="1">1</RandomDisturbDigitalZoom>
+			<useStrictCondition>1</useStrictCondition>
+        </GlobalAlign>
+    </ImageAlign>
+    <Perception use='1' description="perception paramter">
+        <!--default 70-->
+        <GhostDetectOn>1</GhostDetectOn>
+        <ShakingTH>0.01</ShakingTH>
+        <LuxIndexTh>8888888</LuxIndexTh>
+        <ExpTimeTh>87944</ExpTimeTh>
+        <BandingNNTh>60</BandingNNTh>
+        <BandingSSTh>150</BandingSSTh>
+        <MatchShakingThreshold>0.1</MatchShakingThreshold>
+        <FirstSFrameIndex>5</FirstSFrameIndex>
+        <SecondSFrameIndex>6</SecondSFrameIndex>
+        <SwitchNormalMatchThreshold>1</SwitchNormalMatchThreshold>
+    </Perception>
+    <Unpurple use='0' mode='1' openmode='0' description="Unpurple paramster, openmode=0: only use in HDR scence; openmode=1: use in all scence;">
+        <Radius>5</Radius>
+        <Intensity>2</Intensity>
+        <MinBrightness>0</MinBrightness>
+        <MinRedToBlueRatio>0.5</MinRedToBlueRatio>
+        <MaxRedToBlueRatio>0.33</MaxRedToBlueRatio>
+        <Threshold>30</Threshold>
+    </Unpurple>
+    <ModelPath description="normal model information">
+	<NetSelectParam>
+            <digitZoomUp2>2.00</digitZoomUp2>
+            <digitZoomThd>4.99</digitZoomThd>
+        </NetSelectParam>
+        <NormModel tempBufferSizeMb="36" use="1" eng="4" dev="4" inw="544" inh="544" num="4" warp="2" quad="1" rate="1">nice_imx882_sat_full_x1_4f.vdnn</NormModel>
+        <Up2Model tempBufferSizeMb="36" use="1" eng="4" dev="4" inw="544" inh="544" num="6" warp="2" quad="1" rate="2">nice_imx882_roi_quad_2x_6f.vdnn</Up2Model>
+    </ModelPath>
+    <HDRModelPath>
+        <!--UseNormalModel>1</UseNormalModel-->
+        <NetSelectParam>
+            <digitZoomUp2>1.79</digitZoomUp2>
+        </NetSelectParam>
+        <FrameOrder expLevel='3' useSysFrameOrder='1'>
+            <!-- refrence type: 0: short frame, 1: normal frame, 2: long frame-->
+            <FrameTypeOrder ref='2' refn='2' clip='0' useawb='1'>1,1,1,1,1,0,3</FrameTypeOrder>
+        </FrameOrder>
+        <!--ForwoardFrameOrder>0,1,2,3,4,6,5</ForwoardFrameOrder-->
+        <NormModel tempBufferSizeMb="26" use="1" eng="4" inw="544" inh="544" num="6" warp="2" swarp="6" oflg='1' usesqrtev="1" quad="1" mode="3">nice_ldr_imx921_roi_quad_6f_x1.vdnn</NormModel>
+        <InpaintingModel tempBufferSizeMb="38" use="1"  eng="4" inw="512" inh="512" num="1" inputScale="0.000030518509447574615" outScale="0.0000339735415764153">nice_inpainting.vdnn</InpaintingModel>
+    </HDRModelPath>
+    <DeGhost description="DeGhost params">
+        <nThd description="ghost detection threshold of normal frame">20</nThd>
+        <s0Thd description="ghost detection threshold of s0 frame">-300</s0Thd>
+        <s1Thd description="ghost detection threshold of s1 frame">-300</s1Thd>
+        <shakeThd description="nThd, soThd, s1Thd will change to [nThdShake, s0ThdShake, s1ThdShake] if shaking value bigger than shakeThd">0.028</shakeThd>
+        <nThdShake description="if shaking value bigger than shakeThd, use nThdShake replace nThd">18</nThdShake>
+        <s0ThdShake description="if shaking value bigger than shakeThd, use s0ThdShake replace s0Thd">-300</s0ThdShake>
+        <s1ThdShake description="if shaking value bigger than shakeThd, use s1ThdShake replace s1Thd">-300</s1ThdShake>
+        <maskDilate description="mask dilate size">3</maskDilate>
+        <diffThd description="threshold of diff mask">1</diffThd>
+        <minCropSize description="minimum size of ghost cropping size">1024</minCropSize>
+        <cropThd1 description="the first threshold of increase ghost crop size. float type">0.02</cropThd1>
+        <cropThd2 description="the second threshold of increase ghost crop size. float type">0.1</cropThd2>
+        <cropThd1Shake description="if shaking value bigger than shakeThd, use s0ThdShake replace s0Thd">0.02</cropThd1Shake>
+        <cropThd2Shake description="if shaking value bigger than shakeThd, use s1ThdShake replace s1Thd">0.1</cropThd2Shake>
+        <flexRatio1 description="a ratio that use to increase ghost crop size if ghost area bigger than cropThd1 and les than cropThd2. float type">3.0</flexRatio1>
+        <flexRatio2 description="a ratio that use to increase ghost crop size if ghost area bigger than cropThd2. float type">4.0</flexRatio2>
+        <refineGhostThd description="param of refine ghost mask">9</refineGhostThd>
+        <refineInpaintThd description="param of refine inpainting mask">9</refineInpaintThd>
+        <s0Thd1 description="ghost detection threshold of s0 frame, use to detect banding ghost">19</s0Thd1>
+        <s1Thd1 description="ghost detection threshold of s1 frame, use to detect banding ghost">-300</s1Thd1>
+        <ghostDeleteSize description="use to delete small ghosts that pixel number lower than this param">40</ghostDeleteSize>
+        <minGhostPixelNum description="decide whether to use inpainting if all ghost pixel number lower than this param">64</minGhostPixelNum>
+    </DeGhost>
+    <XDR use="1">
+        <xmlPath>/vendor/camera3rd/nti/xdr</xmlPath>
+    </XDR>
+</NiceCREConfig>

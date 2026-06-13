@@ -1,0 +1,4 @@
+<Config version="1.0.0.0">
+	<!--threadNums: 线程数量 threadMems: 模型dmaBuffer数量-->
+	<CpuConfig id="cpuConfig" cpuLevel="4" />
+</Config>

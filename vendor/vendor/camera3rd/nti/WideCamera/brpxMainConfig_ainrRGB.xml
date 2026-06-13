@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brpxConfig>
+    <!-- align config params if necessary -->
+    <alignConfig>
+        <FeatureTrack description="feature track information">
+            <MaxCorners>500</MaxCorners>
+            <MaxCandidateCorners>32768</MaxCandidateCorners>
+            <MinDistance>16</MinDistance>
+            <HarrisK use='0'>0.04</HarrisK>
+            <QualityLevel>0.01</QualityLevel>
+        </FeatureTrack>
+        <GlobalAlign description="global align information">
+            <MinPointsNum>50</MinPointsNum>
+            <LKEpsilon>0.01</LKEpsilon>
+            <LKMaxIter>20</LKMaxIter>
+            <LKNumRatio>0.7</LKNumRatio>
+            <RansacMaxIter>100</RansacMaxIter>
+            <RansacConfidence>0.9950</RansacConfidence>
+            <RansacThreshold>3</RansacThreshold>
+            <UseRegion>0</UseRegion>
+            <Ratio>0.5</Ratio>
+            <SwitchRegionDigitalZoom>4</SwitchRegionDigitalZoom>
+            <DeltaPad>32</DeltaPad>
+            <RandomDisturbDigitalZoom use="1">1</RandomDisturbDigitalZoom>
+        </GlobalAlign>
+    </alignConfig>
+    <!-- nr config params if necessary -->
+    <nrConfig>
+        <SensorInfo num='1' name='GC08A'>
+            <Noise01>
+                <a0>0.0010529809</a0>
+                <a1>0.0225801976</a1>
+                <b0>0.0000006784</b0>
+                <b1>0.0004001991</b1>
+                <b2>-0.0037343470</b2>
+            </Noise01>
+        </SensorInfo>
+        <ModelPath description="normal model information">
+            <NormModel use="1" s2d="0" rng="1" rate="1" eng="4" dev="4" inw="544" inh="544" num="1" warp="2" maxiso="3200" inputScale="0.000015259021896696422" outScale="0.000018601613267750273">GC08A_binning_AINR.vdnn</NormModel>
+            <NormModel use="1" s2d="0" rng="1" rate="1" eng="4" dev="4" inw="544" inh="544" num="1" warp="2" inputScale="0.000015259021896696422" outScale="0.000018601613267750273">GC08A_binning_AINR.vdnn</NormModel>
+        </ModelPath>
+    </nrConfig>
+    <ModelSubPath description="model sub path">WideCamera</ModelSubPath>
+    <Overlap description="block overlap, default 16">16</Overlap>
+    <UseVst description="vst convert swith, default 1" hdrvstmode="2">1</UseVst>
+</brpxConfig>

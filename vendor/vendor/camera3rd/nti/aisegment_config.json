@@ -1,0 +1,60 @@
+{
+    "segment_configs": {
+        "dumpPath": "data/vendor/camera/test/aisegment/result/",
+        "platform": 1
+    },
+    "network_configs": [
+        {
+            "type": 1,
+            "typename": "SEG_HUMAN_MINI_1",
+            "modelPath": "vendor/camera3rd/nti/fbp.vdnn",
+            "networkRuntime": "vdnn",
+            "deviceType": 0,
+            "threadNum": 1,
+            "powerFactor": 1.5,
+            "postPluginType": "ArgmaxTransmitP",
+            "iNodeNames": ["data"],
+            "oNodeNames": ["bilinear/317"]
+        },
+        {
+            "type": 5,
+            "typename": "SEG_HUMAN_NORMAL_3",
+            "modelPath": "vendor/camera3rd/nti/fes.vdnn",
+            "networkRuntime": "qnn",
+            "deviceType": 3,
+            "postPluginType": "DoubleResizeArgmax",
+            "postResizedWidth": 656,
+            "postResizedHeight": 656,
+            "postAlignCorners": 0,
+            "postHalfPixelCenters": 0,
+            "iNodeNames": ["input_0"],
+            "oNodeNames": ["ResizeBilinear_1_0"]
+        },
+        {
+            "type": 11,
+            "typename": "SEG_PERSON_SKIN_HAIR",
+            "modelPath": "vendor/camera3rd/nti/psh.vdnn",
+            "networkRuntime": "qnn",
+            "deviceType": 3,
+            "powerMode": 2,
+            "frontPluginType": "ResizeDet",
+            "postPluginType": "MultiOutDet",
+            "iNodeNames": ["input_0_0"],
+            "oNodeNames": ["sigmoid_218_f_0","sigmoid_220_f_0","sigmoid_215_f_0"]
+        },
+        {
+            "type": 12,
+            "typename": "SEG_PERSON_MATTING_2",
+            "modelPath": "vendor/camera3rd/nti/pm.vdnn",
+            "modelPath2": "vendor/camera3rd/nti/pmn.vdnn",
+            "networkRuntime": "qnn",
+            "deviceType": 3,
+            "frontPluginType": "ResizeCropMat",
+            "postPluginType": "MultiOutMat",
+            "iNodeNames": ["input_0_0", "input_1_0"],
+            "oNodeNames": ["sigmoid_122_f_0", "sigmoid_123_f_0"]
+        }
+    ]
+}
+
+

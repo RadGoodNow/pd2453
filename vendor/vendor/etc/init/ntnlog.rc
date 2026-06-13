@@ -1,0 +1,10 @@
+service vivo_ntnlog /vendor/bin/vivo_ntnlog
+    user root
+    group root system shell
+    disabled
+
+on property:persist.sys.ntnlog.open=1
+    start vivo_ntnlog
+
+on property:persist.sys.ntnlog.open=0
+    stop vivo_ntnlog

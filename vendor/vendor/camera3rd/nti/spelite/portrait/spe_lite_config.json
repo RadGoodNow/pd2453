@@ -1,0 +1,199 @@
+{
+    "commit_version": "If you change the version number, you should only change the 4th digit. The first three digits are controlled by the SDK, and checked in SDK's code.",
+    "version": "1.0.1.0",
+
+    "baseConfig": {
+        "comment_runMode": "if run in async model, 0 - sync, 1 - async",
+        "runMode": 0,
+
+        "comment_downscale": "downscale ratio on input image. valid values: 1, 2, 4",
+        "downscale": 2,
+
+        "comment_inverTone": "0: disable inverseTone，for input without toneMapping 1: enable inverseTone，for input with toneMapping, 0 for mtk, 1 for qcom",
+        "inverTone": 1
+    },
+
+    "MotionMeteringConfig": {
+        "gyroConfig": {
+            "comment_gyro": "phoneMotionMode, take gyro data from gyrot0 seconds to gyrot1 before current frame",
+            "gyrot0": 1.5,
+            "gyrot1": 0.4,
+
+            "comment_avgGyroNum": "num of frame to calculate phone mode",
+            "avgGyroNum": 5,
+
+            "comment_gyroNumPerSecond": "input max num of gyro per second, eg: preview max 30fps, process 1 frame per 4 frames, every time 40 gyro, the gyroNumPerSecond is 30fps/4*40 = 300",
+            "gyroNumPerSecond": 416,
+
+            "comment_tripodThresh": "gyro threshold to classify tripod and handle",
+            "tripodThreshLow": 0.004,
+            "tripodThreshHigh": 0.008,
+
+            "comment_focalLength_gyro": "calibration data for specific device, do not change once calibrated",
+            "focalLength": 1175,
+            "gyroDelay": 516444,
+            "gyroDriftX": -3.29439e-05,
+            "gyroDriftY": -7.24828e-06,
+            "gyroDriftZ": -1.59536e-05
+        },
+
+        "aligningConfig": {
+            "comment_method": "1 - align_off; 2 - lk optical flow; 3 - gyro intergeral; 4 - gyro divided; 5 - gyro rolling shutter; 6 - gyro calibrate lk",
+            "method": 2,
+
+            "comment_calcBrightConfig": "configure for brightness calculation",
+            "calcBrightConfig": {
+                "comment_method": "0:off; 1: gamma; 2: Histogram Equalization; 3: CLAHE",
+                "method": 0,
+
+                "comment_enableBrightCompensation": "0:disable brightness compensation; 1:enable",
+                "enableBrightCompensation": 1
+            }
+        },
+
+        "meteringConfig": {
+            "comment_method": "0 - global align and local dis; 1 - global align and local diff; 2 - local diff; 3 - bounded flow; 4 - global align and bounded flow; 5 - motion capture",
+            "method": 3,
+
+            "comment_BlockNum": "how to split image.",
+            "horBlockNum": 12,
+            "verBlockNum": 12,
+
+            "comment_blockWeight": "weight of each block to calculate global move value.",
+            "blockWeight": [
+                [ 0, 0,  0,  0,   0,   0,   0,   0,   0,   0,  0,  0 ],
+                [ 0, 60, 60, 60,  60,  60,  60,  60,  60,  60, 60, 0 ],
+                [ 0, 60, 90, 90,  90,  90,  90,  90,  90,  90, 60, 0 ],
+                [ 0, 60, 90, 100, 100, 100, 100, 100, 100, 90, 60, 0 ],
+                [ 0, 60, 90, 100, 100, 100, 100, 100, 100, 90, 60, 0 ],
+                [ 0, 60, 90, 100, 100, 100, 100, 100, 100, 90, 60, 0 ],
+                [ 0, 60, 90, 100, 100, 100, 100, 100, 100, 90, 60, 0 ],
+                [ 0, 60, 90, 100, 100, 100, 100, 100, 100, 90, 60, 0 ],
+                [ 0, 60, 90, 100, 100, 100, 100, 100, 100, 90, 60, 0 ],
+                [ 0, 60, 90, 90,  90,  90,  90,  90,  90,  90, 60, 0 ],
+                [ 0, 60, 60, 60,  60,  60,  60,  60,  60,  60, 60, 0 ],
+                [ 0, 0,  0,  0,   0,   0,   0,   0,   0,   0,  0,  0 ]
+            ],
+
+            "comment_smoothFactor": "smooth current motion and previous motion",
+            "smoothFactor": 0,
+
+            "comment_mdLocalTh": "threshold to classify current loacal motion",
+            "mdLocalTh": 10,
+
+            "coment_mdGlobalTh": "threshold to classify current global motion",
+            "mdGlobalTh": 2,
+
+            "comment_mdConfirmTh": "threshold to finally judgement wheather obj moves",
+            "mdConfirmTh": 50,
+
+            "comment_thresMotion": "frame diff threshold",
+            "thresMotion": 0.0,
+
+            "comment_diffSensitivity": "frame diff threshold",
+            "diffSensitivity": 7.0,
+
+            "comment_gradSensitivity": "gradiant threshold",
+            "gradSensitivity": 6.0,
+
+            "comment_noiseSensitivity": "noise filter coefficient",
+            "noiseSensitivity": 2.5,
+
+            "comment_motionClassifyThresh": "threshold to classify motion, this param should match skip frame number",
+            "motionClassifyThresh": 3.0,
+
+            "comment_motionSmoothRate": "the rate of smoothing the current motion and previous motion, in (0.0, 1.0). 1.0 means totally depending on current motion",
+            "motionSmoothRate": 0.5,
+
+            "comment_motionPercent": "select strongest percent grid to classify motion mode",
+            "motionPercent": 0.95,
+
+            "comment_lowLight": "combine gyro and motion low light point",
+            "lowLight": 150,
+
+            "comment_highLight": "combine gyro and motion high light point",
+            "highLight": 235,
+
+            "comment_gyroMag": "gyro coefficient to match motion in magnitude",
+            "gyroMag": 0.2,
+
+            "comment_totalMvStatMethod": "method of calculating local Mv, 0: average, 1: percentage",
+            "totalMvStatMethod": 0,
+
+            "comment_localMvStatMethod": "method of calculating local Mv, 0: average, 1: percentage",
+            "localMvStatMethod": 0,
+
+            "comment_bodyMvMag": "local mv mag for human body attention areas",
+            "bodyMvMag": 3.0,
+
+            "comment_MVThresh": "move velocity thresholds",
+            "MVThresh": {
+                "comment_globalMvLevelThresh": "Level threshold of global motion - homogarphy",
+                "globalMvLevelThresh": [ 100.0, 200.0, 400.0, 600.0, 800.0 ],
+
+                "comment_totalMvLevelThresh": "Level threshold of local motion average",
+                "totalMvLevelThresh": [ 0.75, 1.0, 2.0, 3.0, 4.0 ],
+
+                "comment_localMvLevelThresh": "motion threshold of local motion for motion statistic",
+                "localMvLevelThresh": [ 3.0, 7.0, 12.0, 16.0, 20.0 ],
+
+                "comment_bodyMvLevelThresh": "level threshold of local motion in body area",
+                "bodyMvLevelThresh": [ 4.0, 100.0, 300.0, 400.0, 500.0 ],
+
+                "comment_localCountThresh": "count threshold for each level",
+                "localCountThresh": [ 1, 2, 3, 3, 3 ]
+            },
+
+            "predictConfig": {
+                "comment_method": "0: equal current frame motion 1:mean of previous avgFrameNum frame motion 2:GMM(Gaussian Mixture Mode), 3: kalman filter",
+                "method": 3,
+
+                "comment_avgFrameNum": "num of frame in mean method(pmmPredictMethod=1) to predict motion",
+                "avgFrameNum": 4,
+
+                "comment_iterConvergence": "num of iteration in GMM method(pmmPredictMethod=2) to predict motion, in [250,1000]",
+                "iterConvergence": 1000,
+
+                "comment_gmmClusterNum": "num of cluster in GMM method(pmmPredictMethod=2) to predict motion, max value is 3",
+                "gmmClusterNum": 3,
+
+                "comment_gmmFrameNum": "num of frame in GMM method(pmmPredictMethod=2) to predict motion",
+                "gmmFrameNum": 10,
+
+                "comment_gmmConf": "confidence to get one clear frame at least in next gmmKFrameK frame in GMM method",
+                "gmmConf": 0.99,
+
+                "comment_gmmKFrame": "num of capturing frame for using",
+                "gmmKFrame": 4,
+
+                "comment_kalmanQ_kalmanR": "kalman predict param Q and R",
+                "kalmanQ": 1e-3,
+                "kalmanR": 5e-3
+            }
+        },
+
+        "hdrDetectingConfig": {
+            "comment_highLightThresh": "",
+            "highLightThresh" : 227.0,
+            "comment_rGammaTable": "red gain table, size 256",
+            "rGammaTable" : [0,0,0,0,0,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,6,7,7,7,7,8,8,8,9,9,9,9,10,10,10,11,11,11,11,12,12,12,13,13,13,14,14,14,15,15,15,16,16,16,17,17,17,18,18,19,19,19,20,20,20,21,21,21,22,22,23,23,23,24,24,25,25,25,26,26,27,27,27,28,28,29,29,30,30,30,31,31,32,32,33,33,34,34,35,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,43,43,44,44,45,45,46,47,47,48,48,49,50,50,51,52,52,53,54,54,55,56,57,57,58,59,59,60,61,62,63,63,64,65,66,67,68,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,88,89,90,91,92,93,95,96,97,99,100,101,103,104,106,107,109,110,111,113,114,116,117,119,120,122,123,125,127,129,131,132,134,136,138,140,142,144,146,148,150,152,154,156,158,160,163,165,167,169,171,173,176,178,180,183,185,188,190,192,195,197,200,203,205,207,210,212,215,218,221,224,226,229,232,234,237,240,242,245,248,250,253,255],
+            "comment_gGammaTable": "green gain table, size 256",
+            "gGammaTable" : [0,4,7,11,14,17,19,22,26,29,33,36,40,43,46,49,52,55,58,60,63,66,69,71,74,76,79,81,84,86,88,91,93,95,97,99,102,104,106,108,110,112,114,115,117,119,121,122,124,126,127,129,130,132,133,135,136,137,139,140,142,143,144,145,147,148,149,150,151,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,171,172,173,174,175,176,177,177,178,179,180,180,181,182,183,183,184,185,185,186,187,187,188,189,190,190,191,192,192,193,194,194,195,196,196,197,198,198,199,199,200,200,201,201,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,217,218,218,219,219,220,220,221,221,222,222,223,223,223,224,224,225,225,226,226,226,227,227,228,228,228,229,229,230,230,231,231,231,232,232,233,233,233,234,234,234,235,235,236,236,237,237,237,238,238,239,239,239,240,240,240,241,241,241,242,242,242,243,243,244,244,244,245,245,245,246,246,247,247,247,248,248,248,249,249,250,250,250,251,251,251,252,252,253,253,253,254,255],
+            "comment_drcCurve1": "balabala",
+            "drcCurve1": [0,63,127,191,255,319,383,447,511,575,639,703,767,831,895,959,1023,1087,1151,1215,1279,1343,1407,1471,1535,1599,1663,1727,1791,1855,1919,1983,2047,2111,2175,2239,2303,2367,2431,2495,2559,2623,2687,2751,2815,2879,2943,3007,3071,3135,3199,3263,3327,3391,3455,3519,3583,3647,3711,3775,3839,3903,3967,4031,4095],
+            "comment_drcCurve2": "balabala",
+            "drcCurve2": [0,127,255,383,505,621,732,836,935,1030,1120,1207,1290,1371,1448,1523,1596,1667,1736,1804,1869,1934,1997,2058,2119,2179,2237,2295,2352,2408,2463,2518,2572,2625,2678,2730,2782,2833,2884,2935,2985,3034,3084,3133,3182,3230,3278,3326,3373,3421,3468,3514,3561,3607,3653,3698,3744,3789,3833,3878,3922,3966,4009,4052,4095],
+            "comment_drcCurve3": "balabala",
+            "drcCurve3": [0,191,383,560,719,861,989,1106,1214,1315,1410,1499,1584,1664,1742,1816,1887,1956,2023,2088,2150,2212,2271,2329,2386,2442,2497,2550,2603,2654,2705,2755,2804,2852,2900,2947,2993,3039,3084,3129,3173,3216,3259,3302,3344,3386,3427,3468,3508,3548,3587,3626,3664,3703,3740,3778,3814,3851,3887,3923,3958,3993,4027,4061,4095],
+            "comment_drcCurve4": "balabala",
+            "drcCurve4": [0,255,502,712,889,1041,1176,1297,1407,1509,1604,1693,1777,1857,1933,2005,2075,2142,2207,2270,2330,2389,2446,2502,2556,2609,2661,2712,2761,2810,2857,2904,2950,2995,3039,3082,3125,3167,3208,3249,3289,3328,3367,3405,3443,3480,3516,3553,3588,3623,3658,3692,3725,3759,3791,3824,3855,3887,3918,3948,3978,4008,4037,4066,4095],
+            "comment_drcCurve5": "balabala",
+            "drcCurve5": [0,319,610,839,1024,1181,1318,1440,1551,1653,1748,1836,1919,1998,2073,2144,2213,2278,2342,2402,2461,2518,2574,2627,2679,2730,2780,2828,2875,2921,2966,3010,3053,3095,3137,3177,3217,3256,3294,3332,3369,3405,3441,3476,3510,3544,3577,3610,3642,3674,3705,3736,3766,3796,3825,3854,3882,3910,3938,3965,3991,4018,4044,4069,4095],
+            "comment_drcCurve6": "balabala",
+            "drcCurve6": [0,383,705,945,1135,1294,1432,1555,1666,1768,1862,1949,2032,2110,2183,2254,2321,2385,2447,2506,2563,2619,2672,2724,2774,2823,2871,2917,2962,3006,3049,3090,3131,3171,3210,3248,3286,3322,3358,3393,3428,3461,3494,3527,3559,3590,3621,3651,3681,3710,3739,3767,3794,3822,3849,3875,3901,3926,3952,3976,4001,4025,4048,4072,4095]
+        }
+    },
+
+    "BackLightDetectingConfig": {
+    }
+}

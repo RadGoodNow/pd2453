@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * vivo copyright
+ */
+-->
+<settings version="1.0">
+
+<!-- for dualbokeh algo -->
+<string name="MODEL_PATH">/vendor/camera3rd/nti/document/libpynet_fakequant_0426_1088_2_trans.bin</string>
+<!-- end for dualbokeh algo -->
+
+<!-- begin for preview in hal -->
+<bool name="vas_hal">true</bool>
+<!-- end for preview in hal -->
+
+<!-- begin for vivo_affinity -->
+<integer-array name="affinity_cpu">
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+</integer-array>
+<integer-array name="affinity_cpu_portrait">
+    <item>4</item>
+    <item>5</item>
+</integer-array>
+<!-- begin for vivo_affinity -->
+
+<bool name="qnn_use_unsigned_process_domain">true</bool>
+
+</settings>

@@ -1,0 +1,46 @@
+{
+    "configVersion": "1.0.2",
+    "networkInfo":
+  [
+      {
+          "comment_lensDirection": "0:horizontal, 1:vertical",
+          "lensDirection": 0,
+          "modelNum": 1,
+          "comment_platform": "0:MTK5, 1:MTK6, 5:QCOM",
+          "platform": 5,
+          "isCropBorder": 1,
+          "networkParam":
+          [
+              {
+                  "modelPath": "/vendor/camera3rd/nti/qualcomm_model_0919_i8fp16.vdnn",
+                  "runtime": "qnn",
+                  "threadNum": 1,
+                  "frequency": 100,
+                  "powerMode": 3,
+                  "sessionName": "raft-stereo",
+                  "inputNode": ["input_0_0", "input_1_0"],
+                  "outputNode": ["sum_1143_f_0"]
+              }
+          ]
+      },
+      {
+          "lensDirection": 1,
+          "modelNum": 1,
+          "platform": 5,
+          "isCropBorder": 1,
+          "networkParam":
+          [
+              {
+                  "modelPath": "/vendor/camera3rd/nti/qualcomm_model_0821_h960w736_i8fp16.vdnn",
+                  "runtime": "qnn",
+                  "threadNum": 1,
+                  "frequency": 100,
+                  "powerMode": 3,
+                  "sessionName": "raft-stereo",
+                  "inputNode": ["input_0_0", "input_1_0"],
+                  "outputNode": ["sum_1143_f_0"]
+              }
+          ]
+      }
+  ]
+}

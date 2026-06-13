@@ -1,0 +1,1016 @@
+{
+	"LogLevel": 1,
+	"UsecaseSelector": [
+		{
+			"Type": "AppType",
+			"Condition": ["string", "vivo"],
+			"Result": "PHOTO",
+			"UsecaseSelector": [
+				{ // 录像
+					"Type": "UIMode",
+					"Condition": ["int", "==51", "==3", "==64"],
+					"Result": "VIDEO",
+					"UsecaseSelector": [
+						{ // 标准防抖 & 无防抖
+							"Type": "EISMode",
+							"Condition": ["int", "==0", "==1", "==9", "==14", "==16", "==12", "==4", "==18"],
+							"Result": "VIDEO",
+							"UsecaseSelector": [
+								{ // 60FPS
+									"Type": "FrameRate",
+									"Condition": ["int", "==60", "==50"],
+									"Result": "VIDEO16960",
+									"UsecaseSelector": [
+										{//广角摄像头
+											"Type": "Camera ID",
+											"Condition": ["int", "==2"],
+											"Result": "4K60"
+										},
+										{ // 4K30fps
+											"Type": "Width",
+											"Condition": ["int", "==3840"],
+											"UsecaseSelector": [
+												{
+													"Type": "Height",
+													"Condition": ["int", "==2160"],
+													"Result": "4K60"
+												}]
+										}
+									]
+								},
+								{
+									"Type": "SCENARIO",
+									"Condition": ["int", "==6"],
+									"Result": "ROIHWREMOSAIC",
+									"Debug": 1
+								},
+								{ // <=30FPS
+									"Type": "FrameRate",
+									"Condition": ["int", "<=30"],
+									"UsecaseSelector": [
+										{	//后置摄像头
+										"Type": "Physical ID",
+										"Condition": ["int", "==0"],
+										"Result": "VIDEO",
+										"UsecaseSelector": [
+											{ // 普通录像
+												"Type": "UIMode",
+												"Condition": ["int", "==3"],
+												"Result": "VIDEO1610",
+												"UsecaseSelector": [
+													{ // 主摄ROI Remosaic
+														"Type": "Tag",
+														"Parameter": ["vcf.parameter", "seamlessMode", "4"],
+														"Condition": ["int", "==0"],
+														"Debug": 1,
+														"UsecaseSelector": [
+															{
+																"Type": "Tag",
+																"Parameter": ["vcf.parameter", "seamlessMode", "0"],
+																"Condition": ["int", "==3"/* rear main */],
+																"Result": "ROIREMOSAICVIDEO1610",
+																"Debug": 1
+															}
+														]
+													},
+													{ // 4K30fps
+														"Type": "Width",
+														"Condition": ["int", "==3840"],
+														"UsecaseSelector": [
+															{
+																"Type": "Height",
+																"Condition": ["int", "==2160", "==1600"],
+																"Result": "4K30",
+																"UsecaseSelector": [
+																	{ // 主摄ROI Remosaic
+																		"Type": "Tag",
+																		"Parameter": ["vcf.parameter", "seamlessMode", "4"],
+																		"Condition": ["int", "==0"],
+																		"Debug": 1,
+																		"UsecaseSelector": [
+																			{
+																				"Type": "Tag",
+																				"Parameter": ["vcf.parameter", "seamlessMode", "0"],
+																				"Condition": ["int", "==11"/* rear main */],
+																				"Result": "ROIHWREMOSAICVIDEO169",
+																				"Debug": 1
+																			}
+																		]
+																	}
+																]
+															}]
+													},
+													{ // 录像美颜开关
+														"Type": "Tag",
+														"Parameter": ["vivo.control", "videoalgotype"],
+														"Condition": ["int", "==1"],
+														"Result": "VIDEO1610",
+														"UsecaseSelector": [
+															{ // 主摄ROI Remosaic
+																"Type": "Tag",
+																"Parameter": ["vcf.parameter", "seamlessMode", "4"],
+																"Condition": ["int", "==0"],
+																"Debug": 1,
+																"UsecaseSelector": [
+																	{
+																		"Type": "Tag",
+																		"Parameter": ["vcf.parameter", "seamlessMode", "0"],
+																		"Condition": ["int", "==3"/* rear main */],
+																		"Result": "ROIREMOSAICVIDEO1610",
+																		"Debug": 1
+																	}
+																]
+															},
+															{ // 短信拍摄后置
+																"Type": "Ratio",
+																"Condition": ["int", "==1333"],
+																"Debug": 1,
+																"Result": "PHOTO"
+															}]
+													},
+													{ // 录像虚化、微电影、微电影美颜
+														"Type": "Tag",
+														"Parameter": ["vivo.control", "videoalgotype"],
+														"Condition": ["int", "==8", "==64", "==65"],
+														"Result": "VIDEO1610",
+														"UsecaseSelector": [
+															{ // 主摄ROI Remosaic
+																"Type": "Tag",
+																"Parameter": ["vcf.parameter", "seamlessMode", "4"],
+																"Condition": ["int", "==0"],
+																"Debug": 1,
+																"UsecaseSelector": [
+																	{
+																		"Type": "Tag",
+																		"Parameter": ["vcf.parameter", "seamlessMode", "0"],
+																		"Condition": ["int", "==3"/* rear main */],
+																		"Result": "ROIREMOSAICVIDEO1610",
+																		"Debug": 1
+																	}
+																]
+															}
+														]
+													}]
+											},
+											{ // 专业录像
+												"Type": "UIMode",
+												"Condition": ["int", "==51"],
+												"Result": "VIDEO1610",
+												"UsecaseSelector": [
+													{ // 8K
+														"Type": "Width",
+														"Condition": ["int", "==7680"],
+														"UsecaseSelector": [
+															{
+																"Type": "Height",
+																"Condition": ["int", "==4320"],
+																"Result": "8K"
+															}]
+													},
+													{ // LOG
+														"Type": "Tag",
+														"Parameter": ["org.codeaurora.qcamera3.sessionParameters",    "EnableSHDR"],
+														"Condition": ["int", "==1"],
+														"Debug": 1,
+														"Result": "VHDR2"
+													}]
+											},
+											{ // HDR10+
+												"Type": "Tag",
+												"Parameter": ["vivo.control", "hdr10_plus_enable"],
+												"Condition": ["int", "==1"],
+												"Result": "HDR10+"
+											},
+											{ // 杜比视界
+												"Type": "Tag",
+												"Parameter": ["org.codeaurora.qcamera3.sessionParameters", "HDRVideoMode"],
+												"Condition": ["int", "==1"],
+												"Result": "DolbyVision"
+											}
+										]
+										},
+										{	//广角摄像头
+											"Type": "Physical ID",
+											"Condition": ["int", "==3"],
+											"Result": "VIDEO1",
+											"UsecaseSelector": [
+												{ // 普通录像
+													"Type": "UIMode",
+													"Condition": ["int", "==3"],
+													"Result": "WIDEVIDEO1610",
+													"UsecaseSelector": [
+														{ // 录像美颜开关
+															"Type": "Tag",
+															"Parameter": ["vivo.control", "videoalgotype"],
+															"Condition": ["int", "==1"],
+															"Result": "WIDEVIDEO1610",
+															"UsecaseSelector": [
+																{ // 短信拍摄后置
+																	"Type": "Ratio",
+																	"Condition": ["int", "==1333"],
+																	"Debug": 1,
+																	"Result": "WIDEPHOTO"
+																	}]
+														},
+														{ // 录像虚化、微电影、微电影美颜
+															"Type": "Tag",
+															"Parameter": ["vivo.control", "videoalgotype"],
+															"Condition": ["int", "==8", "==64", "==65"],
+															"Result": "VIDEO1"
+														}]
+												},
+												{ // 专业录像
+													"Type": "UIMode",
+													"Condition": ["int", "==51"],
+													"Result": "WIDEVIDEO1610"
+												},
+												{ // HDR10+
+													"Type": "Tag",
+													"Parameter": ["vivo.control", "hdr10_plus_enable"],
+													"Condition": ["int", "==1"],
+													"Result": "HDR10+"
+												},
+												{ // 杜比视界
+													"Type": "Tag",
+													"Parameter": ["org.codeaurora.qcamera3.sessionParameters", "HDRVideoMode"],
+													"Condition": ["int", "==1"],
+													"Result": "DolbyVision"
+												}
+											]
+										},
+										{	//前置摄像头
+											"Type": "Physical ID",
+											"Condition": ["int", "==1"],
+											"Result": "VIDEO",
+											"UsecaseSelector": [
+											{ // 短信拍摄
+												"Type": "Ratio",
+												"Condition": ["int", "==1333"],
+												"Debug": 1,
+												"Result": "PHOTO"
+											},
+											{ // HDR10+
+												"Type": "Tag",
+												"Parameter": ["vivo.control", "hdr10_plus_enable"],
+												"Condition": ["int", "==1"],
+												"Result": "HDR10+"
+											},
+											{ // 杜比视界
+												"Type": "Tag",
+												"Parameter": ["org.codeaurora.qcamera3.sessionParameters", "HDRVideoMode"],
+												"Condition": ["int", "==1"],
+												"Result": "DolbyVision"
+											}]
+										}]
+								}]
+						},
+						{ // 地平线防抖
+							"Type": "EISMode",
+							"Condition": ["int", "==10"],
+							"Debug": 1,
+							"Result": "SKYLINEEIS"
+						},
+						{ // 超级防抖
+							"Type": "EISMode",
+							"Condition": ["int", "==2"],
+							"Result": "VIDEO16960",
+							"UsecaseSelector": [
+								{
+									"Type": "FrameRate",
+									"Condition": ["int", "==30"],
+									"Result": "VIDEO16930"
+								}]
+						},
+						{ // 前置人像超级防抖
+							"Type": "EISMode",
+							"Condition": ["int", "==7", "==6", "==15"],
+							"Result": "VIDEO",
+							"UsecaseSelector": [
+								{
+									"Type": "FrameRate",
+									"Condition": ["int", "==60"],
+									"Result": "VIDEO60"
+								},
+								{
+									"Type": "Tag",
+									"Parameter": ["org.codeaurora.qcamera3.sessionParameters", "EnableMFHDR"],
+									"Condition": ["int", ">>0"],
+									"Debug": 1,
+									"Result": "VIDEO60"
+								},
+								{
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "shdr_enable"],
+									"Condition": ["int", "==1"],
+									"Debug": 1,
+									"Result": "VIDEO60"
+								},
+								{ // 3DHDR
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "3dhdr_enable"],
+									"Condition": ["int", ">>0"],
+									"Debug": 1,
+									"UsecaseSelector": [
+										{ // 无IC且支持3DHDR
+											"Type": "Property",
+											"Condition": ["property", "TDHDR"],
+											"Result": "3DHDR"
+										}]
+								}]
+						},
+						{  // 视频夜景算法
+							"Type": "Tag",
+							"Parameter": ["vivo.control", "videoNight"],
+							"Condition": ["int", "==1", "==11"],
+							"Result": "RAWVIDEONR"
+						}]
+				},
+				{ // 普通拍照 & 超清文档 & 夜景模式
+					"Type": "UIMode",
+					"Condition": ["int", "==1", "==13", "==7"],
+					"Result": "PHOTO",
+					"UsecaseSelector": [
+						{ // 主摄ROI
+							"Type": "Physical ID",
+							"Condition": ["int", "==0"],
+							"Debug": 1,
+							"UsecaseSelector": [
+								{// roi quad
+									"Type": "Tag",
+									"Parameter": ["vcf.parameter", "seamlessMode", "0"],
+									"Condition": ["int", "==3"/* rear main */],
+									"Result": "ROIQUAD",
+									"Debug": 1
+								}
+							]
+						},
+						{ // 广角摄像头
+							"Type": "Camera ID",
+							"Condition": ["int", "==2"],
+							"Debug": 1,
+							"Result": "WIDEPHOTO"
+						},
+						{ // dual stream
+							"Type": "Tag",
+							"Parameter": ["vivo.control", "seamlesscontrol"],
+							"Condition": ["int", "==2"],
+							"Result": "SHDR2",
+							"Debug": 1
+						},
+						{ // SAT Remosaic
+							"Type": "SCENARIO",
+							"Condition": ["int", "==3"],
+							"Result": "SATREMOSAIC"
+						},
+						{ // Remosaic
+							"Type": "SCENARIO",
+							"Condition": ["int", "==2"],
+							"Result": "REMOSAIC"
+						},
+						{ // SAT Remosaic
+							"Type": "Tag",
+							"Parameter": ["vivo.control", "seamless.remosaic.enable"],
+							"Condition": ["int", "==1"],
+							"Debug": 1,
+							"UsecaseSelector": [
+								{ // 主摄SAT Remosaic
+									"Type": "Physical ID",
+									"Condition": ["int", "==0"],
+									"Debug": 1,
+									"UsecaseSelector": [
+										{ // 物理id=0
+										"Type": "Tag",
+										"Parameter": ["vivo.control", "satAppControlInfo", "4"],
+										"Condition": ["int", "==1"/* rear main */],
+										"Result": "SATREMOSAIC",
+										"Debug": 1
+										}
+									]
+								}
+							]
+						},
+						{ // ROI Remosaic
+							"Type": "Tag",
+							"Parameter": ["org.codeaurora.qcamera3.sessionParameters", "EnableInsensorZoom"],
+							"Condition": ["int", "==1"],
+							"Debug": 1
+						}
+					]
+				},
+				{ // 电影人像2x
+					"Type": "UIMode",
+					"Condition": ["int", "==64"],
+					"UsecaseSelector": [
+						{
+							"Type": "SCENARIO",
+							"Condition": ["int", "==6"],
+							"Debug": 1,
+							"UsecaseSelector": [
+								{ // 主摄选择ROI hwremosaic
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "video.seamless.roiRemosaic"],
+									"Condition": ["int", "==1"],
+									"Debug": 1,
+									"Usecaseselector": [
+								    {
+										"Type": "Camera ID",
+										"Condition": ["int", "==0"],
+										"Result": "ICRTBROIREMOSAIC",
+										"Debug": 1
+									}]
+							}]
+						},
+						{ // 主摄选择BINNING
+							"Type": "Tag",
+							"Parameter": ["vivo.control", "video.seamless.roiRemosaic"],
+							"Condition": ["int", "==0"],
+							"Debug": 1,
+							"Usecaseselector": [
+							{
+								"Type": "Camera ID",
+								"Condition": ["int", "==0"],
+								"Result": "VIDEO",
+								"Debug": 1
+							}]
+						}
+					]
+				},
+				{ // 高像素
+					"Type": "UIMode",
+					"Condition": ["int", "==29"],
+					"Result": "PHOTO",
+					"UsecaseSelector": [
+						{
+							"Type": "SCENARIO",
+							"Condition": ["int", "==2"],
+							"Debug": 1,
+							"Result": "REMOSAIC"
+						},
+						{ // SAT Remosaic
+							"Type": "SCENARIO",
+							"Condition": ["int", "==3"],
+							"Debug": 1,
+							"Result": "SATREMOSAIC"
+						}]
+				},
+				{ // 美食
+					"Type": "UIMode",
+					"Condition": ["int", "==57"],
+					"UsecaseSelector": [
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==3"],
+							"Debug": 1,
+							"Result": "PROTRAIT1X"
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==11"],
+							"Debug": 1,
+							"Result": "FOODMODE2X",
+							"UsecaseSelector": [
+							{
+								"Type": "Camera ID",
+								"Condition": ["int", "==0"],
+								"Result": "PROTRAIT2XL",
+								"UsecaseSelector": [
+								{
+									"Type": "Tag",
+									"Parameter": ["vcf.parameter", "seamlessMode"],
+									"Condition": ["int", "==1"],
+									"Result": "PROTRAIT2XM",
+									"Debug": 1
+								}]
+							}]
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==18"],
+							"Debug": 1,
+							"Result": "PROTRAIT2X",
+							"UsecaseSelector": [
+							{
+								"Type": "Camera ID",
+								"Condition": ["int", "==0"],
+								"Result": "PROTRAIT2XM",
+								"UsecaseSelector": [
+								{
+									"Type": "Tag",
+									"Parameter": ["vcf.parameter", "seamlessMode"],
+									"Condition": ["int", "==3"],
+									"Result": "PROTRAIT2XL",
+									"Debug": 1
+								}]
+							}]
+						}]
+				},
+				{ // 运动
+					"Type": "UIMode",
+					"Condition": ["int", "==35"],
+					"Result": "PHOTO",
+					"UsecaseSelector": [
+					{
+						"Type": "Camera ID",
+						"Condition": ["int", "==0"],
+						"Result": "PHOTO",
+						"UsecaseSelector": [
+						{
+							//支持SHDR
+							"Type": "Property",
+							"Condition": ["property", "SHDR2EXP"],
+							"Result": "SPORT",
+							"UsecaseSelector": [
+								{
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "seamlesscontrol"],
+									"Condition": ["int", "==3"],
+									"Debug": 1,
+									"UsecaseSelector": [
+									{ //支持insensor zoom
+										"Type": "Property",
+										"Condition": ["property", "ROI"],
+										"Result": "SPORTROI"
+									}]
+								},
+								{
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "motionCaptureMode"],
+									"Condition": ["int", "==2"],
+									"Debug": 1,
+									"Result": "PHOTO"
+								},
+								{
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "seamlesscontrol"],
+									"Condition": ["int", "==1"],
+									"Result": "PHOTO"
+								}]
+						}]
+					},
+					{
+						"Type": "Camera ID",
+						"Condition": ["int", "==3"],
+						"Result": "PHOTOTELE",
+						"UsecaseSelector": [
+						{
+							//支持SHDR
+							"Type": "Property",
+							"Condition": ["property", "SHDR2EXP"],
+							"Result": "SPORTTELE",
+							"UsecaseSelector": [
+								{
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "seamlesscontrol"],
+									"Condition": ["int", "==3"],
+									"Debug": 1,
+									"UsecaseSelector": [
+									{ //支持insensor zoom
+										"Type": "Property",
+										"Condition": ["property", "ROI"],
+										"Result": "SPORTROI"
+									}]
+								},
+								{
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "motionCaptureMode"],
+									"Condition": ["int", "==2"],
+									"Debug": 1,
+									"Result": "PHOTOTELE"
+								},
+								{
+									"Type": "Tag",
+									"Parameter": ["vivo.control", "seamlesscontrol"],
+									"Condition": ["int", "==1"],
+									"Result": "PHOTOTELE"
+								}]
+						}]
+					}]
+				},
+				{ // 微距
+					"Type": "UIMode",
+					"Condition": ["int", "==34"],
+					"Result": "PHOTO"
+				},
+				{ // 人像 and 人文模式
+					"Type": "UIMode",
+					"Condition": ["int", "==31", "==71"],
+					"Result": "PHOTO",
+					"Debug": 1,
+					"UsecaseSelector": [
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==3"],
+							"Debug": 1,
+							"Result": "PROTRAIT1X"
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==4"],
+							"Debug": 1,
+							"Result": "PROTRAIT2X"
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==15"],
+							"Debug": 1,
+							"Result": "PROTRAIT3X"
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==18"],
+							"Debug": 1,
+							"Result": "PROTRAIT2X",
+							"UsecaseSelector": [
+							{
+								"Type": "Camera ID",
+								"Condition": ["int", "==0"],
+								"Result": "PROTRAIT2XM",
+								"UsecaseSelector": [
+								{
+									"Type": "Tag",
+									"Parameter": ["vcf.parameter", "seamlessMode"],
+									"Condition": ["int", "==3"],
+									"Result": "PROTRAIT2XL",
+									"Debug": 1
+								}]
+							}
+						]
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==20"],
+							"Debug": 1,
+							"Result": "PROTRAIT3XL"
+						}
+					]
+				},
+				{ // 前置人像
+					"Type": "UIMode",
+					"Condition": ["int", "==0"],
+					"Result": "PHOTO",
+					"Debug": 1,
+					"UsecaseSelector": [
+					{ // Remosaic
+						"Type": "SCENARIO",
+						"Condition": ["int", "==2"],
+						"Result": "REMOSAIC"
+					}]
+				},
+				{ // 慢镜头
+					"Type": "FrameRate",
+					"Condition": ["int", ">=120"],
+					"Result": "HFR"
+				},
+				{//运动特写
+					"Type": "Tag",
+					"Parameter": ["vivo.control", "motionCaptureMode"],
+					"Condition": ["int", "==3"],
+					"UsecaseSelector": [
+					{ //支持funmotion
+						"Type": "Property",
+						"Condition": ["property", "FUNMOTION"],
+						"Result": "FUNMOTION"
+					}]
+				},
+				{ // 专业模式
+					"Type": "UIMode",
+					"Condition": ["int", "==16"],
+					"Result": "PHOTO",
+					"UsecaseSelector": [
+						{ //广角摄像头
+							"Type": "Camera ID",
+							"Condition": ["int", "==2"],
+							"Debug": 1,
+							"Result": "WIDEPHOTO"
+						}]
+				},
+				{ // 延时摄影
+					"Type": "UIMode",
+					"Condition": ["int", "==12"],
+					"Result": "VIDEO1610",
+					"UsecaseSelector": [
+						{
+							"Type": "Property",
+							"Condition": ["property", "DefaultDPC"],
+							"Result": "VIDEODefaultDPC"
+						},
+						{//广角摄像头
+						"Type": "Camera ID",
+						"Condition": ["int", "==2"],
+						"Debug": 1,
+						"Result": "WIDEVIDEO1610"
+						}
+					]
+				},
+				{ // 月亮模式
+					"Type": "UIMode",
+					"Condition": ["int", "==32"],
+					"Result": "PHOTO",
+					"UsecaseSelector": [
+						{
+							"Type": "SCENARIO",
+							"Condition": ["int", "==6"],
+							"Result": "PHOTO",
+							"Debug": 1
+						}]
+				},
+				{ // 双视野录像
+					"Type": "UIMode",
+					"Condition": ["int", "==53"],
+					"Result": "PHOTO"
+				},
+				{ // 3D相机
+					"Type": "UIMode",
+					"Condition": ["int", "==67","==68"],
+					"Result": "PHOTO",
+					"UsecaseSelector": [
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==3"],
+							"Debug": 1,
+							"Result": "PROTRAIT1X"
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+							"Condition": ["int", "==23"],
+							"Debug": 1,
+							"Result": "3DCAMERA2X"
+						}
+					]
+				},
+				{ // 后编辑
+					"Type": "Tag",
+					"Parameter": ["vivo.control", "reprocessMode"],
+					"Condition": ["int","==2"],
+					"Debug": 1,
+					"UsecaseSelector": [
+						{ // 电影画幅
+							"Type": "Width",
+							"Condition": ["int", "==1920"],
+							"UsecaseSelector": [
+								{
+									"Type": "Height",
+									"Condition": ["int", "==800"],
+									"UsecaseSelector": [
+										{
+											"Type": "Camera ID",
+											"Debug": 1,
+											"Condition": ["int", "==5"],
+											"Result": "ICRTBMOVIE"
+										}]
+								}]
+						},
+						{ // 电影画幅
+							"Type": "Width",
+							"Condition": ["int", "==3840"],
+							"UsecaseSelector": [
+								{
+									"Type": "Height",
+									"Condition": ["int", "==1600"],
+									"UsecaseSelector": [
+										{
+											"Type": "Camera ID",
+											"Debug": 1,
+											"Condition": ["int", "==5"],
+											"Result": "ICRTBUHDMOVIE"
+										}]
+								}]
+						},
+						{ // fhd
+						"Type": "Width",
+						"Condition": ["int", "==1920"],
+						"UsecaseSelector": [
+							{
+								"Type": "Height",
+								"Condition": ["int", "==1080"],
+								"UsecaseSelector": [
+									{
+										"Type": "Camera ID",
+										"Debug": 1,
+										"Condition": ["int", "==5"],
+										"Result": "ICRTBFHD"
+									}]
+							}]
+					},
+					{ // uhd
+						"Type": "Width",
+						"Condition": ["int", "==3840"],
+						"UsecaseSelector": [
+							{
+								"Type": "Height",
+								"Condition": ["int", "==2160"],
+								"UsecaseSelector": [
+									{
+										"Type": "Camera ID",
+										"Debug": 1,
+										"Condition": ["int", "==5"],
+										"Result": "ICRTBUHD"
+									}]
+							}]
+					}]
+				}
+			]
+		},
+		{
+			"Type": "AppType",
+			"Condition": ["string", "ENGINEER"],
+			"UsecaseSelector": [
+				{ // 工模普通拍照
+					"Type": "UIMode",
+					"Condition": ["int", "==25"],
+					"Debug": 1,
+					"Result": "PHOTO",
+					"UsecaseSelector": [
+						{
+							"Type": "SCENARIO",
+							"Condition": ["int", "==2"],
+							"Result": "REMOSAIC"
+						},
+						{
+							"Type": "Tag",
+							"Parameter": ["vivo.control", "sensorMode"],
+							"Condition": ["int", "==1"],
+							"Result": "REMOSAIC"
+						}]
+				},
+				{ // 工模普通录像
+					"Type": "UIMode",
+					"Condition": ["int", "==3"],
+					"Debug": 1,
+					"Result": "VIDEO"
+				},
+				{ // gc08a8
+					"Type": "Camera ID",
+					"Condition": ["int", "==2"],
+					"Debug": 1,
+					"Result": "WIDEPHOTO"
+				},
+				{ // 后置主摄+广角测试
+					"Type": "Tag",
+					"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+					"Condition": ["int", "==3"],
+					"Debug": 1,
+					"Result": "PROTRAIT1X"
+				},
+				{ // 后置主摄+望远测试
+					"Type": "Tag",
+					"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+					"Condition": ["int", "==4"],
+					"Debug": 1,
+					"Result": "PROTRAIT2X"
+				},
+				{ // 后置主摄+潜望测试
+					"Type": "Tag",
+					"Parameter": ["com.vivo", "MultiCameraBokehSelectSessionId"],
+					"Condition": ["int", "==15"],
+					"Debug": 1,
+					"Result": "PROTRAIT3X"
+				},
+			    {
+					"Type": "Tag",
+					"Parameter": ["vivo.control", "ic.effect"],
+					"Condition": ["int",">>0"],
+					"Debug": 1,
+					"Result": "VIDEO",
+					"UsecaseSelector": [
+						{
+							"Type": "Height",
+							"Condition": ["int", "==1080"],
+							"Debug": 1,
+							"UsecaseSelector": [
+								{
+									"Type": "Camera ID",
+									"Debug": 1,
+									"Condition": ["int", "==5"],
+									"Result": "ICRTBFHD"
+								}]
+						},
+						{
+							"Type": "Height",
+							"Condition": ["int", "==2160"],
+							"Debug": 1,
+							"UsecaseSelector": [
+								{
+									"Type": "Camera ID",
+									"Debug": 1,
+									"Condition": ["int", "==5"],
+									"Result": "ICRTBUHD"
+								}]
+						}]
+				}]
+		},
+		{
+			"Type": "AppType",
+			"Condition": ["string", "FACEUNLOCK", "FACEUNLOCK2"],
+			"Result": "FD"
+		},
+		{
+			"Type": "AppType",
+			"Condition": ["string", "WEIXIN", "QQ", "KUAISHOU", "DOUYIN", "MEIYAN", "FRONTAF", "INSTAGRAM",
+							"WHATSAPP", "TAOBAO", "LINE", "FACEBOOK", "DOUYU", "MOMO", "DINGDING", "FACEWAKE",
+							"PROTAKE", "PARAMLUMA", "VIVOSEARCH", "ZALO", "ZINGZALO", "VIBER", "VOLTE",
+							"BBM", "UMEETING", "YIXIN", "VIVOSCANNER", "IMOIM", "FACEBOOK1", "DEFAULT"],
+			"Debug": 1,
+			"Result": "PHOTO",
+			"UsecaseSelector": [{
+				"Type": "FrameRate",
+				"Condition": ["int", "<=30"],
+				"Debug": 1,
+				"Result": "SupportedThirdParty"
+			}]
+		},
+		{
+			"Type": "AppType",
+			"Condition": ["string", "!vivo"],
+			"Debug": 1,
+			"UsecaseSelector": [
+			{
+				"Type": "FrameRate",
+				"Condition": ["int", "==50", "==60"],
+				"Debug": 1,
+				"Result": "VIDEO60"
+			},
+			{
+				"Type": "FrameRate",
+				"Condition": ["int", ">=120"],
+				"Result": "HFR"
+			}]
+		}
+	],
+	"SensorModeSelector": {
+		"PHOTO": [{"Property": "FullFOV"}, {"Property": "Ratio4_3"}, {"FrameRate" : 30}, {"Property": "Binning"}],
+		"WIDEPHOTO": [{"Property": "FullFOV"}, {"Property": "Ratio4_3"}, {"FrameRate" : 30}],
+		"PHOTOTELE": [{"Property": "SHDR1EXP"}, {"Property": "Ratio4_3"}, {"Property": "Binning"}],
+		"VIDEO": [{"Property": "FullFOV"}, {"Ratio" : 1777}, {"Property": "Binning"}, "FrameRate"],
+		"VIDEO1": [{"Property": "FullFOV"}, {"Ratio" : 1777}, "FrameRate"],
+		"VIDEO1610": [{"Property": "FullFOV"}, {"Property": "Ratio16_10"}, {"Property": "Binning"}, "FrameRate"],
+		"WIDEVIDEO1610": [{"Property": "FullFOV"}, {"Property": "Ratio16_10"}, "FrameRate"],
+		"VIDEO1610Normal1EXP": [{"Property": "FullFOV"}, {"Property": "Ratio16_10"}, {"Property": "Binning"}, "FrameRate", {"Property": "NORMAL1EXP"}],
+		"HFR": ["FrameRate"],
+		"4K60": [{"Property": "UHD4K"}, {"Width": 3840}, {"Height": 2160}, {"Property": "Binning"}, {"FrameRate": 60}],
+		"VIDEO60": [{"FrameRate": 60}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"VIDEO16960": [{"FrameRate": 60}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"VIDEO16930": [{"FrameRate": 30}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"HDR10+": [{"Property": "SHDR2EXP"}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"DolbyVision": [{"Property": "SHDR2EXP"}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"VHDR2": [{"Property": "VIDEO"}, {"Property": "Ratio16_10"}, {"Property": "SHDR2EXP"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"VHDR1": [{"Property": "SHDR1EXP"}, {"Property": "Ratio16_10"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"4K30": [{"Property": "NORMAL1EXP"}, {"Property": "UHD4K"}, {"Width": 3840}, {"Height": 2160}, {"Property": "Binning"}, {"FrameRate": 30}],
+		"4KVHDR2": [{"Property": "SHDR2EXP"}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "UHD4K"}],
+		"4KVHDR1": [{"Property": "SHDR1EXP"}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "UHD4K"}],
+		"PROTRAIT1X": [{"Property": "RTB1"}, {"Property": "Ratio4_3"}],
+		"PROTRAIT1P5X": [{"Property": "Binning"}, {"Property": "RTB1P5"}],
+		"PROTRAIT2X": [{"Property": "RTB2"}, {"Property": "Ratio4_3"}],
+		"PROTRAIT2XM": [{"Property": "Binning"}, {"Property": "Ratio4_3"}],
+		"PROTRAIT2XL": [{"Property": "RTB2"}, {"Property": "ROI"}, {"Property": "Ratio4_3"}, {"RemosaicType" :"HWRemosaic"}],
+		"PROTRAIT2XL_QUAD": [{"Property": "RTB2"}, {"Property": "ROI"}, {"Property": "Ratio4_3"}, {"RemosaicType" :"NORemosaic"}],
+		"PROTRAIT3X": [{"Property": "RTB3"}, {"Property": "Ratio4_3"}],
+		"PROTRAIT3XL": [{"Property": "Binning"}, {"Property": "RTB3L"}, {"Property": "Ratio4_3"}],
+		"PROTRAIT3X": [{"Property": "Binning"}, {"Property": "RTB3"}, {"Property": "Ratio4_3"}],
+		"PROTRAIT4X": [{"Property": "RTB4"}, {"Property": "Ratio4_3"}],
+		"PROTRAIT4XL": [{"Property": "RTB4"}, {"Property": "ROI"}, {"Property": "Ratio4_3"}, {"RemosaicType" :"NORemosaic"}],
+		"FOODMODE2X": [{"Property": "RTB2"}, {"Property": "Ratio4_3"}],
+		"3DCAMERA2X": [{"Property": "RTB3D2"}, {"Property": "Ratio4_3"}],
+		"REMOSAIC": [{"Property": "QuadCFA"}],
+		"ROIREMOSAIC_MAROTELE": [{"Property": "ROI"}, {"Property": "QuadCFA"}, {"RemosaicType" :"NORemosaic"}, {"Property": "MARCOTELE"}],
+		"SATREMOSAIC": [{"Property": "QuadCFA"}, {"RemosaicType" :"NORemosaic"}],
+		"ROIHWREMOSAIC_MAROTELE": [{"Property": "ROI"}, {"Property": "QuadCFA"},{"RemosaicType" :"HWRemosaic"},{"Property": "MARCOTELE"}],
+		"SPORT": [{"Property": "SHDR2EXP"}, {"Property": "Binning"}, {"Property": "Ratio4_3"}, {"Property": "FullFOV"}],
+		"SPORTTELE": [{"Property": "SHDR2EXP"}, {"Property": "Binning"}, {"Property": "Ratio4_3"}],
+		"8K": [{"Property": "UHD8K"}, {"Width": 7680}, {"Height": 4320}],
+		"ROIQUAD": [{"Property": "ROI"}, {"Property": "QuadCFA"}, {"RemosaicType" :"SWRemosaic"}],
+		"ROIHWREMOSAIC": [{"Property": "ROI"}, {"Property": "QuadCFA"}, {"Ratio" : 1333}, {"RemosaicType" :"HWRemosaic"}],
+		"ROIHWREMOSAICVIDEO169": [{"Property": "ROI"}, {"Property": "QuadCFA"}, {"Ratio" : 1777}, {"RemosaicType" :"HWRemosaic"}],
+		"ROIREMOSAICVIDEO30": [{"Property": "ROI"}, {"Property": "QuadCFA"},{"RemosaicType" :"HWRemosaic"},{"FrameRate": 30}],
+		"ROIREMOSAICVIDEO1610": [{"Property": "ROI"}, {"Property": "QuadCFA"},{"RemosaicType" :"HWRemosaic"},{"Property": "Ratio16_10"}],
+		"SKYLINEEIS": [{"Property": "Ratio4_3"}, {"Property": "FullFOV"}, {"Property": "Binning"}, {"Property": "NORMAL1EXP"}, {"FrameRate" :"30"}],
+		"PHOTODefaultDPC": [{"Property": "FullFOV"}, {"Property": "Ratio4_3"}, {"FrameRate" : 30}, {"Property": "Binning"}, {"Property": "DefaultDPC"}],
+		"VIDEODefaultDPC": [{"Property": "FullFOV"}, {"Property": "Ratio16_9"}, {"FrameRate" : 30}, {"Property": "Binning"}, {"Property": "DefaultDPC"}],
+		"4KDefaultDPC": [{"Property": "UHD4K"}, {"Width": 3840}, {"Height": 2160}, {"Property": "Binning"}, {"FrameRate": 30}, {"Property": "DefaultDPC"}],
+		"3DHDR": [{"Property": "TDHDR"}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"RAWVIDEONR": [{"Property": "RAWVIDEONR"}],
+		"SPORTROI": [{"Property": "ROI"}, {"Property": "Ratio4_3"}],
+		"SHDR2": [{"Property": "SHDR2EXP"}, {"Property": "Ratio4_3"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"MARCOTELE": [{"Property": "MARCOTELE"}],
+		"ICRTBFHD": [{"Property": "ICRTBFHD"}],
+		"ICRTBUHD": [{"Property": "ICRTBUHD"}],
+		"ICRTBMOVIE": [{"Property": "ICRTBMOVIE"}],
+		"ICRTBUHDMOVIE": [{"Property": "ICRTBUHDMOVIE"}],
+		"ICRTBROIREMOSAIC": [{"Property": "ROI"}, {"Property": "Ratio16_9"}],
+		"ICRTBVHDR2": [{"Property": "VIDEO"}, {"Property": "Ratio16_9"}, {"Property": "SHDR2EXP"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"ICRTBVHDR1": [{"Property": "SHDR1EXP"}, {"Property": "Ratio16_9"}, {"Property": "Binning"}, {"Property": "FullFOV"}],
+		"SupportedThirdParty": [">=Height", ">=Width", "Ratio", ">=FrameRate", {"Property": "Binning"}],
+		"FD": [{"Property": "FD"}, {"Property": "Ratio4_3"}, {"FrameRate" : 30}],
+		"FUNMOTION": [{"Property": "FUNMOTION"}]
+	}
+}

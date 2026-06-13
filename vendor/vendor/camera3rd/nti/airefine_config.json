@@ -1,0 +1,17 @@
+{
+    "network_configs":  {
+        "modelNames": [ "airfh.vdnn", "airfv.vdnn" ],
+        "networkRuntime": "qnn",
+        "deviceType": 3,
+        "powerMode": 2,
+        "iNodeNames": ["DispMatteTensor_0", "ImageMatteTensor_0"],
+        "oNodeNames": ["conv2d_152_f_0"],
+        "inputScales": [ 0.0014801172169961819, 2.291840019729578e-05 ],
+        "outputScales": [ 0.0013267146301385948 ],
+        "inputZeps": [ -42, -21902 ],
+        "outputZeps": [ -31466 ],
+        "imageBias": -128
+    }
+}
+
+

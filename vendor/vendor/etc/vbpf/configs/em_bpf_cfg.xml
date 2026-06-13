@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vbpf_config>
+    <file path = "/factory/etc/bpf/atcmdResponse.bpf.o" auto_load = "1" >
+        <prog name = "atcmd_ng" />
+        <map name = "atcmd_ng_rb" handler = "atcmd_logcat_cb" />
+    </file>
+</vbpf_config>

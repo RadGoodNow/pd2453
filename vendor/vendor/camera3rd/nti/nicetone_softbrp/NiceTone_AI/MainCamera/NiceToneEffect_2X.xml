@@ -1,0 +1,2263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NiceToneEffectConfig version="1.0.192">
+
+  <SWITCHER>
+    <EnableCCMPorcess description="ccm function control">1</EnableCCMPorcess>
+    <EnableGammaPorcess description="gamma function control">1</EnableGammaPorcess>
+  </SWITCHER>
+  <HighlightCyanCorrection>
+    <Enable description="HighlightCyanCorrection function control">1</Enable>
+    <SNMode>
+      <NoPortrait>
+        <Indoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Indoor>
+        <Market>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Market>
+        <Outdoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Outdoor>
+        <Night>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Night>
+        <Sunset>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Sunset>
+        <Stage>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Stage>
+      </NoPortrait>
+      <Portrait>
+        <Indoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Indoor>
+        <Market>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Market>
+        <Outdoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Outdoor>
+        <Night>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Night>
+        <Sunset>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Sunset>
+        <Stage>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.5</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Stage>
+      </Portrait>
+    </SNMode>
+    <DayMode>
+      <NoPortrait>
+        <Indoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.05</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Indoor>
+        <Market>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.05</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Market>
+        <Outdoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Outdoor>
+        <Night>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Night>
+        <Sunset>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Sunset>
+        <Stage>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Stage>
+      </NoPortrait>
+      <Portrait>
+        <Indoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.05</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Indoor>
+        <Market>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.05</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Market>
+        <Outdoor>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Outdoor>
+        <Night>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Night>
+        <Sunset>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Sunset>
+        <Stage>
+          <sigmaS>15000</sigmaS>
+          <sigmaW>2500</sigmaW>
+          <wLimitLow>0.7</wLimitLow>
+          <wLimitHigh>0.95</wLimitHigh>
+          <wRatioLow>0</wRatioLow>
+          <wRatioHigh>0.0</wRatioHigh>
+          <sobelLimitLow>1500</sobelLimitLow>
+          <sobelLimitHigh>6500</sobelLimitHigh>
+          <sobelRatioLow>0</sobelRatioLow>
+          <sobelRatioHigh>1.0</sobelRatioHigh>
+          <vEnhancebias>0.2</vEnhancebias>
+          <SAdjustThreshold>500</SAdjustThreshold>
+        </Stage>
+      </Portrait>
+    </DayMode>
+  </HighlightCyanCorrection>
+  <CAIXIA_saturation_Enhance>
+    <Enable description="0 is disadble">1</Enable>
+    <saturationValue description="saturation enhance strength,range 0 to 0.2, suggest 0.1, 0 is no enhance , 0.2 is most enhanced">0.1</saturationValue>
+  </CAIXIA_saturation_Enhance>
+  <HightlightHueCorrect>
+    <Enable>1</Enable>
+    <number_cct>3</number_cct>
+    <start_cct>2300 3700 4800</start_cct>
+    <end_cct>3300 4300 7500</end_cct>
+    <DayMode>
+      <Portrait>
+        <Indoor>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Indoor>
+        <Outdoor>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Outdoor>
+        <Market>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Market>
+        <Night>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Night>
+        <Sunset>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Sunset>
+        <Stage>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Stage>
+      </Portrait>
+      <NoPortrait>
+        <Indoor>
+          <strength>0.0 0.2 0.2</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Indoor>
+        <Outdoor>
+          <strength>0.0 0.2 0.2</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Outdoor>
+        <Market>
+          <strength>0.0 0.3 0.3</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Market>
+        <Night>
+          <strength>0.0 0.4 0.5</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Night>
+        <Sunset>
+          <strength>0.0 0.1 0.1</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Sunset>
+        <Stage>
+          <strength>0.0 0.2 0.2</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Stage>
+      </NoPortrait>
+    </DayMode>
+    <SNMode>
+      <Portrait>
+        <Indoor>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Indoor>
+        <Outdoor>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Outdoor>
+        <Market>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Market>
+        <Night>
+          <strength>0.0 0.2 0.3</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Night>
+        <Sunset>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Sunset>
+        <Stage>
+          <strength>0.0 0.0 0.0</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Stage>
+      </Portrait>
+      <NoPortrait>
+        <Indoor>
+          <strength>0.0 0.5 0.5</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Indoor>
+        <Outdoor>
+          <strength>0.0 0.5 0.5</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Outdoor>
+        <Market>
+          <strength>0.0 0.5 0.5</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Market>
+        <Night>
+          <strength>0.0 0.5 0.5</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Night>
+        <Sunset>
+          <strength>0.0 0.5 0.5</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Sunset>
+        <Stage>
+          <strength>0.0 0.5 0.5</strength>
+          <EVMValueThredUp>8000.0</EVMValueThredUp>
+          <EVMValueThredDown>2000.0</EVMValueThredDown>
+          <EVMHueCyanThredUp>9500.0</EVMHueCyanThredUp>
+          <EVMHueCyanThredDown>8500.0</EVMHueCyanThredDown>
+          <SDRLumaThredUp>16000.0</SDRLumaThredUp>
+          <SDRLumaThredDown>10000.0</SDRLumaThredDown>
+        </Stage>
+      </NoPortrait>
+    </SNMode>
+  </HightlightHueCorrect>
+  <PORTRAIT>
+    <number_l>3</number_l>
+    <start_l>200 320 510</start_l>
+    <end_l>300 490 600</end_l>
+    <number_cct>3</number_cct>
+    <start_cct>2300 3700 4800</start_cct>
+    <end_cct>3300 4300 7500</end_cct>
+    <SNMode>
+      <Indoor>
+        <target_l>56.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.10</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.00 0.00 0.00</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Indoor>
+      <Market>
+        <target_l>60.0 58.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.00 0.00 0.00</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Market>
+      <Outdoor>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.00 0.00 0.00</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Outdoor>
+      <Night>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.00 0.00 0.00</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Night>
+      <Sunset>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.00 0.00 0.00</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Sunset>
+      <Stage>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.00 0.00 0.00</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Stage>
+    </SNMode>
+    <DayTimeMode>
+      <Indoor>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.10 0.25 0.25</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.50 0.50 0.50</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Indoor>
+      <Market>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.25 0.25 0.25</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.50 0.50 0.50</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Market>
+      <Outdoor>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.25 0.25 0.25</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.20 0.20 0.20</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Outdoor>
+      <Night>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.50 0.50 0.50</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Night>
+      <Sunset>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.50 0.50 0.50</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Sunset>
+      <Stage>
+        <target_l>60.0 60.0 60.0</target_l>
+        <degree_l>0.20 0.20 0.20</degree_l>
+        <target_c>20.0 20.0 20.0</target_c>
+        <target_h>50.0 50.0 50.0</target_h>
+        <degree_c>0.50 0.50 0.50</degree_c>
+        <degree_h>0.00 0.00 0.00</degree_h>
+      </Stage>
+    </DayTimeMode>
+  </PORTRAIT>
+  <PORTRAITBACKGROUND>
+    <SNMode>
+      <Indoor>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Indoor>
+      <Market>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Market>
+      <Outdoor>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.4</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Outdoor>
+      <Night>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Night>
+      <Sunset>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Sunset>
+      <Stage>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Stage>
+    </SNMode>
+    <DayTimeMode>
+      <Indoor>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Indoor>
+      <Market>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.60</highlight_set>
+        <highlight_power>0.2</highlight_power>
+      </Market>
+      <Outdoor>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.2</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Outdoor>
+      <Night>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Night>
+      <Sunset>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.3</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Sunset>
+      <Stage>
+        <contrast_set>0.02</contrast_set>
+        <contrast_power>0.0</contrast_power>
+        <highlight_set>0.98</highlight_set>
+        <highlight_power>0.0</highlight_power>
+      </Stage>
+    </DayTimeMode>
+  </PORTRAITBACKGROUND>
+  <COLOR>
+    <number_cct>3</number_cct>
+    <start_cct>2300 3700 4800</start_cct>
+    <end_cct>3300 4300 7500</end_cct>
+    <CCMReleaseProtect_Enable>1</CCMReleaseProtect_Enable>
+    <SNMode>
+      <NoPortraitMode>
+        <Indoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Indoor>
+        <Market>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Market>
+        <Outdoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>0.0 0.0 0.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Outdoor>
+        <Night>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Night>
+        <Sunset>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Sunset>
+        <Stage>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Stage>
+      </NoPortraitMode>
+      <PortraitMode>
+        <Indoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Indoor>
+        <Market>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Market>
+        <Outdoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>0.0 0.0 0.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Outdoor>
+        <Night>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Night>
+        <Sunset>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Sunset>
+        <Stage>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Stage>
+      </PortraitMode>
+    </SNMode>
+    <DayMode>
+      <NoPortraitMode>
+        <Indoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Indoor>
+        <Market>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Market>
+        <Outdoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>0.0 0.0 0.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Outdoor>
+        <Night>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Night>
+        <Sunset>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Sunset>
+        <Stage>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>2.0 2.0 2.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Stage>
+      </NoPortraitMode>
+      <PortraitMode>
+        <Indoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Indoor>
+        <Market>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Market>
+        <Outdoor>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Outdoor>
+        <Night>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Night>
+        <Sunset>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Sunset>
+        <Stage>
+          <CCMReleaseProtect>
+            <sigma>1500 1500 1500</sigma>
+            <maxShiftR>50000 50000 50000</maxShiftR>
+            <maxShiftG>10000 10000 10000</maxShiftG>
+            <maxShiftB>10000 10000 10000</maxShiftB>
+            <minShiftR>1000 1000 1000</minShiftR>
+            <minShiftG>1000 1000 1000</minShiftG>
+            <minShiftB>1000 1000 1000</minShiftB>
+          </CCMReleaseProtect>
+          <sky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </sky>
+          <nosky>
+            <fColora>0.0 0.0 0.0</fColora>
+            <fOffset1>3.0 3.0 3.0</fOffset1>
+            <fOffset2>10.0 10.0 10.0</fOffset2>
+          </nosky>
+        </Stage>
+      </PortraitMode>
+    </DayMode>
+  </COLOR>
+  <LUMA>
+    <Enable>1</Enable>
+    <number_l>3</number_l>
+    <start_l>0 200 360</start_l>
+    <end_l>150 300 600</end_l>
+    <SNMode>
+      <NoPortraitMode>
+        <Indoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 80 128 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0 80 130 185 225 245 255 0 80 130 185 225 245 255 0 80 130 185 225 245 255</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0 80 130 185 225 245 255 0 80 130 185 225 245 255 0 80 130 185 225 245 255</fLuma>
+          </nosky>
+        </Indoor>
+        <Market>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Market>
+        <Outdoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 185.0 225.0 245.0 255.0 0.0 5.0 85.0 185.0 225.0 245.0 255.0 0.0 5.0 85.0 185.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 185.0 225.0 245.0 255.0 0.0 5.0 85.0 185.0 225.0 245.0 255.0 0.0 5.0 85.0 185.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Outdoor>
+        <Night>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 80 128 160 245 255</value_kp>
+          <sky>
+            <fLuma>0 3 80 128 160 245 255 0 3 80 128 160 245 255 0 3 80 128 160 245 255</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0 5 80 128 160 245 255 0 5 80 128 160 245 255 0 5 80 128 160 245 255</fLuma>
+          </nosky>
+        </Night>
+        <Sunset>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Sunset>
+        <Stage>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Stage>
+      </NoPortraitMode>
+      <PortraitMode>
+        <Indoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 10.0 87.0 180.0 229.0 245.0 255.0 0.0 10.0 87.0 180.0 225.0 245.0 255.0 0.0 10.0 87.0 180.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 10.0 87.0 180.0 229.0 245.0 255.0 0.0 10.0 87.0 179.0 225.0 245.0 255.0 0.0 7.0 87.0 179.0 229.0 245.0 255.0</fLuma>
+          </portrait>
+        </Indoor>
+        <Market>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 5.0 85.0 180.0 230.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 180.0 230.0 245.0 255.0</fLuma>
+          </portrait>
+        </Market>
+        <Outdoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 8.0 87.0 180.0 225.0 245.0 255.0 0.0 8.0 87.0 180.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 8.0 87.0 180.0 225.0 245.0 255.0 0.0 8.0 87.0 180.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Outdoor>
+        <Night>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 165.0 215.0 240.0 255.0 0.0 5.0 85.0 165.0 215.0 240.0 255.0 0.0 5.0 85.0 165.0 215.0 240.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 10.0 85.0 175.0 225.0 245.0 255.0 0.0 10.0 85.0 175.0 225.0 245.0 255.0 0.0 10.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Night>
+        <Sunset>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 5.0 15.0 95.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Sunset>
+        <Stage>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 4.0 78.0 155.0 205.0 225.0 235.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 3.0 80.0 170.0 225.0 245.0 255.0 0.0 3.0 80.0 170.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Stage>
+      </PortraitMode>
+    </SNMode>
+    <DayMode>
+      <NoPortraitMode>
+        <Indoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 80 128 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0 80 130 180 225 245 255 0 80 128 175 225 245 255 0 80 130 180 225 245 255</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0 80 130 180 225 245 255 0 80 130 180 225 245 255 0 80 130 180 225 245 255</fLuma>
+          </nosky>
+        </Indoor>
+        <Market>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Market>
+        <Outdoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Outdoor>
+        <Night>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 4.0 78.0 175.0 225.0 245.0 255.0 0.0 4.0 78.0 175.0 225.0 245.0 255.0 0.0 4.0 78.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 180.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 180.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Night>
+        <Sunset>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Sunset>
+        <Stage>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+        </Stage>
+      </NoPortraitMode>
+      <PortraitMode>
+        <Indoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 10.0 95.0 185.0 220.0 240.0 255.0 0.0 10.0 95.0 180.0 225.0 243.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 8.0 85.0 180.0 225.0 245.0 255.0 0.0 10.0 90.0 185.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Indoor>
+        <Market>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 8.0 85.0 175.0 225.0 245.0 255.0 0.0 8.0 90.0 180.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Market>
+        <Outdoor>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 95.0 185.0 235.0 250.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 220.0 240.0 255.0 0.0 7.0 87.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 7.0 85.0 175.0 220.0 240.0 255.0 0.0 7.0 87.0 175.0 225.0 240.0 255.0 0.0 5.0 80.0 168.0 220.0 245.0 255.0</fLuma>
+          </portrait>
+        </Outdoor>
+        <Night>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 4.0 78.0 175.0 205.0 225.0 245.0 0.0 4.0 78.0 175.0 205.0 225.0 245.0 0.0 4.0 78.0 175.0 205.0 225.0 245.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>5.0 15.0 95.0 175.0 225.0 245.0 255.0 5.0 15.0 95.0 175.0 225.0 245.0 255.0 5.0 15.0 95.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Night>
+        <Sunset>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 75.0 165.0 215.0 235.0 255.0 0.0 5.0 75.0 165.0 215.0 235.0 255.0 0.0 5.0 75.0 165.0 215.0 235.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 8.0 78.0 168.0 218.0 238.0 255.0 0.0 8.0 78.0 168.0 218.0 238.0 255.0 0.0 8.0 78.0 168.0 218.0 238.0 255.0</fLuma>
+          </portrait>
+        </Sunset>
+        <Stage>
+          <number_kp>7</number_kp>
+          <value_kp>0 5 85 175 225 245 255</value_kp>
+          <sky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </sky>
+          <nosky>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </nosky>
+          <portrait>
+            <fLuma>0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0 0.0 5.0 85.0 175.0 225.0 245.0 255.0</fLuma>
+          </portrait>
+        </Stage>
+      </PortraitMode>
+    </DayMode>
+  </LUMA>
+  <Lhe>
+    <Enable>1</Enable>
+    <DayTimeMode>
+      <Portrait>
+        <Outdoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0.5</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">0.3</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Outdoor>
+        <Indoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.3</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0.5</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.2</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">0.5</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Indoor>
+        <Night>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Night>
+        <Sunset>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">0.5</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">1.0</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.3</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Sunset>
+        <Stage>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Stage>
+        <Market>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0.8</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Market>
+      </Portrait>
+      <NoPortrait>
+        <Outdoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Outdoor>
+        <Indoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Indoor>
+        <Night>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.15</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Night>
+        <Sunset>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Sunset>
+        <Stage>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Stage>
+        <Market>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Market>
+      </NoPortrait>
+    </DayTimeMode>
+    <SNMode>
+      <Portrait>
+        <Outdoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.3</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0.4</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Outdoor>
+        <Indoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.4</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0.4</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.5</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.3</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Indoor>
+        <Night>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.3</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0.5</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Night>
+        <Sunset>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Sunset>
+        <Stage>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Stage>
+        <Market>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <PortraitEqStrength description="control Total Lhe Strenth in Portrait, suggest value 1.0">0.4</PortraitEqStrength>
+          <SkinEqStrength description="control Total Lhe Strenth in Skin, suggest value 0.0">0.0</SkinEqStrength>
+          <HairEqStrength description="control Total Lhe Strenth in Hair, suggest value 0.0">0.0</HairEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Market>
+      </Portrait>
+      <NoPortrait>
+        <Outdoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Outdoor>
+        <Indoor>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Indoor>
+        <Night>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.15</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">0.1</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Night>
+        <Sunset>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Sunset>
+        <Stage>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Stage>
+        <Market>
+          <DarkPoint description="control DarkPoint(8bit gamma domain) in Lhe,suggest value 50">50</DarkPoint>
+          <ShadowPoint description="control ShadowPoint(8bit gamma domain) in Lhe,suggest value 160">160</ShadowPoint>
+          <HighLightPoint description="control HighLightPoint(8bit gamma domain) in Lhe,suggest value 230">230</HighLightPoint>
+          <EqStrenth description="control Lhe Strenth, suggest value 0.1~0.9">0.2</EqStrenth>
+          <SkyEqStrength description="control Total Lhe Strenth in sky, suggest value 1.0">1.0</SkyEqStrength>
+          <DetailStrenth description="control Detail Strenth, suggest value 0.1~0.9">0.5</DetailStrenth>
+          <DarkEqStrength description="control Lhe DarkStrenth , suggest value 1.0">1.0</DarkEqStrength>
+          <ShadowEqStrength description="control Lhe ShadowEqStrength , suggest value 1.0">1.0</ShadowEqStrength>
+          <HighLightEqStrength description="control Lhe HighLightEqStrength , suggest value 1.0">1.0</HighLightEqStrength>
+          <EndEqStrength description="control Lhe EndEqStrength , suggest value 1.0">1.0</EndEqStrength>
+        </Market>
+      </NoPortrait>
+    </SNMode>
+  </Lhe>
+  <Dehaze>
+    <Enable>1</Enable>
+    <DayTimeMode>
+      <Portrait>
+        <Outdoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.3 0.3 0.3 0.3</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">500 100 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Outdoor>
+        <Indoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.3 0.3 0.3 0.3</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Indoor>
+        <Night>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.2 0.2 0.2 0.2</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Night>
+        <Sunset>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.3 0.3 0.3 0.3</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Sunset>
+        <Stage>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.2 0.2 0.2 0.2</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Stage>
+        <Market>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.2 0.2 0.2 0.2</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Market>
+      </Portrait>
+      <NoPortrait>
+        <Outdoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Outdoor>
+        <Indoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Indoor>
+        <Night>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Night>
+        <Sunset>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Sunset>
+        <Stage>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Stage>
+        <Market>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Market>
+      </NoPortrait>
+    </DayTimeMode>
+    <SNMode>
+      <Portrait>
+        <Outdoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Outdoor>
+        <Indoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Indoor>
+        <Night>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Night>
+        <Sunset>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Sunset>
+        <Stage>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Stage>
+        <Market>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Market>
+      </Portrait>
+      <NoPortrait>
+        <Outdoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Outdoor>
+        <Indoor>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Indoor>
+        <Night>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Night>
+        <Sunset>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Sunset>
+        <Stage>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Stage>
+        <Market>
+          <tableNum>4</tableNum>
+          <lux_start>0 140 325 490</lux_start>
+          <lux_end>100 290 450 1000</lux_end>
+          <ColorGradeAdjust_dark_strength description="Degree of cutdark , range from 0  (No adjust) to 1 (Max adjust)">0.6 0.6 0.6 0.6</ColorGradeAdjust_dark_strength>
+          <ColorGradeAdjust_white_strength description="Degree of cutwhitek , range from 0  (No adjust) to 1 (Max adjust)">0.0 0.0 0.0 0.0</ColorGradeAdjust_white_strength>
+          <ColorGradeAdjust_dark_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">1000 1000 1000 1000</ColorGradeAdjust_dark_lower_limit>
+          <ColorGradeAdjust_dark_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">3000 3000 3000 3000</ColorGradeAdjust_dark_upper_limit>
+          <ColorGradeAdjust_white_lower_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust),">15500 15500 15500 15500</ColorGradeAdjust_white_lower_limit>
+          <ColorGradeAdjust_white_upper_limit description="[lower_limit,upper_limit] adjust ,otherwise bypass,range from 0  (No adjust) to 16383 (Max adjust)">16383 16383 16383 16383</ColorGradeAdjust_white_upper_limit>
+          <ColorGradeAdjust_bright_compens description="defalut 1.0,after adjust,compensate bright,similar with gamma">0.7 0.7 0.7 0.7</ColorGradeAdjust_bright_compens>
+        </Market>
+      </NoPortrait>
+    </SNMode>
+  </Dehaze>
+  <GammaTab>
+    <i32defalutGammaTab description="the gamma table is copy from the most bright part gamma lut in ipe gamma">
+      <tableNum>4</tableNum>
+      <lux_start>0 240 370 560</lux_start>
+      <lux_end>210 340 520 1000</lux_end>
+      <gammalen>257</gammalen>
+      <table0>0 13 26 39 52 65 78 91 104 117 130 142 155 167 180 192 204 216 228 240 251 262 274 285 296 306 317 327 337 347 357 367 376 385 394 403 411 420 428 436 444 451 459 466 473 480 487 494 500 507 513 519 525 531 537 542 548 554 559 564 569 575 580 585 590 594 599 604 608 613 617 622 626 630 634 639 643 647 651 655 658 662 666 670 674 677 681 684 688 692 695 699 702 705 709 712 716 719 722 726 729 732 735 738 742 745 748 751 754 757 760 763 766 769 772 774 777 780 783 786 788 791 794 797 799 802 805 807 810 812 815 817 820 822 825 827 830 832 834 837 839 841 844 846 848 850 853 855 857 859 861 863 866 868 870 872 874 876 878 880 882 884 886 888 889 891 893 895 897 899 901 902 904 906 908 910 911 913 915 916 918 920 921 923 925 926 928 929 931 933 934 936 937 939 940 942 943 945 946 948 949 951 952 954 955 956 958 959 961 962 963 965 966 968 969 970 972 973 974 975 977 978 979 981 982 983 985 986 987 988 990 991 992 993 995 996 997 998 999 1001 1002 1003 1004 1006 1007 1008 1009 1010 1012 1013 1014 1015 1016 1018 1019 1020 1024</table0>
+      <table1>0 13 26 39 52 65 78 91 104 117 130 142 155 167 180 192 204 216 228 240 251 262 274 285 296 306 317 327 337 347 357 367 376 385 394 403 411 420 428 436 444 451 459 466 473 480 487 494 500 507 513 519 525 531 537 542 548 554 559 564 569 575 580 585 590 594 599 604 608 613 617 622 626 630 634 639 643 647 651 655 658 662 666 670 674 677 681 684 688 692 695 699 702 705 709 712 716 719 722 726 729 732 735 738 742 745 748 751 754 757 760 763 766 769 772 774 777 780 783 786 788 791 794 797 799 802 805 807 810 812 815 817 820 822 825 827 830 832 834 837 839 841 844 846 848 850 853 855 857 859 861 863 866 868 870 872 874 876 878 880 882 884 886 888 889 891 893 895 897 899 901 902 904 906 908 910 911 913 915 916 918 920 921 923 925 926 928 929 931 933 934 936 937 939 940 942 943 945 946 948 949 951 952 954 955 956 958 959 961 962 963 965 966 968 969 970 972 973 974 975 977 978 979 981 982 983 985 986 987 988 990 991 992 993 995 996 997 998 999 1001 1002 1003 1004 1006 1007 1008 1009 1010 1012 1013 1014 1015 1016 1018 1019 1020 1024</table1>
+      <table2>0 9 19 28 37 47 56 65 74 84 93 102 111 120 129 138 147 156 165 174 183 192 200 209 218 226 235 243 251 260 268 276 284 292 300 307 315 323 330 338 345 352 359 366 373 380 386 393 400 406 412 419 425 431 437 443 449 455 461 466 472 478 483 489 495 500 506 511 516 522 527 533 538 543 548 554 559 564 569 574 579 584 589 594 599 604 609 613 618 623 627 632 637 641 646 650 654 659 663 667 672 676 680 684 688 692 696 700 704 707 711 715 719 722 726 729 733 736 740 743 747 750 753 756 760 763 766 769 772 775 778 781 784 787 790 793 796 798 801 804 807 809 812 815 817 820 823 825 828 830 833 835 838 840 843 845 847 850 852 855 857 859 861 864 866 868 870 873 875 877 879 881 883 885 887 889 892 894 896 898 900 902 903 905 907 909 911 913 915 917 919 920 922 924 926 928 929 931 933 935 936 938 940 941 943 945 947 948 950 951 953 955 956 958 959 961 963 964 966 967 969 970 972 973 975 976 978 980 981 982 984 985 987 988 990 991 993 994 996 997 999 1000 1001 1003 1004 1006 1007 1009 1010 1011 1013 1014 1016 1017 1019 1020 1024</table2>
+      <table3>0 6 13 19 25 32 38 46 53 61 69 78 86 95 104 113 122 131 140 149 158 167 176 185 194 204 214 223 232 241 250 259 268 277 286 296 305 314 323 333 342 351 360 369 378 387 396 405 414 423 431 440 448 457 465 474 481 489 497 505 512 519 526 533 540 547 553 560 566 572 578 584 590 596 602 608 613 619 624 630 635 640 645 650 655 660 665 670 675 679 684 689 693 698 702 706 710 714 718 722 726 729 733 736 740 744 747 750 753 757 760 763 766 769 773 776 779 782 785 788 791 794 797 801 804 808 811 815 819 822 826 829 832 834 837 839 841 843 846 848 850 852 854 856 857 859 861 863 865 866 868 870 871 873 875 876 878 880 881 883 884 886 887 889 891 892 894 895 897 898 900 901 903 904 906 907 909 910 912 913 914 916 918 919 920 922 923 925 926 928 929 931 932 934 935 937 938 939 941 942 944 945 947 948 950 951 952 954 955 957 958 960 961 962 964 965 967 968 970 971 973 974 975 977 978 980 981 982 984 985 987 988 990 991 992 994 995 997 998 1000 1001 1002 1004 1005 1007 1008 1010 1011 1012 1014 1015 1017 1018 1020 1021 1023 1024</table3>
+    </i32defalutGammaTab>
+    <i32defalutPortraitGammaTab description="the Portrait gamma table is copy from the most bright part gamma lut in ipe gamma">
+      <tableNum>4</tableNum>
+      <lux_start>0 240 370 560</lux_start>
+      <lux_end>210 340 520 1000</lux_end>
+      <gammalen>257</gammalen>
+      <table0>0 13 26 39 52 65 78 91 104 117 130 142 155 167 180 192 204 216 228 240 251 262 274 285 296 306 317 327 337 347 357 367 376 385 394 403 411 420 428 436 444 451 459 466 473 480 487 494 500 507 513 519 525 531 537 542 548 554 559 564 569 575 580 585 590 594 599 604 608 613 617 622 626 630 634 639 643 647 651 655 658 662 666 670 674 677 681 684 688 692 695 699 702 705 709 712 716 719 722 726 729 732 735 738 742 745 748 751 754 757 760 763 766 769 772 774 777 780 783 786 788 791 794 797 799 802 805 807 810 812 815 817 820 822 825 827 830 832 834 837 839 841 844 846 848 850 853 855 857 859 861 863 866 868 870 872 874 876 878 880 882 884 886 888 889 891 893 895 897 899 901 902 904 906 908 910 911 913 915 916 918 920 921 923 925 926 928 929 931 933 934 936 937 939 940 942 943 945 946 948 949 951 952 954 955 956 958 959 961 962 963 965 966 968 969 970 972 973 974 975 977 978 979 981 982 983 985 986 987 988 990 991 992 993 995 996 997 998 999 1001 1002 1003 1004 1006 1007 1008 1009 1010 1012 1013 1014 1015 1016 1018 1019 1020 1024</table0>
+      <table1>0 13 26 39 52 65 78 91 104 117 130 142 155 167 180 192 204 216 228 240 251 262 274 285 296 306 317 327 337 347 357 367 376 385 394 403 411 420 428 436 444 451 459 466 473 480 487 494 500 507 513 519 525 531 537 542 548 554 559 564 569 575 580 585 590 594 599 604 608 613 617 622 626 630 634 639 643 647 651 655 658 662 666 670 674 677 681 684 688 692 695 699 702 705 709 712 716 719 722 726 729 732 735 738 742 745 748 751 754 757 760 763 766 769 772 774 777 780 783 786 788 791 794 797 799 802 805 807 810 812 815 817 820 822 825 827 830 832 834 837 839 841 844 846 848 850 853 855 857 859 861 863 866 868 870 872 874 876 878 880 882 884 886 888 889 891 893 895 897 899 901 902 904 906 908 910 911 913 915 916 918 920 921 923 925 926 928 929 931 933 934 936 937 939 940 942 943 945 946 948 949 951 952 954 955 956 958 959 961 962 963 965 966 968 969 970 972 973 974 975 977 978 979 981 982 983 985 986 987 988 990 991 992 993 995 996 997 998 999 1001 1002 1003 1004 1006 1007 1008 1009 1010 1012 1013 1014 1015 1016 1018 1019 1020 1024</table1>
+      <table2>0 9 19 28 37 47 56 65 74 84 93 102 111 120 129 138 147 156 165 174 183 192 200 209 218 226 235 243 251 260 268 276 284 292 300 307 315 323 330 338 345 352 359 366 373 380 386 393 400 406 412 419 425 431 437 443 449 455 461 466 472 478 483 489 495 500 506 511 516 522 527 533 538 543 548 554 559 564 569 574 579 584 589 594 599 604 609 613 618 623 627 632 637 641 646 650 654 659 663 667 672 676 680 684 688 692 696 700 704 707 711 715 719 722 726 729 733 736 740 743 747 750 753 756 760 763 766 769 772 775 778 781 784 787 790 793 796 798 801 804 807 809 812 815 817 820 823 825 828 830 833 835 838 840 843 845 847 850 852 855 857 859 861 864 866 868 870 873 875 877 879 881 883 885 887 889 892 894 896 898 900 902 903 905 907 909 911 913 915 917 919 920 922 924 926 928 929 931 933 935 936 938 940 941 943 945 947 948 950 951 953 955 956 958 959 961 963 964 966 967 969 970 972 973 975 976 978 980 981 982 984 985 987 988 990 991 993 994 996 997 999 1000 1001 1003 1004 1006 1007 1009 1010 1011 1013 1014 1016 1017 1019 1020 1024</table2>
+      <table3>0 6 13 19 25 32 38 46 53 61 69 78 86 95 104 113 122 131 140 149 158 167 176 185 194 204 214 223 232 241 250 259 268 277 286 296 305 314 323 333 342 351 360 369 378 387 396 405 414 423 431 440 448 457 465 474 481 489 497 505 512 519 526 533 540 547 553 560 566 572 578 584 590 596 602 608 613 619 624 630 635 640 645 650 655 660 665 670 675 679 684 689 693 698 702 706 710 714 718 722 726 729 733 736 740 744 747 750 753 757 760 763 766 769 773 776 779 782 785 788 791 794 797 801 804 808 811 815 819 822 826 829 832 834 837 839 841 843 846 848 850 852 854 856 857 859 861 863 865 866 868 870 871 873 875 876 878 880 881 883 884 886 887 889 891 892 894 895 897 898 900 901 903 904 906 907 909 910 912 913 914 916 918 919 920 922 923 925 926 928 929 931 932 934 935 937 938 939 941 942 944 945 947 948 950 951 952 954 955 957 958 960 961 962 964 965 967 968 970 971 973 974 975 977 978 980 981 982 984 985 987 988 990 991 992 994 995 997 998 1000 1001 1002 1004 1005 1007 1008 1010 1011 1012 1014 1015 1017 1018 1020 1021 1023 1024</table3>
+    </i32defalutPortraitGammaTab>
+  </GammaTab>
+</NiceToneEffectConfig>

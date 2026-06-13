@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Copyright (c) 2015-2021, The Linux Foundation. All rights reserved.
+
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are
+* met:
+*     * Redistributions of source code must retain the above copyright
+*       notice, this list of conditions and the following disclaimer.
+*     * Redistributions in binary form must reproduce the above
+*       copyright notice, this list of conditions and the following
+*       disclaimer in the documentation and/or other materials provided
+*       with the distribution.
+*     * Neither the name of The Linux Foundation nor the names of its
+*       contributors may be used to endorse or promote products derived
+*       from this software without specific prior written permission.
+
+* THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+* WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+* ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+* BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+* CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+* SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+* BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+* WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+* OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+* IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+* Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+* Copyright (c) 2022-2024 Qualcomm Innovation Center, Inc. All rights reserved.
+* SPDX-License-Identifier: BSD-3-Clause-Clear
+* -->
+
+<mixer>
+    <!-- These are the initial mixer settings -->
+    <!-- vivo zhengguobing delete for qcom default begin -->
+    <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="0" />
+    <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
+    <ctl name="WSA_AIF_CPS Mixer WSA_SPKR_CPS_1" value="0" />
+    <ctl name="WSA_AIF_CPS Mixer WSA_SPKR_CPS_2" value="0" /-->
+    <!-- vivo zhengguobing delete for qcom default end -->
+
+    <!-- WSA controls -->
+    <ctl name="WSA RX0 MUX" value="ZERO" />
+    <ctl name="WSA RX1 MUX" value="ZERO" />
+    <ctl name="WSA_RX0 INP0" value="ZERO" />
+    <ctl name="WSA_RX1 INP0" value="ZERO" />
+    <!-- vivo zhengguobing delete for qcom default begin -->
+    <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="0" />
+    <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
+    <ctl name="WSA PBR Enable" value="0" />
+    <ctl name="Idle Detect" value="0" />
+    <ctl name="WSA SPKRRECV" value="0" />
+    <ctl name="SpkrLeft COMP Switch" value="0" />
+    <ctl name="SpkrRight COMP Switch" value="0" />
+    <ctl name="SpkrLeft VISENSE Switch" value="0" />
+    <ctl name="SpkrRight VISENSE Switch" value="0" />
+    <ctl name="SpkrLeft CPS Switch" value="0" />
+    <ctl name="SpkrRight CPS Switch" value="0" />
+    <ctl name="SpkrLeft SWR DAC_Port Switch" value="0" />
+    <ctl name="SpkrRight SWR DAC_Port Switch" value="0" />
+    <ctl name="SpkrLeft PBR Switch" value="0" />
+    <ctl name="SpkrRight PBR Switch" value="0" />
+    <ctl name="SpkrLeft WSA MODE" value="0" />
+    <ctl name="SpkrRight WSA MODE" value="0" /-->
+    <!-- vivo zhengguobing delete for qcom default end -->
+    <!-- vivo zhengguobing add for qcom default begin -->
+
+    <!-- RX Controls -->
+    <ctl name="RX_MACRO RX0 MUX" value="ZERO" />
+    <ctl name="RX_MACRO RX1 MUX" value="ZERO" />
+    <ctl name="RX INT0_1 MIX1 INP0" value="ZERO" />
+    <ctl name="RX INT0_1 MIX1 INP1" value="ZERO" />
+    <ctl name="RX INT0_1 MIX1 INP2" value="ZERO" />
+    <ctl name="RX INT1_1 MIX1 INP0" value="ZERO" />
+    <ctl name="RX INT1_1 MIX1 INP1" value="ZERO" />
+    <ctl name="RX INT1_1 MIX1 INP2" value="ZERO" />
+    <ctl name="RX INT0 DEM MUX" value="NORMAL_DSM_OUT" />
+    <ctl name="RX INT1 DEM MUX" value="NORMAL_DSM_OUT" />
+    <ctl name="RX_COMP1 Switch" value="0" />
+    <ctl name="RX_COMP2 Switch" value="0" />
+    <ctl name="HPHL_COMP Switch" value="0" />
+    <ctl name="HPHR_COMP Switch" value="0" />
+    <ctl name="EAR_RDAC Switch" value="0" />
+    <ctl name="HPHL_RDAC Switch" value="0" />
+    <ctl name="HPHR_RDAC Switch" value="0" />
+    <ctl name="RX_FIR Filter" value="OFF" />
+    <ctl name="RX_EAR Mode" value="OFF" />
+    <!-- WCD939x enable PCM path by default -->
+    <ctl name="RX_HPH PCM" value="1" />
+    <ctl name="HPH PCM Enable" value="1" />
+    <ctl name="PM_QOS Vote" value="Disable" />
+
+    <!-- TX Controls -->
+    <ctl name="VA_AIF1_CAP Mixer DEC0" value="0" />
+    <ctl name="VA_AIF1_CAP Mixer DEC1" value="0" />
+    <ctl name="VA_AIF1_CAP Mixer DEC2" value="0" />
+    <ctl name="VA_AIF1_CAP Mixer DEC3" value="0" />
+    <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+    <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+    <ctl name="VA DEC2 MUX" value="SWR_MIC" />
+    <ctl name="VA DEC3 MUX" value="SWR_MIC" />
+    <ctl name="VA DMIC MUX0" value="ZERO" />
+    <ctl name="VA DMIC MUX1" value="ZERO" />
+    <ctl name="VA DMIC MUX2" value="ZERO" />
+    <ctl name="VA DMIC MUX3" value="ZERO" />
+    <ctl name="VA SMIC MUX0" value="ZERO" />
+    <ctl name="VA SMIC MUX1" value="ZERO" />
+    <ctl name="VA SMIC MUX2" value="ZERO" />
+    <ctl name="VA SMIC MUX3" value="ZERO" />
+    <ctl name="VA_DEC0 MODE" value="ADC_DEFAULT" />
+    <!-- vivo zhengguobing add for qcom default begin -->
+    <ctl name="VA_DEC1 MODE" value="ADC_DEFAULT" />
+    <ctl name="VA_DEC2 MODE" value="ADC_DEFAULT" />
+    <ctl name="VA_DEC3 MODE" value="ADC_DEFAULT" />
+    <!-- vivo zhengguobing add for qcom default end -->
+    <ctl name="ADC2_BCS Disable" value="0" />
+    <ctl name="ADC1_MIXER Switch" value="0" />
+    <ctl name="ADC2_MIXER Switch" value="0" />
+    <ctl name="ADC3_MIXER Switch" value="0" />
+    <ctl name="ADC4_MIXER Switch" value="0" />
+    <ctl name="DEC0_BCS Switch" value="0" />
+    <ctl name="ADC2_BCS Disable" value="0" />
+    <ctl name="ADC1 MUX" value="CH1_AMIC_DISABLE" />
+    <ctl name="ADC2 MUX" value="CH2_AMIC_DISABLE" />
+    <ctl name="ADC3 MUX" value="CH3_AMIC_DISABLE" />
+    <ctl name="ADC4 MUX" value="CH4_AMIC_DISABLE" />
+    <ctl name="ADC1 ChMap" value="ZERO" />
+    <ctl name="ADC2 ChMap" value="ZERO" />
+    <ctl name="ADC3 ChMap" value="ZERO" />
+    <ctl name="ADC4 ChMap" value="ZERO" />
+    <ctl name="VA_AMIC1_MIXER Switch" value="0" />
+    <ctl name="VA_AMIC2_MIXER Switch" value="0" />
+    <ctl name="VA_AMIC3_MIXER Switch" value="0" />
+    <ctl name="VA_AMIC4_MIXER Switch" value="0" />
+    <ctl name="VA_AMIC5_MIXER Switch" value="0" />
+    <ctl name="AMIC1_MIXER Switch" value="0" />
+    <ctl name="AMIC2_MIXER Switch" value="0" />
+    <ctl name="AMIC3_MIXER Switch" value="0" />
+    <ctl name="AMIC4_MIXER Switch" value="0" />
+    <ctl name="AMIC5_MIXER Switch" value="0" />
+
+    <ctl name="TX_AIF1_CAP Mixer DEC0" value="0" />
+    <ctl name="TX_AIF1_CAP Mixer DEC1" value="0" />
+    <ctl name="TX_AIF1_CAP Mixer DEC2" value="0" />
+    <ctl name="TX_AIF1_CAP Mixer DEC3" value="0" />
+    <ctl name="TX_AIF1_CAP Mixer DEC4" value="0" />
+    <ctl name="TX_AIF1_CAP Mixer DEC5" value="0" />
+    <ctl name="TX_AIF1_CAP Mixer DEC6" value="0" />
+    <ctl name="TX_AIF1_CAP Mixer DEC7" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC0" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC1" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC2" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC3" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC4" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC5" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC6" value="0" />
+    <ctl name="TX_AIF2_CAP Mixer DEC7" value="0" />
+    <ctl name="TX DEC0 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX0" value="ZERO" />
+    <ctl name="TX SMIC MUX0" value="ZERO" />
+    <ctl name="TX DEC1 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX1" value="ZERO" />
+    <ctl name="TX SMIC MUX1" value="ZERO" />
+    <ctl name="TX DEC2 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX2" value="ZERO" />
+    <ctl name="TX SMIC MUX2" value="ZERO" />
+    <ctl name="TX DEC3 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX3" value="ZERO" />
+    <ctl name="TX SMIC MUX3" value="ZERO" />
+    <ctl name="TX DEC4 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX4" value="ZERO" />
+    <ctl name="TX SMIC MUX4" value="ZERO" />
+    <ctl name="TX DEC5 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX5" value="ZERO" />
+    <ctl name="TX SMIC MUX5" value="ZERO" />
+    <ctl name="TX DEC6 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX6" value="ZERO" />
+    <ctl name="TX SMIC MUX6" value="ZERO" />
+    <ctl name="TX DEC7 MUX" value="MSM_DMIC" />
+    <ctl name="TX DMIC MUX7" value="ZERO" />
+    <ctl name="TX SMIC MUX7" value="ZERO" />
+    <ctl name="TX0 MODE" value="ADC_INVALID" />
+    <ctl name="TX1 MODE" value="ADC_INVALID" />
+    <ctl name="TX2 MODE" value="ADC_INVALID" />
+    <ctl name="TX3 MODE" value="ADC_INVALID" />
+
+    <!-- Volume controls -->
+    <ctl name="WSA_RX0 Digital Volume" value="75" />
+    <ctl name="WSA_RX1 Digital Volume" value="75" />
+    <ctl name="RX_RX0 Digital Volume" value="84" />
+    <ctl name="RX_RX1 Digital Volume" value="84" />
+    <ctl name="RX_RX2 Digital Volume" value="84" />
+    <ctl name="HPHL Volume" value="20" />
+    <ctl name="HPHR Volume" value="20" />
+
+    <!-- vivo zhengguobing modify for qcom default begin -->
+    <ctl name="TX_DEC0 Volume" value="84" />
+    <ctl name="TX_DEC1 Volume" value="84" />
+    <ctl name="TX_DEC2 Volume" value="84" />
+    <ctl name="TX_DEC3 Volume" value="84" />
+    <ctl name="TX_DEC4 Volume" value="84" />
+    <ctl name="TX_DEC5 Volume" value="84" />
+    <ctl name="TX_DEC6 Volume" value="84" />
+    <ctl name="TX_DEC7 Volume" value="84" />
+
+    <ctl name="ADC1 Volume" value="8" />
+    <ctl name="ADC2 Volume" value="8" />
+    <ctl name="ADC3 Volume" value="8" />
+    <ctl name="ADC4 Volume" value="8" />
+    <!-- vivo zhengguobing modify for qcom default end -->
+
+    <ctl name="VA_DEC0 Volume" value="84" />
+    <ctl name="VA_DEC1 Volume" value="84" />
+    <ctl name="VA_DEC2 Volume" value="84" />
+    <ctl name="VA_DEC3 Volume" value="84" />
+
+    <!-- Compander controls -->
+    <!-- vivo zhengguobing delete for qcom default begin -->
+    <!--ctl name="WSA_COMP1 Switch" value="0" />
+    <ctl name="WSA_COMP2 Switch" value="0" /-->
+    <!-- vivo zhengguobing delete for qcom default end -->
+
+    <!-- Headphone class-H mode  -->
+    <ctl name="RX HPH Mode" value="CLS_H_ULP" />
+
+    <!-- IIR/voice anc -->
+    <ctl name="IIR0 Band1" value="00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00" />
+    <ctl name="IIR0 Band2" value="00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00" />
+    <ctl name="IIR0 Band3" value="00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00" />
+    <ctl name="IIR0 Band4" value="00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00" />
+    <ctl name="IIR0 Band5" value="00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00" />
+    <ctl name="IIR0 Enable Band1" value="0" />
+    <ctl name="IIR0 Enable Band2" value="0" />
+    <ctl name="IIR0 Enable Band3" value="0" />
+    <ctl name="IIR0 Enable Band4" value="0" />
+    <ctl name="IIR0 Enable Band5" value="0" />
+    <ctl name="IIR0 INP0 Volume" value="40" />
+    <ctl name="IIR0 INP0 MUX" value="ZERO" />
+    <ctl name="IIR0 INP1 MUX" value="ZERO" />
+    <ctl name="IIR0 INP2 MUX" value="ZERO" />
+    <ctl name="IIR0 INP3 MUX" value="ZERO" />
+
+    <!-- vbat related data -->
+    <ctl name="GSM mode Enable" value="OFF" />
+    <ctl name="WSA_Softclip0 Enable" value="0" />
+    <ctl name="WSA_Softclip1 Enable" value="0" />
+    <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="0" />
+    <ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="0" />
+
+    <!-- vivo zhengguobing add for default begin -->
+    <ctl name="TFA_CHIP_SELECTOR" value="0" /> <!--0 off;1 left;2 right;3 stereo  -->
+    <ctl name="stereo Profile" value="speaker" />
+    <ctl name="SmartPA Switch" value="0" />
+    <ctl name="HiFi Mode Switch" value="Normal" />
+    <ctl name="Headphone Rx Mixer I2S_RX" value="0" />
+    <ctl name="HP Switch" value="Disable" />
+    <ctl name="aw882xx_mode_switch_l" value="Spk" />
+    <ctl name="aw882xx_mode_switch_r" value="Spk" />
+    <ctl name="aw882xx_pa_switch_l" value="Off" />
+    <ctl name="aw882xx_pa_switch_r" value="Off" />
+    <!-- vivo zhengguobing add for default end -->
+
+    <!-- Codec controls end -->
+
+    <!-- defaults for mmap record -->
+
+    <!-- HIFI Filter coefficients for headphones path -->
+    <path name="hifi-filter-coefficients">
+        <!-- vivo zhengguobing delete for hifi begin -->
+        <!--
+        <ctl name="RX0 FIR Coeff Num" value="8" />
+        <ctl name="RX0 FIR Coeff Group0" value="08 00 00 00 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+        <ctl name="RX0 FIR Coeff Group1" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+        <ctl name="RX1 FIR Coeff Num" value="8" />
+        <ctl name="RX1 FIR Coeff Group0" value="08 00 00 00 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 00 00 00 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+        <ctl name="RX1 FIR Coeff Group1" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+        -->
+        <!-- vivo zhengguobing delete for hifi end -->
+    </path>
+
+    <!-- These are audio route (FE to BE) specific mixer settings -->
+    <path name="gsm-mode">
+        <ctl name="GSM mode Enable" value="ON" />
+    </path>
+
+
+    <!-- These are actual sound device specific mixer settings -->
+    <path name="amic1">
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC4" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+    </path>
+
+    <path name="amic2">
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="SWR_MIC5" />
+        <ctl name="DEC0_BCS Switch" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC2" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="MBHC ChMap" value="SWRM_TX1_CH3" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="BCS Channel" value="CH2" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="AMIC2_MIXER Switch" value="1" />
+    </path>
+
+
+    <path name="amic3">
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC5" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC3" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="ADC2_BCS Disable" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="AMIC3_MIXER Switch" value="1" />
+    </path>
+
+    <path name="amic4">
+        <ctl name="TX DEC5 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX5" value="SWR_MIC8" />
+        <ctl name="TX_AIF1_CAP Mixer DEC5" value="1" />
+        <ctl name="ADC3 MUX" value="CH3_AMIC4" />
+        <ctl name="TX2 MODE" value="ADC_LP" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="AMIC4_MIXER Switch" value="1" />
+    </path>
+
+    <path name="amic5">
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX3" value="SWR_MIC9" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+    </path>
+
+    <path name="amic6">
+        <ctl name="TX DEC4 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX4" value="SWR_MIC9" />
+        <ctl name="TX_AIF2_CAP Mixer DEC4" value="1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+    </path>
+
+    <path name="amic7">
+        <ctl name="TX DEC5 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX5" value="SWR_MIC4" />
+        <ctl name="TX_AIF2_CAP Mixer DEC5" value="1" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+    </path>
+
+    <path name="dmic1">
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DMIC MUX2" value="DMIC0" />
+    </path>
+
+    <path name="dmic2">
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DMIC MUX2" value="DMIC1" />
+    </path>
+
+    <path name="dmic3">
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DMIC MUX2" value="DMIC2" />
+    </path>
+
+    <path name="dmic4">
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DMIC MUX2" value="DMIC3" />
+    </path>
+
+    <path name="dmic5">
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DMIC MUX2" value="DMIC4" />
+    </path>
+
+    <path name="dmic6">
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DMIC MUX2" value="DMIC5" />
+    </path>
+
+    <!-- vivo linjinping add for double-mic begin -->
+    <!-- BOTTOM MIC to AMIC1 to ADC1 to TX2_CH1 to SWR_MIC4 to CH1 -->
+    <!-- TOP MIC    to AMIC5 to ADC4 to TX3_CH2 to SWR_MIC9 to CH2 -->
+    <path name="double-mic">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <!-- Bottom Mic adc1 ch1 -->
+        <ctl name="TX SMIC MUX1" value="SWR_MIC4" />
+        <!-- Top Mic adc4 ch2 -->
+        <ctl name="TX SMIC MUX2" value="SWR_MIC9" />
+        <!-- BOTTOM MIC -->
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <!-- TOP MIC -->
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <!-- adc4 -->
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <!-- adc1 -->
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+
+        <ctl name="ADC1 Volume" value="8" />
+        <ctl name="ADC4 Volume" value="8" />
+    </path>
+    <!-- vivo linjinping add for double-mic end -->
+
+    <!-- vivo linjinping add for vivo-three-mic begin -->
+    <!-- BOTTOM MIC to AMIC1 to ADC1 to TX2_CH1 to SWR_MIC4 to CH1 -->
+    <!-- TOP MIC    to AMIC5 to ADC4 to TX3_CH2 to SWR_MIC9 to CH2 -->
+    <!-- BACK MIC   to AMIC4 to ADC3 to TX3_CH1 to SWR_MIC8 to CH3 -->
+    <path name="vivo-three-mic">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <!-- Bottom Mic adc1 ch1 -->
+        <ctl name="TX SMIC MUX1" value="SWR_MIC4" />
+        <!-- Top Mic adc4 ch2 -->
+        <ctl name="TX SMIC MUX2" value="SWR_MIC9" />
+        <!-- Back Mic adc3 ch3 -->
+        <ctl name="TX SMIC MUX3" value="SWR_MIC8" />
+        <!-- adc1 -->
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <!-- adc3 -->
+        <ctl name="TX2 MODE" value="ADC_LP" />
+        <!-- adc4 -->
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC3 MUX" value="CH3_AMIC4" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="ADC4_MIXER Switch" value="1"  />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+        <ctl name="AMIC4_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+        <!-- Bottom Mic ch1 -->
+        <ctl name="ADC1 Volume" value="10" />
+        <!-- Top Mic ch2 -->
+        <ctl name="ADC4 Volume" value="10" />
+        <!-- Back Mic ch3 -->
+        <ctl name="ADC3 Volume" value="10" />
+    </path>
+    <!-- vivo linjinping add for vivo-three-mic end -->
+
+    <!-- vivo linjinping modified for double-hdr-mic begin -->
+    <!-- TOP MIC    to AMIC5 to ADC4 to TX3_CH2 to SWR_MIC9 to CH1-->
+    <!-- BOTTOM MIC to AMIC1 to ADC1 to TX2_CH2 to SWR_MIC4 to CH2-->
+    <!-- TOP MIC    to AMIC5 to ADC3 to TX3_CH1 to SWR_MIC8 to CH3-->
+    <!-- BOTTOM MIC to AMIC1 to ADC2 to TX3_CH2 to SWR_MIC5 to CH4 -->
+    <path name="double-hdr-mic">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC4" value="1"/>
+        <ctl name="TX DEC1 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC2 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC3 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC4 MUX" value="SWR_MIC"/>
+        <!-- Top Mic adc4 swr_mic9 ch1 -->
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9" />
+        <!-- Bottom Mic adc1 swr_mic4 ch2 -->
+        <ctl name="TX SMIC MUX2" value="SWR_MIC4" />
+        <!-- Top Mic adc3 swr_mic8 ch3 -->
+        <ctl name="TX SMIC MUX3" value="SWR_MIC8" />
+        <!-- Bottom Mic adc2 swr_mic5 ch4 -->
+        <ctl name="TX SMIC MUX4" value="SWR_MIC5" />
+	
+        <!-- BOTTOM MIC -->
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC1" />
+        <!-- TOP MIC -->
+        <ctl name="ADC3 MUX" value="CH3_AMIC5" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+
+        <ctl name="TX2 MODE" value="ADC_HIFI"/>
+        <ctl name="TX0 MODE" value="ADC_HIFI"/>
+        <ctl name="TX3 MODE" value="ADC_HIFI"/>
+        <ctl name="TX1 MODE" value="ADC_HIFI"/>
+
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1"/>
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1"/>
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2"/>
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2"/>
+        <ctl name="ADC3_MIXER Switch" value="1"/>
+        <ctl name="ADC1_MIXER Switch" value="1"/>
+        <ctl name="ADC4_MIXER Switch" value="1"/>
+        <ctl name="ADC2_MIXER Switch" value="1"/>
+        <ctl name="AMIC1_MIXER Switch" value="1"/>
+        <ctl name="AMIC5_MIXER Switch" value="1"/>
+        <ctl name="TX_DEC1 Volume" value="84"/>
+        <ctl name="TX_DEC2 Volume" value="84"/>
+        <ctl name="TX_DEC3 Volume" value="84"/>
+        <ctl name="TX_DEC4 Volume" value="84"/>
+        <ctl name="ADC1 Volume" value="0"/>
+        <ctl name="ADC2 Volume" value="21"/>
+        <ctl name="ADC3 Volume" value="21"/>
+        <ctl name="ADC4 Volume" value="0"/>
+    </path>
+    <!-- vivo linjinping modified for double-hdr-mic end -->
+
+    <!-- vivo linjinping add for three-hdr-mic begin -->
+    <!-- TOP MIC    to AMIC5 to ADC4 to TX3_CH2 to SWR_MIC9 to CH1-->
+    <!-- BACK MIC   to AMIC4 to ADC3 to TX3_CH1 to SWR_MIC8 to CH2-->
+    <!-- BOTTOM MIC to AMIC1 to ADC1 to TX2_CH1 to SWR_MIC4 to CH3-->
+    <!-- BOTTOM MIC to AMIC1 to ADC1 to TX2_CH2 to SWR_MIC5 to CH4-->
+    <path name="three-hdr-mic">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC4" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC4 MUX" value="SWR_MIC" />
+        <!-- Top Mic adc4 ch1 -->
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9" />
+        <!-- Back Mic adc3 ch2 -->
+        <ctl name="TX SMIC MUX2" value="SWR_MIC8" />
+        <!-- Bottom Mic adc1 ch3 -->
+        <ctl name="TX SMIC MUX3" value="SWR_MIC4" />
+        <!-- Bottom Mic adc2 ch4 -->
+        <ctl name="TX SMIC MUX4" value="SWR_MIC5" />
+
+        <!-- BOTTOM MIC -->
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC1" />
+        <!-- BACK MIC -->
+        <ctl name="ADC3 MUX" value="CH3_AMIC4" />
+        <!-- TOP MIC -->
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+
+        <ctl name="TX0 MODE" value="ADC_HIFI" />
+        <ctl name="TX1 MODE" value="ADC_HIFI" />
+        <ctl name="TX2 MODE" value="ADC_HIFI" />
+        <ctl name="TX3 MODE" value="ADC_HIFI" />
+
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+        <ctl name="AMIC4_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+        <!-- Top Mic ch1 -->
+        <ctl name="ADC4 Volume" value="8" />
+        <!-- Back Mic ch2 -->
+        <ctl name="ADC3 Volume" value="8" />
+        <!-- Bottom Mic ch3 -->
+        <ctl name="ADC1 Volume" value="8" />
+        <!-- Bottom Mic ch4 -->
+        <ctl name="ADC2 Volume" value="0" />
+    </path>
+    <!-- vivo linjinping add for three-hdr-mic end -->
+
+    <!-- vivo zhengguobing add for voice and voip begin -->
+    <path name="voice-handset-mic">
+        <path name="double-mic" />
+        <!-- Bottom Mic -->
+        <ctl name="ADC1 Volume" value="10" />
+        <!-- Top Mic -->
+        <ctl name="ADC4 Volume" value="10" />
+    </path>
+
+    <path name="voice-speaker-mic">
+        <path name="double-mic" />
+        <!-- Bottom Mic -->
+        <ctl name="ADC1 Volume" value="8" />
+        <!-- Top Mic -->
+        <ctl name="ADC4 Volume" value="8" />
+    </path>
+
+    <path name="voice-headset-mic">
+        <path name="amic2" />
+        <ctl name="ADC2 Volume" value="8" />
+    </path>
+
+    <path name="voice-headphones-mic">
+        <path name="double-mic" />
+        <!-- Bottom Mic -->
+        <ctl name="ADC1 Volume" value="8" />
+        <!-- Top Mic -->
+        <ctl name="ADC4 Volume" value="8" />
+    </path>
+
+    <path name="voip-handset-mic">
+        <path name="double-mic" />
+        <!-- Bottom Mic -->
+        <ctl name="ADC1 Volume" value="10" />
+        <!-- Top Mic -->
+        <ctl name="ADC4 Volume" value="10" />
+    </path>
+
+    <path name="voip-speaker-mic">
+        <path name="double-mic" />
+        <!-- Bottom Mic -->
+        <ctl name="ADC1 Volume" value="8" />
+        <!-- Top Mic -->
+        <ctl name="ADC4 Volume" value="8" />
+    </path>
+
+    <path name="voip-headset-mic">
+        <path name="amic2" />
+        <ctl name="ADC2 Volume" value="8" />
+    </path>
+
+    <path name="voip-headphones-mic">
+        <path name="double-mic" />
+        <!-- Bottom Mic -->
+        <ctl name="ADC1 Volume" value="8" />
+        <!-- Top Mic -->
+        <ctl name="ADC4 Volume" value="8" />
+    </path>
+    <!-- vivo zhengguobing add for voice and voip end -->
+    <path name="speaker">
+        <!-- vivo zhengguobing modify for speaker begin -->
+        <ctl name="TFA_CHIP_SELECTOR" value="3" /> <!--0 off;1 left;2 right;3 stereo  -->
+        <ctl name="stereo Profile" value="speaker" />
+        <ctl name="SmartPA Switch" value="1" />
+        <ctl name="aw882xx_mode_switch_l" value="Spk" />
+        <ctl name="aw882xx_mode_switch_r" value="Spk" />
+        <ctl name="aw882xx_pa_switch_l" value="On" />
+        <ctl name="aw882xx_pa_switch_r" value="On" />
+        <!-- vivo zhengguobing modify for speaker end -->
+    </path>
+
+    <path name="speaker-prot">
+        <path name="speaker" />
+        <!--ctl name="WSA_RX0 Digital Volume" value="84" />
+        <ctl name="WSA_RX1 Digital Volume" value="84" -->
+    </path>
+
+    <path name="haptics-dev">
+        <ctl name="Haptics VISENSE Switch" value="1" />
+        <ctl name="SWR DAC_Port Switch" value="1" />
+    </path>
+
+    <!--path name="haptics-dev-wsa">
+        <ctl name="WSA2 RX5 MUX" value="AIF1_PB" />
+        <ctl name="WSA2_RX1 INP0" value="RX5" />
+        <ctl name="WSA2_COMP2 Switch" value="1" />
+        <ctl name="Idle Detect" value="1" />
+        <ctl name="Spkr2Right COMP Switch" value="1" />
+        <ctl name="Spkr2Right VISENSE Switch" value="1" />
+        <ctl name="Spkr2Right SWR DAC_Port Switch" value="1" />
+    </path>
+
+    <path name="haptics-vi-feedback-mono">
+        <ctl name="WSA2_AIF_VI Mixer WSA2_SPKR_VI_2" value="1" />
+        <ctl name="WSA2 2CH_DMA ENABLE" value="1" />
+    </path>
+
+    <path name="haptics-vi-feedback">
+        <ctl name="WSA2_AIF_VI Mixer WSA2_SPKR_VI_1" value="1" />
+        <ctl name="WSA2_AIF_VI Mixer WSA2_SPKR_VI_2" value="1" />
+        <ctl name="WSA2 2CH_DMA ENABLE" value="1" />
+    </path-->
+
+    <path name="speaker-mono">
+        <!-- vivo zhengguobing modify for speaker begin -->
+        <path name="speaker" />
+        <!-- vivo zhengguobing modify for speaker end -->
+    </path>
+
+    <path name="speaker-mono-prot">
+        <!-- vivo zhengguobing modify for speaker begin -->
+        <path name="speaker-mono" />
+        <!-- ctl name="WSA_RX0 Digital Volume" value="84" / -->
+        <!-- vivo zhengguobing modify for speaker end -->
+    </path>
+
+    <path name="speaker-mono-2">
+        <!-- vivo zhengguobing modify for speaker begin -->
+        <path name="speaker" />
+        <!-- vivo zhengguobing modify for speaker end -->
+    </path>
+
+    <path name="speaker-mono-2-prot">
+        <!-- vivo zhengguobing modify for speaker begin -->
+        <path name="speaker" />
+        <!-- vivo zhengguobing modify for speaker end -->
+    </path>
+
+    <path name="speaker-mono-vbat">
+       <path name="speaker-mono" />
+       <!-- vivo zhengguobing delete for speaker begin -->
+       <!--ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" /-->
+       <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="speaker-mono-2-vbat">
+       <path name="speaker-mono-2" />
+       <!-- vivo zhengguobing delete for speaker begin -->
+       <!--ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" /-->
+       <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="speaker-mono-vbat-prot">
+       <path name="speaker-mono-prot" />
+       <!-- vivo linjinping delete for speaker begin -->
+       <!--ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" -->
+       <!-- vivo linjinping delete for speaker end -->
+    </path>
+
+    <path name="speaker-mono-2-vbat-prot">
+       <path name="speaker-mono-2-prot" />
+       <!-- vivo linjinping delete for speaker begin -->
+       <!--ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" -->
+       <!-- vivo linjinping delete for speaker end -->
+    </path>
+
+    <path name="speaker-vbat">
+       <path name="speaker" />
+       <!-- vivo zhengguobing delete for speaker begin -->
+       <!--ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" /-->
+       <!--ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" /-->
+       <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="speaker-vbat-prot">
+       <path name="speaker-prot" />
+       <!-- vivo zhengguobing delete for speaker begin -->
+       <!--ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" />
+       <ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" -->
+       <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="speaker-hdk">
+        <path name="speaker-mono" />
+    </path>
+
+    <path name="speaker-fluid">
+        <path name="speaker-mono" />
+    </path>
+
+    <path name="speaker-liquid">
+        <path name="speaker" />
+    </path>
+
+    <path name="speaker-safe">
+        <path name="speaker-mono"/>
+    </path>
+
+    <path name="speaker-hdk-vbat">
+        <path name="speaker-mono-vbat" />
+    </path>
+
+    <path name="speaker-fluid-vbat">
+        <path name="speaker-mono-vbat" />
+    </path>
+
+    <path name="speaker-liquid-vbat">
+        <path name="speaker-vbat" />
+    </path>
+
+    <path name="speaker-safe-vbat">
+        <path name="speaker-mono-vbat"/>
+    </path>
+
+    <path name="sidetone-iir">
+        <!-- vivo zhengguobing delete for sidetone begin -->
+        <!-- <ctl name="IIR0 Enable Band1" value="1" />
+        <ctl name="IIR0 Enable Band2" value="1" />
+        <ctl name="IIR0 Enable Band3" value="1" />
+        <ctl name="IIR0 Enable Band4" value="1" />
+        <ctl name="IIR0 Enable Band5" value="1" /> -->
+        <!-- vivo zhengguobing delete for sidetone end -->
+    </path>
+
+    <path name="sidetone-headphones">
+        <!-- vivo zhengguobing delete for sidetone begin -->
+        <!-- <path name="sidetone-iir" />
+        <ctl name="IIR0 INP0 Volume" value="54" />
+        <ctl name="IIR0 INP0 MUX" value="DEC0" />
+        <ctl name="RX INT0 MIX2 INP" value="SRC0" />
+        <ctl name="RX INT1 MIX2 INP" value="SRC0" /> -->
+        <!-- vivo zhengguobing delete for sidetone end -->
+    </path>
+
+    <path name="sidetone-handset">
+        <!-- vivo zhengguobing delete for sidetone begin -->
+        <!-- <path name="sidetone-iir" />
+        <ctl name="IIR0 INP0 Volume" value="54" />
+        <ctl name="IIR0 INP0 MUX" value="DEC0" />
+        <ctl name="RX INT2 MIX2 INP" value="SRC0" />
+        <ctl name="WSA_RX0 INT0 SIDETONE MIX" value="SRC0" /> -->
+        <!-- vivo zhengguobing delete for sidetone end -->
+    </path>
+
+    <path name="sidetone-headphone-handset-mic">
+        <!-- vivo zhengguobing delete for sidetone begin -->
+        <!-- path name="sidetone-iir" />
+        <ctl name="IIR0 INP0 Volume" value="0" />
+        <ctl name="IIR0 INP0 MUX" value="DEC2" />
+        <ctl name="RX INT0 MIX2 INP" value="SRC0" />
+        <ctl name="RX INT1 MIX2 INP" value="SRC0" / -->
+        <!-- vivo zhengguobing delete for sidetone begin -->
+    </path>
+
+    <path name="afe-sidetone">
+        <ctl name="Voice Sidetone Enable" value="1" />
+    </path>
+
+    <path name="play-fm">
+    </path>
+
+    <path name="speaker-mic">
+        <!-- vivo zhengguobing modify for speaker-mic begin -->
+        <path name="double-mic" />
+        <!-- Bottom Mic -->
+        <ctl name="ADC1 Volume" value="8" />
+        <!-- Top Mic -->
+        <ctl name="ADC4 Volume" value="8" />
+        <!-- vivo zhengguobing modify for speaker-mic end -->
+    </path>
+
+    <path name="speaker-mic-liquid">
+        <!-- vivo zhengguobing modify for speaker-mic begin -->
+        <path name="speaker-mic" />
+        <!-- vivo zhengguobing modify for speaker-mic end -->
+    </path>
+
+    <path name="speaker-mic-sbc">
+    </path>
+
+    <path name="speaker-protected">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="1" /-->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+        <path name="speaker" />
+    </path>
+
+    <path name="voice-speaker-protected">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+        <path name="speaker-mono" />
+    </path>
+
+    <path name="voice-speaker-2-protected">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+        <path name="speaker-mono-2" />
+    </path>
+
+    <path name="voice-speaker-stereo-protected">
+        <path name="speaker-protected" />
+    </path>
+
+    <path name="speaker-protected-vbat">
+        <path name="speaker-protected" />
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" /-->
+        <!--ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="voice-speaker-protected-vbat">
+        <path name="voice-speaker-protected" />
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker begin -->
+    </path>
+
+    <path name="voice-speaker-2-protected-vbat">
+        <path name="voice-speaker-2-protected" />
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_RX INT1 VBAT WSA RX1 VBAT Enable" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="voice-speaker-stereo-protected-vbat">
+        <path name="speaker-protected-vbat" />
+    </path>
+
+    <path name="vi-feedback">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="1" /-->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="vi-feedback-mono-1">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="vi-feedback-mono-2">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!--ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="cps-feedback">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!-- ctl name="WSA_AIF_CPS Mixer WSA_SPKR_CPS_1" value="1" />
+        <ctl name="WSA_AIF_CPS Mixer WSA_SPKR_CPS_2" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="cps-feedback-mono-1">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!-- ctl name="WSA_AIF_CPS Mixer WSA_SPKR_CPS_1" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="cps-feedback-mono-2">
+        <!-- vivo zhengguobing delete for speaker begin -->
+        <!-- ctl name="WSA_AIF_CPS Mixer WSA_SPKR_CPS_2" value="1" /-->
+        <!-- vivo zhengguobing delete for speaker end -->
+    </path>
+
+    <path name="handset">
+        <!-- vivo zhengguobing modify for handset begin -->
+        <ctl name="TFA_CHIP_SELECTOR" value="1" /> <!--0 off;1 left;2 right;3 stereo  -->
+        <ctl name="stereo Profile" value="receiver" />
+        <ctl name="SmartPA Switch" value="1" />
+        <ctl name="aw882xx_mode_switch_l" value="Rcv" />
+        <ctl name="aw882xx_pa_switch_l" value="On" />
+        <!-- vivo zhengguobing modify for handset end -->
+    </path>
+
+    <!-- vivo chengrongfei modify for halo begin -->
+    <path name="vivo-halo">
+        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
+        <ctl name="RX INT2_1 MIX1 INP0" value="RX2" />
+        <ctl name="EAR_RDAC Switch" value="1" />
+        <ctl name="RDAC3_MUX" value="RX3" />
+    </path>
+
+    <path name="voice-halo">
+        <path name="vivo-halo" />
+    </path>
+
+    <path name="vivo-halo-mute">
+    </path>
+
+    <path name="cts-halo">
+    </path>
+    <!-- vivo chengrongfei modify for halo end -->
+
+    <path name="handset-mic">
+        <!-- vivo zhengguobing modify for handset-mic begin -->
+        <path name="double-hdr-mic" />
+        <!-- vivo zhengguobing modify for handset-mic end -->
+    </path>
+
+    <path name="handset-mic-unprocessed">
+        <!-- vivo zhengguobing modify for handset-mic begin -->
+        <path name="double-hdr-mic" />
+        <!-- vivo zhengguobing modify for handset-mic end -->
+    </path>
+
+    <path name="handset-ultrasound">
+        <!-- vivo zhengguobing delete for ultrasound begin -->
+        <!-- ctl name="WSA RX_MIX0 MUX" value="AIF_MIX1_PB" />
+        <ctl name="WSA_RX0 MIX INP" value="RX_MIX0" />
+        <ctl name="WSA_COMP1 Switch" value="1" />
+        <ctl name="Idle Detect" value="1" />
+        <ctl name="SpkrLeft COMP Switch" value="1" />
+        <ctl name="SpkrLeft VISENSE Switch" value="1" />
+        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
+        <ctl name="EAR SPKR PA Gain" value="G_6_DB" / -->
+        <!-- vivo zhengguobing delete for ultrasound end -->
+    </path>
+
+    <path name="speaker-mono-2-ultrasound">
+        <!-- vivo zhengguobing delete for ultrasound begin -->
+        <!-- ctl name="WSA RX_MIX1 MUX" value="AIF_MIX1_PB" />
+        <ctl name="WSA_RX1 MIX INP" value="RX_MIX1" />
+        <ctl name="WSA_COMP2 Switch" value="1" />
+        <ctl name="Idle Detect" value="1" />
+        <ctl name="SpkrRight COMP Switch" value="1" />
+        <ctl name="SpkrRight VISENSE Switch" value="1" />
+        <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
+        <ctl name="WSA PBR Enable" value="1" / -->
+        <!-- vivo zhengguobing delete for ultrasound end -->
+    </path>
+
+    <path name="speaker-ultrasound">
+        <path name="handset-ultrasound" />
+        <path name="speaker-mono-2-ultrasound" />
+    </path>
+
+    <path name="ultrasound-handset-vbat">
+        <!--path name="ultrasound-handset" />
+        <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" -->
+    </path>
+
+    <path name="ultrasound-mic">
+        <path name="amic6" />
+    </path>
+
+    <path name="ultrasound-dmic">
+        <path name="amic6" />
+        <path name="amic7" />
+    </path>
+
+    <path name="headphones">
+        <!-- vivo zhengguobing modify for headphones begin -->
+        <!--ctl name="HiFi Mode Switch" value="Normal" />
+        <ctl name="Headphone Rx Mixer I2S_RX" value="1" /-->
+        <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
+        <ctl name="RX_MACRO RX1 MUX" value="AIF1_PB" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT1_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="HPHL Compander" value="1" />
+        <ctl name="HPHR Compander" value="1" />
+        <ctl name="HPHL XTALK" value="1" />
+        <ctl name="HPHR XTALK" value="1" />
+        <ctl name="HPHL_RDAC Switch" value="1" />
+        <ctl name="HPHR_RDAC Switch" value="1" />
+        <!-- vivo zhengguobing modify for headphones end -->
+    </path>
+
+    <path name="headphones-and-haptics">
+        <!-- vivo zhengguobing modify for headphones begin -->
+        <!--ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
+        <ctl name="RX_MACRO RX1 MUX" value="AIF1_PB" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT1_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="HPHL Compander" value="1" />
+        <ctl name="HPHR Compander" value="1" />
+        <ctl name="HPHL XTALK" value="1" />
+        <ctl name="HPHR XTALK" value="1" />
+        <ctl name="HPHL_RDAC Switch" value="1" />
+        <ctl name="HPHR_RDAC Switch" value="1" /-->
+        <path name="headphones" />
+        <ctl name="SWR DAC_Port Switch" value="1" />
+        <!-- vivo zhengguobing modify for headphones end -->
+    </path>
+
+    <path name="headphones-44.1">
+        <path name="headphones" />
+    </path>
+
+    <path name="headphones-hifi-filter">
+        <!-- vivo zhengguobing delete for headphones begin -->
+        <!--ctl name="RX_FIR Filter" value="ON" /-->
+        <!-- vivo zhengguobing delete for headphones end -->
+        <path name="headphones" />
+    </path>
+
+    <path name="hph-highquality-mode">
+    </path>
+
+    <path name="hph-lowpower-mode">
+    </path>
+
+    <path name="true-native-mode">
+    </path>
+
+    <path name="line">
+        <path name="headphones" />
+    </path>
+
+    <path name="headset-mic">
+        <!-- vivo zhengguobing modify for headset-mic begin -->
+        <path name="amic2" />
+        <ctl name="ADC2 Volume" value="2" />
+        <!-- vivo zhengguobing modify for headset-mic end -->
+    </path>
+
+    <path name="headset-mic-liquid">
+        <path name="amic2" />
+    </path>
+
+    <path name="voice-handset">
+        <!-- vivo zhengguobing delete for voice-handset begin -->
+        <!--ctl name="WSA_RX0 Digital Volume" value="60" /-->
+        <!-- vivo zhengguobing delete for voice-handset end -->
+        <path name="handset" />
+    </path>
+
+    <path name="voice-handset-tmus">
+        <path name="handset" />
+    </path>
+
+    <path name="voice-handset-hac">
+        <path name="handset" />
+    </path>
+
+    <path name="voice-handset-hdk">
+        <path name="handset" />
+    </path>
+
+    <path name="voice-handset-tmus-hdk">
+        <path name="handset" />
+    </path>
+
+    <path name="voice-speaker">
+        <!-- vivo zhengguobing modify for voice-speaker begin -->
+        <path name="speaker" />
+        <ctl name="stereo Profile" value="voice" />
+        <!-- vivo zhengguobing modify for voice-speaker end -->
+    </path>
+
+    <path name="voice-speaker-stereo">
+        <!-- vivo zhengguobing delete for voice-speaker begin -->
+        <!--ctl name="WSA_RX0 Digital Volume" value="60" /-->
+        <!-- vivo zhengguobing delete for voice-speaker end -->
+        <path name="speaker" />
+    </path>
+
+    <path name="voice-speaker-2">
+        <path name="speaker-mono-2" />
+    </path>
+
+    <path name="voice-speaker-hdk">
+        <path name="speaker-mono" />
+    </path>
+
+    <path name="voice-speaker-fluid">
+        <path name="speaker-fluid" />
+    </path>
+
+    <path name="voice-speaker-vbat">
+        <path name="speaker-mono-vbat" />
+    </path>
+
+    <path name="voice-speaker-stereo-vbat">
+        <!-- vivo zhengguobing delete for voice-speaker begin -->
+        <!--ctl name="WSA_RX0 Digital Volume" value="60" /-->
+        <!-- vivo zhengguobing delete for voice-speaker end -->
+        <path name="speaker-vbat" />
+    </path>
+
+    <path name="voice-speaker-2-vbat">
+        <path name="speaker-mono-2-vbat" />
+    </path>
+
+    <path name="voice-speaker-hdk-vbat">
+        <path name="speaker-mono-vbat" />
+    </path>
+
+    <path name="voice-speaker-fluid-vbat">
+        <path name="speaker-fluid-vbat" />
+    </path>
+
+    <!-- vivo zhengguobing move for voice-speaker-mic begin -->
+    <!-- path name="voice-speaker-mic">
+        <path name="speaker-mic" />
+    </path -->
+    <!-- vivo zhengguobing move for voice-speaker-mic end -->
+
+    <path name="voice-headphones">
+        <path name="headphones" />
+    </path>
+
+    <path name="voice-headset">
+        <path name="headphones" />
+    </path>
+
+    <path name="voice-line">
+        <path name="voice-headphones" />
+    </path>
+
+    <!-- vivo zhengguobing move for voice-headset-mic begin -->
+    <!-- path name="voice-headset-mic">
+        <path name="headset-mic" />
+    </path -->
+    <!-- vivo zhengguobing move for voice-headset-mic end -->
+
+    <path name="speaker-and-headphones">
+        <path name="headphones" />
+        <path name="speaker" />
+    </path>
+
+    <path name="speaker-and-headphones-hifi-filter">
+        <path name="headphones-hifi-filter" />
+        <path name="speaker" />
+    </path>
+
+    <path name="speaker-safe-and-headphones">
+        <path name="headphones" />
+        <path name="speaker-safe" />
+    </path>
+
+    <path name="speaker-and-line">
+        <path name="speaker-and-headphones" />
+    </path>
+
+    <path name="speaker-and-headphones-liquid">
+        <path name="headphones" />
+        <path name="speaker" />
+    </path>
+
+    <path name="speaker-and-line-liquid">
+        <path name="speaker-and-headphones-liquid" />
+    </path>
+
+    <path name="usb-headphones">
+    </path>
+
+    <path name="usb-headset">
+    </path>
+
+    <path name="usb-headset-mic">
+    </path>
+
+    <path name="speaker-and-usb-headphones">
+        <path name="speaker" />
+        <path name="usb-headphones" />
+    </path>
+
+    <path name="speaker-safe-and-usb-headphones">
+        <path name="speaker-safe" />
+        <path name="usb-headphones" />
+    </path>
+
+    <path name="bt-sco">
+    </path>
+
+    <path name="bt-sco-mic">
+    </path>
+
+    <path name="bt-sco-wb">
+    </path>
+
+    <path name="bt-sco-mic-wb">
+    </path>
+
+    <path name="bt-sco-swb">
+    </path>
+
+    <path name="bt-sco-mic-swb">
+    </path>
+
+    <path name="bt-a2dp">
+    </path>
+
+    <path name="bt-a2dp-mic">
+    </path>
+
+    <path name="bt-ble">
+    </path>
+
+    <path name="bt-ble-mic">
+    </path>
+
+    <path name="dummy-dev">
+    </path>
+
+    <path name="va-mic-mono">
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC9" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC4 Volume" value="10" />
+        <ctl name="VA_AMIC5_MIXER Switch" value="1" />
+    </path>
+
+    <!-- vivo husanzai modify for voicewakeup begin -->
+    <path name="va-mic-dmic">
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC1 MODE" value="ADC_LOW_PWR" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC4" />
+        <ctl name="VA SMIC MUX1" value="SWR_MIC9" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC5_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC1_MIXER Switch" value="1" />
+        <ctl name="VA_DEC0 Volume" value="84" />
+        <ctl name="VA_DEC1 Volume" value="84" />
+    </path>
+    <!-- vivo husanzai modify for voicewakeup begin -->
+
+    <path name="va-mic-tmic">
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC2 MUX" value="SWR_MIC" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC1 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC2 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC9" />
+        <ctl name="VA SMIC MUX1" value="SWR_MIC4" />
+        <ctl name="VA SMIC MUX2" value="SWR_MIC5" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC2_BCS Disable" value="1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC4" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC2 Volume" value="10" />
+        <ctl name="ADC4 Volume" value="10" />
+        <ctl name="VA_AMIC5_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC1_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC4_MIXER Switch" value="1" />
+    </path>
+
+    <path name="va-mic-qmic">
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC3 MUX" value="SWR_MIC" />
+        <ctl name="VA_DEC2 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC1 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC3 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA DEC2 MUX" value="SWR_MIC" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC9" />
+        <ctl name="VA SMIC MUX1" value="SWR_MIC4" />
+        <ctl name="VA SMIC MUX3" value="SWR_MIC8" />
+        <ctl name="VA SMIC MUX2" value="SWR_MIC5" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="TX2 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC2_BCS Disable" value="1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC4" />
+        <ctl name="ADC3 MUX" value="CH3_AMIC3" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC2 Volume" value="10" />
+        <ctl name="ADC3 Volume" value="10" />
+        <ctl name="ADC4 Volume" value="10" />
+        <ctl name="VA_AMIC5_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC1_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC3_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC4_MIXER Switch" value="1" />
+    </path>
+
+    <path name="va-mic">
+        <path name="va-mic-mono" />
+    </path>
+
+    <path name="va-mic-mono-lpi">
+        <ctl name="VA_DEC0 Volume" value="96" />
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC4" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC1_MIXER Switch" value="1" />
+    </path>
+
+    <!-- vivo husanzai modify for voicewakeup begin -->
+    <path name="va-mic-dmic-lpi">
+        <path name="va-mic-dmic" />
+        <ctl name="VA_DEC0 Volume" value="84" />
+        <ctl name="VA_DEC1 Volume" value="84" />
+    </path>
+    <!-- vivo husanzai modify for voicewakeup end -->
+
+    <path name="va-mic-tmic-lpi">
+        <ctl name="VA_DEC0 Volume" value="96" />
+        <ctl name="VA_DEC1 Volume" value="96" />
+        <ctl name="VA_DEC2 Volume" value="96" />
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC2 MUX" value="SWR_MIC" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC1 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC2 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC4" />
+        <ctl name="VA SMIC MUX1" value="SWR_MIC9" />
+        <ctl name="VA SMIC MUX2" value="SWR_MIC8" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX2 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC3 MUX" value="CH3_AMIC3" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC1_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC5_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC3_MIXER Switch" value="1" />
+    </path>
+
+    <path name="va-mic-qmic-lpi">
+        <ctl name="VA_DEC0 Volume" value="96" />
+        <ctl name="VA_DEC1 Volume" value="96" />
+        <ctl name="VA_DEC2 Volume" value="96" />
+        <ctl name="VA_DEC3 Volume" value="96" />
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="VA_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC3 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC2 MUX" value="SWR_MIC" />
+        <ctl name="VA_DEC2 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC1 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA_DEC3 MODE" value="ADC_LOW_PWR" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC4" />
+        <ctl name="VA SMIC MUX1" value="SWR_MIC9" />
+        <ctl name="VA SMIC MUX3" value="SWR_MIC5" />
+        <ctl name="VA SMIC MUX2" value="SWR_MIC8" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="TX2 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC2_BCS Disable" value="1" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC3 MUX" value="CH3_AMIC3" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC4" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC1_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC5_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC4_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC3_MIXER Switch" value="1" />
+    </path>
+
+    <path name="va-mic-lpi">
+        <path name="va-mic-mono-lpi" />
+    </path>
+
+    <path name="headset-va-mic-lpi">
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC5" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC2" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC2_BCS Disable" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC2_MIXER Switch" value="1" />
+    </path>
+
+    <path name="headset-va-mic">
+        <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC5" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC2" />
+        <ctl name="VA_DEC0 MODE" value="ADC_LOW_PWR" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC2_BCS Disable" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="VA_AMIC2_MIXER Switch" value="1" />
+    </path>
+
+    <path name="lpi-pcm-logging">
+        <!-- vivo husanzai modify for lpi debug log begin -->
+        <!--ctl name="LPI PCM Logging Enable" value="1" -->
+        <!-- vivo husanzai modify for lpi debug log end -->
+    </path>
+
+    <path name="PM_QOS_Vote">
+        <ctl name="PM_QOS Vote" value="Enable" />
+    </path>
+
+    <!-- Dual MIC devices -->
+    <path name="handset-dmic-endfire">
+        <!-- vivo zhengguobing modify for dmic begin -->
+        <!--ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC4" />
+        <ctl name="TX SMIC MUX3" value="SWR_MIC5" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC4" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+        <ctl name="AMIC4_MIXER Switch" value="1" /-->
+        <path name="double-mic" />
+        <ctl name="ADC1 Volume" value="8" />
+        <ctl name="ADC4 Volume" value="8" />
+        <!-- vivo zhengguobing modify for dmic end -->
+    </path>
+
+    <path name="speaker-dmic-endfire">
+        <!-- vivo zhengguobing modify for dmic begin -->
+        <!--ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC9" />
+        <ctl name="TX SMIC MUX3" value="SWR_MIC4" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="TX2 MODE" value="ADC_LP" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" /-->
+        <path name="double-mic" />
+        <ctl name="ADC1 Volume" value="8" />
+        <ctl name="ADC4 Volume" value="8" />
+        <!-- vivo zhengguobing modify for dmic end -->
+    </path>
+
+    <path name="dmic-endfire">
+        <!-- vivo zhengguobing modify for dmic begin -->
+        <!--path name="handset-dmic-endfire" />
+        <ctl name="IIR0 INP0 MUX" value="DEC2" /-->
+        <path name="double-mic" />
+        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC4 Volume" value="10" />
+        <!-- vivo zhengguobing modify for dmic end -->
+    </path>
+
+    <path name="dmic-endfire-liquid">
+        <path name="handset-dmic-endfire" />
+        <!-- vivo zhengguobing delete for dmic begin -->
+        <!--ctl name="IIR0 INP0 MUX" value="DEC2" /-->
+        <!-- vivo zhengguobing delete for dmic end -->
+    </path>
+
+    <path name="handset-stereo-dmic-ef">
+        <path name="handset-dmic-endfire" />
+    </path>
+
+    <path name="speaker-stereo-dmic-ef">
+        <path name="speaker-dmic-endfire" />
+    </path>
+
+    <path name="voice-dmic-ef-tmus">
+        <path name="dmic-endfire" />
+    </path>
+
+    <path name="voice-dmic-ef">
+        <path name="dmic-endfire" />
+    </path>
+
+    <path name="voice-speaker-dmic-ef">
+        <path name="speaker-dmic-endfire" />
+    </path>
+
+    <path name="voice-rec-dmic-ef">
+        <path name="dmic-endfire" />
+    </path>
+
+    <path name="voice-rec-dmic-ef-fluence">
+        <path name="dmic-endfire" />
+    </path>
+
+    <path name="hearing-aid-mic">
+        <path name="voice-speaker-mic"/>
+    </path>
+
+    <path name="handset-stereo-dmic-ef-liquid">
+        <path name="handset-dmic-endfire" />
+    </path>
+
+    <path name="speaker-stereo-dmic-ef-liquid">
+        <path name="speaker-dmic-endfire" />
+    </path>
+
+    <path name="voice-dmic-ef-liquid-liquid">
+        <path name="dmic-endfire-liquid" />
+    </path>
+
+    <path name="voice-speaker-dmic-ef-liquid">
+        <path name="dmic-endfire-liquid" />
+    </path>
+
+    <path name="voice-rec-dmic-ef-liquid">
+        <path name="dmic-endfire-liquid" />
+    </path>
+
+    <path name="voice-rec-dmic-ef-fluence-liquid">
+        <path name="dmic-endfire-liquid" />
+    </path>
+
+    <path name="speaker-dmic-broadside">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC4" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+    </path>
+
+    <path name="dmic-broadside">
+        <path name="speaker-dmic-broadside" />
+        <ctl name="IIR0 INP0 MUX" value="DEC2" />
+    </path>
+
+    <path name="voice-speaker-dmic-broadside">
+        <path name="dmic-broadside" />
+    </path>
+
+    <!-- Tri MIC devices -->
+    <path name="three-mic">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC4" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC5" />
+        <ctl name="TX SMIC MUX3" value="SWR_MIC9" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC4" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC4_MIXER Switch" value="1"  />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+        <ctl name="AMIC4_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+    </path>
+
+    <path name="speaker-tmic">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC4" />
+        <ctl name="TX SMIC MUX3" value="SWR_MIC5" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC4" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="AMIC4_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+        <ctl name="TX_DEC1 Volume" value="98" />
+        <ctl name="TX_DEC2 Volume" value="88" />
+        <ctl name="TX_DEC3 Volume" value="98" />
+    </path>
+
+    <path name="voice-speaker-tmic">
+        <path name="speaker-tmic" />
+    </path>
+
+    <!-- Quad MIC devices -->
+    <path name="speaker-qmic">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
+        <ctl name="TX_AIF1_CAP Mixer DEC4" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX DEC4 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9" />
+        <ctl name="TX SMIC MUX2" value="SWR_MIC4" />
+        <ctl name="TX SMIC MUX3" value="SWR_MIC5" />
+        <ctl name="TX SMIC MUX4" value="SWR_MIC8" />
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC4" />
+        <ctl name="ADC3 MUX" value="CH3_AMIC3" />
+        <ctl name="ADC2_BCS Disable" value="1" />
+        <ctl name="TX2 MODE" value="ADC_LP" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="AMIC5_MIXER Switch" value="1" />
+        <ctl name="AMIC1_MIXER Switch" value="1" />
+        <ctl name="AMIC3_MIXER Switch" value="1" />
+        <ctl name="AMIC4_MIXER Switch" value="1" />
+        <ctl name="TX_DEC1 Volume" value="98" />
+        <ctl name="TX_DEC2 Volume" value="88" />
+        <ctl name="TX_DEC3 Volume" value="98" />
+        <ctl name="TX_DEC4 Volume" value="84" />
+    </path>
+
+    <path name="speaker-qmic-liquid">
+    </path>
+
+    <path name="voice-speaker-qmic">
+        <path name="speaker-qmic" />
+    </path>
+
+    <path name="quad-mic">
+        <path name="speaker-qmic" />
+    </path>
+
+    <path name="voice-speaker-qmic-liquid">
+        <path name="speaker-qmic-liquid" />
+    </path>
+
+    <path name="quad-mic-liquid">
+        <path name="speaker-qmic-liquid" />
+    </path>
+
+    <path name="handset-dual-amic-quad-adc-hdr">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC4" value="1"/>
+        <ctl name="TX DEC1 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC2 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC3 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC4 MUX" value="SWR_MIC"/>
+        <ctl name="ADC1 MUX" value="CH1_AMIC1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC1" />
+        <ctl name="ADC3 MUX" value="CH3_AMIC5" />
+        <ctl name="ADC4 MUX" value="CH4_AMIC5" />
+        <ctl name="TX2 MODE" value="ADC_HIFI"/>
+        <ctl name="TX0 MODE" value="ADC_HIFI"/>
+        <ctl name="TX3 MODE" value="ADC_HIFI"/>
+        <ctl name="TX1 MODE" value="ADC_HIFI"/>
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1"/>
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1"/>
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2"/>
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2"/>
+        <ctl name="ADC3_MIXER Switch" value="1"/>
+        <ctl name="ADC1_MIXER Switch" value="1"/>
+        <ctl name="ADC4_MIXER Switch" value="1"/>
+        <ctl name="ADC2_MIXER Switch" value="1"/>
+        <ctl name="AMIC1_MIXER Switch" value="1"/>
+        <ctl name="AMIC5_MIXER Switch" value="1"/>
+        <ctl name="TX_DEC1 Volume" value="84"/>
+        <ctl name="TX_DEC2 Volume" value="84"/>
+        <ctl name="TX_DEC3 Volume" value="84"/>
+        <ctl name="TX_DEC4 Volume" value="84"/>
+        <ctl name="ADC1 Volume" value="16"/>
+        <ctl name="ADC2 Volume" value="0"/>
+        <ctl name="ADC3 Volume" value="0"/>
+        <ctl name="ADC4 Volume" value="16"/>
+    </path>
+
+    <path name="unprocessed-hdr-mic-landscape">
+        <path name="handset-dual-amic-quad-adc-hdr" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9"/>
+        <ctl name="TX SMIC MUX2" value="SWR_MIC8"/>
+        <ctl name="TX SMIC MUX3" value="SWR_MIC4"/>
+        <ctl name="TX SMIC MUX4" value="SWR_MIC5"/>
+    </path>
+
+    <path name="unprocessed-hdr-mic-inverted-landscape">
+        <path name="handset-dual-amic-quad-adc-hdr" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC4"/>
+        <ctl name="TX SMIC MUX2" value="SWR_MIC5"/>
+        <ctl name="TX SMIC MUX3" value="SWR_MIC9"/>
+        <ctl name="TX SMIC MUX4" value="SWR_MIC8"/>
+    </path>
+
+    <path name="handset-single-amic-quad-adc">
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC3" value="1"/>
+        <ctl name="TX_AIF1_CAP Mixer DEC4" value="1"/>
+        <ctl name="TX DEC1 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC2 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC3 MUX" value="SWR_MIC"/>
+        <ctl name="TX DEC4 MUX" value="SWR_MIC"/>
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9"/>
+        <ctl name="TX SMIC MUX2" value="SWR_MIC8"/>
+        <ctl name="TX SMIC MUX3" value="SWR_MIC9"/>
+        <ctl name="TX SMIC MUX4" value="SWR_MIC8"/>
+        <ctl name="ADC3 MUX" value="CH3_AMIC5"/>
+        <ctl name="ADC4 MUX" value="CH4_AMIC5"/>
+        <ctl name="TX2 MODE" value="ADC_HIFI"/>
+        <ctl name="TX3 MODE" value="ADC_HIFI"/>
+        <ctl name="ADC3 ChMap" value="SWRM_TX3_CH1"/>
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2"/>
+        <ctl name="ADC3_MIXER Switch" value="1"/>
+        <ctl name="ADC4_MIXER Switch" value="1"/>
+        <ctl name="AMIC5_MIXER Switch" value="1"/>
+        <ctl name="TX_DEC1 Volume" value="84"/>
+        <ctl name="TX_DEC2 Volume" value="84"/>
+        <ctl name="TX_DEC3 Volume" value="84"/>
+        <ctl name="TX_DEC4 Volume" value="84"/>
+        <ctl name="ADC3 Volume" value="0"/>
+        <ctl name="ADC4 Volume" value="16"/>
+    </path>
+
+    <path name="unprocessed-hdr-mic-portrait">
+        <path name="handset-single-amic-quad-adc" />
+    </path>
+
+    <path name="unprocessed-hdr-mic-inverted-portrait">
+        <path name="handset-single-amic-quad-adc" />
+    </path>
+
+    <!-- TTY devices -->
+
+    <path name="tty-headphones">
+        <!-- vivo zhengguobing modify for tty begin -->
+        <!--ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="HPHL Compander" value="1" />
+        <ctl name="HPHL XTALK" value="1" />
+        <ctl name="HPHL_RDAC Switch" value="1" /-->
+        <path name="headphones" />
+        <!-- vivo zhengguobing modify for tty end -->
+    </path>
+
+    <path name="voice-tty-full-headphones">
+        <path name="tty-headphones" />
+    </path>
+
+    <path name="voice-tty-full-headset">
+        <path name="tty-headphones" />
+    </path>
+
+    <path name="voice-tty-vco-headphones">
+        <path name="tty-headphones" />
+    </path>
+
+    <path name="voice-tty-vco-headset">
+        <path name="tty-headphones" />
+    </path>
+
+    <path name="voice-tty-hco-handset">
+        <path name="handset" />
+    </path>
+
+
+    <path name="voice-tty-hco-handset-hdk">
+        <path name="handset" />
+    </path>
+
+    <path name="voice-tty-full-headset-mic">
+        <path name="amic2" />
+        <ctl name="ADC2 Volume" value="0" />
+        <!-- vivo zhengguobing modify for tty begin -->
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <!-- vivo zhengguobing modify for tty end -->
+    </path>
+
+    <path name="voice-tty-hco-headset-mic">
+        <ctl name="TX DEC6 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX6" value="SWR_MIC5" />
+        <ctl name="TX_AIF1_CAP Mixer DEC6" value="1" />
+        <ctl name="ADC2 MUX" value="CH2_AMIC2" />
+        <ctl name="ADC2 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="MBHC ChMap" value="SWRM_TX3_CH3" />
+        <ctl name="TX1 MODE" value="ADC_LP" />
+        <ctl name="BCS Channel" value="CH10" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="AMIC2_MIXER Switch" value="1" />
+    </path>
+
+    <path name="voice-tty-vco-handset-mic">
+        <!-- vivo zhengguobing modify for tty begin -->
+        <path name="amic1" />
+        <!-- vivo zhengguobing modify for tty end -->
+    </path>
+
+    <path name="unprocessed-handset-mic">
+        <path name="handset-mic" />
+    </path>
+
+    <path name="unprocessed-mic">
+        <path name="unprocessed-handset-mic" />
+    </path>
+
+    <path name="unprocessed-stereo-mic">
+        <path name="voice-rec-dmic-ef" />
+    </path>
+
+    <path name="unprocessed-three-mic">
+        <path name="three-mic" />
+    </path>
+
+    <path name="unprocessed-headset-mic">
+        <path name="headset-mic" />
+    </path>
+
+    <path name="echo-ref-record">
+    </path>
+
+    <!-- vivo zhengguobing add for ktv begin -->
+    <path name="ktv-headset-mic">
+        <path name="headset-mic" />
+        <ctl name="TX_DEC0 Volume" value="100"/>
+        <ctl name="ADC2 Volume" value="2"/>
+    </path>
+    <!-- vivo zhengguobing add for ktv end -->
+
+    <!-- vivo zhengguobing add for voicewakeup training begin -->
+    <path name="voicewakeup-training-mic">
+        <path name="double-mic" />
+        <ctl name="ADC1 Volume" value="8" />
+        <ctl name="ADC4 Volume" value="8" />
+    </path>
+    <!-- vivo zhengguobing add for voicewakeup training end -->
+
+    <!-- vivo zhengguobing add for jovi asr begin -->
+    <path name="jovi-asr-self-mic">
+        <path name="double-mic" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="12" />
+    </path>
+
+    <path name="jovi-asr-other-mic">
+        <path name="double-mic" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="12" />
+    </path>
+    <!-- vivo zhengguobing add for jovi asr end -->
+
+    <!-- vivo zhengguobing add for camera record begin -->
+    <path name="camera-handset-mic">
+        <path name="double-hdr-mic" />
+    </path>
+    <!-- vivo zhengguobing add for camera record end -->
+
+    <!-- vivo zhengguobing add for cts begin -->
+    <path name="cts-handset-mic">
+        <path name="amic1" />
+        <ctl name="ADC1 Volume" value="14" />
+    </path>
+
+    <path name="cts-speaker">
+        <!-- only enable right spk to reduce delay for cts -->
+        <ctl name="TFA_CHIP_SELECTOR" value="3" /> <!--0 off;1 left;2 right;3 stereo  -->
+        <ctl name="stereo Profile" value="speaker" />
+        <ctl name="SmartPA Switch" value="1" />
+        <ctl name="aw882xx_mode_switch_r" value="Spk" />
+        <ctl name="aw882xx_pa_switch_r" value="On" />
+    </path>
+    <!-- vivo zhengguobing add for cts end -->
+	
+	<!-- vivo linjinping add for cts begin -->
+	<path name="cts-speaker-prot">
+        <path name="cts-speaker" />
+    </path>
+	<!-- vivo linjinping add for cts end -->
+
+    <!-- vivo zhengguobing add for spkpa mute begin -->
+    <path name="speaker-mute">
+    </path>
+    <!-- vivo zhengguobing add for spkpa mute end -->
+
+    <!-- vivo zhengguobing add for hifi begin -->
+    <path name="headphones-hifi">
+        <path name="headphones" />
+    </path>
+    <!-- vivo zhengguobing add for hifi begin -->
+
+    <!-- vivo zhengguobing add for audioroute-logv-disable begin -->
+    <path name="audioroute-logv-disable">
+    </path>
+    <!-- vivo zhengguobing add for saudioroute-logv-disable end -->
+</mixer>

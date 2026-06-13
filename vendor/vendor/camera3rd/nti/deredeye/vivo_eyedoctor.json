@@ -1,0 +1,51 @@
+{
+    "enableDeRed": true,
+
+    "# deRedMethod": "rough, delphi, gimpV1, gimpV2",
+    "deRedMethod": "delphi",
+
+    "# levelDebug": "0: unknow; 1: default; 2: verbose; 3: debug; 4: info; 5: warn; 6: error; 7: fatal; 8: silent;",
+    "## levelDebug": 4,
+
+    "dumpControl": {
+        "## enable": false,
+
+        "dumpInput": false,
+        "dumpOutput": false,
+        "dumpComponentMasks": false,
+        "dumpRefinedMasks": false,
+        "dumpSamples": false,
+
+        "## path": "./data/output/"
+    },
+    
+    "drawControl": {
+        "enable": false,
+        "radius": 1,
+        "color": "0000FF"
+    },
+
+    "checkControl": {
+        "thresholdPose": 40.0,
+        "thresholdScore": 0.55,
+        "thresholdEyeSize": 10.0,
+        "thresholdIrisRadius": 4.0,
+        "thresholdOpened2Radius": 0.5,
+
+        "ratioRadiusHalf2HalfMin": 0.5,
+        "ratioRadiusHalf2HalfMax": 2.0,
+
+        "rangeEyeballYawAngle": 120.0,
+        "rangeEyeballPitchAngle": 90.0,
+        "thresholdEyeballDefAngle": 60.0,
+
+        "thresholdRed2avgOfGB": 1.3
+    },
+
+    "refineControl": {
+        "scaleSigmaOfGuass": 0.5,
+        "scaleOfRedRatio": 128.0,
+        "scaleRadiusOfGuide": 0.25,
+        "scaleEpsilonOfGuide": 0.001
+    }
+}

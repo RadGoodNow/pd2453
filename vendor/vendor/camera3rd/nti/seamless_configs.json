@@ -1,0 +1,65 @@
+{
+	"name": "seamless_config",
+	"Project": "PD2453",
+	"majorVersion": 1,
+	"minorVersion": 0,
+	"isOnlySupportCameraChangeSeamless": 1,
+	"roiDetect": {
+		"satCameraNum": 2,
+		"satMode": {
+			"roiForceOnThresholds": 120.0,
+			"roiCancelsLuxrestriction": 0,
+			"isNotSupportSlaveRoi": 1,
+			"_comment": "cameras max 5  switchCount 5 lux/ratio listSize 5x2",
+			"switchCountThreshold": [14, 14],
+			"zoomRatio": {
+				"photo": [999.9, 999.9, 2.0, 999.9],
+				"video_common": [999.9, 999.9, 2.0, 999.9],
+				"video_1080P_60FPS": [999.9, 999.9, 999.9, 999.9],
+				"video_4K_60FPS": [999.9, 999.9, 999.9, 999.9]
+			},
+			"luxIndex": {
+				"photo": [999.9, 999.9, 340.0, 320.0],
+				"video_common":  [9999.9, 9999.9, 340.0, 320.0],
+				"video_1080P_60FPS":  [9999.9, 9999.9, 999.9, 999.9],
+				"video_4K_60FPS":  [9999.9, 9999.9, 999.9, 999.9]
+			}
+		},
+		"noSatMode": {
+			"zoomRatio": {
+				"video": [2.0, 999.0],
+				"photo": [2.0, 999.0]
+			},
+			"luxIndex": {
+				"video": [300.0, 270.0],
+				"portrait": [0, 0],
+				"moviePortrait" : [0, 0],
+				"photo": [340.0, 320.0]
+			},
+			"isPortraitFoodSeamlessDiff": 1
+		}
+	},
+	"sportStagger": {
+		"zoomRatio": {
+			"photo": [1.0, 1.0],
+			"motion": [1.0, 999.9]
+		},
+		"luxIndex": {
+			"photo": [9999.9, 9999.9, 355.0, 325.0],
+			"motion": [9999.9, 9999.9, 370.0, 340.0]
+		},
+		"isSupporthightluxSsport":[1, 1],
+		"isSupportMutiCamSsport":[0, 0],
+		"freqThreshold": [400.0, 35.0],
+		"bandCoefThreshold": [0.05, 0.02]
+	},
+	"StaggerHDR": {
+		"zoomRatio": {
+			"photo": [999.9, 999.9]
+		}
+	},
+	"SingleROIFallback": {
+		"_comment": "seamless roi->binning, QUAD2x2_HDR_ISZ2X->SHDR_CAPTURE, QUAD2x2_HDR_ISZ2X_FUS->SHDR_BURST",
+		"burstIdx": [1, 1, 0]
+		}
+}

@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AiConfig version="3.5.45.21">
+    <!--算法运行框架(勿改)-->
+    <FrameWork>vdnn</FrameWork>
+	<lipMaxNum>5</lipMaxNum>
+	<fot41 use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineCoarsedet41.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1, BF16 12-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>conv2d/132</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="1">
+			<!--相机模式类型,1(capture), 2(preview)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3（高精度/低精度）-->
+			<accMode>3</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture),2(preview)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3(高精度/低精度)-->
+			<accMode>3</accMode>
+		</preProp>
+	</fot41>
+	<fot103Big use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineCoarsedet103Big.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>conv2d/165 sigmoid/186</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="1">
+			<!--相机模式类型,1(capture), 2(preview)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>1</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3（高精度/低精度）-->
+			<accMode>3</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="0">
+			<!--相机模式类型,1(capture),2(preview)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>1</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3(高精度/低精度)-->
+			<accMode>3</accMode>
+		</preProp>
+	</fot103Big>
+	<fot103Small use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineCoarsedet103Small.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>conv2d/130 sigmoid/147 sigmoid/154</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="1">
+			<!--相机模式类型,1(capture), 2(preview)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3（高精度/低精度 拍照多人高精度,单人的时候是做低精度使用）-->
+			<accMode>3</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture),2(preview)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3(高精度/低精度)-->
+			<accMode>3</accMode>
+		</preProp>
+	</fot103Small>
+	<fot103SmallLow use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineCoarsedet103SmallLowPreview.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>conv2d/97 sigmoid/114</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture), 2(preview)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3（高精度/低精度）-->
+			<accMode>2</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture),2(preview)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度), 2(低精度), 3(高精度/低精度)-->
+			<accMode>2</accMode>
+		</preProp>
+	</fot103SmallLow>	
+	<fotConf use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineConf.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>sigmoid/72</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>1</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>2</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>3</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>1</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>2</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>
+	</fotConf>
+	<fotSegLite use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineSegLite.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>bilinear/86</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>
+	</fotSegLite>
+	<fotSeg use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineSeg.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>bilinear/85</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device>
+		<!--模型的拍照属性-->		
+		<capProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>1</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>	
+	</fotSeg>
+	
+	<fotLipSrtBig use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineLipSrtBig.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>bilinear/80</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>			
+	</fotLipSrtBig>
+	<fot24HairPre use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineHairMustangShelbyPre.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>conv2d/140</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>1</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>		
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>3</accMode>
+		</preProp>		
+	</fot24HairPre>
+	<fot24HairCap use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineHairMustangShelby.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>conv2d/93</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>3</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>3</accMode>
+		</preProp>		
+	</fot24HairCap>
+	<fotLipMulBig use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineLipMultiBig.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>bilinear/80</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>		
+	</fotLipMulBig>
+	<fotLipJudge use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineLipJudge.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>bilinear/80</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>			
+	</fotLipJudge>
+	<fotLipCover use="1">
+		<!--模型路径-->
+		<ModelPath>FaceOutlineLipFullCover.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>12</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>bilinear/80 sigmoid/92</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>1</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>2</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 4（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>1</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>		
+	</fotLipCover>
+	<fotRecheck use="1">
+		<!--模型路径-->
+		<ModelPath>srt_lip_0803recheck.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>2</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>data</input_node>
+		<output_node>conv2d/86</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device>
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 4（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>				
+	</fotRecheck>
+	<fotLipHighAccCap use="1">
+		<!--模型路径-->
+		<ModelPath>refine_lip_85_1208_nowarp.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>2</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>data</input_node>
+		<output_node>conv2d/164</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device>
+		<!--模型的拍照属性-->		
+		<capProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>3</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>2</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>			
+	</fotLipHighAccCap>
+	<fotLipHighAccPre use="1">
+		<!--模型路径-->
+		<ModelPath>refine_lip_small_231127_v1.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1-->
+		<engine_type>2</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>data</input_node>
+		<output_node>conv2d/86</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device> 
+		<!--模型的拍照属性-->		
+		<capProp use="0">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>1</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</capProp>
+		<!--模型的预览属性-->		
+		<preProp use="1">
+			<!--相机模式类型,1(capture)，2(preview) 4(cap/pre)-->
+			<camMode>2</camMode>
+			<!--人脸模式-->
+			<faceMode>
+				<!--人数模式, 1(单人),2(多人),3(单人/多人)-->
+				<num>3</num>
+				<!--人脸模式, 1(小人脸),2(大人脸),3(小人脸/大人脸)-->
+				<size>3</size>
+				<!--角度模式，1(有限制),2(无限制)-->	
+				<yaw>2</yaw>
+			</faceMode>
+			<!--遮挡模式, 1(非遮挡),2(遮挡),3(遮挡/非遮挡)-->
+			<cover>3</cover>
+			<!--运动模式, 1(非运动),2(运动),3(运动/非运动)-->
+			<motion>3</motion>
+			<!--精度模式类型,1(高精度)，2(低精度), 3（高精度/低精度）-->
+			<accMode>1</accMode>
+		</preProp>			
+	</fotLipHighAccPre>
+</AiConfig>

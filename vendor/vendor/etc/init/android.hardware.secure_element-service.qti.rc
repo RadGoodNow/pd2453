@@ -1,0 +1,8 @@
+on property:vendor.vivo.nfc.boot=1
+    enable vendor.secure_element
+
+service vendor.secure_element /vendor/bin/hw/android.hardware.secure_element-service.qti
+    class hal
+    disabled
+    user system
+    group nfc system

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ddr_freq_options>
+
+	<write path="/sys/kernel/debug/aoss_send_message"/>
+	<read path="/sys/kernel/debug/clk/measure_only_mccc_clk/clk_measure"   read_range="10000000"/>
+
+	<option name="547.2MHz"  write_value="{class:ddr, res:fixed, val: 547.2}"       read_value="547200000"/>
+	<option name="1353.6MHz"    write_value="{class:ddr, res:fixed, val: 1353.6}"         read_value="1353600000"/>
+	<option name="1555.2MHz" write_value="{class:ddr, res:fixed, val: 1555.2}"      read_value="1555200000"/>
+	<option name="1708.8MHz" write_value="{class:ddr, res:fixed, val: 1708.8}"      read_value="1708800000"/>
+	<option name="2092.8MHz" write_value="{class:ddr, res:fixed, val: 2092.8}"      read_value="2092800000"/>
+	<option name="2736MHz"   write_value="{class:ddr, res:fixed, val: 2736}"        read_value="2736000000"/>
+	<option name="3187.2MHz"   write_value="{class:ddr, res:fixed, val: 3187.2}"    read_value="3187200000"/>
+	<option name="3686.4MHz"   write_value="{class:ddr, res:fixed, val: 3686.4}"    read_value="3686400000"/>
+	<option name="4224MHz"   write_value="{class:ddr, res:fixed, val: 4224}"    read_value="4237000000"/>
+	<option name="4761.6MHz"   write_value="{class:ddr, res:fixed, val: 4761.6}"    read_value="4761600000"/>
+	<option name="reset"   write_value="{class:ddr, res:fixed, val: Fmax}"    read_value=""/>
+
+</ddr_freq_options>

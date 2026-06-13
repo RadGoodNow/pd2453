@@ -1,0 +1,59 @@
+{
+	"ARNET": {
+		"modelPath": "micBokehAR_QNN2_12_x_256.vdnn",
+		"iNodeNum": 3,
+		"iNodeCfgs": {
+			"name_0": "input_0_0",
+			"allocMem_0": 1,
+			"memType_0": 0,
+			"name_1": "input_1_0",
+			"allocMem_1": 1,
+			"memType_1": 0,
+			"name_2": "input_2_0",
+			"allocMem_2": 1,
+			"memType_2": 0
+		},
+		"oNodeCfgs": {
+			"name": "depth_to_space_26_f_0",
+			"allocMem": 1,
+			"memType": 0
+		},
+		"sessionName": "default",
+		"inferType": 6
+	},
+	"IUNET": {
+		"modelPath": "micBokehIU_QNN2_12_x.vdnn",
+		"iNodeNum": 4,
+		"iNodeCfgs": {
+			"name_0": "input_0_0",
+			"allocMem_0": 1,
+			"memType_0": 0,
+			"name_1": "input_1_0",
+			"allocMem_1": 1,
+			"memType_1": 0,
+			"name_2": "input_2_0",
+			"allocMem_2": 1,
+			"memType_2": 0,
+			"name_3": "input_3_0",
+			"allocMem_3": 1,
+			"memType_3": 0
+		},
+		"oNodeCfgs": {
+			"name": "depth_to_space_18_f_0",
+			"allocMem": 1,
+			"memType": 0
+		},
+		"sessionName": "default",
+		"inferType": 6
+	},
+	"degOfBlurBenchMark": 12,
+	"degOfSpot":          64,
+	"arInputScale":		  0.0000305180,
+	"arOutputScale":	  0.0000315573,
+	"iuInputScale":		  0.0000305180,
+	"iuOutputScale":	  0.0000320381,
+	"arInputZeroPt":	  32768,
+	"arOutputZeroPt":	  32684,
+	"iuInputZeroPt":	  32768,
+	"iuOutputZeroPt":	  32483
+}

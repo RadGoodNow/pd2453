@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application_config>
+   <!-- Qcom usb3.0  echo "tx_drv_lvl 0x40" > /sys/devices/virtual/usb30_eye_tune/usb30/ss_phytune -->
+    <usbinfo product_solution="QCOM" product_platform="SM8750" product_model="PD2408" speed="3.0" phy_mode="ss-phy"/>
+    <parameter tx_drv_lvl="0x3f" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2f"/>
+    <parameter tx_drv_lvl="0x3f" tx_pre_emph="0x0" tx_emp_post1_lvl="0x31"/>
+    <parameter tx_drv_lvl="0x3f" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2d"/>
+    <parameter tx_drv_lvl="0x3d" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2f"/>
+    <parameter tx_drv_lvl="0x3b" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2f"/>
+
+   <!-- Qcom usb3.0  echo "tx_drv_lvl 0x40" > /sys/devices/virtual/usb30_eye_tune/usb30/ss_phytune -->
+    <usbinfo product_solution="QCOM" product_platform="SM8750" product_model="PD2454" speed="3.0" phy_mode="ss-phy"/>
+    <parameter tx_drv_lvl="0x3f" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2f"/>
+    <parameter tx_drv_lvl="0x3f" tx_pre_emph="0x0" tx_emp_post1_lvl="0x31"/>
+    <parameter tx_drv_lvl="0x3f" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2d"/>
+    <parameter tx_drv_lvl="0x3d" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2f"/>
+    <parameter tx_drv_lvl="0x3b" tx_pre_emph="0x0" tx_emp_post1_lvl="0x2f"/>
+
+    <!-- Qcom usb2.0 eusb_phy   echo "0x51 0x6" > /sys/devices/virtual/usb_eye_tune/usb/repeater_phytune -->
+    <usbinfo product_solution="QCOM" product_platform="SM7750" product_model="PD2464" speed="2.0" phy_mode="eusb-phy"/>
+    <parameter reg1="0x51" val1="0xf" reg2="0x52" val2="0x5" reg3="0x53" val3="0x7" reg4="0x54" val4="0x1"/>
+    <parameter reg1="0x51" val1="0xf" reg2="0x52" val2="0x5" reg3="0x53" val3="0x7" reg4="0x54" val4="0x4"/>
+    <parameter reg1="0x51" val1="0xf" reg2="0x52" val2="0x3" reg3="0x53" val3="0x7" reg4="0x54" val4="0x0"/>
+    <parameter reg1="0x51" val1="0xf" reg2="0x52" val2="0x5" reg3="0x53" val3="0x7" reg4="0x54" val4="0x0"/>
+    <parameter reg1="0x51" val1="0xf" reg2="0x52" val2="0x5" reg3="0x53" val3="0x7" reg4="0x54" val4="0x2"/>
+
+    <!-- Qcom usb2.0 eusb_phy   echo "0x51 0x6" > /sys/devices/virtual/usb_eye_tune/usb/repeater_phytune -->
+    <usbinfo product_solution="QCOM" product_platform="SM8735" product_model="PD2453" speed="2.0" phy_mode="eusb-phy"/>
+    <parameter reg1="0x51" val1="0x8" reg2="0x54" val2="0x1" reg3="0x55" val3="0x0" reg4="0x57" val4="0x4"/>
+    <parameter reg1="0x51" val1="0xd" reg2="0x54" val2="0x1" reg3="0x55" val3="0x0" reg4="0x57" val4="0x7"/>
+    <parameter reg1="0x51" val1="0xb" reg2="0x54" val2="0x2" reg3="0x55" val3="0x0" reg4="0x57" val4="0x6"/>
+    <parameter reg1="0x51" val1="0xa" reg2="0x54" val2="0x0" reg3="0x55" val3="0x1" reg4="0x57" val4="0x5"/>
+    <parameter reg1="0x51" val1="0xd" reg2="0x54" val2="0x3" reg3="0x55" val3="0x0" reg4="0x57" val4="0x7"/>
+
+    <!-- Qcom usb2.0 eusb_phy   echo "0x51 0x6" > /sys/devices/virtual/usb_eye_tune/usb/repeater_phytune -->
+    <usbinfo product_solution="QCOM" product_platform="SM8750" product_model="PD2463" speed="2.0" phy_mode="eusb-phy"/>
+    <parameter reg1="0x51" val1="0xd" reg2="0x54" val2="0x3" reg3="0x55" val3="0x0" reg4="0x57" val4="0x7"/>
+    <parameter reg1="0x51" val1="0xe" reg2="0x54" val2="0x2" reg3="0x55" val3="0x0" reg4="0x57" val4="0x7"/>
+    <parameter reg1="0x51" val1="0xd" reg2="0x54" val2="0x1" reg3="0x55" val3="0x0" reg4="0x57" val4="0x7"/>
+    <parameter reg1="0x51" val1="0xd" reg2="0x54" val2="0x5" reg3="0x55" val3="0x0" reg4="0x57" val4="0x6"/>
+    <parameter reg1="0x51" val1="0xf" reg2="0x54" val2="0x3" reg3="0x55" val3="0x3" reg4="0x57" val4="0x7"/>
+</application_config>

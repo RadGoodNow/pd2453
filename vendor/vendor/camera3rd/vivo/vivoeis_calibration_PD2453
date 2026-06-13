@@ -1,0 +1,83 @@
+{
+    "0": [
+        {
+            "BaseRatio": 1,
+            "Cost": 0.30174075162907177,
+            "FocalLength": 1935.1199951171875,
+            "FrameHeight": 1646,
+            "FrameNum": 973,
+            "FrameWidth": 2560,
+            "FullSizeHeight": 2624,
+            "FullSizeWidth": 4086,
+            "GyroDelay": 3040728,
+            "OIS0": 0.006519022397696972,
+            "OIS1": 0.00010470722190802917,
+            "OIS2": 8.67865965119563e-05,
+            "OIS3": -0.00647806515917182,
+            "OIS4": 0,
+            "OIS5": 0,
+            "OISDelay": -1973929,
+            "OIS_GainX": 1,
+            "OIS_GainY": 1,
+            "OIS_TYPE": 1,
+            "OIS_centerX": 0,
+            "OIS_centerY": 0,
+            "date": "2025.02.26 17:22:56",
+            "description": "normal eis 1080P 30FPS",
+            "fps": 30,
+            "id": 0
+        },
+        {
+            "BaseRatio": 0.6,
+            "Cost": 0.16699970427974312,
+            "FocalLength": 1218.8609619140625,
+            "FrameHeight": 1646,
+            "FrameNum": 984,
+            "FrameWidth": 2560,
+            "FullSizeHeight": 2000,
+            "FullSizeWidth": 3116,
+            "GyroDelay": 6351484,
+            "OIS0": 0,
+            "OIS1": -1,
+            "OIS2": 1,
+            "OIS3": 0,
+            "OIS4": 0,
+            "OIS5": 0,
+            "OISDelay": 0,
+            "OIS_GainX": 1,
+            "OIS_GainY": 1,
+            "OIS_TYPE": 0,
+            "OIS_centerX": 0,
+            "OIS_centerY": 0,
+            "date": "2025.01.16 15:54:33",
+            "description": "normal eis 1080P 30FPS",
+            "fps": 30,
+            "id": 30
+        }
+    ],
+    "Gyro": {
+        "GMM00": 1,
+        "GMM01": 0,
+        "GMM02": 0,
+        "GMM10": 0,
+        "GMM11": 1,
+        "GMM12": 0,
+        "GMM20": 0,
+        "GMM21": 0,
+        "GMM22": 1,
+        "GyroDriftX": 0,
+        "GyroDriftY": 0,
+        "GyroDriftZ": 0
+    },
+    "Version": "vivoEISCalibration: V2.2.1",
+    "fovc": [
+        {
+            "DefaultFOVCfactor": 0.9308189749717712,
+            "id": 0
+        },
+        {
+            "DefaultFOVCfactor": 0,
+            "id": 30
+        }
+    ]
+}

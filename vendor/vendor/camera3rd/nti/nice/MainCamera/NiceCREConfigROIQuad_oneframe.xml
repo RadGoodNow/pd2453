@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NiceCREConfig version="0.0.1" name='TeleCamera'>
+    <Adams use="0" description="adams algorithm config">
+        <ModelPath description="adams model path">/vendor/camera3rd/nti/adams</ModelPath>
+        <EffectXmlName description="adams effect xmlfile name">AdamsEffectConfig.xml</EffectXmlName>
+        <FunctionXmlName description="adams function xmlfile name">AdamsFunctionConfig.xml</FunctionXmlName>
+        <SegmentjsonName description="adams segment config path">/vendor/camera3rd/nti/aisegment_config.json</SegmentjsonName>
+        <AllinoneXML description="adams allinone config path">/vendor/camera3rd/nti/allinone2_0_config.xml</AllinoneXML>
+    </Adams>
+    <NiceTone description="nice-tone algorithm config">
+        <ModelPath description="nice-tone model path">/vendor/camera3rd/nti/nice_tone/Model/</ModelPath>
+        <XmlPath description="nice-tone xmlfile name">/vendor/camera3rd/nti/nice_tone</XmlPath>
+        <SkysegConfigPath description="nice-tone SkysegConfigPath name">/vendor/camera3rd/nti/skyseg.xml</SkysegConfigPath>
+        <SegmentjsonName description="nice-tone segment config path">/vendor/camera3rd/nti/aisegment_config.json</SegmentjsonName>
+        <AllinoneXML description="nice-tone allinone config path">/vendor/camera3rd/nti/allinone2_0_config.xml</AllinoneXML>
+        <CVTNXmlPath description="nice-tone brp_xml_path config path">/vendor/camera3rd/nti/nice_tone/RawBrp/xml</CVTNXmlPath>
+    </NiceTone>
+    <!-- sensor infomation, max segmentation num: 2-->
+    <NoiseInfo num='1' name='IMX882'>
+        <limitexp>35310</limitexp>
+        <coeff>1</coeff>
+        <Sensor01>
+            <a0>0.0010243642</a0>
+            <a1>0.0044352463</a1>
+            <b0>0.0000023569</b0>
+            <b1>0.0002716186</b1>
+            <b2>0.0098872833</b2>
+        </Sensor01>
+    </NoiseInfo>
+    <NoiseInfoHDR num='1' name='IMX882'>
+        <limitexp>35310</limitexp>
+        <coeff>1</coeff>
+        <Sensor01>
+            <a0>0.0010243642</a0>
+            <a1>0.0044352463</a1>
+            <b0>0.0000023569</b0>
+            <b1>0.0002716186</b1>
+            <b2>0.0098872833</b2>
+        </Sensor01>
+    </NoiseInfoHDR>
+    <ISOThred description="iso thred">
+        <NightModelThred description="night model thred">800</NightModelThred>
+    </ISOThred>
+    <ModelSubPath description="model sub path">MainCamera</ModelSubPath>
+    <Overlap description="block overlap, default 16">16</Overlap>
+    <OverlapThred description="overlap fusion thred">
+        <OverlapDigitalZoomThred description="overlap Digitalzoom thred">1</OverlapDigitalZoomThred>
+        <OverlapISOThresh description="overlap ISO thred">0</OverlapISOThresh>
+        <OverlapDigitalZoomThredHDR description="overlap Digitalzoom thred">1.0</OverlapDigitalZoomThredHDR>
+        <OverlapISOThreshHDR description="overlap ISO thred">0</OverlapISOThreshHDR>
+    </OverlapThred>
+    <UseVst description="vst convert swith, default 1" hdrvstmode="2">1</UseVst>
+    <FallBackKeepHdr>1</FallBackKeepHdr>
+    <BitWidthNormal description="normal flow bitwidth, default 16">16</BitWidthNormal>
+    <BitWidthHDR description="hdr flow bitwidth, default 32">32</BitWidthHDR>
+    <LogDomainMax description="Max vaule in Log Domain Convert">17034.8</LogDomainMax>
+    <!-- prebps parameter -->
+    <UsePreBit description="prebps use bit, default 16">14</UsePreBit>
+    <UseRawClarityDigitalZoom>2</UseRawClarityDigitalZoom>
+    <PreBpsParam description="pre bps parameter">
+        <!--0: none, 1: only for pretbps local, 2: only for prebps global, 4: only for postbps local, 5: only for postbps global, 6: vst and ivst (not support) -->
+        <OpticalBlackCorrect use='1' method='2' description="local ob prameter file path">/vendor/camera3rd/nti/MainCamera/prebps_localobc_roiquad_normal.xml</OpticalBlackCorrect>
+        <OpticalBlackCorrectHDR use='1' method='2' description="local ob prameter file path">/vendor/camera3rd/nti/MainCamera/prebps_localobc_roiquad_hdr.xml</OpticalBlackCorrectHDR>
+        <CodeFunc description="pre bps function code">2560</CodeFunc>
+    </PreBpsParam>
+    <!-- postbps parameter -->
+    <PostBpsParam description="post bps parameter">
+        <!--CodeFunc description="post bps function code">8456</CodeFunc>
+        <LTMCodeFunc description="ltm function code, 0, not ltm; 1, cvltm; 2, mtk ltm; 3, nice-tone">2</LTMCodeFunc-->
+        <CodeFunc description="post bps function code">376</CodeFunc>
+        <LTMCodeFunc description="ltm function code, 0, not ltm; 1, cvltm; 2, mtk ltm; 3, nice-tone">0</LTMCodeFunc>
+        <ToneFunc>1</ToneFunc>
+        <NormalNiceTMDigitalZoomTH>0</NormalNiceTMDigitalZoomTH>
+        <NiceTMOnlyUsePortrait>2</NiceTMOnlyUsePortrait>
+    </PostBpsParam>
+    <ROIStrategy use='1'>
+        <ROIUseType>2</ROIUseType>
+        <UseRoiDigitZoom>1.5</UseRoiDigitZoom>
+    </ROIStrategy>
+    <HighRatioInfo description="high ratio information">
+        <NetMinZoomRatio description="net min zoom ratio">2</NetMinZoomRatio>
+        <LastZoom description="last zoom ratio">1000</LastZoom>
+    </HighRatioInfo>
+    <ImageAlign description="image align information">
+        <FeatureTrack description="feature track information">
+            <MaxCorners>1000</MaxCorners>
+            <MaxCandidateCorners>32768</MaxCandidateCorners>
+            <MinDistance>16</MinDistance>
+            <HarrisK use='0'>0.04</HarrisK>
+            <QualityLevel>0.01</QualityLevel>
+        </FeatureTrack>
+        <GlobalAlign description="global align information">
+            <MinPointsNum>50</MinPointsNum>
+            <LKEpsilon>0.01</LKEpsilon>
+            <LKMaxIter>20</LKMaxIter>
+            <LKNumRatio>0.5</LKNumRatio>
+            <RansacMaxIter>100</RansacMaxIter>
+            <RansacConfidence>0.9950</RansacConfidence>
+            <RansacThreshold>3</RansacThreshold>
+            <UseRegion>0</UseRegion>
+            <Ratio>0.5</Ratio>
+            <SwitchRegionDigitalZoom>4</SwitchRegionDigitalZoom>
+            <DeltaPad>32</DeltaPad>
+            <RandomDisturbDigitalZoom use="1">1</RandomDisturbDigitalZoom>
+        </GlobalAlign>
+    </ImageAlign>
+    <SunFocusNearAlign use='1' description="align for sun scene when focus at foreground">
+        <DistThresh>650</DistThresh>
+        <LKNumRatio>0.70</LKNumRatio>
+        <LimitPointsNum>50</LimitPointsNum>
+    </SunFocusNearAlign>
+    <Perception use='1' description="perception paramter">
+        <!--default 70-->
+        <GhostDetectOn>1</GhostDetectOn>
+        <ShakingTH>0.01</ShakingTH>
+        <LuxIndexTh>8888888</LuxIndexTh>
+        <ExpTimeTh>87944</ExpTimeTh>
+        <BandingNNTh>60</BandingNNTh>
+        <BandingSSTh>150</BandingSSTh>
+        <MatchShakingThreshold>0.1</MatchShakingThreshold>
+        <FirstSFrameIndex>5</FirstSFrameIndex>
+        <SecondSFrameIndex>6</SecondSFrameIndex>
+        <SwitchNormalMatchThreshold>1</SwitchNormalMatchThreshold>
+        <SwitchLongMatchThreshold>1</SwitchLongMatchThreshold>
+    </Perception>
+    <Unpurple use='0' mode='1' openmode='0' description="Unpurple paramster, openmode=0: only use in HDR scence; openmode=1: use in all scence;">
+        <Radius>5</Radius>
+        <Intensity>2</Intensity>
+        <MinBrightness>0</MinBrightness>
+        <MinRedToBlueRatio>0.5</MinRedToBlueRatio>
+        <MaxRedToBlueRatio>0.33</MaxRedToBlueRatio>
+        <Threshold>30</Threshold>
+    </Unpurple>
+    <ModelPath description="normal model information">
+        <UseAnalogGainMethod description="0:lastframe, 1:ref">1</UseAnalogGainMethod>
+        <NetSelectParam>
+            <digitZoomThd>1</digitZoomThd>
+            <FrameMatchSuccessThd>0</FrameMatchSuccessThd>
+        </NetSelectParam>
+        <NormModel use="1" inw="544" inh="544" num="4" warp="1" quad="1">nice_imx882_sat_full_x1_4f.vdnn</NormModel>
+    </ModelPath>
+    <XDR use="1">
+        <xmlPath>/vendor/camera3rd/nti/xdr</xmlPath>
+    </XDR>
+    <!-- <Gyro use="1">
+        <DigitalZoom>0</DigitalZoom>
+    </Gyro> -->
+</NiceCREConfig>

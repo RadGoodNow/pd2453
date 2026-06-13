@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sw_selfcheck_items>
+	<command name = "lcm_cali_file">
+		<item type = "file" tag = "/mnt/vendor/persist/display/display_3dLut.json" />
+	</command>
+
+	<command name = "lcm_cali_file_back">
+		<item type = "file" tag = "/mnt/vendor/persist/display/display_3dLut_2nd.json" />
+	</command>
+
+</sw_selfcheck_items>

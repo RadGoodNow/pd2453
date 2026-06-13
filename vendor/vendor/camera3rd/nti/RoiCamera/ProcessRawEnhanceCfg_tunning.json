@@ -1,0 +1,17 @@
+{
+    "AlgoMode": {
+		"isoBoundary0":	800,
+		"isoBoundary1":	4800,
+		"motionLevelBoundary":	3
+    },
+    "AINRMode": {
+		"AINREnable":	1
+    },
+	"RawEnhanceHQ": {
+		"RHHQEnable":	1
+    },
+	"RawEnhanceGIC": {
+		"mediumGicEnable":	0,
+		"hqGicEnable":	1
+    }
+}

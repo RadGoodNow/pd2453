@@ -1,0 +1,33 @@
+npu_type:5
+***graph info config   0/1/2/3/4 (uint8/uint16/fp16/fp32/int32)***
+graph_name:track_522
+graph_type:0
+input_output_num:2-2
+
+***input tensor dtype=0 config _1_0***
+dims=1-256-256-3
+rank=4
+id=1
+scale=0.018659
+offset=-114
+
+***input tensor dtype=0 config _2_0***
+dims=1-8-8-256
+rank=4
+id=2
+scale=0.047046
+offset=-129
+
+***output tensor dtype=0 config _1040_0***
+dims=1-16-16-1
+rank=4
+id=448
+scale=0.160771
+offset=-178
+
+***output tensor dtype=0 config _998_0***
+dims=1-16-16-4
+rank=4
+id=449
+scale=0.396750
+offset=0

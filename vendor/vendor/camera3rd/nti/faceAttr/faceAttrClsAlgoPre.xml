@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AiConfig version="1.0.0.13">
+    <!--算法运行框架(勿改)-->
+	<faceNumMax>5</faceNumMax>
+    <FrameWork>vdnn</FrameWork>
+	<faceMultiClsAlgoFOT use="1">
+		<!--模型路径-->
+		<ModelPath>faceMultiClsAlgoFOT.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1, BF16 12-->
+		<engine_type>2</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<!--output_node 6, skin, gender, race, age, quality, statue-->
+		<output_node>conv2d/52 conv2d/53 conv2d/54 conv2d/55 conv2d/56 conv2d/57</output_node>
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device>
+		<faceSizeMin>10</faceSizeMin>
+		<faceYawMax>50</faceYawMax>
+		<facePitchMax>20</facePitchMax>
+		<luxIndexMax>500.0</luxIndexMax>
+		<cbcrMax>0.9</cbcrMax>
+		<clsNum>6</clsNum>
+		<detectPeriod>6</detectPeriod>
+	</faceMultiClsAlgoFOT>
+	<faceSkinClsAlgoFD use="1">
+		<!--模型路径-->
+		<ModelPath>faceSkinClsAlgoFD.vdnn</ModelPath>
+		<!--模型推理引擎类型类型INT8 4, UINT8 3, FP16 2,  FP32 1, BF16 12-->
+		<engine_type>2</engine_type>
+		<!--类型为档次数值0-10-->
+		<Powerlevel>10</Powerlevel>
+		<input_node>input/0</input_node>
+		<output_node>conv2d/50 conv2d/59 conv2d/53 conv2d/62 conv2d/56 conv2d/65</output_node> 
+		<threads>1</threads>
+		<!--运行硬件类型,0(cpu)，1(gpu)类型为0时设置线程数-->
+		<Device>0</Device>
+		<faceSizeMin>10</faceSizeMin>
+		<faceYawMax>50</faceYawMax>
+		<facePitchMax>20</facePitchMax>
+		<luxIndexMax>500.0</luxIndexMax>
+		<cbcrMax>0.9</cbcrMax>
+		<clsNum>1</clsNum>
+		<detectPeriod>6</detectPeriod>
+	</faceSkinClsAlgoFD>
+	<faceClsConfusion>
+		<!--1 少儿 2 青少年 3 青年 4 中年 5 中老年 6 老年-->
+		<!--置信度低于0.8的少儿会被分类为青少年-->
+		<teenager srcCls="1" dstCls="2">
+			<fusionCls>0</fusionCls>
+		</teenager>
+		<!--置信度低于0.8的中老年会被分类为中年-->
+		<midAge srcCls="5" dstCls="4">
+			<fusionCls>0</fusionCls>
+		</midAge>
+	</faceClsConfusion>
+</AiConfig>

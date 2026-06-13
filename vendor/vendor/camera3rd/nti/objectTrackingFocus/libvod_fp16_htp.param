@@ -1,0 +1,19 @@
+npu_type:5
+***graph info config   0/1/2/3/4 (uint8/uint16/fp16/fp32/int32)***
+graph_name:vod
+graph_type:0
+input_output_num:1-1
+
+***input tensor dtype=0 config _1_0***
+dims=1-320-320-3
+rank=4
+id=1
+scale=1.000000
+offset=0
+
+***output tensor dtype=0 config _1292_0***
+dims=1-2100-25-1
+rank=4
+id=744
+scale=0.156211
+offset=-203

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NiceToneConfig version="1.0.107">
+    <NiceToneSwich>
+        <DumpDebugImage>0</DumpDebugImage>
+        <EnableDebugInput>0</EnableDebugInput>
+        <EnableAllinone>0</EnableAllinone>
+        <EnableDeglare>0</EnableDeglare>
+        <EnableSkySegment>1</EnableSkySegment>
+        <EnablePortraitSegment>1</EnablePortraitSegment>
+        <EnableLocalAWB>0</EnableLocalAWB>
+		<OutputResizeMethod description="output resize method, 0 bilinear, 1(if cameraUIZoomRatio>=cameraUIZoomRatioThreshold bicubic, else bilinear)">1</OutputResizeMethod>
+		<cameraUIZoomRatioThreshold description="threshold of cameraUIZoomRatio, greater than it, use bicubic resize">0.0</cameraUIZoomRatioThreshold>
+    </NiceToneSwich>
+	<NiceToneModeControl description="-1:close debug, 0: Adams, 1:CVTone, 2:HDRNet (实拍无效)"> -1 </NiceToneModeControl>
+    <AiModelConfig>
+        <Adams>
+            <Framework>neuron</Framework>
+            <InferType description="0: Quacomm, 1:MTK, 2:CPU Float 3: CPU Quant">0</InferType>
+            <PowerMode description="0: BALANCED, 1: PERFORMANCE, 2: SAVING, 3: TURBO">2</PowerMode>
+            <ModelName>nicetone_adams_v10.vdnn</ModelName>
+            <SegMaskType description="0: None, 1: SegmentMaskU16C3, 2: FaceMaskU16C1, 3: FaceMaskU16C1withPortraitMask">3</SegMaskType>
+            <ChannelOrder description="0: RGB, 1: BGR">0</ChannelOrder>
+            <NNModelInfo>
+              <RunWidth>1024</RunWidth>
+              <RunHegiht>1024</RunHegiht>
+              <RunDepth>3</RunDepth>
+              <ResidualOutput>0</ResidualOutput>
+              <InputNormalizeType description="0: NormAdapt, 1: NormFixed, 2: NormFloat">1</InputNormalizeType>
+              <NormValue>17034.8</NormValue>
+              <unNormValue>16383</unNormValue>
+              <NetOutputDomin description="0: log, 1: Gamma">0</NetOutputDomin>
+              <OutputInfo>
+                <OutputNum> 1 </OutputNum>
+                <OutputMinMax>
+                  <Min>0</Min>
+                  <Max>0.7507638335227966</Max>
+                </OutputMinMax>
+              </OutputInfo>
+            </NNModelInfo>
+            <DownScaleGuidedFilterParams description="parameteres for post-process down-scaled diff filtering">
+              <Radius>4</Radius>
+              <Scale>4</Scale>
+              <Eps>0.0001</Eps>
+              <Mode>0</Mode>
+            </DownScaleGuidedFilterParams>
+            <GuidedFilterParams description="parameteres for post-process ori-scale diff filtering">
+              <Radius>5</Radius>
+              <Scale>2</Scale>
+              <Eps>0.000001</Eps>
+              <Mode>0</Mode>
+            </GuidedFilterParams>
+        </Adams>
+        <HDRNet>
+            <DATA>
+              <multiexp>2</multiexp>
+              <whitepoint>16383</whitepoint>
+              <apply_ccm>1</apply_ccm>
+              <apply_gamma>1</apply_gamma>
+              <gamma_value>2.4</gamma_value>
+            </DATA>
+            <InferType description="0: Quacomm, 1:MTK, 2:CPU Float 3: CPU Quant">0</InferType>
+            <width>1020</width>
+            <height>1020</height>
+            <net_size>512</net_size>
+            <grid_size>32</grid_size>
+            <grid_lumabin>16</grid_lumabin>
+            <coeff_chnl_in>4</coeff_chnl_in>
+            <coeff_chnl_out>6</coeff_chnl_out>
+            <model_name_coeff_s1>nicetone_coeff_v13.vdnn</model_name_coeff_s1>
+            <model_name_weight_s1>nicetone_weight_v13.vdnn</model_name_weight_s1>
+            <model_name_coeff_s2>nicetone_coeff_v7.vdnn</model_name_coeff_s2>
+            <model_name_weight_s2>nicetone_weight_v7.vdnn</model_name_weight_s2>
+            <netIn_name_coeff>_1_0</netIn_name_coeff>
+            <netIn_name_weight>_1_0</netIn_name_weight>
+            <netOut_name_coeff>_116_0</netOut_name_coeff>
+            <netOut_name_weight>_134_0</netOut_name_weight>
+            <s32GuideSize>1024</s32GuideSize>
+            <GuidedFilterParams description="parameteres for post-process ori-scale diff filtering">
+              <Radius>3</Radius>
+              <Scale>2</Scale>
+              <Eps>0.000001</Eps>
+              <Mode>0</Mode>
+            </GuidedFilterParams>
+        </HDRNet>
+        <FastTM>
+			<ModelName>nicetone_fasttm_v7.vdnn</ModelName>
+			<InferType description="0: QNN quant, 1:MTK quant, 2:CPU Float 3: CPU Quant, 4:QNN FP16, 5:MTK FP16">0</InferType>
+			<InputNormalizeType description="0: NormAdapt, 1: NormFixed, 2: NormFloat">1</InputNormalizeType>
+            <NormValue>15615.0</NormValue>
+            <unNormValue>9937</unNormValue>
+            <runwidth>520</runwidth>
+            <runheight>520</runheight>
+            <channel>3</channel>
+            <InputNodeName>x_0</InputNodeName>
+            <OutputNodeName>add_14_0</OutputNodeName>
+            <OutputDomin description="0: Log 1: Gamma">0</OutputDomin>
+            <OutputMin>0</OutputMin>
+            <OutputMax>1.3269894123077393</OutputMax>
+        </FastTM>
+    </AiModelConfig>
+</NiceToneConfig>

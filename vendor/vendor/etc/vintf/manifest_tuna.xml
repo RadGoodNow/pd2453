@@ -1,0 +1,86 @@
+<!--
+    Input:
+        device/qcom/sun/manifest_tuna.xml
+        vendor/vivo/external/Nfc/vendor/manifest/st_aidl/manifest_st.xml
+        vendor/vivo/external/EseConfigure/manifest/android.hardware.secure_element/manifest_ese_aidl.xml
+        vendor/vivo/hardware/interfaces/manifest/common_manifest.xml
+        vendor/vivo/hardware/interfaces/manifest/qcom_common_manifest.xml
+        vendor/vivo/hardware/interfaces/manifest/project/PD2453/project_manifest.xml
+        vendor/vivo/external/VivoCamera/hardware/interfaces/manifest/common_manifest.xml
+        vendor/vivo/external/VivoCamera/hardware/interfaces/manifest/qcom_common_manifest.xml
+-->
+<manifest version="8.0" type="device" target-level="202404">
+    <hal format="aidl">
+        <name>android.hardware.gatekeeper</name>
+        <fqname>IGatekeeper/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.nfc</name>
+        <fqname>INfc/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/eSE1</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.novatek.hardware.visdisplaysrv</name>
+        <fqname>IVisdisplaysrv/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.bbklog</name>
+        <fqname>IBbklog/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.bbkts</name>
+        <fqname>IBbktsAidl/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.capacity_key</name>
+        <fqname>ICapacityKeyAidl/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.configstore</name>
+        <fqname>IVivoConfigStore/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.omnipotentservice</name>
+        <fqname>IOmnipotentService/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.radio.vmdri</name>
+        <fqname>IVmil/slot1</fqname>
+        <fqname>IVmil/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.sectee</name>
+        <version>2</version>
+        <fqname>ISecTee/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.vcode</name>
+        <fqname>IVcode/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.vdtf</name>
+        <fqname>IVdtf/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.vgnss</name>
+        <fqname>IVgnss/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.vivocameraprovider</name>
+        <fqname>IVivoCameraProvider/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.vmediametrics</name>
+        <fqname>IVMediaMetrics/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.vperf</name>
+        <fqname>IVPerf/default</fqname>
+    </hal>
+    <sepolicy>
+        <version>202404</version>
+    </sepolicy>
+</manifest>

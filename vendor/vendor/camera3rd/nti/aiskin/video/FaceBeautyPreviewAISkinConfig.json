@@ -1,0 +1,13 @@
+{
+	"version":	"3.1.2101",
+	"release data":	"2023-07-13 18:00",
+	"device":	2,
+	"model01":	{
+		"node_info":	[["input_0_0", "add_84_f_0"], [3921568.627451, 3960363.479221], [0, -2]],
+		"model_name":	"AISkinPreview_SM8750_004_256.vdnn"
+	},
+	"model02":	{
+		"node_info":	[["input_0_0", "add_76_f_0"], [3921568.627451, 3826682.275051], [0, -2]],
+		"model_name":	"AISkinPreview_SM8750_004_192.vdnn"
+	}
+}

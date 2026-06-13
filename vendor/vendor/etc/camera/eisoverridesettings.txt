@@ -1,0 +1,5 @@
+EISv2OperationMode=0
+EISv3OperationMode=0
+EISLDCGridEnabled=0
+EISv3FrameDelay=25
+EISv3GyroDumpEnabled=0

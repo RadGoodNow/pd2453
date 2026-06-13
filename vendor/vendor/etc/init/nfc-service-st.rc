@@ -1,0 +1,14 @@
+on property:vendor.vivo.nfc.boot=1
+    enable nfc_hal_service
+on property:vendor.vivo.nfc.chip.type=ST54J
+	setprop persist.vendor.vivo.nfc.chip.type ST54J
+on property:vendor.vivo.nfc.chip.type=ST54L
+	setprop persist.vendor.vivo.nfc.chip.type ST54L
+
+on property:vendor.vivo.nfc.halDead=1
+   restart nfc_hal_service
+
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service-st
+    class hal
+    user nfc
+    group nfc

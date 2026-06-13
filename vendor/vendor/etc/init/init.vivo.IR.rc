@@ -1,0 +1,7 @@
+
+on boot
+
+on post-fs-data
+# IR device permission
+    chown system system /dev/kookong
+    chmod 0666 /dev/kookong

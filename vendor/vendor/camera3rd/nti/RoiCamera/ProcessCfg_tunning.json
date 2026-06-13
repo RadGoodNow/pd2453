@@ -1,0 +1,121 @@
+{
+    "hdrMotion": {
+        "ainrCfg": {
+            "shortGainThrold":	1000,
+            "delevThrold":	-2.5
+        }
+    },
+    "HDR": {
+        "ainrCfg": {
+            "ISOThrold":	50
+        }
+    },
+    "supernight": {
+        "ainrCfg": {
+            "Enable":	1
+        },
+        "mfainrCfg": {
+            "Enable":	0,
+            "ShortGainISOThrold":	10000,
+            "InputFrameMax":  10,
+            "InputFrameMin":  5
+        },
+        "localawbCfg": {
+            "Enable":	1,
+            "ButtonEnable": 0
+        }
+    },
+    "fastnight": {
+        "ainrCfg": {
+            "Enable":	1
+        },
+        "localawbCfg": {
+            "Enable":	1,
+            "ButtonEnable": 1
+        },
+        "softBrp3_0": {
+            "Enable":   1
+        }
+    },
+    "HDRLite": {
+        "ainrCfg": {
+            "shortGainThrold":	10,
+            "darkBoostGainRatioThrold":	5.5
+        }
+    },
+    "LLHDR": {
+        "ainrCfg": {
+            "shortGainThrold":	8,
+            "darkBoostGainRatioThrold":	2.5
+        }
+    },
+    "HDRoff": {
+        "ainrCfg": {
+            "shortGainThrold":	32,
+            "darkBoostGainRatioThrold":	6
+        }
+    },
+    "HDRsport": {
+        "mfnrMode": {
+            "isoBoundary0":	600,
+            "isoBoundary1":	2000,
+            "motionLevelBoundary":	3
+        }
+    },
+    "prebps": {
+        "ModeCfg": {
+            "expTimeThrold":	1000,
+            "shortgainThrold":	120
+        }
+    },
+    "portraitToneMap": {
+        "ToneCfg": {
+            "outlineEnable": 1,
+            "portraitEnable":	1
+        }
+    },
+    "skySegment": {
+        "segCfg": {
+            "Enable": 1
+        }
+    },
+    "mfnr": {
+        "evmmDenoiseMode": 1
+    },
+    "cac": {
+        "Enable": 0
+    },
+    "lightspot": {
+        "Enable": 1,
+        "luxThreshold": 290,
+        "threshDay": 10500,
+        "threshNight": 10000
+    },
+    "zeissColorPs": {
+        "fileConfigEnable": 1
+    },
+    "secSkySegment": {
+        "Enable": 0
+    },
+    "BrpxMode": {
+		"BrpxModeRGB": {
+			"Enable":	1,
+			"_comment": "brpx rgb mode for night raw",
+			"ISOThroldMax" : 3200,
+			"ISOThroldMin" : 50
+		},
+        "BrpxUIMode": {
+            "PortraitEnable": 1,
+            "NormalEnable" :1,
+            "NightEnable" :1
+            
+        },
+        "BrpxScenetype": {
+            "LLHDR": 1,
+            "HDR" :1,
+            "HDRLite":1,
+            "FlashEnable":1,
+			"HDRoff":1
+        }
+	}
+}
