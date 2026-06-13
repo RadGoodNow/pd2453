@@ -1,0 +1,55 @@
+#init.rc for vivo
+on property:persist.vivo.wifi.tcp.parameter.enable=true
+    write /proc/sys/net/ipv4/tcp_syn_retries 6
+
+#vivo xushuo add for SPU NVM begin
+on post-fs
+    write /mnt/vendor/persist/secnvm/test_channel_names sp_nvm\nvivo_password_keeper\n
+    chmod 0644 /mnt/vendor/persist/secnvm/test_channel_names
+#vivo xushuo add for SPU NVM end
+
+on post-fs-data
+    #vivo XieJiYuan add for bbkpanic begin
+    mkdir /data/bbkpanic 0777 root system encryption=Attempt
+    #vivo XieJiYuan add for bbkpanic end
+
+# vivo laifeilong add for xtra property begin
+on property:persist.vivo.gnss.log.level=*
+    setprop vendor.qti.location.force.debug ${persist.vivo.gnss.log.level}
+
+on property:persist.vivo.gnss.restart_launcher=true
+    setprop vendor.qti.location.force.debug ${persist.vivo.gnss.log.level}
+    restart loc_launcher
+    setprop persist.vivo.gnss.restart_launcher false
+# vivo laifeilong add for xtra property end
+
+# vivo YuanQiuxing add for bt cl logs start
+# zip and move logs to location specified by cloud diag (for uploading)
+service cl_bt_logs /system/bin/cl_bt_logs.sh
+    class main
+    user root
+    group root system bluetooth
+    disabled
+    oneshot
+# vivo YuanQiuxing add for bt cl logs end
+
+# vivo xiashoucheng add for gps hal log begin
+on property:persist.vivo.gnss.hallog=*
+    setprop vendor.qti.gnss.force.verbose ${persist.vivo.gnss.hallog}
+# vivo xiashoucheng add for gps hal log end
+
+#vivo charger add for India BIS test start
+on property:sys.vivo.bis_certify_state=*
+    write /sys/class/cms_class/bis_certify_state ${sys.vivo.bis_certify_state}
+    write /sys/class/power_supply/cms/bis_certify_state ${sys.vivo.bis_certify_state}
+#vivo charger add for India BIS test end
+
+# vivo xiashoucheng add for dynamic intermediate position begin
+on property:persist.vivo.gnss.intermediate.pos=*
+    setprop vendor.qti.gnss.open.interpos ${persist.vivo.gnss.intermediate.pos}
+# vivo xiashoucheng add for dynamic intermediate position end
+
+on boot
+    #vivo dongashan add for aon begin
+    chmod 0666 /sys/kernel/camera_aon/aon_select
+    #vivo dongashan add for aon end
