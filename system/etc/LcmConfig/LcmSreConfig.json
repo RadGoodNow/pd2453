@@ -1,0 +1,74 @@
+[
+    {
+        "project":[ "PD2453" ],
+        "sreConfigStatus": "true",
+	"panel":[
+		{
+               "panel_name":["mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel"],
+               "Version": 4,
+               "hbmMap": [ 16032, 16033, 16083, 16103, 16123, 16123, 16123, 16240 ],
+		"hbmUpLuxLevel": [ 10000, 20000, 30000, 50000, 70000, 90000, 100000 ],
+		"hbmDownLuxLevel": [ 9999, 10000, 20000, 30000, 50000, 70000, 90000 ],
+               "hbmLimitTime": 15,
+               "transitionPoint": 16032,
+               "hdrBrightnessLimit": 16240,
+               "upLuxDelay": 2500,
+               "downLuxDelay": 3500,
+			   "batteryLimit": {
+			        "batteryPercent": [1,5,10,15],
+			        "batteryLimitBrightness": [16032,16104,16159,16191]
+           	    },
+			"packagePolicy":[
+				{
+					"packages":[ "com.vivo.gallery"],
+					"packageHbmMap":[ 16032, 16033, 16083, 16103, 16123, 16141, 16159, 16240 ]
+				}
+			]
+		},
+		{
+               "panel_name":["mdss_dsi_pd2453_cndvt4_fhd_cmd panel"],
+               "Version": 4,
+               "hbmMap": [ 16032, 16033, 16083, 16103, 16123, 16123, 16123, 16240 ],
+		"hbmUpLuxLevel": [ 10000, 20000, 30000, 50000, 70000, 90000, 100000 ],
+		"hbmDownLuxLevel": [ 9999, 10000, 20000, 30000, 50000, 70000, 90000 ],
+               "hbmLimitTime": 15,
+               "transitionPoint": 16032,
+               "hdrBrightnessLimit": 16240,
+               "upLuxDelay": 2500,
+               "downLuxDelay": 3500,
+			   "batteryLimit": {
+			        "batteryPercent": [1,5,10,15],
+			        "batteryLimitBrightness": [16032,16104,16159,16191]
+           	    },
+			"packagePolicy":[
+				{
+					"packages":[ "com.vivo.gallery"],
+					"packageHbmMap":[ 16032, 16033, 16083, 16103, 16123, 16141, 16159, 16240 ]
+				}
+			]
+		},
+		{
+               "panel_name":["mdss_dsi_pd2453_cndvt5_fhd_cmd panel"],
+               "Version": 4,
+               "hbmMap": [ 16032, 16033, 16083, 16103, 16123, 16123, 16123, 16240 ],
+		"hbmUpLuxLevel": [ 10000, 20000, 30000, 50000, 70000, 90000, 100000 ],
+		"hbmDownLuxLevel": [ 9999, 10000, 20000, 30000, 50000, 70000, 90000 ],
+               "hbmLimitTime": 15,
+               "transitionPoint": 16032,
+               "hdrBrightnessLimit": 16240,
+               "upLuxDelay": 2500,
+               "downLuxDelay": 3500,
+			   "batteryLimit": {
+			        "batteryPercent": [1,5,10,15],
+			        "batteryLimitBrightness": [16032,16104,16159,16191]
+           	    },
+			"packagePolicy":[
+				{
+					"packages":[ "com.vivo.gallery"],
+					"packageHbmMap":[ 16032, 16033, 16083, 16103, 16123, 16141, 16159, 16240 ]
+				}
+			]
+		}
+	   ]
+	}
+]

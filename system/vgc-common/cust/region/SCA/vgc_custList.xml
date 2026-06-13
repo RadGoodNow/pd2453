@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <custlist name="setupwizard_language_with_iso_map">
+        <item name="CO" value="es_CO"/>
+        <item name="CL" value="es_CL"/>
+        <item name="PE" value="es_PE"/>
+        <item name="CR" value="es_CR"/>
+        <item name="PA" value="es_PA"/>
+    </custlist>
+</config>

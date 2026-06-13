@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<boolean name="light_sensor_angle">true</boolean>
+	<boolean name="linear_motor_support">true</boolean>
+	<boolean name="under_infrared_support">true</boolean>
+	<boolean name="front_cct_support">true</boolean>
+	<boolean name="front_cct_fov_require">false</boolean>
+	<boolean name="cct_coexist_bright_light">true</boolean>
+	<boolean name="gyroscope_support">true</boolean>
+	<boolean name="sarA_support">false</boolean>
+	<boolean name="lcm_light_sensor">true</boolean>
+	<boolean name="elliptic_ultrasound_support">true</boolean>
+	<boolean name="hifi_support">false</boolean>
+	<boolean name="fm_support">false</boolean>
+	<boolean name="multi_speaker_receiver_support">true</boolean>
+	<boolean name="elliptic_ultrasound_support">true</boolean>
+	<boolean name="dpdt_test">true</boolean>
+	<boolean name="new_nr5g">true</boolean>
+	<boolean name="nsa_solution">true</boolean>
+	<string name="btb_slot">SIM1,SIM2</string>
+	<boolean name="sim_test_support">true</boolean>
+	<string name="camera_type">back[Master,Wide]front[Master]</string>
+	<boolean name="camera_pdaf">true</boolean>
+	<boolean name="camera_ois_test">true</boolean>
+	<boolean name="front_camera_under_screen">true</boolean>
+	<boolean name="doule_flash_light">true</boolean>
+	<boolean name="rear_wide_type_ff">true</boolean>
+	<boolean name="flash_light_cali_support">true</boolean>
+	<boolean name="video_record">true</boolean>
+	<boolean name="high_rate_shadow_support">true</boolean>
+	<boolean name="lcm_refresh_rate">true</boolean>
+	<boolean name="bad_screen_support">true</boolean>
+	<boolean name="nova_display_ic_support">true</boolean>
+	<boolean name="nova_i2c_not_support">true</boolean>
+	<boolean name="nova_display_ic_v2_support">true</boolean>
+	<boolean name="double_battery">true</boolean>
+</resources>

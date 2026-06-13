@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2023 vivo Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - vivo Technologies, Inc.
+#
+
+service vendor.vivosymphonyservice /system/bin/vivosymphonyservice
+    class main
+    user root
+    group root system readproc
+    seclabel u:r:artd:s0
+
+on property:debug.vivo.vivosymphonyservice=1
+    stop  vendor.vivosymphonyservice
+
+on property:debug.vivo.vivosymphonyservice=0
+    start vendor.vivosymphonyservice

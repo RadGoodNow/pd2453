@@ -1,0 +1,17 @@
+service vbpf_client /system/bin/vbpf_client -start
+    capabilities CHOWN SYS_ADMIN NET_ADMIN DAC_OVERRIDE
+    rlimit memlock 1073741824 1073741824
+    group root graphics network_stack net_admin net_bw_acct net_bw_stats net_raw system
+    class late_start
+    user root
+    oneshot
+
+on property:sys.vivo.vbpf_client_start=1
+    start vbpf_client
+
+# Stop command is executed by init by sending SIGKILL.
+# However, processes cannot catch SIGKILL.
+# So we do some clean up work.
+on property:sys.vivo.vbpf_client_start=0
+    stop vbpf_client
+    setprop sys.vivo.vbpf_sock_stat stopped

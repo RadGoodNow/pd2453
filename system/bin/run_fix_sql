@@ -1,0 +1,6 @@
+#!/system/bin/sh
+#
+#
+
+export LD_PRELOAD=/system/lib64/libsqlite_3.39.2.so
+/system/bin/sqlite3_3.39.2 "$@"

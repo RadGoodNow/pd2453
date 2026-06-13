@@ -1,0 +1,762 @@
+{
+    "Debug" : "false",
+    "UsePanelName" : "true",
+    "RgbFactorArray" : [
+        {
+            "index" : 0,
+            "array" : [255, 214, 154, 255, 231, 188, 255, 255, 255]
+        },
+        {
+            "index" : 1,
+            "array" : [255, 216, 166, 255, 233, 201, 255, 255, 255]
+        },
+        {
+            "index" : 2,
+            "array" : [255, 214, 154, 255, 231, 188, 255, 255, 255]
+        },
+        {
+            "index" : 3,
+            "array" : [255, 214, 154, 255, 231, 188, 255, 255, 255]
+        },
+        {
+            "index" : 4,
+            "array" : [255, 218, 159, 255, 235, 197, 255, 252, 237]
+        },
+
+        {
+            "index" : 5,
+            "array" : [255, 225, 176, 255, 238, 213, 255, 255, 254]
+        },
+        {
+            "index" : 6,
+            "array" : [255, 218, 159, 255, 235, 197, 255, 255, 239]
+        },
+        {
+            "index" : 7,
+            "array" : [255, 216, 155, 255, 232, 187, 255, 255, 255]
+        },
+        {
+            "index" : 8,
+            "array" : [255, 243, 198, 255, 255, 255, 221, 239, 255]
+        },
+		{
+            "index" : 9,
+            "array" : [255, 243, 198, 255, 255, 255, 221, 239, 255]
+        },
+		{
+            "index" : 10,
+            "array" : [255, 243, 198, 255, 255, 255, 221, 239, 255]
+        },
+		{
+            "index" : 11,
+            "array" : [255, 243, 198, 255, 255, 255, 221, 239, 255]
+        },
+		{
+            "index" : 12,
+            "array" : [255, 243, 198, 255, 255, 255, 221, 239, 255]
+        },
+		{
+            "index" : 13,
+            "array" : [255, 243, 198, 255, 255, 255, 221, 239, 255]
+        },
+		{
+            "index" : 14,
+            "array" : [255, 243, 198, 255, 255, 255, 221, 239, 255]
+        },
+        {
+            "index" : 15,
+            "array" : [255, 220, 145, 255, 255, 255, 230, 233, 255]
+        }
+    ],
+    "GameV2ColorTempFactor": [
+        {
+            "panelName"           : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+            "GameV2ColorTempRGB"  : [
+                [ "com.miHoYo.Yuanshen", "0.50", "0.50"],
+                [ "com.tencent.tmgp.sgame", "0.50", "0.50" ],
+                [ "com.tencent.tmgp.pubgmhd", "0.50", "0.50" ],
+                [ "default", "0.95", "0.95" ]
+            ]
+        },
+        {
+            "panelName"           : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+            "GameV2ColorTempRGB"  : [
+                [ "com.miHoYo.Yuanshen", "0.50", "0.50"],
+                [ "com.tencent.tmgp.sgame", "0.50", "0.50" ],
+                [ "com.tencent.tmgp.pubgmhd", "0.50", "0.50" ],
+                [ "default", "0.95", "0.95" ]
+            ]
+        },
+        {
+            "panelName"           : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+            "GameV2ColorTempRGB"  : [
+                [ "com.miHoYo.Yuanshen", "0.50", "0.50"],
+                [ "com.tencent.tmgp.sgame", "0.50", "0.50" ],
+                [ "com.tencent.tmgp.pubgmhd", "0.50", "0.50" ],
+                [ "default", "0.95", "0.95" ]
+            ]
+        }
+    ],
+
+    "VicoColorTempFactorArray": [
+        {
+            "index" : 0,
+            "vicoFactorMap": [
+                [ 1, 6000, 255, 248, 249 ],
+                [ 1, 6000, 255, 245, 242 ],
+                [ 1, 6000, 255, 242, 235 ],
+                [ 1, 6000, 255, 240, 228 ],
+                [ 1, 6000, 255, 237, 220 ],
+                [ 1, 6000, 255, 234, 212 ],
+                [ 1, 6000, 255, 230, 204 ],
+                [ 1, 6000, 255, 226, 194 ],
+                [ 1, 6000, 255, 222, 185 ]
+            ]
+        },
+        {
+            "index" : 1,
+            "vicoFactorMap": [
+                [ 1, 6000, 255, 253, 250 ],
+                [ 1, 6000, 255, 251, 245 ],
+                [ 1, 6000, 255, 249, 239 ],
+                [ 1, 6000, 255, 247, 234 ],
+                [ 1, 6000, 255, 245, 228 ],
+                [ 1, 6000, 255, 242, 221 ],
+                [ 1, 6000, 255, 240, 215 ],
+                [ 1, 6000, 255, 237, 207 ],
+                [ 1, 6000, 255, 234, 200 ],
+                [ 1, 6000, 255, 230, 192 ],
+                [ 1, 6000, 255, 226, 183 ],
+                [ 1, 6000, 255, 222, 174 ]
+            ]
+        },
+        {
+            "index" : 2,
+            "vicoFactorMap": [
+                [ 1, 6000, 255, 254, 250 ],
+                [ 1, 6000, 255, 252, 245 ],
+                [ 1, 6000, 255, 250, 239 ],
+                [ 1, 6000, 255, 248, 231 ],
+                [ 1, 6000, 255, 246, 225 ],
+                [ 1, 6000, 255, 243, 217 ],
+                [ 1, 6000, 255, 240, 208 ],
+                [ 1, 6000, 255, 237, 198 ],
+                [ 1, 6000, 255, 234, 189 ]
+            ]
+        },
+        {
+            "index" : 3,
+            "vicoFactorMap": [
+                [ 1, 6000, 255, 254, 251 ],
+                [ 1, 6000, 255, 253, 245 ],
+                [ 1, 6000, 255, 249, 238 ],
+                [ 1, 6000, 255, 247, 235 ],
+                [ 1, 6000, 255, 245, 230 ],
+                [ 1, 6000, 255, 243, 225 ],
+                [ 1, 6000, 255, 240, 218 ],
+                [ 1, 6000, 255, 238, 209 ],
+                [ 1, 6000, 255, 234, 198 ],
+                [ 1, 6000, 255, 230, 190 ],
+                [ 1, 6000, 255, 226, 180 ],
+                [ 1, 6000, 255, 222, 175 ]
+            ]
+        }
+    ],
+
+    "VicoColorTempFactor": [
+        {
+            "colorMode"           : "default",
+	    "panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+        {
+            "colorMode"           : "COLOR_MODE_PROFESSIONAL",
+	    "panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+            "VicoColorTempIndex"  : 2
+        },
+        {
+            "colorMode"           : "COLOR_MODE_ENHANCED",
+	    "panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+        {
+            "colorMode"           : "COLOR_MODE_STANDARD",
+	    "panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+       {
+            "colorMode"           : "default",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+        {
+            "colorMode"           : "COLOR_MODE_PROFESSIONAL",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+            "VicoColorTempIndex"  : 2
+        },
+        {
+            "colorMode"           : "COLOR_MODE_ENHANCED",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+        {
+            "colorMode"           : "COLOR_MODE_STANDARD",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+       {
+            "colorMode"           : "default",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+        {
+            "colorMode"           : "COLOR_MODE_PROFESSIONAL",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+            "VicoColorTempIndex"  : 2
+        },
+        {
+            "colorMode"           : "COLOR_MODE_ENHANCED",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        },
+        {
+            "colorMode"           : "COLOR_MODE_STANDARD",
+	    "panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+            "VicoColorTempIndex"  : 3
+        }
+    ],
+
+    "RgbFactorBlueLight" : {
+        "oled" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 0
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+		"panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 4
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+		"panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 5
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+		"panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 6
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+		"panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 4
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+		"panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 5
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+		"panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 6
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+		"panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 4
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+		"panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 5
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+		"panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 6
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 3
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "false",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 3
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 1
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+                "rgbFactorArrayIndex"   : 3
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 3
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 3
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 3
+            }
+        ],
+
+        "super_lcd" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 3
+            }
+        ],
+
+        "lcd" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 3
+            }
+        ],
+
+        "e1pro" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 4
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+                "rgbFactorArrayIndex"   : 0
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 0
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 1
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+                "rgbFactorArrayIndex"   : 0
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 1
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 0
+            }
+        ],
+
+        "default" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 0
+            }
+        ]
+    },
+
+    "RgbFactorColorTemp": {
+        "oled" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 8
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+		"panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 12
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+		"panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 13
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+		"panelName"             : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 14
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+		"panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 12
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+		"panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 13
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+		"panelName"             : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 14
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+		"panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 12
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+		"panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 13
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+		"panelName"             : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+                "rgbFactorArrayIndex"   : 14
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 8
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 6
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+                "rgbFactorArrayIndex"   : 8
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 8
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 8
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 8
+            }
+        ],
+
+        "super_lcd" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 8
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 8
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "false",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 8
+            }
+        ],
+
+        "lcd" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 8
+            }
+        ],
+
+        "e1pro" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 9
+            }, 
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+                "rgbFactorArrayIndex"   : 5
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 5
+            },
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 6
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_STANDARD",
+                "rgbFactorArrayIndex"   : 5
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_PROFESSIONAL",
+                "rgbFactorArrayIndex"   : 6
+            },
+            {
+                "deviceType"            : "tablet",
+                "supportColorManager"   : "true",
+                "colorMode"             : "COLOR_MODE_ENHANCED",
+                "rgbFactorArrayIndex"   : 5
+            }
+        ],
+
+        "default" : [
+            {
+                "deviceType"            : "default",
+                "supportColorManager"   : "default",
+                "colorMode"             : "default",
+                "rgbFactorArrayIndex"   : 5
+            }
+        ]
+    },
+
+    "RgbRatioArray" : [
+        {
+            "index" : 0,
+            "array" : [255, 255, 255]
+        },
+        {
+            "index" : 1,
+            "array" : [255, 252, 203]
+        }
+    ],
+
+    "RgbRatio": [
+        {
+            "panelType"           : "default",
+            "platform"            : "default",
+            "colorMode"           : "default",
+            "rgbRatioArrayIndex"  : 0
+        },
+        {
+            "panelType"           : "super_lcd",
+            "platform"            : "mtk",
+            "colorMode"           : "COLOR_MODE_PROFESSIONAL",
+            "rgbRatioArrayIndex"  : 1
+        },
+        {
+            "panelType"           : "e1pro",
+            "platform"            : "mtk",
+            "colorMode"           : "COLOR_MODE_PROFESSIONAL",
+            "rgbRatioArrayIndex"  : 1
+        }
+    ],
+
+	"CircleColor" : [
+	    {
+			"mode"                : 0,
+			"panelName" : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+			"whitePointX"         : 0.30,
+			"whitePointY"         : 0.311,
+			"R"                   : 52.0,
+			"angle"               : 81.0,
+			"transformMatrix"     :[
+				1.78421053,	-0.66644737,	-0.28815789,	-0.83157895,	1.76710526,	0.02368421,	0.04736842,	-0.10065789,	1.26447368,
+				0.68,	0.265,	0.15,	0.32,	0.69,	0.06,	0,	0.045,	0.79,
+				2.5700678,	-0.95998476,	-0.41507732,	-0.83612464,	1.77676486,	0.02381368,	0.03102782,	-0.06593411,	0.82827034
+			]
+		},
+	    {
+			"mode"                : 1,
+			"panelName" : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+			"whitePointX"         : 0.311,
+			"whitePointY"         : 0.322,
+			"R"                   : 56.0,
+			"angle"               : 81.0,
+			"transformMatrix"     :[
+				2.08835341,	-0.99062918,	-0.32128514,	-1.15528782,	2.23605533,	0.04953146,	0.0669344,	-0.24542615,	1.27175368,
+				0.64,	0.3,	0.15,	0.33,	0.6,	0.06,	0.03,	0.1,	0.79,
+				3.16322418,	-1.50050378,	-0.48664987,	-0.98181369,	1.90029678,	0.04209398,	0.05275806,	-0.1934462,	1.00240306
+			]
+		},
+		{
+			"mode"                : 2,
+			"panelName" : "mdss_dsi_pd2453_csot_nt37705_fhd_cmd panel",
+			"whitePointX"         : 0.30,
+			"whitePointY"         : 0.311,
+			"R"                   : 51.0,
+			"angle"               : 81.0,
+			"transformMatrix"     :[
+				1.72925185,	-0.58687568,	-0.25855863,	-0.76273422,	1.66382722,	0.03119609,	0.03348237,	-0.07695155,	1.22736254,
+				0.685,	0.248,	0.138,	0.314,	0.714,	0.048,	0.001,	0.038,	0.814,
+				2.28191652,	-0.77443971,	-0.34119333,	-0.78868926,	1.72044549,	0.03225766,	0.0224633,	-0.05162675,	0.82343683
+			]
+		},
+	    {
+			"mode"                : 0,
+			"panelName" : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+			"whitePointX"         : 0.30,
+			"whitePointY"         : 0.311,
+			"R"                   : 52.0,
+			"angle"               : 81.0,
+			"transformMatrix"     :[
+				1.78421053,	-0.66644737,	-0.28815789,	-0.83157895,	1.76710526,	0.02368421,	0.04736842,	-0.10065789,	1.26447368,
+				0.68,	0.265,	0.15,	0.32,	0.69,	0.06,	0,	0.045,	0.79,
+				2.5700678,	-0.95998476,	-0.41507732,	-0.83612464,	1.77676486,	0.02381368,	0.03102782,	-0.06593411,	0.82827034
+			]
+		},
+	    {
+			"mode"                : 1,
+			"panelName" : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+			"whitePointX"         : 0.311,
+			"whitePointY"         : 0.322,
+			"R"                   : 56.0,
+			"angle"               : 81.0,
+			"transformMatrix"     :[
+				2.08835341,	-0.99062918,	-0.32128514,	-1.15528782,	2.23605533,	0.04953146,	0.0669344,	-0.24542615,	1.27175368,
+				0.64,	0.3,	0.15,	0.33,	0.6,	0.06,	0.03,	0.1,	0.79,
+				3.16322418,	-1.50050378,	-0.48664987,	-0.98181369,	1.90029678,	0.04209398,	0.05275806,	-0.1934462,	1.00240306
+			]
+		},
+		{
+			"mode"                : 2,
+			"panelName" : "mdss_dsi_pd2453_cndvt4_fhd_cmd panel",
+			"whitePointX"         : 0.30,
+			"whitePointY"         : 0.311,
+			"R"                   : 51.0,
+			"angle"               : 81.0,
+			"transformMatrix"     :[
+				1.72925185,	-0.58687568,	-0.25855863,	-0.76273422,	1.66382722,	0.03119609,	0.03348237,	-0.07695155,	1.22736254,
+				0.685,	0.248,	0.138,	0.314,	0.714,	0.048,	0.001,	0.038,	0.814,
+				2.28191652,	-0.77443971,	-0.34119333,	-0.78868926,	1.72044549,	0.03225766,	0.0224633,	-0.05162675,	0.82343683
+			]
+		},
+	    {
+			"mode"                : 0,
+			"panelName" : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+			"whitePointX"         : 0.30,
+			"whitePointY"         : 0.311,
+			"R"                   : 52.0,
+			"angle"               : 82.0,
+			"transformMatrix"     :[
+				1.78421053,	-0.66644737,	-0.28815789,	-0.83157895,	1.76710526,	0.02368421,	0.04736842,	-0.10065789,	1.26447368,
+				0.68,	0.265,	0.15,	0.32,	0.69,	0.06,	0,	0.045,	0.79,
+				2.5700678,	-0.95998476,	-0.41507732,	-0.83612464,	1.77676486,	0.02381368,	0.03102782,	-0.06593411,	0.82827034
+			]
+		},
+	    {
+			"mode"                : 1,
+			"panelName" : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+			"whitePointX"         : 0.311,
+			"whitePointY"         : 0.322,
+			"R"                   : 56.0,
+			"angle"               : 82.0,
+			"transformMatrix"     :[
+				2.08835341,	-0.99062918,	-0.32128514,	-1.15528782,	2.23605533,	0.04953146,	0.0669344,	-0.24542615,	1.27175368,
+				0.64,	0.3,	0.15,	0.33,	0.6,	0.06,	0.03,	0.1,	0.79,
+				3.16322418,	-1.50050378,	-0.48664987,	-0.98181369,	1.90029678,	0.04209398,	0.05275806,	-0.1934462,	1.00240306
+			]
+		},
+		{
+			"mode"                : 2,
+			"panelName" : "mdss_dsi_pd2453_cndvt5_fhd_cmd panel",
+			"whitePointX"         : 0.30,
+			"whitePointY"         : 0.311,
+			"R"                   : 51.0,
+			"angle"               : 82.0,
+			"transformMatrix"     :[
+				1.72925185,	-0.58687568,	-0.25855863,	-0.76273422,	1.66382722,	0.03119609,	0.03348237,	-0.07695155,	1.22736254,
+				0.685,	0.248,	0.138,	0.314,	0.714,	0.048,	0.001,	0.038,	0.814,
+				2.28191652,	-0.77443971,	-0.34119333,	-0.78868926,	1.72044549,	0.03225766,	0.0224633,	-0.05162675,	0.82343683
+			]
+		}
+	]
+}

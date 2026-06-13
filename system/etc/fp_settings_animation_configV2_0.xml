@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config version="2.0">
+    <project-config>
+        <item projects="default" animation-list="100,23,21" icon-list="11,12,13,14,15,16,17,23" enter-animation="300"/>
+    </project-config>
+</config>

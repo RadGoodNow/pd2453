@@ -1,0 +1,3 @@
+service netboosterd /system/bin/netboosterd
+    class main
+    group root

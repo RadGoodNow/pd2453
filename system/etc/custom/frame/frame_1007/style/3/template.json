@@ -1,0 +1,492 @@
+{
+    "version": "1.1.4",
+    "groupId": "text_sticker",
+    "id": "template_textsticker_style3",
+	"preview": "thumb_0.jpg",
+    "user_img_num": 0,
+    "isDeepOpened": false,
+    "deep_status": 3,
+    "isDesktopFollow": 0,
+    "isBlurOpen": false,
+    "bSubjectExist": true,
+    "aodLayout":{
+        "width": "170dp",
+        "height": "170dp",
+        "gt_type": 2,
+        "isUseRelatedFirst": true,
+        "gt_rect": {
+            "left": "0dp",
+            "top": "229dp",
+            "right": "360dp",
+            "bottom": "589dp",
+            "leftByLayerId": {
+                "layerId": "layer_img1_bg_2x2",
+                "side": "left"
+            },
+            "topByLayerId": {
+                "layerId": "layer_img1_bg_2x2",
+                "side": "top"
+            },
+            "rightByLayerId": {
+                "layerId": "layer_img1_bg_2x2",
+                "side": "right"
+            },
+            "bottomByLayerId": {
+                "layerId": "layer_img1_bg_2x2",
+                "side": "bottom"
+            }
+        },
+        "gt_rect_wide": {
+            "leftByLayerId": {
+                "layerId": "layer_img1_bg_2x2",
+                "side": "left"
+            },
+            "topByLayerId": {
+                "layerId": "layer_img1_bg_2x2",
+                "side": "top"
+            },
+            "rightByLayerId": {
+                "layerId": "layer_img1_bg_2x1",
+                "side": "right"
+            },
+            "bottomByLayerId": {
+                "layerId": "layer_img1_bg_2x2",
+                "side": "bottom"
+            }
+        }
+    },
+    "layers": [
+        {
+            "id": "layer_unlock_clock",
+            "type": 21,
+            "tg_nodeep_up": 1,
+            "tg_nolock_hide": true
+        },
+        {
+            "id": "layer_img1_bg_2x1",
+            "type": 2,
+            "tg_aod_hide": true,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_2x1_3.png",
+            "srcDebug": "res/sticker_2x1_3.png",
+            "layout": {
+                "ty": 1,
+                "alignment": "full_center",
+                "margin_left": "20dp",
+                "margin_right": "20dp",
+                "margin_top": "487dp",
+                "margin_bottom": "93dp",
+                "w": "320dp",
+                "h": "220dp"
+            }
+        },
+        {
+            "id": "layer_frame_text1",
+            "type": 5,
+            "text": "福",
+            "textSize": "84dp",
+            "textColor": "#FFE9C0",
+            "isAutoLineWrap": true,
+            "isHorizontal": true,
+            "fileType": "absolute",
+            "fontStyle": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "fontStyleDebug": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "textMaxChar": 8,
+            "textAlign": 1,
+            "textWeight": 800,
+            "lineAlignMode": 1,
+            "isCopyTextProperty": false,
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg_2x2",
+                "align_parent_left": true,
+                "align_parent_bottom": true,
+                "margin_left": "38dp",
+                "margin_right": "196dp",
+                "margin_bottom": "209dp",
+                "w": "86dp",
+                "h": "86dp"
+            }
+        },
+        {
+            "id": "layer_frame_text2",
+            "type": 5,
+            "text": "年年有好运",
+            "textSize": "56dp",
+            "textMinSize": "22dp",
+            "textColor": "#FFE9C0",
+            "isAutoLineWrap": false,
+            "isHorizontal": true,
+            "fileType": "absolute",
+            "fontStyle": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "fontStyleDebug": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "textMaxChar": 16,
+            "textAlign": 1,
+            "textWeight": 800,
+            "lineAlignMode": 1,
+            "isCopyTextProperty": false,
+            "isTextSizeFollowByCount": true,
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg_2x2",
+                "align_parent_left": true,
+                "align_parent_bottom": true,
+                "margin_left": "114.06dp",
+                "margin_bottom": "74.13dp",
+                "rotate": 8.7,
+                "w": "180dp",
+                "h": "56dp"
+            }
+        },
+        {
+            "id": "layer_img1_bg_2x2",
+            "type": 2,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_2x2_3.png",
+            "srcDebug": "res/sticker_2x2_3.png",
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_frame_icon",
+                "margin_bottom": "0dp",
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        },
+        {
+            "id": "layer_img1_fg_tt",
+            "type": 2,
+            "hd": true,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_fg_tt.png",
+            "srcDebug": "res/sticker_fg_tt.png",
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg",
+                "margin_bottom": "0dp",
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        },
+        {
+            "id": "layer_img1_fg",
+            "type": 20,
+            "tt": 1,
+            "tg_noframedeep_hide": true,
+            "parent": "layer_img1_bg"
+        },
+        {
+            "id": "layer_frame_icon",
+            "type": 2,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_circle_3.png",
+            "srcDebug": "res/sticker_circle_3.png",
+            "layout": {
+                "ty": 1,
+                "alignment": "full_center",
+                "margin_left": "20dp",
+                "margin_right": "20dp",
+                "margin_top": "229dp",
+                "margin_bottom": "211dp",
+                "w": "320dp",
+                "h": "360dp"
+            }
+        },
+        {
+            "id": "layer_img1_bg_tt",
+            "type": 2,
+            "hd": true,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_bg_tt.png",
+            "srcDebug": "res/sticker_bg_tt.png",
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg",
+                "margin_bottom": "0dp",
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        },
+        {
+            "id": "layer_img1_bg",
+            "type": 20,
+            "tt": 1,
+            "src": "../../res/origin_lock",
+            "srcDebug": "res/origin_lock",
+            "mask": "../../res/wallpaper_mask_lock.png",
+            "maskDebug": "res/wallpaper_mask_lock.png",
+            "facePath": "face.json",
+            "gt": 21,
+            "layout": {
+                "ty": 1,
+                "alignment": "full_center",
+                "margin_left": "145.39dp",
+                "margin_right": "24.61dp",
+                "margin_top": "229dp",
+                "margin_bottom": "341dp",
+                "w": "190dp",
+                "h": "230dp"
+            }
+        },
+        {
+            "id": "layer_bg",
+            "type": 1,
+            "tg_aod_hide": true,
+            "sc": "#ED9171",
+            "layout": {
+                "ty": 1,
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        }
+    ],
+    "layers_wide": [
+        {
+            "id": "layer_unlock_clock",
+            "type": 21,
+            "tg_nodeep_up": 1,
+            "tg_nolock_hide": true
+        },
+        {
+            "id": "layer_img1_bg_2x1",
+            "type": 2,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_2x1_wide_3.png",
+            "srcDebug": "res/sticker_2x1_wide_3.png",
+            "layout": {
+                "ty": 1,
+                "alignment": "full_center",
+                "margin_left": "369dp",
+                "margin_right": "69dp",
+                "margin_top": "250dp",
+                "margin_bottom": "110dp",
+                "w": "200dp",
+                "h": "360dp"
+            }
+        },
+        {
+            "id": "layer_frame_text1",
+            "type": 5,
+            "text": "福",
+            "textSize": "84dp",
+            "textColor": "#FFE9C0",
+            "isAutoLineWrap": true,
+            "isHorizontal": true,
+            "fileType": "absolute",
+            "fontStyle": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "fontStyleDebug": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "textMaxChar": 8,
+            "textAlign": 1,
+            "textWeight": 800,
+            "lineAlignMode": 1,
+            "isCopyTextProperty": false,
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg_2x2",
+                "align_parent_left": true,
+                "align_parent_bottom": true,
+                "margin_left": "38dp",
+                "margin_right": "196dp",
+                "margin_bottom": "209dp",
+                "w": "86dp",
+                "h": "86dp"
+            }
+        },
+        {
+            "id": "layer_frame_text2",
+            "type": 5,
+            "text": "年年有好运",
+            "textSize": "56dp",
+            "textMinSize": "22dp",
+            "textColor": "#FFE9C0",
+            "isAutoLineWrap": false,
+            "isHorizontal": true,
+            "fileType": "absolute",
+            "fontStyle": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "fontStyleDebug": "/system/fonts/DroidSansFallbackMonster.ttf",
+            "textMaxChar": 16,
+            "textAlign": 1,
+            "textWeight": 800,
+            "lineAlignMode": 1,
+            "isCopyTextProperty": false,
+            "isTextSizeFollowByCount": true,
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg_2x2",
+                "align_parent_left": true,
+                "align_parent_bottom": true,
+                "margin_left": "114.06dp",
+                "margin_bottom": "74.13dp",
+                "rotate": 8.7,
+                "w": "180dp",
+                "h": "56dp"
+            }
+        },
+        {
+            "id": "layer_img1_bg_2x2",
+            "type": 2,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_2x2_wide_3.png",
+            "srcDebug": "res/sticker_2x2_wide_3.png",
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_frame_icon",
+                "margin_bottom": "0dp",
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        },
+        {
+            "id": "layer_img1_fg_tt",
+            "type": 2,
+            "hd": true,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_fg_tt.png",
+            "srcDebug": "res/sticker_fg_tt.png",
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg",
+                "margin_bottom": "0dp",
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        },
+        {
+            "id": "layer_img1_fg",
+            "type": 20,
+            "tt": 1,
+            "tg_noframedeep_hide": true,
+            "parent": "layer_img1_bg"
+        },
+        {
+            "id": "layer_frame_icon",
+            "type": 2,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_circle_3.png",
+            "srcDebug": "res/sticker_circle_3.png",
+            "layout": {
+                "ty": 1,
+                "alignment": "full_center",
+                "margin_left": "69dp",
+                "margin_right": "249dp",
+                "margin_top": "250dp",
+                "margin_bottom": "110dp",
+                "w": "320dp",
+                "h": "360dp"
+            }
+        },
+        {
+            "id": "layer_img1_bg_tt",
+            "type": 2,
+            "hd": true,
+            "fileType": "absolute",
+            "src": "/system/etc/custom/frame/frame_1007/res/sticker_bg_tt.png",
+            "srcDebug": "res/sticker_bg_tt.png",
+            "layout": {
+                "ty": 1,
+                "align_parent": "layer_img1_bg",
+                "margin_bottom": "0dp",
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        },
+        {
+            "id": "layer_img1_bg",
+            "type": 20,
+            "tt": 1,
+            "src": "../../res/origin_lock",
+            "srcDebug": "res/origin_lock",
+            "mask": "../../res/wallpaper_mask_lock.png",
+            "maskDebug": "res/wallpaper_mask_lock.png",
+            "facePath": "face.json",
+            "gt": 21,
+            "layout": {
+                "ty": 1,
+                "alignment": "full_center",
+                "margin_left": "194.39dp",
+                "margin_right": "253.61dp",
+                "margin_top": "250dp",
+                "margin_bottom": "240dp",
+                "w": "190dp",
+                "h": "230dp"
+            }
+        },
+        {
+            "id": "layer_bg",
+            "type": 1,
+            "tg_aod_hide": true,
+            "sc": "#ED9171",
+            "layout": {
+                "ty": 1,
+                "w": "match_parent",
+                "h": "match_parent"
+            }
+        }
+    ],
+    "dump_lock": [
+        {
+            "nm": "user_lock.jpg",
+            "ly": [
+                "layer_frame_text1",
+                "layer_frame_text2",
+                "layer_img1_bg_2x1",
+                "layer_img1_bg_2x2",
+                "layer_img1_fg_tt",
+                "layer_img1_fg",
+                "layer_frame_icon",
+                "layer_img1_bg_tt",
+                "layer_img1_bg",
+                "layer_bg"
+            ]
+        },
+        {
+            "nm": "suck_lock.png",
+            "crop_type": 2,
+            "ly": [
+                "layer_frame_text1",
+                "layer_frame_text2",
+                "layer_img1_bg_2x1",
+                "layer_img1_bg_2x2",
+                "layer_img1_fg_tt",
+                "layer_img1_fg",
+                "layer_frame_icon",
+                "layer_img1_bg_tt",
+                "layer_img1_bg",
+                "layer_bg"
+            ]
+        },
+        {
+            "nm": "sticker_2x2_lock.png",
+            "crop_type": 3,
+            "ly": [
+                "layer_img1_bg_2x2",
+                "layer_frame_text1",
+                "layer_frame_text2",
+                "layer_img1_fg_tt",
+                "layer_img1_fg",
+                "layer_frame_icon",
+                "layer_img1_bg_tt",
+                "layer_img1_bg"
+            ]
+        },
+        {
+            "nm": "sticker_2x1_lock.png",
+            "crop_type": 3,
+            "ly": [
+                "layer_img1_bg_2x1"
+            ]
+        },
+        {
+            "nm": "background_lock.jpg",
+            "crop_type": 0,
+            "ly": [
+                "layer_bg"
+            ]
+        }
+    ],
+    "dump_w": {
+        "nm": "user_desk.jpg"
+    },
+    "dump_a": {
+        "nm": "user_aod.png"
+    }
+}

@@ -1,0 +1,512 @@
+{
+    "isDeepOpened": 2,
+    "id": "1007",
+    "type": "text_sticker",
+    "name": "文字贴纸",
+    "isHide": false,
+    "editImage": [
+        {
+            "editLayers": [
+                "layer_img1_bg"
+            ],
+            "editImagePick": "res/image_pick.png",
+            "editOptions": {
+                "name": "picture",
+                "select": 0,
+                "options": [
+                    {
+                        "thumbs": [
+                            "style/1/res/frame_icon.png",
+                            "style/2/res/frame_icon.png",
+                            "style/3/res/frame_icon.png",
+                            "style/4/res/frame_icon.png",
+                            "style/5/res/frame_icon.png",
+                            "style/6/res/frame_icon.png"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "editText": {
+        "editLayers": [
+            "layer_frame_text1"
+        ],
+        "maxChars": 4,
+        "text": "元气满满"
+    },
+	"editExtraText": {
+        "editLayers": [
+            "layer_frame_text2"
+        ],
+        "maxChars": 8,
+        "text": "开心快乐"
+    },
+   "editColor": {
+    "editLayers": [
+        "layer_bg"
+    ],
+    "editOptions": {
+        "name": "color",
+        "select": 5,
+        "optionColor": [
+            {
+                "options": [
+                    {
+                        "colors": ["#FFED9171"],
+                        "thumb": "res/color_thumb_1.png"
+                    },
+                    {
+                        "colors": ["#FFF7C26D"],
+                        "thumb": "res/color_thumb_2.png"
+                    },
+                    {
+                        "colors": ["#FF99C46E"],
+                        "thumb": "res/color_thumb_3.png"
+                    },
+                    {
+                        "colors": ["#FF58B8BF"],
+                        "thumb": "res/color_thumb_4.png"
+                    },
+                    {
+                        "colors": ["#FF5F9BD9"],
+                        "thumb": "res/color_thumb_5.png"
+                    },
+                    {
+                        "colors": ["#FF8F7ACC"],
+                        "thumb": "res/color_thumb_6.png"
+                    },
+                    {
+                        "colors": ["#FFC767AB"],
+                        "thumb": "res/color_thumb_7.png"
+                    },
+                    {
+                        "colors": ["#FFCC6262"],
+                        "thumb": "res/color_thumb_8.png"
+                    },
+                    {
+                        "colors": ["#FF806969"],
+                        "thumb": "res/color_thumb_9.png"
+                    },
+                    {
+                        "colors": ["#FF807663"],
+                        "thumb": "res/color_thumb_10.png"
+                    },
+                    {
+                        "colors": ["#FF708069"],
+                        "thumb": "res/color_thumb_11.png"
+                    },
+                    {
+                        "colors": ["#FF697880"],
+                        "thumb": "res/color_thumb_12.png"
+                    },
+                    {
+                        "colors": ["#FF6C6980"],
+                        "thumb": "res/color_thumb_13.png"
+                    },
+                    {
+                        "colors": ["#FF8D9599"],
+                        "thumb": "res/color_thumb_14.png"
+                    },
+                    {
+                        "colors": ["#FF191919"],
+                        "thumb": "res/color_thumb_15.png"
+                    },
+                    {
+                        "colors": ["#FFF0F0F0"],
+                        "thumb": "res/color_thumb_16.png"
+                    },
+                    {
+                        "colors": ["#FFF0EEE1"],
+                        "thumb": "res/color_thumb_17.png"
+                    },
+                    {
+                        "colors": ["#FFE4ECF0"],
+                        "thumb": "res/color_thumb_18.png"
+                    }
+                ]
+            },
+            {
+                "options": [
+                    {
+                        "colors": ["#FFED9171"],
+                        "thumb": "res/color_thumb_1.png"
+                    },
+                    {
+                        "colors": ["#FFF7C26D"],
+                        "thumb": "res/color_thumb_2.png"
+                    },
+                    {
+                        "colors": ["#FF99C46E"],
+                        "thumb": "res/color_thumb_3.png"
+                    },
+                    {
+                        "colors": ["#FF58B8BF"],
+                        "thumb": "res/color_thumb_4.png"
+                    },
+                    {
+                        "colors": ["#FF5F9BD9"],
+                        "thumb": "res/color_thumb_5.png"
+                    },
+                    {
+                        "colors": ["#FF8F7ACC"],
+                        "thumb": "res/color_thumb_6.png"
+                    },
+                    {
+                        "colors": ["#FFC767AB"],
+                        "thumb": "res/color_thumb_7.png"
+                    },
+                    {
+                        "colors": ["#FFCC6262"],
+                        "thumb": "res/color_thumb_8.png"
+                    },
+                    {
+                        "colors": ["#FF806969"],
+                        "thumb": "res/color_thumb_9.png"
+                    },
+                    {
+                        "colors": ["#FF807663"],
+                        "thumb": "res/color_thumb_10.png"
+                    },
+                    {
+                        "colors": ["#FF708069"],
+                        "thumb": "res/color_thumb_11.png"
+                    },
+                    {
+                        "colors": ["#FF697880"],
+                        "thumb": "res/color_thumb_12.png"
+                    },
+                    {
+                        "colors": ["#FF6C6980"],
+                        "thumb": "res/color_thumb_13.png"
+                    },
+                    {
+                        "colors": ["#FF8D9599"],
+                        "thumb": "res/color_thumb_14.png"
+                    },
+                    {
+                        "colors": ["#FF191919"],
+                        "thumb": "res/color_thumb_15.png"
+                    },
+                    {
+                        "colors": ["#FFF0F0F0"],
+                        "thumb": "res/color_thumb_16.png"
+                    },
+                    {
+                        "colors": ["#FFF0EEE1"],
+                        "thumb": "res/color_thumb_17.png"
+                    },
+                    {
+                        "colors": ["#FFE4ECF0"],
+                        "thumb": "res/color_thumb_18.png"
+                    }
+                ]
+            },
+            {
+                "options": [
+                    {
+                        "colors": ["#FFED9171"],
+                        "thumb": "res/color_thumb_1.png"
+                    },
+                    {
+                        "colors": ["#FFF7C26D"],
+                        "thumb": "res/color_thumb_2.png"
+                    },
+                    {
+                        "colors": ["#FF99C46E"],
+                        "thumb": "res/color_thumb_3.png"
+                    },
+                    {
+                        "colors": ["#FF58B8BF"],
+                        "thumb": "res/color_thumb_4.png"
+                    },
+                    {
+                        "colors": ["#FF5F9BD9"],
+                        "thumb": "res/color_thumb_5.png"
+                    },
+                    {
+                        "colors": ["#FF8F7ACC"],
+                        "thumb": "res/color_thumb_6.png"
+                    },
+                    {
+                        "colors": ["#FFC767AB"],
+                        "thumb": "res/color_thumb_7.png"
+                    },
+                    {
+                        "colors": ["#FFCC6262"],
+                        "thumb": "res/color_thumb_8.png"
+                    },
+                    {
+                        "colors": ["#FF806969"],
+                        "thumb": "res/color_thumb_9.png"
+                    },
+                    {
+                        "colors": ["#FF807663"],
+                        "thumb": "res/color_thumb_10.png"
+                    },
+                    {
+                        "colors": ["#FF708069"],
+                        "thumb": "res/color_thumb_11.png"
+                    },
+                    {
+                        "colors": ["#FF697880"],
+                        "thumb": "res/color_thumb_12.png"
+                    },
+                    {
+                        "colors": ["#FF6C6980"],
+                        "thumb": "res/color_thumb_13.png"
+                    },
+                    {
+                        "colors": ["#FF8D9599"],
+                        "thumb": "res/color_thumb_14.png"
+                    },
+                    {
+                        "colors": ["#FF191919"],
+                        "thumb": "res/color_thumb_15.png"
+                    },
+                    {
+                        "colors": ["#FFF0F0F0"],
+                        "thumb": "res/color_thumb_16.png"
+                    },
+                    {
+                        "colors": ["#FFF0EEE1"],
+                        "thumb": "res/color_thumb_17.png"
+                    },
+                    {
+                        "colors": ["#FFE4ECF0"],
+                        "thumb": "res/color_thumb_18.png"
+                    }
+                ]
+            },
+            {
+                "options": [
+                    {
+                        "colors": ["#FFED9171"],
+                        "thumb": "res/color_thumb_1.png"
+                    },
+                    {
+                        "colors": ["#FFF7C26D"],
+                        "thumb": "res/color_thumb_2.png"
+                    },
+                    {
+                        "colors": ["#FF99C46E"],
+                        "thumb": "res/color_thumb_3.png"
+                    },
+                    {
+                        "colors": ["#FF58B8BF"],
+                        "thumb": "res/color_thumb_4.png"
+                    },
+                    {
+                        "colors": ["#FF5F9BD9"],
+                        "thumb": "res/color_thumb_5.png"
+                    },
+                    {
+                        "colors": ["#FF8F7ACC"],
+                        "thumb": "res/color_thumb_6.png"
+                    },
+                    {
+                        "colors": ["#FFC767AB"],
+                        "thumb": "res/color_thumb_7.png"
+                    },
+                    {
+                        "colors": ["#FFCC6262"],
+                        "thumb": "res/color_thumb_8.png"
+                    },
+                    {
+                        "colors": ["#FF806969"],
+                        "thumb": "res/color_thumb_9.png"
+                    },
+                    {
+                        "colors": ["#FF807663"],
+                        "thumb": "res/color_thumb_10.png"
+                    },
+                    {
+                        "colors": ["#FF708069"],
+                        "thumb": "res/color_thumb_11.png"
+                    },
+                    {
+                        "colors": ["#FF697880"],
+                        "thumb": "res/color_thumb_12.png"
+                    },
+                    {
+                        "colors": ["#FF6C6980"],
+                        "thumb": "res/color_thumb_13.png"
+                    },
+                    {
+                        "colors": ["#FF8D9599"],
+                        "thumb": "res/color_thumb_14.png"
+                    },
+                    {
+                        "colors": ["#FF191919"],
+                        "thumb": "res/color_thumb_15.png"
+                    },
+                    {
+                        "colors": ["#FFF0F0F0"],
+                        "thumb": "res/color_thumb_16.png"
+                    },
+                    {
+                        "colors": ["#FFF0EEE1"],
+                        "thumb": "res/color_thumb_17.png"
+                    },
+                    {
+                        "colors": ["#FFE4ECF0"],
+                        "thumb": "res/color_thumb_18.png"
+                    }
+                ]
+            },
+            {
+                "options": [
+                    {
+                        "colors": ["#FFED9171"],
+                        "thumb": "res/color_thumb_1.png"
+                    },
+                    {
+                        "colors": ["#FFF7C26D"],
+                        "thumb": "res/color_thumb_2.png"
+                    },
+                    {
+                        "colors": ["#FF99C46E"],
+                        "thumb": "res/color_thumb_3.png"
+                    },
+                    {
+                        "colors": ["#FF58B8BF"],
+                        "thumb": "res/color_thumb_4.png"
+                    },
+                    {
+                        "colors": ["#FF5F9BD9"],
+                        "thumb": "res/color_thumb_5.png"
+                    },
+                    {
+                        "colors": ["#FF8F7ACC"],
+                        "thumb": "res/color_thumb_6.png"
+                    },
+                    {
+                        "colors": ["#FFC767AB"],
+                        "thumb": "res/color_thumb_7.png"
+                    },
+                    {
+                        "colors": ["#FFCC6262"],
+                        "thumb": "res/color_thumb_8.png"
+                    },
+                    {
+                        "colors": ["#FF806969"],
+                        "thumb": "res/color_thumb_9.png"
+                    },
+                    {
+                        "colors": ["#FF807663"],
+                        "thumb": "res/color_thumb_10.png"
+                    },
+                    {
+                        "colors": ["#FF708069"],
+                        "thumb": "res/color_thumb_11.png"
+                    },
+                    {
+                        "colors": ["#FF697880"],
+                        "thumb": "res/color_thumb_12.png"
+                    },
+                    {
+                        "colors": ["#FF6C6980"],
+                        "thumb": "res/color_thumb_13.png"
+                    },
+                    {
+                        "colors": ["#FF8D9599"],
+                        "thumb": "res/color_thumb_14.png"
+                    },
+                    {
+                        "colors": ["#FF191919"],
+                        "thumb": "res/color_thumb_15.png"
+                    },
+                    {
+                        "colors": ["#FFF0F0F0"],
+                        "thumb": "res/color_thumb_16.png"
+                    },
+                    {
+                        "colors": ["#FFF0EEE1"],
+                        "thumb": "res/color_thumb_17.png"
+                    },
+                    {
+                        "colors": ["#FFE4ECF0"],
+                        "thumb": "res/color_thumb_18.png"
+                    }
+                ]
+            },
+            {
+                "options": [
+                    {
+                        "colors": ["#FFED9171"],
+                        "thumb": "res/color_thumb_1.png"
+                    },
+                    {
+                        "colors": ["#FFF7C26D"],
+                        "thumb": "res/color_thumb_2.png"
+                    },
+                    {
+                        "colors": ["#FF99C46E"],
+                        "thumb": "res/color_thumb_3.png"
+                    },
+                    {
+                        "colors": ["#FF58B8BF"],
+                        "thumb": "res/color_thumb_4.png"
+                    },
+                    {
+                        "colors": ["#FF5F9BD9"],
+                        "thumb": "res/color_thumb_5.png"
+                    },
+                    {
+                        "colors": ["#FF8F7ACC"],
+                        "thumb": "res/color_thumb_6.png"
+                    },
+                    {
+                        "colors": ["#FFC767AB"],
+                        "thumb": "res/color_thumb_7.png"
+                    },
+                    {
+                        "colors": ["#FFCC6262"],
+                        "thumb": "res/color_thumb_8.png"
+                    },
+                    {
+                        "colors": ["#FF806969"],
+                        "thumb": "res/color_thumb_9.png"
+                    },
+                    {
+                        "colors": ["#FF807663"],
+                        "thumb": "res/color_thumb_10.png"
+                    },
+                    {
+                        "colors": ["#FF708069"],
+                        "thumb": "res/color_thumb_11.png"
+                    },
+                    {
+                        "colors": ["#FF697880"],
+                        "thumb": "res/color_thumb_12.png"
+                    },
+                    {
+                        "colors": ["#FF6C6980"],
+                        "thumb": "res/color_thumb_13.png"
+                    },
+                    {
+                        "colors": ["#FF8D9599"],
+                        "thumb": "res/color_thumb_14.png"
+                    },
+                    {
+                        "colors": ["#FF191919"],
+                        "thumb": "res/color_thumb_15.png"
+                    },
+                    {
+                        "colors": ["#FFF0F0F0"],
+                        "thumb": "res/color_thumb_16.png"
+                    },
+                    {
+                        "colors": ["#FFF0EEE1"],
+                        "thumb": "res/color_thumb_17.png"
+                    },
+                    {
+                        "colors": ["#FFE4ECF0"],
+                        "thumb": "res/color_thumb_18.png"
+                    }
+                ]
+            }
+        ]
+        }
+    }
+}

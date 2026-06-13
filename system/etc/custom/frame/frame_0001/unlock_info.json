@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "style_id": 22,
+    "time_view": {
+        "progress": 50,
+        "color_type": -2,
+        "font": "/system/fonts/vivoSansClock-Light.ttf",
+        "position": 1,
+        "version": "2"
+    },
+    "info_widget": {
+        "info_type": "com.vivo.systemuiplugin/lunar"
+    },
+    "shortcut": {
+        "left_tool": "com.android.phone",
+        "right_tool": "com.android.camera"
+    }
+}

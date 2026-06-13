@@ -1,0 +1,7 @@
+service vspflinger /system/bin/vspflinger
+    class main
+    user root
+    group root system
+    seclabel u:r:dumpstate:s0
+    priority -10
+    task_profiles ServiceCapacityLow

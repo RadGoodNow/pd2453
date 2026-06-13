@@ -1,0 +1,13 @@
+service zygote_v64 /system/bin/app_process64 -Xzygote /system/bin --zygote --nice-name=zygote_v64 --socket-name=zygote_v64
+    class main
+    priority -20
+    user root
+    group root readproc reserved_disk
+    socket zygote_v64 stream 660 root system
+    # socket usap_pool_v64 stream 660 root system
+    oneshot
+    task_profiles ProcessCapacityHigh MaxPerformance
+    disabled
+
+on property:sys.boot_completed=1 && property:sys.system_server.start_count=1 && property:ro.product.vivo.art2=true && property:sys.vivo.zygote_v64=true
+    start zygote_v64

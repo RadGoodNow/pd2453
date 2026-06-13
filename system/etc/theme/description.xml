@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme> 
+  <id>40</id>
+    <uid>40</uid>
+    <version><![CDATA[3.0.0]]></version>
+    <titles>
+        <title locale="zh_CN"><![CDATA[默认版]]></title>
+    </titles>
+    <authors>
+        <author locale="zh_CN"><![CDATA[vivo]]></author>
+    </authors>
+    <designers>
+        <designer locale="zh_CN"><![CDATA[]]></designer>
+    </designers>
+    <descriptions>
+        <description locale="zh_CN"><![CDATA[OriginOS官方主题。]]></description>
+    </descriptions>
+    <innertype>0</innertype>
+  <extras> 
+    <extra_behavior_type>5</extra_behavior_type>  
+    <!-- 服务器需要返回给客户端的颜色值-->  
+    <extra_background_color>#579CF8</extra_background_color>  
+    <extra_style_type>1</extra_style_type>  
+    <extra_style_id>1</extra_style_id> 
+  </extras>  
+  <res_config_version>0</res_config_version>  
+  <verify_file> 
+    <vf_file>content/content.zip</vf_file> 
+  </verify_file>  
+  <!-- 关联模块信息-->  
+  <relate_resource> 
+    <version><![CDATA[1.0.0]]></version>  
+    <item> 
+      <!-- 锁屏-->  
+      <name>轻尚</name>  
+      <!-- 锁屏只有本地预置样式，这里的id是固定的，小于999-->  
+      <id>15</id>  
+      <category>5</category>  
+      <!-- 是否是本地资源-->  
+      <local>true</local> 
+    </item>  
+    <!-- 熄屏-->  
+    <item> 
+	  <id>311</id>
+      <name>起源Ⅰ</name>
+      <category>7</category>  
+      <local>true</local>
+    </item>  
+    <!-- 卡包-->  
+    <item> 
+      <id>201</id>
+      <name>卡包皮肤一</name>
+      <category>107</category>  
+      <local>true</local> 
+    </item>
+  </relate_resource> 
+</theme>

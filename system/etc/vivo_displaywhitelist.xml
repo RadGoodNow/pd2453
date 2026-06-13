@@ -1,0 +1,26 @@
+<display_ic_white_list>
+	<package>
+	    <Name>com.tencent.qqlive/com.tencent.qqlive.ona.activity.VideoDetailActivity</Name>
+		<VideoIndex>0</VideoIndex>
+	</package>
+	<package>
+	    <Name>com.youku.phone/com.youku.ui.activity.DetailActivity</Name>
+		<VideoIndex>1</VideoIndex>
+	</package>
+	<package>
+	    <Name>com.qiyi.video/org.iqiyi.video.activity.PlayerActivity</Name>
+		<VideoIndex>1</VideoIndex>
+	</package>
+	<package>
+	    <Name>tv.danmaku.bili/com.bilibili.video.story.StoryVideoActivity</Name>
+		<VideoIndex>0</VideoIndex>
+	</package>
+	<package>
+	    <Name>tv.danmaku.bili/tv.danmaku.bili.ui.video.VideoDetailsActivity</Name>
+		<VideoIndex>0</VideoIndex>
+	</package>
+	<package>
+	    <Name>com.vivo.video.local.localplayer.LocalInnerPlayerActivity</Name>
+		<VideoIndex>0</VideoIndex>
+	</package>
+</display_ic_white_list>

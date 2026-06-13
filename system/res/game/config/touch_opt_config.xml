@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gameconfig version="1.0">
+    <!-- 王者荣耀 -->
+    <pkg name="com.tencent.tmgp.sgame" settings="sgame_small_map">
+        <switch touch_opt="1" model="PD2339F-PD2366"/>
+    </pkg>
+    <!-- 和平精英 -->
+    <pkg name="com.tencent.tmgp.pubgmhd" settings="pubgmhd_small_map">
+        <switch touch_opt="1" model="PD2405-PD2408-PD2415-PD2419-PD2425-PD2426-PD2436-PD2452-PD2453-PD2454-PD2458-PD2463-DPD2429-DPD2437-DPD2438"/>
+    </pkg>
+
+    <!-- 不支持pkg-list -->
+</gameconfig>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gameconfig version="1.0">
+    <!-- 原神 -->
+    <pkg name="com.miHoYo.Yuanshen-com.miHoYo.ys.bilibili-com.miHoYo.yuanshencb" tips="1">
+        <!-- <switch memc_gles="1" model="PD2408-PD2425-PD2426-PD2463-DPD2429-DPD2438"/> -->
+        <param fps_config="24,1,48,144"/>
+        <param fps_config="30,1,60,120"/>
+        <param fps_config="45,1,90,90"/>
+        <param fps_config="60,1,120,120"/>
+        <param fps_config="72,1,120,120"/>
+        <param fps_config="90,1,120,120"/>
+        <param fps_config="120,1,120,120"/>
+        <param fps_config="60,2,60,120"/>
+        <param fps_config="72,2,72,144"/>
+        <param fps_config="90,2,90,90"/>
+        <param fps_config="120,2,120,120"/>
+        <param fps_config="45,3,60,120"/>
+        <param fps_config="60,3,60,120,0"/>
+        <param fps_config="72,3,60,120"/>
+        <param fps_config="90,3,60,120"/>
+        <param fps_config="120,3,60,120"/>
+        <param fps_config="45,13,90,90,1"/>
+        <param fps_config="60,13,90,90,1"/>
+        <param fps_config="72,13,90,90,1"/>
+        <param fps_config="90,13,90,90,1"/>
+        <param fps_config="120,13,90,90,1"/>
+        <param fps_config="60,23,-1,-1,1"/>
+        <param temp_fps_config="48000,47750,48,144,47700,47250,60,120,47200,46750,72,144,46700,44700,90,90"/>
+        <param temp_fps_config="48000,47750,48,144,47700,47250,60,120,47200,46750,72,144,46000,44000,90,90" model="DPD2437"/>
+        <!-- 最高插到144fps -->
+        <param fps_config="60,1,144,144" model="PD2408-PD2426-PD2463-PD2507"/>
+        <param fps_config="72,1,144,144" model="PD2408-PD2426-PD2463-PD2507"/>
+        <param fps_config="90,1,144,144" model="PD2408-PD2426-PD2463-PD2507"/>
+        <param fps_config="120,1,144,144" model="PD2408-PD2426-PD2463-PD2507"/>
+        <param temp_fps_config="48000,47750,48,144,47700,47250,60,120,47200,46750,72,144,46700,45200,90,90,45000,42500,120,120" model="PD2408-PD2426-PD2463-PD2507"/>
+    </pkg>
+
+    <!-- GPU插帧名单 -->
+    <pkg-list memc_gles="1" model="PD2408-PD2425-PD2426-PD2463-PD2507-DPD2429-DPD2437-DPD2438">
+        <item name="com.miHoYo.Yuanshen"/> <!-- 原神官服 -->
+        <item name="com.miHoYo.ys.bilibili"/> <!-- 原神B服 -->
+        <item name="com.miHoYo.yuanshencb"/> <!-- 原神测试服 -->
+    </pkg-list>
+</gameconfig>

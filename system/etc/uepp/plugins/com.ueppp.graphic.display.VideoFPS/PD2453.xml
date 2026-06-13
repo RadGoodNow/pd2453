@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<group __id__="com.ueppp.graphic.display.VideoFPS"
+    __ver__="1">
+    <group __id__="com.ss.android.ugc.aweme">
+        <elem __name__="option"
+            app="抖音短视频"
+            max_pfps_for_video="1"
+            smart_frame_app_enabled="false"/>
+
+        <set __name__="reqFps">
+            com.ss.android.ugc.aweme.splash.SplashActivity,30;
+            com.ss.android.ugc.aweme.main.MainActivity,30;
+            com.ss.android.ugc.aweme.detail.ui.DetailActivity,30;
+        </set>
+
+        <set __name__="dfps">
+            com.ss.android.ugc.aweme.splash.SplashActivity,true;
+            com.ss.android.ugc.aweme.main.MainActivity,true;
+            com.ss.android.ugc.aweme.detail.ui.DetailActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.ss.android.ugc.aweme.splash.SplashActivity,10110;
+            com.ss.android.ugc.aweme.main.MainActivity,10110;
+            com.ss.android.ugc.aweme.detail.ui.DetailActivity,10110;
+        </set>
+    </group>
+
+    <group __id__="com.ss.android.ugc.live">
+        <elem __name__="option"
+            app="抖音火山版"
+            smart_frame_app_enabled="true"/>
+
+        <set __name__="reqFps">
+            com.ss.android.ugc.aweme.splash.SplashActivity,30;
+            com.ss.android.ugc.live.main.MainActivity,30;
+            com.ss.android.ugc.live.detail.DetailActivity,30;
+        </set>
+
+        <set __name__="dfps">
+            com.ss.android.ugc.aweme.splash.SplashActivity,true;
+            com.ss.android.ugc.live.main.MainActivity,true;
+            com.ss.android.ugc.live.detail.DetailActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.ss.android.ugc.aweme.splash.SplashActivity,10111;
+            com.ss.android.ugc.live.main.MainActivity,10111;
+            com.ss.android.ugc.live.detail.DetailActivity,10111;
+        </set>
+    </group>
+
+    <group __id__="com.ss.android.ugc.aweme.lite">
+        <elem __name__="option"
+            app="抖音极速版"
+            smart_frame_app_enabled="true"/>
+
+        <set __name__="reqFps">
+            com.ss.android.ugc.aweme.splash.SplashActivity,30;
+            com.ss.android.ugc.aweme.main.MainActivity,30;
+            com.ss.android.ugc.aweme.detail.ui.DetailActivity,30;
+            com.ss.android.ugc.aweme.detail.ui.LiveDetailActivity,30;
+        </set>
+
+        <set __name__="dfps">
+            com.ss.android.ugc.aweme.splash.SplashActivity,true;
+            com.ss.android.ugc.aweme.main.MainActivity,true;
+            com.ss.android.ugc.aweme.detail.ui.DetailActivity,true;
+            com.ss.android.ugc.aweme.detail.ui.LiveDetailActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.ss.android.ugc.aweme.splash.SplashActivity,10111;
+            com.ss.android.ugc.aweme.main.MainActivity,10111;
+            com.ss.android.ugc.aweme.detail.ui.DetailActivity,10111;
+            com.ss.android.ugc.aweme.detail.ui.LiveDetailActivity,10111;
+        </set>
+    </group>
+
+    <group __id__="com.kuaishou.nebula">
+        <elem __name__="option"
+            app="快手极速版"
+            max_pfps_for_video="10"/>
+    </group>
+
+    <group __id__="com.smile.gifmaker">
+        <elem __name__="option"
+            app="快手"
+            max_pfps_for_video="10"
+            smart_frame_app_enabled="false"/>
+
+        <set __name__="reqFps">
+            com.yxcorp.gifshow.detail.PhotoDetailActivity,30;
+        </set>
+
+        <set __name__="dfps">
+            com.yxcorp.gifshow.detail.PhotoDetailActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.yxcorp.gifshow.detail.PhotoDetailActivity,10111;
+        </set>
+    </group>
+
+    <group __id__="com.rumtel.mobiletv">
+        <elem __name__="option"
+            app="看看视频大全"
+            max_pfps_for_video="10"
+            smart_frame_app_enabled="true"/>
+
+        <set __name__="reqFps">
+            com.rumtel.mobiletv.activity.MainActivity,30;
+        </set>
+
+        <set __name__="dfps">
+            com.rumtel.mobiletv.activity.MainActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.rumtel.mobiletv.activity.MainActivity,10111;
+        </set>
+    </group>
+
+    <group __id__="com.tencent.karaoke">
+        <elem __name__="option"
+            app="全民K歌/WeSing"
+            smart_frame_app_enabled="true"/>
+
+        <set __name__="reqFps">
+            com.tencent.karaoke.module.main.ui.MainTabActivity,30;
+        </set>
+
+        <set __name__="dfps">
+            com.tencent.karaoke.module.main.ui.MainTabActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.tencent.karaoke.module.main.ui.MainTabActivity,10111;
+        </set>
+    </group>
+
+    <group __id__="com.tencent.qqmusic">
+        <elem __name__="option"
+            app="QQ音乐"
+            smart_frame_app_enabled="true"/>
+
+        <set __name__="reqFps">
+            com.tencent.qqmusic.activity.PortMVPlayerActivity,30;
+            com.tencent.qqmusic.activity.AppStarterActivity,30;
+        </set>
+
+        <set __name__="dfps">
+            com.tencent.qqmusic.activity.PortMVPlayerActivity,true;
+            com.tencent.qqmusic.activity.AppStarterActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.tencent.qqmusic.activity.PortMVPlayerActivity,10111;
+            com.tencent.qqmusic.activity.AppStarterActivity,10111;
+        </set>
+    </group>
+
+    <group __id__="com.baidu.searchbox.lite">
+        <elem __name__="option"
+            app="百度极速版"
+            smart_frame_app_enabled="true"/>
+
+        <set __name__="reqFps">
+            com.baidu.searchbox.video.feedflow.VideoFlowActivity,30
+        </set>
+
+        <set __name__="dfps">
+            com.baidu.searchbox.video.feedflow.VideoFlowActivity,true;
+        </set>
+
+        <set __name__="considerConfig">
+            com.baidu.searchbox.video.feedflow.VideoFlowActivity,10111;
+        </set>
+    </group>
+
+    <group __id__="com.tencent.qqlive">
+        <elem __name__="option"
+            app="腾讯视频"
+            max_pfps_for_video="12"/>
+    </group>
+
+    <group __id__="com.youku.phone">
+        <elem __name__="option"
+            app="优酷视频"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="tv.danmaku.bili">
+        <elem __name__="option"
+            app="哔哩哔哩"
+            max_pfps_for_video="12"/>
+    </group>
+
+    <group __id__="com.ss.android.article.video">
+        <elem __name__="option"
+            app="西瓜视频"
+            max_pfps_for_video="10"/>
+    </group>
+
+    <group __id__="air.tv.douyu.android">
+        <elem __name__="option"
+            app="斗鱼直播"
+            max_pfps_for_video="10"/>
+    </group>
+
+    <group __id__="com.duowan.kiwi">
+        <elem __name__="option"
+            app="虎牙直播"
+            max_pfps_for_video="10"/>
+    </group>
+
+    <group __id__="com.android.systemui">
+        <elem __name__="option"
+            app="systemui"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.vivo.systemuiplugin">
+        <elem __name__="option"
+            app="SystemUIPlugin"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.android.systemui.theme.dark">
+        <elem __name__="option"
+            app="systemui黑暗主题"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.ss.android.article.news">
+        <elem __name__="option"
+            app="今日头条"
+            max_pfps_for_video="10"/>
+    </group>
+
+    <group __id__="com.AikesiGame.CAC">
+        <elem __name__="option"
+            app="i wanna be the creator"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="moe.low.arc">
+        <elem __name__="option"
+            app="Arcaea"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.prpr.musedash.TapTap">
+        <elem __name__="option"
+            app="MuseDash"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.ludashi.benchmark">
+        <elem __name__="option"
+            app="鲁大师"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.ludashi.benchmark2">
+        <elem __name__="option"
+            app="鲁大师"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.youku.zrealauth">
+        <elem __name__="option"
+            app="ZRealAuth"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.BigTrue.Orzmic">
+        <elem __name__="option"
+            app="Orzmic"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.sega.pjsekai">
+        <elem __name__="option"
+            app="世界计划缤纷舞台"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.tencent.tmgp.sgame">
+        <elem __name__="option"
+            app="王者荣耀"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.tencent.tmgp.sgamece">
+        <elem __name__="option"
+            app="王者荣耀体验服"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.levelinfinite.sgameGlobal">
+        <elem __name__="option"
+            app="王者荣耀全球服"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.levelinfinite.sgameGlobal.midaspay">
+        <elem __name__="option"
+            app="王者荣耀全球服"
+            max_pfps_for_video="1"/>
+    </group>
+
+    <group __id__="com.levelinfinite.sgameGlobalTY">
+        <elem __name__="option"
+            app="王者荣耀全球体验服"
+            max_pfps_for_video="1"/>
+    </group>
+</group>

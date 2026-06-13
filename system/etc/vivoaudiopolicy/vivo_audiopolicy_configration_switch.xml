@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<switches>
+	<switch name="persist.sys.audio.vapc.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.collectepmdata.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.sco.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.sco.reroute_speaker.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.btfakepause.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.volume.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.volume.change.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.volume.intercept.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.volume.adjust_streamtype.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.volume.adapte_volume.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.volume.intercept_localkeyboard.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.volume.adapte_volume_phonecall.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.volume.voip_ring_oneclick_mute.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.volume.recording_adapte_volume.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.playback.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.playback.pause_mute.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.playback.force_pause_mute.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.playback.phonecall_advolume.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.playback.media_mute_detection.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.voip.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.voip.reroute_record.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.voip.force_reroute_record.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.voip.adapte_volume.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.voip.force_ring_stop.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.voip.doze_remit.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.speakerphone.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.speakerphone.intercept.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.focus.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.focus.bind_playback.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.focus.request_intercept.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.focus.abandon_intercept.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.focus.gain_focus.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.focus.interactive.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.focus.device_change.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.focus.duck_player.enable" value="off" />
+	<switch name="persist.sys.audio.vapc.focus.fadeout_player.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.record.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.record.silent_mode.enable" value="on" />
+	<switch name="persist.sys.audio.vapc.record.share_record.enable" value="on" />
+</switches>

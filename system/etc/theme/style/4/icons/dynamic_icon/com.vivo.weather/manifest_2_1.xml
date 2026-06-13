@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ICON Version ="3">
+	<weatherEnabled>true</weatherEnabled>
+	<degreetextsize>80</degreetextsize>
+	<degreetextcolor>16777215</degreetextcolor>
+	<degreetextcolorcloudy>16777215</degreetextcolorcloudy>
+	<degreetextcolorfog>16777215</degreetextcolorfog>
+	<degreetextcolorhaze>16777215</degreetextcolorhaze>
+	<degreetextcolorovercast>16777215</degreetextcolorovercast>
+	<degreetextcolorrain>16777215</degreetextcolorrain>
+	<degreetextcolorsnow>16777215</degreetextcolorsnow>
+	<degreetextcolorsun>16777215</degreetextcolorsun>
+	<degreetextcolorthunder>16777215</degreetextcolorthunder>
+	<weatherleftoffset>0</weatherleftoffset>
+	<weathertopoffset>0</weathertopoffset>
+	<degreeleftoffset>0</degreeleftoffset>
+	<degreetopoffset>0</degreetopoffset>
+	<longdegreetextsize>95</longdegreetextsize>
+	<background>dynamic_weather_bg.png</background>
+	<version>3</version>
+	<tempnumfontweight>60</tempnumfontweight>
+	<tempocfontweight>280</tempocfontweight>
+	<tempnumandcoffset>1</tempnumandcoffset>
+	<tempoctopdelta>2</tempoctopdelta>
+	<tempnumtextsize>55</tempnumtextsize>
+	<tempoctextsize>31</tempoctextsize>
+	<temperatureleftoffset>-22</temperatureleftoffset>
+	<temperaturetopoffset>-160</temperaturetopoffset>
+	<tempctopoffset>2</tempctopoffset>
+	<temperatureleftoffset_46>-21</temperatureleftoffset_46>
+	<temperaturetopoffset_46>-186</temperaturetopoffset_46>
+	<tempnumtextsize_46>56</tempnumtextsize_46>
+	<tempoctextsize_46>32</tempoctextsize_46>
+	<tempctopoffset_46>1</tempctopoffset_46>
+	<tempoctopdelta_46>2</tempoctopdelta_46>
+	<tempnumandcoffset_46>1</tempnumandcoffset_46>
+</ICON>

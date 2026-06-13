@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grants>
+    <!-- ================================================================== -->
+    <!-- ================================================================== -->
+    <!-- ================================================================== -->
+    <!-- The following tags are associating low-level group IDs with
+         permission names.  By specifying such a mapping, you are saying
+         that any application process granted the given permission will
+         also be running with the given group ID attached to its process,
+         so it can perform any filesystem (read, write, execute) operations
+         allowed for that group. -->
+    <grant package="com.vivo.networkimprove">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.android.sharedstoragebackup">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+	
+    <grant package="com.vivo.ai.ime">
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.vivo.ai.ime.nex">
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.vivo.ai.ime.pad">
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+
+    <grant package="com.android.VideoPlayer">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.android.packageinstaller">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.GET_ACCOUNTS"/>
+    </grant>
+    <grant package="com.android.providers.downloads">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.bbk.launcher2">
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.puresearch">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.gallery">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.bbk.appstore">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.iotserver">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.amap.android.location">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.baidu.map.location">
+          <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+          <permission name="android.permission.READ_PHONE_STATE"/>
+          <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+          <permission name="android.permission.ACCESS_FINE_LOCATION" />
+          <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+          <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+          <permission name="android.permission.ACCESS_MEDIA_LOCATION" />
+    </grant>
+    <grant package="com.vivo.livewallpaper.galaxy">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.android.captiveportallogin">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </grant>
+    <grant package="com.android.permissioncontroller">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.videoeditor">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.browser">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.pushservice">
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.hybrid">
+         <permission name="android.permission.READ_CALENDAR"/>
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.RECEIVE_SMS"/>
+         <permission name="android.permission.WRITE_CONTACTS"/>
+         <permission name="android.permission.CAMERA"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.SEND_SMS"/>
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_CONTACTS"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_CALENDAR"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.RECORD_AUDIO"/>
+         <permission name="android.permission.ACTIVITY_RECOGNITION"/>
+         <permission name="android.permission.READ_CALL_LOG"/>
+         <permission name="android.permission.BLUETOOTH_SCAN"/>
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.vivo.easyshare">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.motionrecognition">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.android.bips">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </grant>
+    <grant package="com.vivo.collage">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.ewarranty">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.bbk.theme">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.bbk.lite.theme">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.iqoo.secure">
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.android.bbksoundrecorder">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.sdkplugin">
+         <permission name="android.permission.RECEIVE_SMS"/>
+         <permission name="android.permission.SEND_SMS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_MEDIA_AUDIO"/>
+         <permission name="android.permission.READ_MEDIA_VIDEO"/>
+         <permission name="android.permission.READ_MEDIA_IMAGES"/>
+    </grant>
+    <grant package="com.vivo.livewallpaper.monster">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.android.providers.calendar">
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.WRITE_CALENDAR"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.mobiletools.systemhelper">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.vivo.heduohao">
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.RECEIVE_SMS"/>
+         <permission name="android.permission.CAMERA"/>
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.aiservice">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+         <permission name="android.permission.ACTIVITY_RECOGNITION"/>
+         <permission name="android.permission.READ_CONTACTS"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.RECORD_AUDIO"/>
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.bbk.updater">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.globalsearch">
+         <permission name="android.permission.READ_CALENDAR"/>
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_CONTACTS"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.android.filemanager">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.space">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.android.htmlviewer">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.aitranslate">
+         <permission name="android.permission.RECORD_AUDIO"/>
+    </grant>
+    <grant package="com.android.managedprovisioning">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.findphone">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.RECEIVE_SMS"/>
+         <permission name="android.permission.WRITE_CONTACTS"/>
+         <permission name="android.permission.CAMERA"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+         <permission name="android.permission.SEND_SMS"/>
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_CONTACTS"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.BLUETOOTH_ADMIN"/>
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+         <permission name="android.permission.BLUETOOTH_SCAN"/>
+         <permission name="android.permission.BLUETOOTH_ADVERTISE"/>
+    </grant>
+    <grant package="com.vivo.hiboard">
+         <permission name="android.permission.READ_CALENDAR"/>
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.funtouch.uiengine">
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.weather.provider">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.vivo.sos">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.WRITE_CONTACTS"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+         <permission name="android.permission.SEND_SMS"/>
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+         <permission name="android.permission.WRITE_CALL_LOG"/>
+         <permission name="android.permission.READ_CONTACTS"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.RECORD_AUDIO"/>
+         <permission name="android.permission.READ_CALL_LOG"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.RECORD_AUDIO"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.CAMERA"/>
+    </grant>
+    <grant package="com.vivo.gamecube">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.vivo.smartanswer">
+         <permission name="android.permission.CALL_PHONE"/>
+         <permission name="android.permission.WRITE_CONTACTS"/>
+         <permission name="android.permission.WRITE_CALL_LOG"/>
+         <permission name="android.permission.READ_CALL_LOG"/>
+         <permission name="android.permission.READ_CONTACTS"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.RECORD_AUDIO"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.widget.calendar">
+         <permission name="android.permission.READ_CALENDAR"/>
+         <permission name="android.permission.WRITE_CALENDAR"/>
+    </grant>
+    <grant package="com.vivo.engineercamera">
+         <permission name="android.permission.CAMERA"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.RECORD_AUDIO"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.alphacamera">
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.magazine">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.safecenter">
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.READ_SMS"/>
+    </grant>
+    <grant package="com.bbk.account">
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.WRITE_CONTACTS"/>
+         <permission name="android.permission.SEND_SMS"/>
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.vivo.share">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+         <permission name="android.permission.BLUETOOTH_SCAN"/>
+         <permission name="android.permission.BLUETOOTH_ADVERTISE"/>
+         <permission name="android.permission.BLUETOOTH_CONNECT"/>
+         <permission name="android.permission.NEARBY_WIFI_DEVICES"/>
+    </grant>
+    <grant package="com.android.providers.downloads.ui">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.bbk.cloud">
+         <permission name="android.permission.GET_ACCOUNTS"/>
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.READ_MEDIA_IMAGES"/>
+         <permission name="android.permission.READ_MEDIA_VIDEO"/>
+         <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+         <permission name="android.permission.READ_MEDIA_AUDIO"/>
+         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+         <permission name="android.permission.NEARBY_WIFI_DEVICES"/>
+         <permission name="android.permission.READ_SMS"/>
+         <permission name="android.permission.WRITE_SMS"/>
+         <permission name="android.permission.READ_CONTACTS"/>
+         <permission name="android.permission.WRITE_CONTACTS"/>
+         <permission name="android.permission.READ_CALENDAR"/>
+         <permission name="android.permission.WRITE_CALENDAR"/>
+         <permission name="android.permission.READ_CALL_LOG"/>
+         <permission name="android.permission.WRITE_CALL_LOG"/>
+         <permission name="com.android.permission.GET_INSTALLED_APPS"/>
+    </grant>
+    <grant package="com.android.camera">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.google.android.gms">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="true"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.BLUETOOTH_SCAN"/>
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.RECEIVE_MMS"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" fixed="true"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="true"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS"/>
+        <permission name="android.permission.SEND_SMS"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.WRITE_CALL_LOG"/>
+        <permission name="android.permission.ACTIVITY_RECOGNITION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+        <permission name="com.android.voicemail.permission.ADD_VOICEMAIL"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.GET_ACCOUNTS"/>
+        <permission name="android.permission.NEARBY_WIFI_DEVICES"/>
+    </grant>
+    <grant package="com.google.android.gsf">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.vivo.shortcutcenter">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.deformer">
+         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.smartkeyboard">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <permission name="android.permission.BLUETOOTH_SCAN" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+    </grant>
+    <grant package="com.vivo.cota">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.vivo.numbermark">
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </grant>
+    <grant package="com.st.frameLoggerNew">
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.android.defcontainer">
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.nttouchscreen.mptest">
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.nttouchscreen.getdata">
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.vivo.connbase.connectcenter">
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.vivo.connbase.deviceaccessory">
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.nt36xxxtouchscreen.deltadiff">
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.focaltouchscreen.sensortest">
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.focaltech.deltadiff">
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </grant>
+    <grant package="com.wdstechnology.android.kryten">
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH"/>
+    </grant>
+    <grant package="com.google.android.gms">
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+    </grant>
+    <grant package="com.vivo.remoteassistant">
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.SEND_SMS"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+	<grant package="com.vivo.ai.businesscenter.app">
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.WRITE_CALENDAR"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </grant>
+    <grant package="com.vivo.upnpserver">
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.RECORD_AUDIO" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+    </grant>
+    <grant package="com.vivo.agent">
+        <permission name="android.permission.RECORD_AUDIO" />
+    </grant>
+    <grant package="com.vivo.phonehandoff">
+        <permission name="android.permission.RECORD_AUDIO" />
+        <permission name="android.permission.ANSWER_PHONE_CALLS" />
+    </grant>
+    <grant package="com.amap.ams">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+    </grant>
+
+    <grant package="com.vivo.familycare.local">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACTIVITY_RECOGNITION" />
+        <permission name="android.permission.CAMERA"/>
+    </grant>
+    <grant package="com.android.vivo.tws.vivotws">
+        <permission name="android.permission.BLUETOOTH_SCAN" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+    </grant>
+
+    <grant package="com.vivo.safecenter">
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_MEDIA_IMAGES"/>
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    </grant>
+
+    <grant package="com.vivo.connbase">
+        <permission name="android.permission.NEARBY_WIFI_DEVICES" />
+        <permission name="android.permission.BLUETOOTH_SCAN" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+        <permission name="android.permission.BLUETOOTH_ADVERTISE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+    </grant>
+
+    <grant package="com.vivo.penwrite">
+        <permission name="android.permission.BLUETOOTH_SCAN" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+    </grant>
+    <grant package="com.android.intentresolver">
+        <permission name="android.permission.READ_MEDIA_VIDEO" />
+        <permission name="android.permission.READ_MEDIA_IMAGES" />
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION" />
+    </grant>
+    <grant package="com.vos.as.vit">
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.CALL_PHONE" />
+        <permission name="android.permission.CAMERA" />
+        <permission name="android.permission.RECORD_AUDIO" />
+    </grant>
+
+    <grant package="com.vivo.devicereg">
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.SEND_SMS" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </grant>
+
+    <grant package="com.vivo.devicepower">
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+    </grant>
+
+    <grant package="com.qualcomm.qti.modemmbnmode">
+         <permission name="android.permission.READ_PHONE_STATE"/>
+    </grant>
+    <grant package="com.vivo.pcsuite">
+        <permission name="android.permission.RECORD_AUDIO" />
+    </grant>
+    <grant package="com.vivo.walkietalkie">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+        <permission name="android.permission.RECORD_AUDIO" />
+        <permission name="android.permission.BLUETOOTH_SCAN"/>
+        <permission name="android.permission.BLUETOOTH_ADVERTISE"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </grant>
+    <grant package="com.vivo.favorite">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.READ_MEDIA_AUDIO" />
+        <permission name="android.permission.READ_MEDIA_IMAGES" />
+        <permission name="android.permission.READ_MEDIA_VIDEO" />
+        <permission name="android.permission.READ_CONTACTS" />
+    </grant>
+</grants>

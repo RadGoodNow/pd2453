@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+    <!--PD2453配置文件-->
+    <version>4</version>
+        <item pkgName="com.miHoYo.ys.bilibili" label="原神" channel="bilibili" state="2" frameDepress="36" frameInter="72"  monsterFrameDepress="" monsterFrameInter="" overHeatExtremeTemperature="47" coolDownExtremeTemperature="44" index="3"/>
+        <item pkgName="com.miHoYo.Yuanshen" label="原神" channel="#" state="2" frameDepress="36" frameInter="72"  monsterFrameDepress="" monsterFrameInter="" overHeatExtremeTemperature="47" coolDownExtremeTemperature="44" index="3"/>
+        <item pkgName="com.miHoYo.yuanshencb" label="原神体验服" channel="#" state="2" frameDepress="36" frameInter="72"  monsterFrameDepress="" monsterFrameInter="" overHeatExtremeTemperature="47" coolDownExtremeTemperature="44" index="3"/>
+        <item pkgName="com.miHoYo.GenshinImpact" label="原神" channel="#" state="2" frameDepress="36" frameInter="72"  monsterFrameDepress="" monsterFrameInter="" overHeatExtremeTemperature="47" coolDownExtremeTemperature="44" index="3"/>
+        <item pkgName="com.tencent.tmgp.sgame" label="王者荣耀" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.sgamece" label="王者荣耀" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.lolm" label="英雄联盟" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.cf" label="穿越火线" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.cfalpha" label="穿越火线" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.miHoYo.enterprise.NGHSoD" label="崩坏3" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.miHoYo.bh3.vivo" label="崩坏3" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.miHoYo.bh3.bilibili" label="崩坏3" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.bh3" label="崩坏3" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.miHoYo.bh3.uc" label="崩坏3" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.aceracer" label="王牌竞速" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.aceracer.vivo" label="王牌竞速" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.onmyoji" label="阴阳师" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.onmyoji.vivo" label="阴阳师" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.yys.zqb" label="阴阳师" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dwrg" label="第五人格" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dwrg5.vivo" label="第五人格" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dwrg.nearme.gamecenter" label="第五人格" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dwrg.m4399" label="第五人格" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dwrg.huawei" label="第五人格" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.dwrg" label="第五人格" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dwrg.mi" label="第五人格" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dwrg.bili" label="第五人格" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.sky" label="光遇" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.sky.vivo" label="光遇" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.sky.huawei" label="光遇" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.sky.nearme.gamecenter" label="光遇" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.eyou.eygy" label="光遇" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.wmsj" label="完美世界" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.moba" label="决战平安京" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.moba.vivo" label="决战平安京" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.pwrd.hotta.laohu" label="幻塔" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.games.hotta.vivo" label="幻塔" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.dw.h5yvzr.yt" label="幻塔" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.KiHan" label="火影忍者" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.gamematrix.kihan" label="火影忍者" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.pubgmhd" label="和平精英" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.projectg" label="和平精英" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.hyxd" label="荒野行动" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.hyxd.vivo" label="荒野行动" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.wuxia" label="天涯明月刀" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.hermes.h1game" label="航海王热血航线" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.hermes.h1game.vivo" label="航海王热血航线" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.g67.vivo" label="暗黑破坏神不朽" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmaoe" label="重返帝国" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.mf.uam" label="暗区突围" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.tank.vivo" label="坦克连" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.vlfcn.vivo" label="绿茵信仰" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.fifamobile" label="FIFA足球世界" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.nebulajoy.nero.opensdk" label="鬼泣" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.nebulajoy.nero.vivo" label="鬼泣" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.party.vivo" label="蛋仔派对" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.party" label="蛋仔派对" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.party.nearme.gamecenter" label="蛋仔派对" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.party.huawei" label="蛋仔派对" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.party" label="蛋仔派对" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.party_toutiao_cps" label="蛋仔派对" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dfjs.vivo" label="巅峰极速" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dfjs" label="巅峰极速" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.race" label="巅峰极速" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.dfjs.bytedance.gamecenter" label="巅峰极速" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.race.ua" label="巅峰极速" channel="*" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.hermes.p6game.vivo" label="晶核" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.hermes.p6game" label="晶核" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.harrypotter.vivo" label="哈利波特：魔法觉醒" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.harrypotter" label="哈利波特：魔法觉醒" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.hypergryph.arknights" label="明日方舟" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.kurogame.haru.vivo" label="战双帕弥什" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.kurogame.haru.hero" label="战双帕弥什" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.sy.dldlhsdj.vivo" label="斗罗大陆：魂师对决" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.miHoYo.wd.vivo" label="未定事件簿" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.NBA" label="最强NBA" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.stzb.netease" label="率土之滨" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.stzb.vivo" label="率土之滨" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.supercell.boombeach.vivo" label="海岛奇兵" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.supercell.boombeach" label="海岛奇兵" channel="#" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.netease.my.vivo" label="梦幻西游" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+        <item pkgName="com.tencent.tmgp.supercell.clashroyale" label="皇室战争" channel="vivo" state="1" frameDepress="" frameInter=""  monsterFrameDepress="" monsterFrameInter=""/>
+</games>

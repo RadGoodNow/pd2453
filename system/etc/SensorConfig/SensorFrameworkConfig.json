@@ -1,0 +1,19 @@
+{
+  "EngineModeRejectReduceSar": 1,
+  "DriverProxTempCali": 1,
+  "MaxBrightness": 16032,
+  "MultilevelBright": 1,
+  "ScreenOnProxTempCali": 1,
+  "IsUseNitBrightnessBar": 1,
+  "UserModifyVer": 3,
+  "ScreenOnWaitLux": 240,
+  "UnderDisplayLight": 1,
+  "is_underproximitysensor": 1,
+  "ellipseUltra": 1,
+  "CameraCurvePromotion": 1,
+  "NotifyLcmBrightnessToDriverList": 0,
+  "CameraCurvePromotion": 1,
+  "VicoVersion": 2,
+  "UseOriginNitCurve": 1,
+  "FaceUnlockTimeout": 1500
+}

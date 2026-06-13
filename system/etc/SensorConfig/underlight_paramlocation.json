@@ -1,0 +1,12 @@
+{
+	"paramlocation": {
+		"seventhInsideLocation": [770, 75, 865, 165],
+		"sensordisplaylocation": [0, 0, 1259, 2799],
+		"project": "PD2353",
+		"notsupportDCFeature": 0,
+		"supportAcl3": 0,
+		"supportSecondLight": 0,
+		"supportSecondDisplay": 2,
+		"isNeedCalIcLocationPixel":0
+	}
+}

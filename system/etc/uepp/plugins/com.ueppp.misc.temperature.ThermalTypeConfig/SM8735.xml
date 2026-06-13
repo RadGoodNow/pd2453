@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<group __id__="com.ueppp.misc.temperature.ThermalTypeConfig"
+    __ver__="1">
+    <set __name__="app_perf_thermal_type">
+        com.antutu;
+        com.antutu.benchmark.full;
+        com.antutu.ABenchMark;
+        com.ludashi.benchmark;
+        com.ludashi.benchmark2;
+        com.tencent.benchmark;
+        com.ijinshan.AndroidBench;
+        com.qihoo360.mobilesafe.bench;
+        com.greenecomputing.linpack;
+        com.eembc.coremark;
+        com.rightware.tdmm2v10jnifree;
+        com.futuremark.dmandroid.application;
+        com.rightware.BasemarkX_Free;
+        com.glbenchmark.glbenchmark25;
+        com.aurorasoftworks.quadrant.ui.standard;
+        org.zeroxlab.benchmark;
+        com.andromeda.androbench2;
+        com.primatelabs.geekbench;
+        com.primatelabs.geekbench5;
+        com.primatelabs.geekbench5.corporate;
+        net.kishonti.gfxbench.gl.v40000.corporate;
+        net.kishonti.gfxbench.vulkan.v50000.corporate;
+        net.kishonti.gfxbench.v50000.corporate;
+        com.glbenchmark.glbenchmark27;
+        com.tencent.tmgp.pubgm;
+        com.netease.hyxd;
+        com.netease.aceracer;
+        com.pwrd.hotta.laohu;
+    </set>
+
+    <set __name__="app_benchamrk_black_thermal_type">
+        com.antutu.benchmark.full;
+        com.antutu.ABenchMark;
+        com.primatelabs.geekbench;
+        com.primatelabs.geekbench5;
+        com.primatelabs.geekbench6;
+        com.primatelabs.geekbench7;
+        com.primatelabs.geekbench6.corporate;
+        com.futuremark.dmandroid.application;
+        net.kishonti.gfxbench;
+        com.glbenchmark.glbenchmark27;
+        com.andromeda.androbench2;
+        skynet.cputhrottlingtest;
+        com.ludashi.benchmark;
+    </set>
+
+    <set __name__="app_camera_thermal_type">
+        com.android.camera;
+    </set>
+
+    <group __id__="app_game_thermal_type">
+        <elem __name__="com.tencent.tmgp.sgame"
+            thermal_array="3,4,-1"/>
+
+        <elem __name__="com.tencent.tmgp.pubgmhd"
+            thermal_array="3,4,-1"/>
+
+        <elem __name__="com.tencent.tmgp.cf"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.Yuanshen"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.ys"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.hkrpg"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.tencent.lolm"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.tencent.tmgp.projectg"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.GenshinImpact"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.mi"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.Yuanshen.bilibili"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.mihoyo.ys.bilibili"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.yuanshencb"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.hkrpg.bilibili"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.HoYoverse.hkrpgoversea"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.miHoYo.hkrpgcb"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.tencent.lolmtyf"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.netease.nshm"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.netease.nshm.vivo"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.mobile.legends"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.tencent.ig"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.pubg.imobile"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.kurogame.mingchao"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.netease.l22"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.netease.l22.vivo"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.netease.l22.bytedance.gamecenter"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.dts.freefireth"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.dts.freefiremax"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.tencent.tmgp.cod"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.garena.game.codm"
+            thermal_array="21,21,-1"/>
+
+        <elem __name__="com.activision.callofduty.shooter"
+            thermal_array="21,21,-1"/>
+    </group>
+</group>

@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<lists>
+    <list name="vivo_audio_vmse_detect_latency_app_whitelist">
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.ss.android.ugc.live"/>
+        <item value="com.tencent.weishi"/>
+        <item value="com.baidu.haokan"/>
+        <item value="com.kaixinkan.ugc.video"/>
+        <item value="com.tencent.qqlive"/>
+        <item value="com.android.VideoPlayer"/>
+        <item value="com.ss.android.article.video"/>
+        <item value="com.youku.phone"/>
+        <item value="com.qiyi.video"/>
+        <item value="tv.danmaku.bili"/>
+        <item value="com.hunantv.imgo.activity"/>
+        <item value="com.sohu.sohuvideo"/>
+        <item value="com.cmcc.cmvideo"/>
+        <item value="com.baidu.video"/>
+    </list>
+    <list name="vivo_audio_vmse_detect_latency_bt_name_whitelist">
+        <item value="BMW"/>
+        <item value="CADILLAC CUE"/>
+    </list>
+	<list name="vivo_audio_policy_voip_reroute_whitelist">
+		<item value="com.tencent.tmgp.sgame"/>
+		<item value="com.tencent.tmgp.pubgmhd"/>
+		<item value="com.tencent.ig"/>
+	</list>
+	<list name="vivo_audio_policy_bt_recorder_whitelist">
+		<item value="com.example.test"/>
+	</list>
+	<list name="vivo_audio_policy_btsco_incall_whitelist">
+		<item value="com.systec.umeeting"/>
+	</list>
+    <list name="vivo_audio_policy_LiveSupport_App_whitelist">
+        <item value="com.duowan.live"/>
+        <item value="com.kwai.livepartner"/>
+        <item value="com.duowan.kiwi"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.ss.android.ugc.livepro"/>
+    </list>
+    <list name="vivo_audio_policy_ChangeSource_App_whitelist">
+        <item value="com.xinmang.guitar.tuner.vivo"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.outfit7.mytalkingtom2"/>
+        <item value="com.smule.singandroid"/>
+        <item value="com.xingin.xhs"/>
+    </list>
+    <list name="vivo_audio_policy_ObserveMediaProjection_App_whitelist">
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+        <item value="com.alibaba.android.rimet"/>
+        <item value="com.ss.android.lark"/>
+        <item value="com.tencent.wework"/>
+    </list>
+    <list name="vivo_audio_policy_Need_Low_Latency_App_whitelist">
+        <item value="com.tencent.wemeet.app"/>
+    </list>
+	<list name="vivo_audio_policy_voip_force_reroute_whitelist">
+		<item value="com.tencent.tmgp.pubgmhd"/>
+		<item value="com.tencent.tmgp.sgame"/>
+		<item value="com.tencent.ig"/>
+	</list>
+	<list name="vivo_audio_policy_btsco_reroute_meeting_whitelist">
+		<item value="com.tencent.wemeet.app"/>
+		<item value="com.systec.umeeting"/>
+	</list>
+        <list name="vivo_audio_policy_btsco_dualsco_process_whitelist">
+		<item value="com.tencent.mm"/>
+        	<item value="com.tencent.wemeet.app"/>
+		<item value="com.tencent.mobileqq"/>
+	</list>
+	<list name="vivo_audio_policy_watch_applist">
+		<item value="com.tencent.mm"/>
+		<item value="com.tencent.mobileqq"/>
+		<item value="com.systec.umeeting"/>
+		<item value="com.tencent.wemeet.app"/>
+	</list>
+	<list name="vivo_audio_policy_volumekey_intercept_whitelist">
+	</list>
+	<list name="vivo_audio_policy_volume_voip_ring_oneclick_mute_whitelist">
+		<item value="com.tencent.mm"/>
+	</list>
+	<list name="vivo_audio_policy_media_session_applist">
+		<item value="com.netease.cloudmusic"/>
+		<item value="cn.kuwo.player"/>
+		<item value="com.kugou.android"/>
+		<item value="com.tencent.qqmusic"/>
+		<item value="com.kugou.android.elder"/>
+		<item value="cmccwm.mobilemusic"/>
+		<item value="com.tencent.blackkey"/>
+		<item value="com.tencent.radio"/>
+		<item value="com.ximalaya.ting.android"/>
+		<item value="com.android.bbkmusic"/>
+		<item value="android.media.cts"/>
+		<item value="com.vivo.agent"/>
+		<item value="com.ximalaya.ting.lite"/>
+		<item value="com.luojilab.player"/>
+		<item value="fm.qingting.qtradio"/>
+		<item value="com.kugou.android.lite"/>
+		<item value="com.kugou.viper"/>
+		<item value="com.shinyv.cnr"/>
+		<item value="com.android.mediacenter"/>
+		<item value="bubei.tingshu"/>
+                <item value="com.tencent.blackkey"/>
+		<item value="com.hiby.music"/>
+		<item value="com.luna.music"/>
+		<item value="app.podcast.cosmos"/>
+		<item value="com.apple.android.music"/>
+		<item value="com.spotify.music"/>
+		<item value="cn.missevan"/>
+	</list>
+	<list name="vivo_audio_policy_audio_restoration_applist">
+		<!-- domestic as below -->
+		<item value="com.ss.android.ugc.aweme"/>
+		<item value="com.kuaishou.nebula"/>
+		<item value="com.smile.gifmaker"/>
+		<item value="com.ss.android.ugc.aweme.lite"/>
+		<item value="com.ss.android.article.news"/>
+		<item value="com.ss.android.ugc.live"/>
+		<item value="com.kugou.android"/>
+		<item value="com.tencent.qqmusic"/>
+		<item value="com.tencent.qqmusic:QQPlayerService"/>
+		<item value="com.netease.cloudmusic"/>
+		<item value="com.android.bbkmusic"/>
+		<item value="com.ss.android.ugc.livelite"/>
+		<item value="com.kuaiyin.player"/>
+		<item value="com.kaixinkan.ugc.video"/>
+		<!-- overseas as below -->
+		<item value="com.spotify.music"/>
+		<item value="com.shazam.android"/>
+		<item value="com.amazon.mp3"/>
+		<item value="deezer.android.app"/>
+		<item value="com.starmakerinteractive.starmaker"/>
+		<item value="com.agminstruments.drumpadmachine"/>
+		<item value="com.google.android.apps.youtube.music"/>
+		<item value="com.apple.android.music"/>
+		<item value="com.mwm.sampler"/>
+		<item value="com.media.music.mp3.musicplayer"/>
+		<item value="musicplayer.musicapps.music.mp3player"/>
+		<item value="com.music.rmxpro"/>
+		<item value="musicplayer.hdvideoplayer.backgroundmusic"/>
+		<item value="com.anghami"/>
+		<item value="com.tencent.ibg.joox"/>
+		<item value="com.ohla.socialapps"/>
+		<item value="com.moonvideo.android.resso"/>
+		<item value="br.com.rodrigokolb.realdrum"/>
+		<item value="com.zhiliaoapp.musically"/>
+		<item value="com.instagram.android"/>
+		<item value="com.snapchat.android"/>
+		<item value="com.zhiliaoapp.musically.go"/>
+		<item value="com.ss.android.ugc.trill"/>
+	</list>
+    <list name="vivo_audio_policy_need_remove_fast_whitelist">
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.ss.android.ugc.live"/>
+        <item value="cn.banshenggua.aichang"/>
+        <item value="com.buli"/>
+        <item value="com.ss.android.ugc.trill"/>
+        <item value="com.zhiliaoapp.musically"/>
+        <item value="com.taobao.live4anchor"/>
+        <item value="com.hermes.h1game.vivo"/>
+        <item value="com.starmakerinteractive.starmaker"/>
+        <item value="com.wanxue.boxol"/>
+        <item value="com.vivo.browser"/>
+        <item value="cn.soulapp.android"/>
+        <item value="com.kugou.android.support.ktvapp"/>
+    </list>
+	<list name="vivo_audio_policy_speakerphone_permitincall_whitelist">
+		<item value="com.android.server.telecom"/>
+	</list>
+	<list name="vivo_audio_policy_speakerphone_permitinring_whitelist">
+        	<item value="android.uid.system"/>
+	</list>
+	<list name="vivo_audio_policy_speakerphone_special_whitelist">
+	</list>
+	<list name="vivo_audio_policy_speakerphone_touch_whitelist">
+		<item value="com.tencent.widget"/>
+		<item value="androidx.appcompat.app"/>
+		<item value="us.zoom.androidlib"/>
+		<item value="android.support.v7"/>
+	</list>
+	<list name="vivo_audio_policy_speakerphone_without_touch_whitelist">
+		<item value="org.telegram.messenger"/>
+		<item value="com.viber.voip"/>
+		<item value="jp.naver.line.android"/>
+		<item value="com.facebook.orca"/>
+		<item value="com.whatsapp"/>
+        	<item value="com.whatsapp.w4b"/>
+		<item value="com.microsoft.teams"/>
+        	<item value="com.instagram.android"/>
+	</list>
+	<list name="vivo_audio_policy_ktvmode_default_whitelist">
+		<item value="com.changba"/>
+		<item value="com.tencent.karaoke"/>
+		<item value="com.app.hero.ui"/>
+		<item value="cn.banshenggua.aichang"/>
+		<item value="com.meelive.ingkee"/>
+		<item value="com.meitu.meipaimv"/>
+		<item value="tv.xiaoka.live"/>
+		<item value="com.huajiao"/>
+		<item value="com.ccvideo"/>
+		<item value="com.hunantv.mglive"/>
+		<item value="com.netease.cc"/>
+		<item value="com.duowan.mobile"/>
+		<item value="air.tv.douyu.android"/>
+		<item value="com.audiocn.kalaok"/>
+		<item value="com.smule.singandroid.test"/>
+		<item value="com.vivo.vivokaraoke"/>
+		<item value="com.ss.android.ugc.aweme"/>
+		<item value="com.ss.android.ugc.live"/>
+		<item value="com.ss.android.ugc.aweme.lite"/>
+        	<item value="com.kugou.fanxing"/>
+        	<item value="com.kuaishou.nebula"/>
+        	<item value="com.smile.gifmaker"/>
+        	<item value="com.tencent.qqmusic"/>
+	</list>
+	<list name="vivo_audio_policy_mustrecord_whitelist">
+		<item value="com.tencent.mm"/>
+		<item value="com.tencent.mobileqq"/>
+		<item value="com.tencent.tmgp.sgame"/>
+		<item value="com.tencent.tmgp.pubgmhd"/>
+		<item value="com.duowan.mobile"/>
+		<item value="air.tv.douyu.android"/>
+		<item value="com.duowan.kiwi"/>
+		<item value="com.yy.huyaassist4game"/>
+		<item value="com.ss.android.ugc.aweme"/>
+		<item value="com.smile.gifmaker"/>
+		<item value="com.changba"/>
+		<item value="com.audiocn.kalaok"/>
+		<item value="com.tencent.karaoke"/>
+		<item value="com.kugou.android.ktvapp"/>
+		<item value="com.rockets.chang"/>
+		<item value="com.unking.weiguanai"/>
+	    <item value="com.netease.lrs"/>
+	</list>
+	<list name="vivo_audio_policy_requestfocus_intercept_whitelist">
+		<item value="com.google.android.marvin.talkback"/>
+		<item value="com.android.systemui"/>
+		<item value="com.android.server.telecom"/>
+		<item value="jp.naver.line.android"/>
+		<item value="com.android.test.fakeclient"/>
+		<item value="android.media.audio.cts"/>
+		<item value="com.whatsapp"/>
+		<item value="com.tencent.mm"/>
+		<item value="com.tencent.tmgp.sgame"/>
+		<item value="com.ss.android.ugc.aweme"/>
+	</list>
+	<list name="vivo_audio_policy_abandonfocus_intercept_whitelist">
+	</list>
+
+	<list name="vivo_audio_policy_focus_bind_whitelist">
+		<item value="com.vivo.agent"/>
+                <item value="com.baidu.BaiduMap"/>
+                <item value="com.autonavi.minimap"/>
+		<item value="com.vivo.ai.base.copilot"/>
+		<item value="com.vivo.ai.copilot"/>
+	</list>
+
+	<list name="vivo_audio_policy_music_applist">
+		<item value="com.android.bbkmusic"/>
+		<item value="com.netease.cloudmusic"/>
+		<item value="com.kugou.android"/>
+		<item value="com.tencent.qqmusic"/>
+		<item value="com.ximalaya.ting.android"/>
+		<item value="com.kugou.android.elder"/>
+		<item value="com.kugou.android.lite"/>
+		<item value="com.kugou.viper"/>
+		<item value="cn.kuwo.player"/>
+		<item value="cmccwm.mobilemusic"/>
+		<item value="com.tencent.blackkey"/>
+		<item value="com.tencent.radio"/>
+		<item value="com.ximalaya.ting.lite"/>
+		<item value="com.luojilab.player"/>
+		<item value="fm.qingting.qtradio"/>
+		<item value="com.shinyv.cnr"/>
+		<item value="com.android.mediacenter"/>
+		<item value="bubei.tingshu"/>
+		<item value="com.luna.music"/>
+		<item value="com.xs.fm"/>
+		<item value="com.xs.fm.lite"/>
+		<item value="app.podcast.cosmos"/>
+		<item value="com.apple.android.music"/>
+		<item value="com.spotify.music"/>
+		<item value="cn.missevan"/>
+		<item value="cn.wenyu.bodian"/>
+	</list>
+	<list name="vivo_audio_policy_interactive_whitelist">
+		<item value="com.android.camera"/>
+		<item value="com.android.bbksoundrecorder"/>
+		<item value="com.android.BBKClock"/>
+		<item value="com.vivo.soundrecorder"/>
+		<item value="com.vivo.agent"/>
+		<item value="com.vivo.sos"/>
+		<item value="com.vivo.ai.base.copilot"/>
+		<item value="com.vivo.ai.copilot"/>
+	</list>
+	<list name="vivo_audio_policy_change_silent_mode_whitelist">
+		<item value="com.android.camera"/>
+		<item value="com.vivo.smartshot"/>
+	</list>
+	<list name="vivo_audio_policy_record_silent_mode_whitelist">
+		<item value="com.android.bbksoundrecorder"/>
+		<item value="com.vivo.soundrecorder"/>
+		<item value="com.vivo.smartanswer"/>
+		<item value="com.tencent.mm"/>
+		<item value="com.tencent.mobileqq"/>
+	</list>
+    <list name="vivo_audio_policy_avoid_submix_check_whitelist">
+        <item value="com.kwai.livepartner"/>
+        <item value="com.duowan.live"/>
+        <item value="com.duowan.kiwi"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.vivo.agent"/>
+        <item value="com.vivo.base.agent"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.ss.android.ugc.livepro"/>
+    </list>
+    <list name="vivo_audio_policy_lea_record_whitelist">
+		<item value="com.android.bbksoundrecorder"/>
+		<item value="com.android.camera"/>
+    </list>
+    <list name="vivo_audio_policy_bt_sco_app_whiltelist">
+        <item value="com.systec.umeeting"/>
+    </list>
+    <list name="vivo_audio_policy_userMuteAPP_whitelist">
+        <item value="com.vivo.sdkplugin"/>
+    </list>
+    <list name="vivo_audio_policy_incallmusic_whitelist">
+        <item value="com.vivo.smartanswer"/>
+        <item value="com.vivo.easyshare"/>
+        <item value="com.vivo.autofieldtest"/>
+        <item value="com.vivo.accessibility"/>
+        <item value="com.vivo.phonehandoff"/>
+        <item value="com.vivo.car.networking"/>
+        <item value="com.vivo.car.networking:ucar"/>
+        <item value="com.vivo.vdfs"/>
+        <item value="com.vivo.pcsuite"/>
+    </list>
+    <list name="vivo_audio_policy_ktvPkg_whitelist">
+        <item value="com.changba"/>
+        <item value="com.tencent.karaoke"/>
+        <item value="com.app.hero.ui"/>
+        <item value="cn.banshenggua.aichang"/>
+        <item value="com.meelive.ingkee"/>
+        <item value="com.meitu.meipaimv"/>
+        <item value="tv.xiaoka.live"/>
+        <item value="com.huajiao"/>
+        <item value="com.ccvideo"/>
+        <item value="com.hunantv.mglive"/>
+        <item value="com.netease.cc"/>
+        <item value="com.duowan.mobile"/>
+        <item value="air.tv.douyu.android"/>
+        <item value="com.audiocn.kalaok"/>
+        <item value="com.tencent.wesing"/>
+        <item value="com.vivo.vivokaraoke"/>
+        <item value="com.vivo.mediatune"/>
+        <item value="android.media.ct"/>
+        <item value="android.media.audio.ct"/>
+        <item value="com.kugou.android.support"/>
+        <item value="com.kugou.android.support.ktvapp"/>
+        <item value="com.chaozh.iReader"/>
+        <item value="com.edu24ol.newclass"/>
+        <item value="com.netease.karaoke"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.chaoxing.mobile"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="tv.danmaku.bili:ijkservice"/>
+        <item value="tv.danmaku.bili"/>
+        <item value="music.hising.live"/>
+        <item value="com.zq.live"/>
+        <item value="com.example.ktvtest"/>
+        <item value="com.vv51.mvbox"/>
+        <item value="com.kugou.android.ktvapp"/>
+	<item value="com.kwai.hisense"/>
+    </list>
+    <list name="vivo_audio_policy_ktvmode_lastactivity_whitelist">
+    	<item value="com.android.permissioncontroller"/>
+	<item value="com.android.vivo.tws.vivotws"/>
+    </list>
+    <list name="vivo_audio_policy_samsung_ktvPkg_whitelist">
+        <item value="com.changba"/>
+        <item value="com.tencent.karaoke"/>
+        <item value="com.app.hero.ui"/>
+        <item value="cn.banshenggua.aichang"/>
+        <item value="com.meelive.ingkee"/>
+        <item value="com.meitu.meipaimv"/>
+        <item value="tv.xiaoka.live"/>
+        <item value="com.huajiao"/>
+        <item value="com.ccvideo"/>
+        <item value="com.hunantv.mglive"/>
+        <item value="com.netease.cc"/>
+        <item value="com.duowan.mobile"/>
+        <item value="air.tv.douyu.android"/>
+        <item value="com.audiocn.kalaok"/>
+        <item value="com.tencent.wesing"/>
+        <item value="com.vivo.vivokaraoke"/>
+        <item value="com.vv51.mvbox"/>
+        <item value="com.kugou.android.support"/>
+        <item value="com.kugou.android.support.ktvapp"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+    </list>
+    <list name="vivo_audio_policy_NotSupportFastApp_whitelist">
+        <item value="com.cmplay.tiles2_cn"/>
+        <item value="com.whatsapp"/>
+    </list>
+    <list name="vivo_audio_policy_needEnlargeFrameCountApp_whitelist">
+        <item value="com.tencent.mobileqq:peak"/>
+        <item value="com.tencent.mm"/>
+    </list>
+    <list name="vivo_audio_policy_gamingParaApp_whitelist">
+        <item value="com.netease.hyxd.vivo"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.tmgp.pubgm"/>
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.pwrd.xxajh.vivo"/>
+        <item value="com.tencent.tmgp.xxajh"/>
+        <item value="com.tencent.ig"/>
+        <item value="com.tencent.tmgp.cf"/>
+    </list>
+    <list name="vivo_audio_policy_JoviApp_whitelist">
+        <item value="com.vivo.agent"/>
+        <item value="com.vivo.ai.ime"/>
+        <item value="com.vivo.ai.ime.pad"/>
+        <item value="com.vivo.ai.ime.nex"/>
+        <item value="com.vivo.ai.ime.nex:vivoasr"/>
+        <item value="com.vivo.ai.ime:vivoasr"/>
+        <item value="com.vivo.healthwidget"/>
+        <item value="com.vivo.base.agent"/>
+        <item value="com.vivo.ai.base.copilot"/>
+        <item value="com.vivo.ai.copilot"/>
+    </list>
+    <list name="vivo_audio_policy_MapSource_whitelist">
+        <item value="com.baidu.BaiduMap"/>
+        <item value="com.autonavi.minimap"/>
+        <item value="com.tencent.map"/>
+    </list>
+    <list name="vivo_audio_policy_FMApp_whitelist">
+        <item value="com.vivo.FMRadio"/>
+    </list>
+    <list name="vivo_audio_policy_VoicewakeupApp_whitelist">
+        <item value="com.vivo.voicewakeup"/>
+        <item value="com.iqoo.engineermode"/>
+    </list>
+    <list name="vivo_audio_policy_CommApp_whitelist">
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.ig"/>
+        <item value="com.tencent.tmgp.cf"/>
+        <item value="com.tencent.tmgp.cod"/>
+        <item value="com.tencent.lolm"/>
+        <item value="com.tencent.mf.uam"/>
+        <item value="com.netease.l22"/>
+        <item value="com.netease.l22.vivo"/>
+        <item value="com.netease.yhtj"/>
+    </list>
+    <list name="vivo_audio_policy_LiveApp_whitelist">
+        <item value="com.duowan.kiwi"/>
+    </list>
+    <list name="vivo_audio_policy_voipApp_whitelist">
+        <item value="com.whatsapp"/>
+        <item value="com.whatsapp.w4b"/>
+    </list>
+    <list name="vivo_audio_mediapp_vol_adjust_whitelist">
+        <item value="com.tencent.qqlive"/>
+        <item value="com.ximalaya.ting.android"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.youku.phone"/>
+        <item value="com.baidu.haokan"/>
+        <item value="com.tencent.weishi"/>
+        <item value="com.autonavi.minimap"/>
+        <item value="com.baidu.BaiduMap"/>
+        <item value="com.ss.android.ugc.live"/>
+    </list>
+    <list name="vivo_audio_policy_shortvideo_whitelist">
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.ss.android.ugc.trill"/>
+        <item value="com.roposo.android"/>
+        <item value="com.zhiliaoapp.musically"/>
+        <item value="com.kwai.video"/>
+        <item value="com.tencent.weishi"/>
+        <item value="com.ss.android.ugc.live"/>
+        <item value="com.instagram.android"/>
+    </list>
+    <list name="vivo_audio_policy_longvideo_whitelist">
+        <item value="tv.danmaku.bili"/>
+        <item value="com.ss.android.article.video"/>
+        <item value="com.tencent.qqlive"/>
+        <item value="com.qiyi.video"/>
+        <item value="com.youku.phone"/>
+        <item value="com.le123.ysdq"/>
+        <item value="com.qiyi.video.lite"/>
+        <item value="com.hunantv.imgo.activity"/>
+        <item value="com.cmcc.cmvideo"/>
+        <item value="com.babycloud.hanju"/>
+        <item value="com.android.VideoPlayer"/>
+        <item value="com.sohu.sohuvideo"/>
+    </list>
+    <list name="vivo_audio_policy_commongame_whitelist">
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.ig"/>
+        <item value="com.happyelements.AndroidAnimal"/>
+        <item value="com.qqgame.hlddz"/>
+        <item value="com.tencent.letsgo"/>
+        <item value="com.netease.party"/>
+        <item value="com.netease.party.vivo"/>
+        <item value="com.tencent.tmgp.cf"/>
+        <item value="com.tencent.tmgp.cod"/>
+        <item value="com.tencent.lolm"/>
+        <item value="com.tencent.mf.uam"/>
+        <item value="com.tencent.jkchess"/>
+        <item value="com.pwrd.xxajh.vivo"/>
+        <item value="com.king.candycrushsaga"/>
+        <item value="com.tencent.tmgp.wuxia"/>
+        <item value="com.miHoYo.hkrpg"/>
+        <item value="com.miHoYo.Yuanshen"/>
+        <item value="com.miHoYo.ys.bilibili"/>
+        <item value="com.miHoYo.GenshinImpact"/>
+        <item value="com.HoYoverse.hkrpgoversea"/>
+        <item value="com.tencent.tmgp.speedmobile"/>
+        <item value="com.tencent.tmgp.djsy"/>
+        <item value="com.mihoyo.bh3"/>
+        <item value="com.miHoYo.bh3.vivo"/>
+        <item value="com.supercell.clashroyale"/>
+        <item value="org.yuzu.yuzu_emu"/>
+        <item value="com.minitech.miniworld.vivo"/>
+        <item value="com.netease.party.vivo"/>
+        <item value="com.tencent.peng"/>
+        <item value="com.dts.freefireth"/>
+        <item value="com.pubg.imobile"/>
+        <item value="com.netease.yyslscn"/>
+        <item value="com.tencent.tmgp.dfm"/>
+    </list>
+    <list name="vivo_audio_zenmode_motormode_white_list">
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+    </list>
+    <list name="vivo_audio_policy_record_share_special_whitelist">
+        <item value="com.vivo.smartshot"/>
+        <item value="com.vivo.soundrecorder"/>
+        <item value="com.android.bbksoundrecorder"/>
+        <item value="com.vivo.voicewakeup"/>
+        <item value="com.vivo.agent"/>
+        <item value="com.vivo.ai.copilot"/>
+        <item value="com.vivo.ai.base.copilot"/>
+    </list>
+    <list name="vivo_audio_policy_record_incoming_share_special_whitelist">
+        <item value="com.vivo.agent"/>
+        <item value="com.vivo.screenagent"/>
+        <item value="com.vivo.ai.copilot"/>
+        <item value="com.vivo.ai.base.copilot"/>
+    </list>
+    <list name="vivo_audio_policy_record_call_share_special_whitelist">
+        <item value="com.vivo.aiservice"/>
+        <item value="com.vivo.smartanswer"/>
+        <item value="com.vivo.screenagent"/>
+    </list>
+    <list name="vivo_audio_policy_record_voip_share_special_whitelist">
+        <item value="com.vivo.agent"/>
+        <item value="com.vivo.ai.copilot"/>
+        <item value="com.vivo.ai.base.copilot"/>
+    </list>
+    <list name="vivo_audio_policy_action_voip_state_whitelist">
+        <item value="com.android.bbksoundrecorder"/>
+    </list>
+    <list name="vivo_audio_policy_record_live_share_special_whitelist">
+        <item value="com.duowan.live"/>
+        <item value="com.kwai.livepartner"/>
+        <item value="com.duowan.kiwi"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.kuaishou.nebula"/>
+    </list>
+    <list name="vivo_audio_policy_record_variable_special_game_whitelist">
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.ig"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+    </list>
+    <list name="vivo_audio_policy_record_variable_special_with_game_whitelist">
+    </list>
+    <list name="vivo_audio_policy_voip_is_game_whitelist">
+        <item value="com.tencent.tmgp.sgame" />
+        <item value="com.vivo.soundrecorder" />
+        <item value="com.android.bbksoundrecorder" />
+        <item value="com.tencent.mf.uam" />
+        <item value="com.tencent.tmgp.pubgmhd" />
+        <item value="com.tencent.lolm" />
+        <item value="com.tencent.tmgp.cf" />
+        <item value="com.tencent.tmgp.cod" />
+        <item value="com.netease.hyxd" />
+        <item value="com.netease.hyxd.vivo" />
+        <item value="com.netease.l22" />
+        <item value="com.netease.l22.vivo" />
+        <item value="com.tencent.tmgp.dfm" />
+        <item value="com.tencent.ig" />
+    </list>
+    <list name="vivo_audio_policy_record_ai_special_with_meeting_whitelist">
+        <item value="com.tencent.wemeet.app"/>
+        <item value="com.alibaba.android.rimet"/>
+        <item value="com.tencent.wework"/>
+	<item value="com.systec.umeeting"/>
+        <item value="com.ss.android.lark"/>
+        <item value="com.tencent.mm"/>
+    </list>
+    <list name="vivo_audio_policy_record_ai_share_special_whitelist">
+        <item value="com.vivo.screenagent" />
+     </list>
+    <list name="vivo_audio_policy_a11y_wechat_whitelist">
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+    </list>
+    <list name="vivo_audio_policy_change_recordchannel_whitelist">
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.whatsapp"/>
+    </list>
+    <list name="vivo_audio_policy_com.tencent.qqmusic_mediasession">
+        <item value="androidx.media.session.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_fm.qingting.qtradio_mediasession">
+        <item value="fm.qingting.qtradio.headset.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_cmccwm.mobilemusic_mediasession">
+        <item value="com.migu.music.player.media.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_cn.kuwo.player_mediasession">
+        <item value="cn.kuwo.mod.playcontrol.HeadsetControlReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.kugou.android_mediasession">
+        <item value="com.kugou.framework.service.MediaButtonIntentReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.netease.cloudmusic_mediasession">
+        <item value="com.netease.cloudmusic.receiver.MediaButtonEventReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_bubei.tingshu_mediasession">
+        <item value="bubei.tingshu.listen.mediaplayer.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.kugou.android.lite_mediasession">
+        <item value="com.kugou.framework.service.MediaButtonIntentReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.kugou.android.elder_mediasession">
+        <item value="com.kugou.framework.service.MediaButtonIntentReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.yibasan.lizhifm_mediasession">
+        <item value="com.yibasan.lizhifm.voicebusiness.player.base.audioengine.MediaButtonEventReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.ximalaya.ting.android_mediasession">
+        <item value="com.ximalaya.ting.android.opensdk.player.receive.WireControlReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.tencent.blackkey_mediasession">
+        <item value="androidx.media.session.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.hiby.music_mediasession">
+        <item value="com.hiby.music.broadcast.LineCtrl"/>
+    </list>
+    <list name="vivo_audio_policy_com.luna.music_mediasession">
+        <item value="com.luna.biz.playing.player.BachMediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_app.podcast.cosmos_mediasession">
+        <item value="io.iftech.android.podcast.app.player.receiver.PlayerReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.apple.android.music_mediasession">
+        <item value="androidx.media.session.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_com.spotify.music_mediasession">
+        <item value="com.spotify.mediasession.mediasession.receiver.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_cn.missevan_mediasession">
+        <item value="cn.missevan.lib.common.player.receiver.MediaButtonReceiver"/>
+    </list>
+    <list name="vivo_audio_policy_playback_phonecall_adapte_volume_whitelist">
+        <item value="com.ss.android.article.news"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.UCMobile"/>
+        <item value="com.quark.browser"/>
+        <item value="com.android.chrome"/>
+        <item value="sogou.mobile.explorer"/>
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.wemeet.app"/>
+        <item value="com.tencent.qqmusic"/>
+        <item value="com.qiyi.video"/>
+    </list>
+    <list name="vivo_audio_policy_audio_fpsgame_applist">
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.tmgp.cf"/>
+        <item value="com.tencent.tmgp.cod"/>
+        <item value="com.tencent.mf.uam"/>
+        <item value="com.netease.hyxd.vivo"/>
+        <item value="com.tencent.toaa"/>
+        <item value="com.netease.mrzh.vivo"/>
+        <item value="com.netease.lztg.vivo"/>
+        <item value="com.DreamGames.WuXiaX.vivo"/>
+        <item value="com.yingxiong.hero.vivo"/>
+    </list>
+    <list name="vivo_audio_policy_audio_simplegame_applist">
+        <item value="org.chromium.latency.walt"/>
+        <item value="com.imangi.templerun"/>
+        <item value="com.qka.qkagamemobile.vivo"/>
+        <item value="com.wedobest.gqyyds.vivo"/>
+        <item value="com.PigeonGames.Phigros"/>
+        <item value="com.netease.ma59.vivo"/>
+        <item value="com.jj.bbby.g.baidu"/>
+    </list>
+    <!--The list of bypass Dolby Audio for app -->
+    <list name="vivo_audio_policy_bypass_dolby_audio_whitelist">
+        <item value="com.tencent.tmgp.speedmobile"/>
+        <item value="com.changyou.xhxshz"/>
+        <!--The game named MengHuanXinZhuXian begin-->
+        <item value="com.tencent.tmgp.tzyxmznew"/>
+        <item value="com.pwrd.tzymhxzx"/>
+        <item value="com.pwrd.tzyxmznew"/>
+        <item value="com.tzy.mhxzx.new0"/>
+        <item value="com.lzuyg6.y3m6w"/>
+        <item value="com.pwrd.tzyxmznew.aligames"/>
+        <item value="com.lzuyg6.y3m6w"/>
+        <!--The game named MengHuanXinZhuXian end-->
+    </list>
+    <list name="vivo_audio_policy_device_state_lock_whitelist">
+        <item value="com.tencent.tmgp.speedmobile"/>
+        <item value="com.netease.hyxd"/>
+        <item value="com.netease.hyxd.vivo"/>
+        <item value="com.tencent.jkchess"/>
+        <item value="com.netease.dfjs.vivo"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.mobile.legends"/>
+        <item value="com.tencent.ig"/>
+        <item value="com.tencent.letsgo"/>
+        <item value="com.netease.party"/>
+        <item value="com.netease.party.vivo"/>
+        <item value="com.tencent.KiHan"/>
+        <item value="com.tencent.lolm"/>
+        <item value="com.miHoYo.Yuanshen"/>
+        <item value="com.tencent.tmgp.cod"/>
+        <item value="com.tencent.mf.uam"/>
+        <item value="com.tencent.tmgp.gnyx"/>
+        <item value="com.sofunny.Sausage"/>
+        <item value="com.outfit7.mytalkingtom2"/>
+        <item value="com.outfit7.mytalkingtom2.vivo"/>
+        <item value="com.tencent.peng"/>
+        <item value="com.tencent.tmgp.sgame"/>
+    </list>
+    <list name="vivo_audio_policy_get_mode_list">
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.tmgp.speedmobile"/>
+        <item value="com.tencent.lolm"/>
+        <item value="com.dts.freefiremax"/>
+        <item value="com.tencent.jkchess"/>
+        <item value="com.miHoYo.hkrpg"/>
+        <item value="com.miHoYo.Yuanshen"/>
+        <item value="com.miHoYo.ys.bilibili"/>
+        <item value="com.miHoYo.GenshinImpact"/>
+        <item value="com.HoYoverse.hkrpgoversea"/>
+        <item value="com.netease.party"/>
+        <item value="com.netease.nshm"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.tmgp.cf"/>
+        <item value="com.tencent.mf.uam"/>
+        <item value="com.qqgame.hlddz"/>
+        <item value="com.tencent.ig"/>
+        <item value="com.tencent.letsgo"/>
+        <item value="com.pandadastudio.ninjamustdie3.vivo"/>
+    </list>
+    <list name="vivo_audio_policy_set_mode_list">
+        <item value="com.android.server.telecom"/>
+        <item value="com.tencent.mobileqq"/>
+        <item value="com.tencent.mm"/>
+        <item value="com.whatsapp"/>
+    </list>
+    <list name="vivo_audio_policy_pommode_only_playback_whitelist">
+    </list>
+    <list name="vivo_audio_policy_mediaplayer_offload_whitelist">
+        <item value="com.android.bbkmusic"/>
+        <item value="com.tencent.qqmusic"/>
+        <item value="com.tencent.qqmusic:QQPlayerService"/>
+        <item value="com.android.bbksoundrecorder"/>
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+        <item value="com.android.systemui"/>
+        <item value="com.android.settings"/>
+    </list>
+    <list name="vivo_audio_policy_specialsetspeakeroff_whitelist">
+        <item value="com.taobao.idlefish"/>
+        <item value="com.tencent.mm"/>
+        <item value="com.eg.android.AlipayGphone"/>
+        <item value="com.tencent.mobileqq"/>
+    </list>
+    <list name="vivo_audio_policy_sensorevent_setspeakerphone_whitelist">
+        <item value="com.tencent.mm"/>
+    </list>
+    <list name="vivo_audio_policy_specialsetmode_whitelist">
+        <item value="com.tencent.mm"/>
+    </list>
+    <list name="vivo_audio_policy_bluetooth_noresample_whitelist">
+        <item value="com.shaiban.audioplayer.mplayer"/>
+        <item value="com.android.bbkmusic"/>
+        <item value="com.tencent.qqmusic"/>
+        <item value="com.netease.cloudmusic"/>
+    </list>
+    <list name="vivo_audio_policy_UsbSpecialRoute_whitelist">
+        <item value="USB-Audio - VIVO USB-C-XE710 HEADSET"/>
+        <item value="USB-Audio - MH148"/>
+        <item value="USB-Audio - JaBra Rvolve2 40"/>
+        <item value="USB-Audio - HUAWEI USB-C HEADSET"/>
+        <item value="USB-Audio - AB13X USB Audio"/>
+        <item value="USB-Audio - H180 Plus (Type C)"/>
+        <item value="USB-Audio - HONOR USB-C HEADSET"/>
+        <item value="USB-Audio - ME01TC"/>
+        <item value="USB-Audio - HECATE GM260 Plus"/>
+        <item value="USB-Audio - Mi Dual Driver Earphones Type-C"/>
+        <item value="USB-Audio - S21"/>
+        <item value="USB-Audio - BE02T"/>
+        <item value="USB-Audio - USB C HEADSET"/>
+        <item value="USB-Audio - TANCHJIM-ZERO DSP"/>
+        <item value="USB-Audio - UGREEN USB-C HEADSET"/>
+        <item value="USB-Audio - HECATE GM180 Plus"/>
+        <item value="USB-Audio - S21DC PRO"/>
+        <item value="USB-Audio - Samsung USB C Earphones"/>
+        <item value="USB-Audio - Quarks DSP"/>
+        <item value="USB-Audio - Samsung USB C Earphone"/>
+        <item value="USB-Audio - H180 Plus (Tpye"/>
+        <item value="USB-Audio - UC02"/>
+        <item value="USB-Audio - USB Audio"/>
+        <item value="USB-Audio - VENTURE-DAS-32"/>
+        <item value="USB-Audio - USB Composite Device"/>
+        <item value="USB-Audio - MIDIPLUS USB AUDIO"/>
+        <item value="USB-Audio - iQOO Headphone"/>
+        <item value="USB-Audio - Langsdom LAT100"/>
+        <item value="USB-Audio - Sennheiser Profile"/>
+        <item value="USB-Audio - SG20"/>
+        <item value="USB-Audio - ROG CETRA II"/>
+    </list>
+    <list name="vivo_audio_vivo_game_incall_whitelist">
+        <item value="com.miHoYo.hkrpg"/>
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.jkchess"/>
+        <item value="com.qqgame.hlddz"/>
+        <item value="com.tencent.tmgp.speedmobile"/>
+        <item value="com.netease.nshm"/>
+        <item value="com.miHoYo.Yuanshen"/>
+        <item value="com.miHoYo.ys.bilibili"/>
+        <item value="com.miHoYo.GenshinImpact"/>
+        <item value="com.HoYoverse.hkrpgoversea"/>
+        <item value="com.netease.party"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.ig"/>
+        <item value="com.tencent.tmgp.cf"/>
+        <item value="com.tencent.mf.uam"/>
+        <item value="com.tencent.letsgo"/>
+        <item value="com.mobile.legends"/>
+        <item value="com.pandadastudio.ninjamustdie3.vivo"/>
+        <item value="com.imangi.templerun2"/>
+        <item value="com.fingersoft.hillclimb"/>
+        <item value="com.rioo.runnersubway"/>
+        <item value="com.king.candycrushsaga"/>
+        <item value="com.pubg.imobile"/>
+        <item value="com.king.com.garena.game.codm"/>
+        <item value="com.dts.freefiremax"/>
+        <item value="com.dts.freefireth"/>
+        <item value="com.garena.game.codm"/>
+        <item value="com.kiloo.subwaysurf"/>
+        <item value="com.tencent.tmgp.dnf"/>
+        <item value="com.wepie.snake"/>
+        <item value="com.wepie.snake.vivo"/>
+        <item value="com.jj.log.vivo"/>
+        <item value="com.levelinfinite.sgameGlobal"/>
+    </list>
+    <list name="vivo_audio_policy_app_type_store_list">
+        <item value="https://in-third-appstore.vivoglobal.com/power/getAppsCategory.do"/>
+        <item value="https://az.appstore.vivo.com.cn/third-service/appinfo"/>
+    </list>
+    <list name="vivo_audio_anchor_need_report_regionVersion_list">
+        <item value="W20"/>
+    </list>
+    <list name="vivo_audio_anchor_need_report_regionCountry_list">
+        <item value="IN"/>
+        <item value="EEA"/>
+        <item value="TR"/>
+        <item value="AU"/>
+        <item value="CO"/>
+        <item value="PE"/>
+        <item value="IL"/>
+        <item value="CL"/>
+        <item value="MX"/>
+        <item value="ZA"/>
+        <item value="SCA"/>
+    </list>
+    <list name="vivo_audio_vivo_musicVolume_limit_cancel_list">
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.lolm"/>
+        <item value="com.tencent.mf.uam"/>
+	<item value="com.tencent.letsgo"/>
+	<item value="com.netease.party.vivo"/>
+	<item value="com.netease.party"/>
+	<item value="com.netease.party.meta"/>
+	<item value="com.netease.party_toutiao_cps"/>
+	<item value="com.tencent.jkchess"/>
+	<item value="com.tencent.jkchess:msdk_inner_webview"/>
+	<item value="com.tencent.tmgp.dfm"/>
+	<item value="com.tencent.ig"/>
+	<item value="com.tencent.ig:remoteWeb"/>
+	<item value="com.tencent.tmgp.cf"/>
+	<item value="com.netease.dwrg5.vivo"/>
+	<item value="com.tencent.tmgp.dwrg"/>
+	<item value="com.tencent.tmgp.cod"/>
+	<item value="com.netease.l22"/>
+	<item value="com.netease.l22.vivo"/>
+	<item value="com.netease.l22.mi"/>
+	<item value="com.netease.yhtj.vivo"/>
+	<item value="com.netease.mc.vivo"/>
+	<item value="com.netease.sky.vivo"/>
+	<item value="com.je.skgame.vivo"/>
+	<item value="com.minitech.miniworld.vivo"/>
+	<item value="com.tencent.KiHan"/>
+	<item value="com.sofunny.Sausage"/>
+	<item value="com.tencent.tmgp.dnf"/>
+	<item value="com.tencent.tmgp.supercell.brawlstars"/>
+	<item value="com.ztgame.bob"/>
+	<item value="com.netease.sky"/>
+	<item value="com.miniworldroyale.sparkgame.vivo"/>
+	<item value="com.miniworldroyale.sparkgame"/>
+	<item value="com.netease.nshm"/>
+	<item value="com.netease.nshm:play"/>
+	<item value="com.tencent.tmgp.gnyx"/>
+	<item value="com.outfit7.mytalkingtom2.vivo"/>
+	<item value="com.outfit7.mytalkingangela2.vivo"/>
+	<item value="com.netease.aceracer.vivo"/>
+	<item value="com.tencent.tmgp.speedmobile"/>
+	<item value="com.outfit7.talkingtom.vivo"/>
+	<item value="com.ztgame.bob.vivo"/>
+	<item value="com.outfit7.mytalkingtom.vivo"/>
+	<item value="com.outfit7.mytalkingtomfree"/>
+	<item value="com.bairimeng.dmmdzz.vivo"/>
+	<item value="com.papegames.lysk.cn.vivo"/>
+	<item value="com.netease.nshm.vivo"/>
+	<item value="com.outfit7.mytalkingangelafree.vivo"/>
+	<item value="com.tencent.tmgp.djsy"/>
+	<item value="com.tencent.nfsonline"/>
+	<item value="com.netease.tom.vivo"/>
+	<item value="com.wepie.snake.vivo"/>
+	<item value="com.wepie.snake"/>
+	<item value="com.tencent.tmgp.NBA"/>
+	<item value="com.tencent.tmgp.lv"/>
+	<item value="com.netease.cfxf.vivo"/>
+	<item value="com.netease.hyxd.vivo"/>
+	<item value="com.netease.dfjs.vivo"/>
+	<item value="com.netease.mrzh.vivo"/>
+	<item value="com.tencent.tmgp.yongyong.mrzh"/>
+	<item value="com.bf.sgs.hdexp.vivo"/>
+	<item value="com.tencent.tmgp.sgamece"/>
+	<item value="com.tencent.tmgp.projectg"/>
+    </list>
+    <list name="vivo_audio_policy_check_hw_sw_dec_whitelist">
+        <item value="com.tencent.qqlive"/>
+        <item value="com.qiyi.video"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.youku.phone"/>
+        <item value="com.ss.android.article.video"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="tv.danmaku.bili"/>
+        <item value="tv.danmaku.bili:ijkservice"/>
+        <item value="com.taobao.taobao"/>
+        <item value="com.sina.weibo"/>
+        <item value="com.xingin.xhs"/>
+    </list>
+    <list name="vivo_audio_policy_special_app_whitelist">
+        <item value="google"/>
+        <item value=".cts"/>
+        <item value=".gts"/>
+    </list>
+    <list name="vivo_audio_policy_audio_frame_above_60fps_game_applist">
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.jkchess"/>
+    </list>
+    <list name="vivo_audio_policy_audio_frame_above_or_equal_60fps_game_applist">
+        <item value="com.tencent.gamematrix.letsgo"/>
+        <item value="com.miHoYo.Yuanshen"/>
+        <item value="com.miHoYo.ys.bilibili"/>
+        <item value="com.miHoYo.GenshinImpact"/>
+        <item value="com.tencent.mf.uam"/>
+        <item value="com.HoYoverse.hkrpgoversea"/>
+    </list>
+    <list name="vivo_audio_policy_voip_inputsource_whitelist">
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.ig"/>
+    </list>
+    <list name="vivo_audio_policy_enable_codec_refine_whitelist">
+        <item value="com.smile.gifmaker"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+        <item value="com.tencent.qqlive"/>
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.news"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="com.ss.android.ugc.live"/>
+        <item value="com.ss.android.article.video"/>
+        <item value="com.ss.android.article.lite"/>
+        <item value="com.ss.android.article.news"/>
+        <item value="com.ss.android.yumme.video"/>
+        <item value="com.jingdong.app.mall"/>
+        <item value="com.taobao.taobao"/>
+        <item value="com.xunmeng.pinduoduo"/>
+        <item value="com.xingin.xhs"/>
+        <item value="tv.danmaku.bili"/>
+        <item value="com.sina.weibo"/>
+        <item value="com.phoenix.read"/>
+        <item value="com.baidu.searchbox"/>
+        <item value="com.baidu.haokan"/>
+        <item value="com.android.VideoPlayer"/>
+        <item value="com.vivo.browser"/>
+        <item value="com.vivo.defaultPlayer"/>
+        <item value="com.kaixinkan.ugc.video"/>
+        <item value="com.huajiao"/>
+        <item value="com.duowan.kiwi"/>
+        <item value="com.duowan.mobile"/>
+        <item value="air.tv.douyu.android"/>
+        <item value="com.qiyi.video"/>
+        <item value="com.qiyi.video.lite"/>
+        <item value="com.youku.phone"/>	
+        <item value="com.lemon.lv"/>
+        <item value="com.cmcc.cmvideo"/>
+        <item value="com.sohu.sohuvideo"/>
+    </list>
+    <list name="vivo_audio_handset_MaxVolume_toast_list">
+        <item value="com.tencent.wemeet.app"/>
+        <item value="com.alibaba.android.rimet"/>
+        <item value="com.ss.android.lark"/>
+        <item value="cn.eeo.classin"/>
+    </list>
+    <list name="vivo_audio_policy_volume_recording_whitelist">
+        <item value="com.tencent.mobileqq"/>
+        <item value="com.tencent.mm"/>
+    </list>
+    <list name="vivo_audio_policy_music_breathing_lamp_whitelist">
+        <item value="com.imusic.iting"/>
+        <item value="com.changba"/>
+        <item value="com.douban.radio"/>
+        <item value="com.duomi.android"/>
+        <item value="com.android.bbkmusic"/>
+        <item value="com.kugou.android"/>
+        <item value="cn.kuwo.player"/>
+        <item value="cmccwm.mobilemusic"/>
+        <item value="com.ting.mp3.android"/>
+        <item value="com.tencent.qqmusic"/>
+        <item value="com.tencent.qqmusic:QQPlayerService"/>
+        <item value="com.tencent.karaoke"/>
+        <item value="com.kugou.viper"/>
+        <item value="com.netease.cloudmusic"/>
+        <item value="com.blueocean.musicplayer"/>
+        <item value="com.luna.music"/>
+        <item value="com.xs.fm.lite"/>
+        <item value="com.kugou.android.lite"/>
+        <item value="com.kwai.hisense"/>
+        <item value="com.kugou.android.ringtone"/>
+        <item value="com.shoujiduoduo.ringtone"/>
+        <item value="cn.wenyu.bodian"/>
+        <item value="com.kuaiyin.player"/>
+        <item value="com.laidian.xiu"/>
+        <item value="com.shoujiduoduo.dj"/>
+        <item value="com.kugou.android.ktvapp"/>
+        <item value="com.rockets.chang"/>
+        <item value="com.apple.android.music"/>
+        <item value="com.ximalaya.ting.android"/>
+        <item value="com.oaxee.ndfgychu"/>
+        <item value="com.facetech.konking"/>
+        <item value="com.kugou.android.elder"/>
+    </list>
+    <list name="vivo_audio_policy_ring_breathing_lamp_whitelist">
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+        <item value="com.android.systemui"/>
+        <item value="com.android.settings"/>
+    </list>
+    <list name="vivo_audio_policy_network_call_breathing_lamp_whitelist">
+        <item value="system_server"/>
+        <item value="com.android.server.telecom"/>
+    </list>
+    <list name="vivo_audio_policy_get_mode_without_lock_list">
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="android.uid.systemui"/>
+        <item value="android.uid.nfc"/>
+        <item value="com.tencent.tmgp.cf"/>
+        <item value="com.tencent.tmgp.cod"/>
+        <item value="com.tencent.KiHan"/>
+        <item value="android.uid.system"/>
+        <item value="com.tencent.lolmtyf"/>
+        <item value="com.tencent.lolm"/>
+    </list>
+    <list name="vivo_audio_policy_enlarge_voice_track_framecount_app_list">
+        <item value="com.tencent.tmgp.sgame"/>
+        <item value="com.tencent.tmgp.pubgmhd"/>
+        <item value="com.tencent.mobileqq"/>
+    </list>
+    <list name="vivo_audio_policy_playback_phonecall_avolume_switch2app_lastpackage_whitelist">
+        <item value="com.android.permissioncontroller"/>
+        <item value="com.android.systemui"/>
+        <item value="com.vivo.upslide"/>
+        <item value="com.android.launcher"/>
+        <item value="com.bbk.launcher"/>
+    </list>
+    <list name="vivo_audio_policy_googletest_whitelist">
+        <item value="android.media.cts"/>
+        <item value="android.media.audio.cts"/>
+        <item value="android.virtualdevice.cts.audio"/>
+        <item value="com.google.android.gms"/>
+        <item value="com.android.cts.verifier"/>
+    </list>
+    <list name="vivo_displayenhace_video_vpp_aisr_whitelist">
+        <item value = "com.tencent.qqlive"/>
+        <item value = "com.qiyi.video"/>
+        <item value = "com.qiyi.video.pad"/>
+        <item value = "com.qiyi.video.lite"/>
+        <item value = "com.youku.phone"/>
+        <item value = "tv.danmaku.bili"/>
+        <item value = "tv.danmaku.bilibilihd"/>
+        <item value = "com.imgo.pad"/>
+    </list>
+    <list name="vivo_audio_policy_sgame_voice_noise_gate_whitelist">
+        <item value="com.tencent.tmgp.sgame"/>
+    </list>
+    <list name="vivo_audio_policy_voip_notallow_whitelist">
+        <item value="com.android.systemui"/>
+    </list>
+    <list name="vivo_audio_policy_voip_direct_whitelist">
+        <item value="com.tencent.mm"/>
+    </list>
+    <list name="vivo_audio_policy_proaudio_allow_whitelist">
+        <item value="org.chromium.latency.walt"/>
+        <item value="org.kamrik.latency.walt"/>
+    </list>
+    <list name="vivo_audio_policy_audioxd_audiobook_list">
+        <item value="com.xs.fm"/>
+        <item value="bubei.tingshu"/>
+        <item value="io.dushu.fandengreader"/>
+        <item value="com.tencent.weread"/>
+        <item value="com.ximalaya.ting"/>
+        <item value="com.dragon.read"/>
+    </list>
+    <list name="vivo_audio_policy_audioxd_navigation_list">
+        <item value="com.autonavi.minimap"/>
+        <item value="com.baidu.BaiduMap"/>
+        <item value="com.sdu.didi.psnger"/>
+        <item value="com.tencent.map"/>
+    </list>
+    <list name="vivo_audio_not_active_no_need_frozen_list">
+        <item value="com.ss.android.ugc.aweme"/>
+    </list>
+    <list name="vivo_audio_policy_need_pause_wait_list">
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+    </list>
+    <list name="vivo_audio_policy_voip_doze_remit_whitelist">
+        <item value="com.tencent.wemeet.app"/>
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+    </list>
+    <list name="vivo_audio_policy_vdecCc_whitelist">
+        <item value="com.tencent.mm"/>
+        <item value="com.tencent.mobileqq"/>
+        <item value="com.smile.gifmaker"/>
+        <item value="com.ss.android.ugc.aweme"/>
+        <item value="com.kuaishou.nebula"/>
+        <item value="com.ss.android.ugc.aweme.lite"/>
+        <item value="tv.danmaku.bili:ijkservice"/>
+        <item value="com.ss.android.article.video"/>
+        <item value="com.ss.android.ugc.live"/>
+        <item value="com.kaixinkan.ugc.video"/>
+        <item value="com.xingin.xhs"/>
+        <item value="com.whatsapp"/>
+        <item value="com.facebook.orca"/>
+        <item value="com.google.android.youtube"/>
+        <item value="com.ss.android.ugc.trill"/>
+        <item value="com.zhiliaoapp.musically"/>
+        <item value="com.facebook.katana"/>
+        <item value="jp.naver.line.android"/>
+        <item value="com.instagram.android"/>
+        <item value="com.facebook.lite"/>
+        <item value="com.spotify.music"/>
+        <item value="com.whatsapp.w4b"/>
+        <item value="org.telegram.messenger"/>
+        <item value="com.netflix.mediaclient"/>
+        <item value="com.autonavi.minimap"/>
+        <item value="com.twitter.android"/>
+        <item value="com.snapchat.android"/>
+    </list>
+    <list name="vivo_audio_policy_system_change_route_list">
+        <item value="com.android.systemui"/>
+        <item value="com.vivo.musicwidgetmix"/>
+    </list>
+</lists>
