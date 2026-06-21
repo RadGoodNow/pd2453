@@ -1,0 +1,84 @@
+﻿"flash:"
+
+"erase:"
+
+"set_active"
+
+"flash:"
+
+"erase:"
+
+"set_active"
+
+"flashing get_unlock_ability"
+
+"oem enable-charger-screen"
+
+"oem disable-charger-screen"
+
+"oem off-mode-charge"
+
+"oem select-display-panel"
+
+"oem set-hw-fence-value"
+
+"oem set-gpu-preemption"
+
+"oem device-info"
+
+"reboot"
+
+"reboot-bootloader"
+
+"getvar:"
+
+"download:"
+
+"oem audio-framework"
+
+"oem bspdebug "
+
+"getid"
+
+"getcpuid"
+
+"vivo_bsp unlock_vivo"
+
+"bbk unlock_vivo"
+
+"vivo_bsp lock_vivo"
+
+"bbk lock_vivo"
+
+"oem product-model"
+
+"oem op-entry"
+
+"oem optr-flag"
+
+"oem device-imei"
+
+"oem device-oemname"
+
+"oem device-name"
+
+"oem device-id"
+
+"oem ufs-id"
+
+"oem device-sdk"
+
+"oem update-app"
+
+"oem getinfo"
+
+"oem get-info"
+
+"oem reboot-edl"
+
+"oem overlay_cfg"
+
+"oem overlay_efs"
+
+"oem memtest"
+
